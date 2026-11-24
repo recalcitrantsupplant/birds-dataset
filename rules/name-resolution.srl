@@ -1,0 +1,21 @@
+PREFIX bird: <https://example.org/birds/def/>
+
+RULE { ?x bird:appliesIn ?c }
+WHERE { ?x a bird:NameChange . ?c a bird:Country NOT { ?x bird:changeRegion ?region } }
+
+RULE { ?x bird:appliesIn ?c } WHERE { ?x a bird:NameChange ; bird:changeRegion ?c }
+
+RULE { ?o bird:nameAt ?n } WHERE { ?o bird:identifiedAs ?n }
+
+RULE { ?o bird:nameAt ?n }
+WHERE { ?o a bird:Occurrence ; bird:species ?s NOT { ?o bird:identifiedAs ?given } ?s bird:acceptedName ?n }
+
+RULE { ?o bird:nameAt ?m }
+WHERE { ?o bird:nameAt ?n ; bird:country ?c . ?x bird:fromName ?n ; bird:toName ?m ; bird:appliesIn ?c }
+
+RULE { ?o bird:resolvesTo ?s }
+WHERE {
+  ?o bird:nameAt ?n ; bird:country ?c .
+  ?s bird:acceptedName ?n
+  NOT { ?x bird:fromName ?n ; bird:appliesIn ?c }
+}

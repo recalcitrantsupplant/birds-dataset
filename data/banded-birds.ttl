@@ -1,0 +1,428 @@
+@prefix bird: <https://example.org/birds/def/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.org/birds/id/resighting/ar-k-11204/3> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/ar-k-11204> ;
+    bird:date "2022-11-30"^^xsd:date ;
+    bird:note "Back in Tierra del Fuego for the austral summer, in a flock of about 4,000 knots."@en ;
+    bird:previous <https://example.org/birds/id/resighting/ar-k-11204/2> ;
+    bird:site <https://example.org/birds/id/site/bahia-lomas> .
+
+<https://example.org/birds/id/resighting/ar-k-11251/2> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/ar-k-11251> ;
+    bird:date "2022-05-25"^^xsd:date ;
+    bird:note "Feeding on horseshoe crab eggs at the tide line. Heavy, ready for the flight to the Arctic."@en ;
+    bird:previous <https://example.org/birds/id/resighting/ar-k-11251/1> ;
+    bird:site <https://example.org/birds/id/site/delaware-bay> .
+
+<https://example.org/birds/id/resighting/au-k-55801/2> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/au-k-55801> ;
+    bird:date "2022-09-02"^^xsd:date ;
+    bird:note "Back on Roebuck Bay. Plumage mostly grey with a few red feathers left."@en ;
+    bird:previous <https://example.org/birds/id/resighting/au-k-55801/1> ;
+    bird:site <https://example.org/birds/id/site/roebuck-bay> .
+
+<https://example.org/birds/id/resighting/au-k-55920/4> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/au-k-55920> ;
+    bird:date "2021-09-05"^^xsd:date ;
+    bird:note "Feeding on the mudflats near the bird observatory with great knots and bar-tailed godwits."@en ;
+    bird:previous <https://example.org/birds/id/resighting/au-k-55920/3> ;
+    bird:site <https://example.org/birds/id/site/roebuck-bay> .
+
+<https://example.org/birds/id/resighting/cl-g-30087/2> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/cl-g-30087> ;
+    bird:date "2022-10-02"^^xsd:date ;
+    bird:note "Back on the tidal flats of Chiloé with several hundred Hudsonian godwits."@en ;
+    bird:previous <https://example.org/birds/id/resighting/cl-g-30087/1> ;
+    bird:site <https://example.org/birds/id/site/chiloe> .
+
+<https://example.org/birds/id/resighting/es-c-61210/2> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/es-c-61210> ;
+    bird:date "2022-02-07"^^xsd:date ;
+    bird:note "On its nest on a pylon in the marshes, with a mate."@en ;
+    bird:previous <https://example.org/birds/id/resighting/es-c-61210/1> ;
+    bird:site <https://example.org/birds/id/site/donana> .
+
+<https://example.org/birds/id/resighting/gb-s-88123/2> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/gb-s-88123> ;
+    bird:date "2022-05-06"^^xsd:date ;
+    bird:note "Back at its natal barn and feeding young in a nest on a beam."@en ;
+    bird:previous <https://example.org/birds/id/resighting/gb-s-88123/1> ;
+    bird:site <https://example.org/birds/id/site/the-wash> .
+
+<https://example.org/birds/id/resighting/gb-t-90544/1> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/gb-t-90544> ;
+    bird:date "2022-12-04"^^xsd:date ;
+    bird:note "Resting on a sandbank in the lagoon with common terns."@en ;
+    bird:previous <https://example.org/birds/id/bird/gb-t-90544> ;
+    bird:site <https://example.org/birds/id/site/langebaan-lagoon> .
+
+<https://example.org/birds/id/resighting/nz-b-40101/5> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/nz-b-40101> ;
+    bird:date "2022-09-25"^^xsd:date ;
+    bird:note "Roosting on the shell bank at high tide with knots and wrybills."@en ;
+    bird:previous <https://example.org/birds/id/resighting/nz-b-40101/4> ;
+    bird:site <https://example.org/birds/id/site/firth-of-thames> .
+
+<https://example.org/birds/id/resighting/nz-b-40102/2> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/nz-b-40102> ;
+    bird:date "2021-10-01"^^xsd:date ;
+    bird:note "Counted in a mixed flock of godwits and knots. Fat and in full breeding plumage."@en ;
+    bird:previous <https://example.org/birds/id/resighting/nz-b-40102/1> ;
+    bird:site <https://example.org/birds/id/site/firth-of-thames> .
+
+<https://example.org/birds/id/resighting/nz-b-40117/4> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/nz-b-40117> ;
+    bird:date "2022-01-15"^^xsd:date ;
+    bird:note "Feeding alone on the sandflat in the estuary, then flew to the roost."@en ;
+    bird:previous <https://example.org/birds/id/resighting/nz-b-40117/3> ;
+    bird:site <https://example.org/birds/id/site/manawatu-estuary> .
+
+<https://example.org/birds/id/resighting/nz-b-40233/2> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/nz-b-40233> ;
+    bird:date "2022-10-11"^^xsd:date ;
+    bird:note "Feeding on the high-tide roost shell bank. Grey non-breeding plumage."@en ;
+    bird:previous <https://example.org/birds/id/resighting/nz-b-40233/1> ;
+    bird:site <https://example.org/birds/id/site/firth-of-thames> .
+
+<https://example.org/birds/id/resighting/nz-o-31502/2> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/nz-o-31502> ;
+    bird:date "2022-09-01"^^xsd:date ;
+    bird:note "Back on the riverbed, near the same nest site as the previous year."@en ;
+    bird:previous <https://example.org/birds/id/resighting/nz-o-31502/1> ;
+    bird:site <https://example.org/birds/id/site/rakaia-river> .
+
+<https://example.org/birds/id/resighting/nz-w-20014/3> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/nz-w-20014> ;
+    bird:date "2022-02-01"^^xsd:date ;
+    bird:note "At the high-tide roost in a tight flock of wrybills."@en ;
+    bird:previous <https://example.org/birds/id/resighting/nz-w-20014/2> ;
+    bird:site <https://example.org/birds/id/site/firth-of-thames> .
+
+<https://example.org/birds/id/resighting/nz-w-20029/2> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/nz-w-20029> ;
+    bird:date "2022-06-18"^^xsd:date ;
+    bird:note "An unusual winter record on the estuary sandbanks, feeding alone."@en ;
+    bird:previous <https://example.org/birds/id/resighting/nz-w-20029/1> ;
+    bird:site <https://example.org/birds/id/site/manawatu-estuary> .
+
+<https://example.org/birds/id/resighting/us-s-70345/2> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/us-s-70345> ;
+    bird:date "2023-03-12"^^xsd:date ;
+    bird:note "In a roost of about 20,000 cranes on a sandbar of the river at dusk."@en ;
+    bird:previous <https://example.org/birds/id/resighting/us-s-70345/1> ;
+    bird:site <https://example.org/birds/id/site/platte-river> .
+
+<https://example.org/birds/id/resighting/ar-k-11204/1> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/ar-k-11204> ;
+    bird:date "2022-03-28"^^xsd:date ;
+    bird:note "Feeding on mussel beds in the bay with about 300 red knots."@en ;
+    bird:previous <https://example.org/birds/id/bird/ar-k-11204> ;
+    bird:site <https://example.org/birds/id/site/san-antonio-oeste> .
+
+<https://example.org/birds/id/resighting/ar-k-11204/2> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/ar-k-11204> ;
+    bird:date "2022-05-21"^^xsd:date ;
+    bird:note "On a beach covered with horseshoe crab eggs. Engraved flag read with a telescope."@en ;
+    bird:previous <https://example.org/birds/id/resighting/ar-k-11204/1> ;
+    bird:site <https://example.org/birds/id/site/delaware-bay> .
+
+<https://example.org/birds/id/resighting/ar-k-11251/1> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/ar-k-11251> ;
+    bird:date "2022-04-02"^^xsd:date ;
+    bird:note "In a flock of red knots on the rocky platform at low tide."@en ;
+    bird:previous <https://example.org/birds/id/bird/ar-k-11251> ;
+    bird:site <https://example.org/birds/id/site/san-antonio-oeste> .
+
+<https://example.org/birds/id/resighting/au-k-55801/1> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/au-k-55801> ;
+    bird:date "2022-04-26"^^xsd:date ;
+    bird:note "Bright red, in a flock of red knots on a mudflat island."@en ;
+    bird:previous <https://example.org/birds/id/bird/au-k-55801> ;
+    bird:site <https://example.org/birds/id/site/yalu-jiang> .
+
+<https://example.org/birds/id/resighting/au-k-55920/1> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/au-k-55920> ;
+    bird:date "2020-04-14"^^xsd:date ;
+    bird:note "Feeding on mudflats beside the seawall construction site."@en ;
+    bird:previous <https://example.org/birds/id/bird/au-k-55920> ;
+    bird:site <https://example.org/birds/id/site/saemangeum> .
+
+<https://example.org/birds/id/resighting/au-k-55920/2> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/au-k-55920> ;
+    bird:date "2020-08-29"^^xsd:date ;
+    bird:note "Moulting into grey plumage on the bay. Flag read from a photograph."@en ;
+    bird:previous <https://example.org/birds/id/resighting/au-k-55920/1> ;
+    bird:site <https://example.org/birds/id/site/roebuck-bay> .
+
+<https://example.org/birds/id/resighting/au-k-55920/3> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/au-k-55920> ;
+    bird:date "2021-04-19"^^xsd:date ;
+    bird:note "Resighted on the same mudflat as the year before, at the same time in April."@en ;
+    bird:previous <https://example.org/birds/id/resighting/au-k-55920/2> ;
+    bird:site <https://example.org/birds/id/site/saemangeum> .
+
+<https://example.org/birds/id/resighting/cl-g-30087/1> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/cl-g-30087> ;
+    bird:date "2022-04-22"^^xsd:date ;
+    bird:note "Probing for worms in a wet field beside the river, with a small group of godwits."@en ;
+    bird:previous <https://example.org/birds/id/bird/cl-g-30087> ;
+    bird:site <https://example.org/birds/id/site/platte-river> .
+
+<https://example.org/birds/id/resighting/es-c-61210/1> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/es-c-61210> ;
+    bird:date "2021-08-19"^^xsd:date ;
+    bird:note "Soaring over the coast near Tarifa in a flock of several hundred storks, waiting for good thermals to cross."@en ;
+    bird:previous <https://example.org/birds/id/bird/es-c-61210> ;
+    bird:site <https://example.org/birds/id/site/strait-of-gibraltar> .
+
+<https://example.org/birds/id/resighting/gb-s-88123/1> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/gb-s-88123> ;
+    bird:date "2022-01-11"^^xsd:date ;
+    bird:note "Perched on a wire beside a farm dam, in a group of about 50 swallows."@en ;
+    bird:previous <https://example.org/birds/id/bird/gb-s-88123> ;
+    bird:site <https://example.org/birds/id/site/langebaan-lagoon> .
+
+<https://example.org/birds/id/resighting/nz-b-40101/1> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/nz-b-40101> ;
+    bird:date "2021-04-02"^^xsd:date ;
+    bird:note "Feeding with about 2,000 godwits on the mudflats at the river mouth at low tide. Flags read through a telescope at 300 m."@en ;
+    bird:previous <https://example.org/birds/id/bird/nz-b-40101> ;
+    bird:site <https://example.org/birds/id/site/yalu-jiang> .
+
+<https://example.org/birds/id/resighting/nz-b-40101/2> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/nz-b-40101> ;
+    bird:date "2021-06-11"^^xsd:date ;
+    bird:note "Seen in breeding plumage on wet tundra near a pond, calling over a nest site."@en ;
+    bird:previous <https://example.org/birds/id/resighting/nz-b-40101/1> ;
+    bird:site <https://example.org/birds/id/site/yukon-kuskokwim-delta> .
+
+<https://example.org/birds/id/resighting/nz-b-40101/3> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/nz-b-40101> ;
+    bird:date "2021-09-20"^^xsd:date ;
+    bird:note "Back on the flats after the non-stop flight from Alaska. Thin, with a dull, worn plumage."@en ;
+    bird:previous <https://example.org/birds/id/resighting/nz-b-40101/2> ;
+    bird:site <https://example.org/birds/id/site/firth-of-thames> .
+
+<https://example.org/birds/id/resighting/nz-b-40101/4> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/nz-b-40101> ;
+    bird:date "2022-03-30"^^xsd:date ;
+    bird:note "In a flock of several thousand on the Yalu Jiang flats. Deep red breeding plumage."@en ;
+    bird:previous <https://example.org/birds/id/resighting/nz-b-40101/3> ;
+    bird:site <https://example.org/birds/id/site/yalu-jiang> .
+
+<https://example.org/birds/id/resighting/nz-b-40102/1> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/nz-b-40102> ;
+    bird:date "2021-04-05"^^xsd:date ;
+    bird:note "Feeding at the edge of the incoming tide with a small flock of godwits."@en ;
+    bird:previous <https://example.org/birds/id/bird/nz-b-40102> ;
+    bird:site <https://example.org/birds/id/site/yalu-jiang> .
+
+<https://example.org/birds/id/resighting/nz-b-40117/1> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/nz-b-40117> ;
+    bird:date "2021-04-08"^^xsd:date ;
+    bird:note "Seen in a flock of fewer than 100 godwits beside the new seawall. Much of the former mudflat is now dry land."@en ;
+    bird:previous <https://example.org/birds/id/bird/nz-b-40117> ;
+    bird:site <https://example.org/birds/id/site/saemangeum> .
+
+<https://example.org/birds/id/resighting/nz-b-40117/2> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/nz-b-40117> ;
+    bird:date "2021-06-02"^^xsd:date ;
+    bird:note "On the tundra in a loose group of godwits, feeding on insects."@en ;
+    bird:previous <https://example.org/birds/id/resighting/nz-b-40117/1> ;
+    bird:site <https://example.org/birds/id/site/yukon-kuskokwim-delta> .
+
+<https://example.org/birds/id/resighting/nz-b-40117/3> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/nz-b-40117> ;
+    bird:date "2021-09-30"^^xsd:date ;
+    bird:note "Roosting near the base of the spit with about 5,000 godwits."@en ;
+    bird:previous <https://example.org/birds/id/resighting/nz-b-40117/2> ;
+    bird:site <https://example.org/birds/id/site/farewell-spit> .
+
+<https://example.org/birds/id/resighting/nz-b-40233/1> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/nz-b-40233> ;
+    bird:date "2022-04-20"^^xsd:date ;
+    bird:note "Resighted in a tight flock of red knots on the outer flats."@en ;
+    bird:previous <https://example.org/birds/id/bird/nz-b-40233> ;
+    bird:site <https://example.org/birds/id/site/yalu-jiang> .
+
+<https://example.org/birds/id/resighting/nz-o-31502/1> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/nz-o-31502> ;
+    bird:date "2022-04-10"^^xsd:date ;
+    bird:note "In a flock of about 400 oystercatchers on the roost."@en ;
+    bird:previous <https://example.org/birds/id/bird/nz-o-31502> ;
+    bird:site <https://example.org/birds/id/site/firth-of-thames> .
+
+<https://example.org/birds/id/resighting/nz-w-20014/1> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/nz-w-20014> ;
+    bird:date "2021-02-17"^^xsd:date ;
+    bird:note "In a flock of about 1,500 wrybills that wheeled over the shell bank before it landed."@en ;
+    bird:previous <https://example.org/birds/id/bird/nz-w-20014> ;
+    bird:site <https://example.org/birds/id/site/firth-of-thames> .
+
+<https://example.org/birds/id/resighting/nz-w-20014/2> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/nz-w-20014> ;
+    bird:date "2021-09-28"^^xsd:date ;
+    bird:note "On its nesting territory on the gravel bed, with a mate."@en ;
+    bird:previous <https://example.org/birds/id/resighting/nz-w-20014/1> ;
+    bird:site <https://example.org/birds/id/site/rakaia-river> .
+
+<https://example.org/birds/id/resighting/nz-w-20029/1> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/nz-w-20029> ;
+    bird:date "2022-03-03"^^xsd:date ;
+    bird:note "Roosting with a flock of about 800 wrybills and some banded dotterels."@en ;
+    bird:previous <https://example.org/birds/id/bird/nz-w-20029> ;
+    bird:site <https://example.org/birds/id/site/firth-of-thames> .
+
+<https://example.org/birds/id/resighting/us-s-70345/1> a bird:Resighting ;
+    bird:bird <https://example.org/birds/id/bird/us-s-70345> ;
+    bird:date "2022-06-10"^^xsd:date ;
+    bird:note "On a pond in the delta with a mate. The collar shows that it crossed from Siberia in the previous autumn."@en ;
+    bird:previous <https://example.org/birds/id/bird/us-s-70345> ;
+    bird:site <https://example.org/birds/id/site/yukon-kuskokwim-delta> .
+
+<https://example.org/birds/id/bird/gb-t-90544> a bird:BandedBird ;
+    rdfs:comment "metal ring only" ;
+    bird:bandNumber "GB-T-90544" ;
+    bird:bandedAt <https://example.org/birds/id/site/the-wash> ;
+    bird:bandedOn "2022-06-30"^^xsd:date ;
+    bird:date "2022-06-30"^^xsd:date ;
+    bird:site <https://example.org/birds/id/site/the-wash> ;
+    bird:species <https://example.org/birds/vocab/taxon/sterna-paradisaea> .
+
+<https://example.org/birds/id/bird/ar-k-11251> a bird:BandedBird ;
+    rdfs:comment "orange flag, left; engraved 7PA" ;
+    bird:bandNumber "AR-K-11251" ;
+    bird:bandedAt <https://example.org/birds/id/site/bahia-lomas> ;
+    bird:bandedOn "2022-01-19"^^xsd:date ;
+    bird:date "2022-01-19"^^xsd:date ;
+    bird:site <https://example.org/birds/id/site/bahia-lomas> ;
+    bird:species <https://example.org/birds/vocab/taxon/calidris-canutus> .
+
+<https://example.org/birds/id/bird/au-k-55801> a bird:BandedBird ;
+    rdfs:comment "yellow flag, left; green over blue, right" ;
+    bird:bandNumber "AU-K-55801" ;
+    bird:bandedAt <https://example.org/birds/id/site/roebuck-bay> ;
+    bird:bandedOn "2021-10-03"^^xsd:date ;
+    bird:date "2021-10-03"^^xsd:date ;
+    bird:site <https://example.org/birds/id/site/roebuck-bay> ;
+    bird:species <https://example.org/birds/vocab/taxon/calidris-canutus> .
+
+<https://example.org/birds/id/bird/cl-g-30087> a bird:BandedBird ;
+    rdfs:comment "blue over white, left; yellow flag, right" ;
+    bird:bandNumber "CL-G-30087" ;
+    bird:bandedAt <https://example.org/birds/id/site/chiloe> ;
+    bird:bandedOn "2021-12-05"^^xsd:date ;
+    bird:date "2021-12-05"^^xsd:date ;
+    bird:site <https://example.org/birds/id/site/chiloe> ;
+    bird:species <https://example.org/birds/vocab/taxon/limosa-haemastica> .
+
+<https://example.org/birds/id/bird/es-c-61210> a bird:BandedBird ;
+    rdfs:comment "white darvic ring, engraved C8H2" ;
+    bird:bandNumber "ES-C-61210" ;
+    bird:bandedAt <https://example.org/birds/id/site/donana> ;
+    bird:bandedOn "2021-05-12"^^xsd:date ;
+    bird:date "2021-05-12"^^xsd:date ;
+    bird:site <https://example.org/birds/id/site/donana> ;
+    bird:species <https://example.org/birds/vocab/taxon/ciconia-ciconia> .
+
+<https://example.org/birds/id/bird/gb-s-88123> a bird:BandedBird ;
+    rdfs:comment "metal ring only" ;
+    bird:bandNumber "GB-S-88123" ;
+    bird:bandedAt <https://example.org/birds/id/site/the-wash> ;
+    bird:bandedOn "2021-07-22"^^xsd:date ;
+    bird:date "2021-07-22"^^xsd:date ;
+    bird:site <https://example.org/birds/id/site/the-wash> ;
+    bird:species <https://example.org/birds/vocab/taxon/hirundo-rustica> .
+
+<https://example.org/birds/id/bird/nz-b-40102> a bird:BandedBird ;
+    rdfs:comment "orange over red, left; blue flag, right" ;
+    bird:bandNumber "NZ-B-40102" ;
+    bird:bandedAt <https://example.org/birds/id/site/firth-of-thames> ;
+    bird:bandedOn "2021-02-14"^^xsd:date ;
+    bird:date "2021-02-14"^^xsd:date ;
+    bird:site <https://example.org/birds/id/site/firth-of-thames> ;
+    bird:species <https://example.org/birds/vocab/taxon/limosa-lapponica> .
+
+<https://example.org/birds/id/bird/nz-b-40233> a bird:BandedBird ;
+    rdfs:comment "white flag, left; red, right" ;
+    bird:bandNumber "NZ-B-40233" ;
+    bird:bandedAt <https://example.org/birds/id/site/firth-of-thames> ;
+    bird:bandedOn "2022-01-09"^^xsd:date ;
+    bird:date "2022-01-09"^^xsd:date ;
+    bird:site <https://example.org/birds/id/site/firth-of-thames> ;
+    bird:species <https://example.org/birds/vocab/taxon/calidris-canutus> .
+
+<https://example.org/birds/id/bird/nz-o-31502> a bird:BandedBird ;
+    rdfs:comment "metal, left; black over green, right" ;
+    bird:bandNumber "NZ-O-31502" ;
+    bird:bandedAt <https://example.org/birds/id/site/rakaia-river> ;
+    bird:bandedOn "2021-10-12"^^xsd:date ;
+    bird:date "2021-10-12"^^xsd:date ;
+    bird:site <https://example.org/birds/id/site/rakaia-river> ;
+    bird:species <https://example.org/birds/vocab/taxon/haematopus-finschi> .
+
+<https://example.org/birds/id/bird/nz-w-20029> a bird:BandedBird ;
+    rdfs:comment "blue over blue, left; white, right" ;
+    bird:bandNumber "NZ-W-20029" ;
+    bird:bandedAt <https://example.org/birds/id/site/rakaia-river> ;
+    bird:bandedOn "2021-10-30"^^xsd:date ;
+    bird:date "2021-10-30"^^xsd:date ;
+    bird:site <https://example.org/birds/id/site/rakaia-river> ;
+    bird:species <https://example.org/birds/vocab/taxon/anarhynchus-frontalis> .
+
+<https://example.org/birds/id/bird/us-s-70345> a bird:BandedBird ;
+    rdfs:comment "GPS collar and colour bands" ;
+    bird:bandNumber "US-S-70345" ;
+    bird:bandedAt <https://example.org/birds/id/site/platte-river> ;
+    bird:bandedOn "2022-03-15"^^xsd:date ;
+    bird:date "2022-03-15"^^xsd:date ;
+    bird:site <https://example.org/birds/id/site/platte-river> ;
+    bird:species <https://example.org/birds/vocab/taxon/antigone-canadensis> .
+
+<https://example.org/birds/id/bird/ar-k-11204> a bird:BandedBird ;
+    rdfs:comment "orange flag, left; engraved 4KL" ;
+    bird:bandNumber "AR-K-11204" ;
+    bird:bandedAt <https://example.org/birds/id/site/bahia-lomas> ;
+    bird:bandedOn "2022-01-18"^^xsd:date ;
+    bird:date "2022-01-18"^^xsd:date ;
+    bird:site <https://example.org/birds/id/site/bahia-lomas> ;
+    bird:species <https://example.org/birds/vocab/taxon/calidris-canutus> .
+
+<https://example.org/birds/id/bird/nz-w-20014> a bird:BandedBird ;
+    rdfs:comment "red over white, left; yellow, right" ;
+    bird:bandNumber "NZ-W-20014" ;
+    bird:bandedAt <https://example.org/birds/id/site/rakaia-river> ;
+    bird:bandedOn "2020-11-02"^^xsd:date ;
+    bird:date "2020-11-02"^^xsd:date ;
+    bird:site <https://example.org/birds/id/site/rakaia-river> ;
+    bird:species <https://example.org/birds/vocab/taxon/anarhynchus-frontalis> .
+
+<https://example.org/birds/id/bird/au-k-55920> a bird:BandedBird ;
+    rdfs:comment "yellow flag, left; white over lime, right" ;
+    bird:bandNumber "AU-K-55920" ;
+    bird:bandedAt <https://example.org/birds/id/site/roebuck-bay> ;
+    bird:bandedOn "2019-09-21"^^xsd:date ;
+    bird:date "2019-09-21"^^xsd:date ;
+    bird:site <https://example.org/birds/id/site/roebuck-bay> ;
+    bird:species <https://example.org/birds/vocab/taxon/calidris-tenuirostris> .
+
+<https://example.org/birds/id/bird/nz-b-40117> a bird:BandedBird ;
+    rdfs:comment "white flag, left; yellow over yellow, right" ;
+    bird:bandNumber "NZ-B-40117" ;
+    bird:bandedAt <https://example.org/birds/id/site/farewell-spit> ;
+    bird:bandedOn "2020-11-28"^^xsd:date ;
+    bird:date "2020-11-28"^^xsd:date ;
+    bird:site <https://example.org/birds/id/site/farewell-spit> ;
+    bird:species <https://example.org/birds/vocab/taxon/limosa-lapponica> .
+
+<https://example.org/birds/id/bird/nz-b-40101> a bird:BandedBird ;
+    rdfs:comment "orange over white, left; blue flag, right" ;
+    bird:bandNumber "NZ-B-40101" ;
+    bird:bandedAt <https://example.org/birds/id/site/firth-of-thames> ;
+    bird:bandedOn "2021-02-14"^^xsd:date ;
+    bird:date "2021-02-14"^^xsd:date ;
+    bird:site <https://example.org/birds/id/site/firth-of-thames> ;
+    bird:species <https://example.org/birds/vocab/taxon/limosa-lapponica> .
+

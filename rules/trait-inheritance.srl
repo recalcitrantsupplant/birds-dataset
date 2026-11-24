@@ -1,0 +1,14 @@
+PREFIX bird: <https://example.org/birds/def/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+RULE { ?t bird:effectiveTrophicNiche ?v } WHERE { ?t bird:rank ?r ; bird:trophicNiche ?v }
+RULE { ?t bird:effectiveTrophicNiche ?v }
+WHERE { ?t bird:rank ?r ; skos:broader ?p . ?p bird:effectiveTrophicNiche ?v NOT { ?t bird:trophicNiche ?own } }
+
+RULE { ?t bird:effectiveHabitat ?v } WHERE { ?t bird:rank ?r ; bird:habitat ?v }
+RULE { ?t bird:effectiveHabitat ?v }
+WHERE { ?t bird:rank ?r ; skos:broader ?p . ?p bird:effectiveHabitat ?v NOT { ?t bird:habitat ?own } }
+
+RULE { ?t bird:effectiveLifestyle ?v } WHERE { ?t bird:rank ?r ; bird:lifestyle ?v }
+RULE { ?t bird:effectiveLifestyle ?v }
+WHERE { ?t bird:rank ?r ; skos:broader ?p . ?p bird:effectiveLifestyle ?v NOT { ?t bird:lifestyle ?own } }

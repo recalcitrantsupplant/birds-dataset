@@ -1,0 +1,146 @@
+PREFIX :       <#>
+PREFIX bird:   <https://example.org/birds/def/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dim:    <https://example.org/birds/index/dimension#>
+PREFIX dwc:    <http://rs.tdwg.org/dwc/terms/>
+PREFIX field:  <https://example.org/birds/index/field#>
+PREFIX fuseki: <http://jena.apache.org/fuseki#>
+PREFIX geo:    <http://www.opengis.net/ont/geosparql#>
+PREFIX idx:    <urn:jena:lucene:index#>
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh:     <http://www.w3.org/ns/shacl#>
+PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+PREFIX tdb2:   <http://jena.apache.org/2016/tdb#>
+PREFIX text:   <http://jena.apache.org/text#>
+
+[] rdf:type fuseki:Server ; fuseki:services ( :service ) .
+
+:service rdf:type fuseki:Service ;
+    fuseki:name "birds" ;
+    fuseki:endpoint [ fuseki:operation fuseki:query ; fuseki:name "sparql" ] ;
+    fuseki:endpoint [ fuseki:operation fuseki:query ] ;
+    fuseki:dataset :textDataset .
+
+:textDataset rdf:type text:TextDataset ;
+    text:dataset :base ;
+    text:indexes ( :birds :vocab ) .
+
+:base rdf:type tdb2:DatasetTDB2 ;
+    tdb2:location "/fuseki/databases/birds" ;
+    tdb2:unionDefaultGraph true .
+
+:birds rdf:type text:TextIndexShacl ;
+    text:indexId "birds" ;
+    text:directory "/fuseki/databases/birds-index" ;
+    text:shapes ( :SpeciesShape :OccurrenceShape :SiteShape :ResightingShape ) ;
+    text:storeValues true ;
+    text:exposeConfig true .
+
+:vocab rdf:type text:TextIndexShacl ;
+    text:indexId "vocab" ;
+    text:directory "/fuseki/databases/vocab-index" ;
+    text:shapes ( :ConceptShape ) ;
+    text:storeValues true ;
+    text:exposeConfig true .
+
+field:label        idx:fieldName "label" ; idx:fieldType idx:TextField ; idx:defaultSearch true ; idx:multiValued true .
+field:labelPrefix  idx:fieldName "labelPrefix" ; idx:fieldType idx:TextField ; idx:multiValued true ;
+    idx:analyzer [ a text:EdgeNGramAnalyzer ; text:tokenized true ] .
+field:text         idx:fieldName "text" ; idx:fieldType idx:TextField ; idx:defaultSearch true ; idx:multiValued true .
+field:prefLabel    idx:fieldName "prefLabel" ; idx:fieldType idx:KeywordField ; idx:sortable true ;
+    idx:normalizer [ a text:LowerCaseKeywordAnalyzer ] .
+
+field:order        idx:fieldName "order" ; idx:fieldType idx:KeywordField ; idx:facetable true .
+field:family       idx:fieldName "family" ; idx:fieldType idx:KeywordField ; idx:facetable true .
+field:genus        idx:fieldName "genus" ; idx:fieldType idx:KeywordField ; idx:facetable true .
+field:region       idx:fieldName "region" ; idx:fieldType idx:KeywordField ; idx:facetable true ; idx:multiValued true .
+field:subregion    idx:fieldName "subregion" ; idx:fieldType idx:KeywordField ; idx:facetable true ; idx:multiValued true .
+field:country      idx:fieldName "country" ; idx:fieldType idx:KeywordField ; idx:facetable true ; idx:multiValued true .
+
+field:trophicNiche idx:fieldName "trophicNiche" ; idx:fieldType idx:KeywordField ; idx:facetable true .
+field:habitat      idx:fieldName "habitat" ; idx:fieldType idx:KeywordField ; idx:facetable true .
+field:lifestyle    idx:fieldName "lifestyle" ; idx:fieldType idx:KeywordField ; idx:facetable true .
+field:migration    idx:fieldName "migration" ; idx:fieldType idx:KeywordField ; idx:facetable true .
+field:redList      idx:fieldName "redList" ; idx:fieldType idx:KeywordField ; idx:facetable true .
+field:siteType     idx:fieldName "siteType" ; idx:fieldType idx:KeywordField ; idx:facetable true .
+field:species      idx:fieldName "species" ; idx:fieldType idx:KeywordField ; idx:facetable true .
+
+field:mass         idx:fieldName "mass" ; idx:fieldType idx:DoubleField ; idx:facetable true ; idx:sortable true .
+field:year         idx:fieldName "year" ; idx:fieldType idx:IntField ; idx:facetable true ; idx:sortable true .
+field:month        idx:fieldName "month" ; idx:fieldType idx:IntField ; idx:facetable true ; idx:sortable true .
+field:date         idx:fieldName "date" ; idx:fieldType idx:TemporalField ; idx:facetable true ; idx:sortable true ;
+    idx:storeLiteralMetadata true .
+field:location     idx:fieldName "location" ; idx:fieldType idx:LatLonField ; idx:multiValued true .
+
+field:scheme       idx:fieldName "scheme" ; idx:fieldType idx:KeywordField ; idx:facetable true ; idx:multiValued true .
+field:notation     idx:fieldName "notation" ; idx:fieldType idx:KeywordField ; idx:sortable true .
+
+dim:taxonomy idx:levels ( field:order field:family field:genus ) .
+dim:geography idx:levels ( field:region field:subregion field:country ) .
+
+
+:SpeciesShape a sh:NodeShape ;
+    sh:targetClass bird:Species ;
+    idx:facetHierarchy dim:taxonomy ;
+    sh:property [ idx:field field:label ; sh:path [ sh:alternativePath ( skos:prefLabel skos:altLabel ) ] ] ;
+    sh:property [ idx:field field:labelPrefix ; sh:path [ sh:alternativePath ( skos:prefLabel skos:altLabel ) ] ] ;
+    sh:property [ idx:field field:prefLabel ; sh:path skos:prefLabel ] ;
+    sh:property [ idx:field field:text ; sh:path [ sh:alternativePath ( bird:account bird:rangeText ) ] ] ;
+    sh:property [ idx:field field:genus ; sh:path skos:broader ] ;
+    sh:property [ idx:field field:family ; sh:path ( skos:broader skos:broader ) ] ;
+    sh:property [ idx:field field:order ; sh:path ( skos:broader skos:broader skos:broader ) ] ;
+    sh:property [ idx:field field:country ; sh:path bird:recordedIn ] ;
+    sh:property [ idx:field field:trophicNiche ; sh:path bird:effectiveTrophicNiche ] ;
+    sh:property [ idx:field field:habitat ; sh:path bird:effectiveHabitat ] ;
+    sh:property [ idx:field field:lifestyle ; sh:path bird:effectiveLifestyle ] ;
+    sh:property [ idx:field field:migration ; sh:path bird:migration ] ;
+    sh:property [ idx:field field:redList ; sh:path bird:redListCategory ] ;
+    sh:property [ idx:field field:mass ; sh:path bird:bodyMass ] ;
+    sh:property [ idx:field field:location ; sh:path ( bird:rangeCentroid geo:asWKT ) ] .
+
+:OccurrenceShape a sh:NodeShape ;
+    sh:targetClass bird:Occurrence ;
+    idx:facetHierarchy dim:taxonomy ;
+    idx:facetHierarchy dim:geography ;
+    sh:property [ idx:field field:label ; sh:path ( bird:species skos:prefLabel ) ] ;
+    sh:property [ idx:field field:species ; sh:path bird:species ] ;
+    sh:property [ idx:field field:genus ; sh:path ( bird:species skos:broader ) ] ;
+    sh:property [ idx:field field:family ; sh:path ( bird:species skos:broader skos:broader ) ] ;
+    sh:property [ idx:field field:order ; sh:path ( bird:species skos:broader skos:broader skos:broader ) ] ;
+    sh:property [ idx:field field:country ; sh:path bird:country ] ;
+    sh:property [ idx:field field:subregion ; sh:path ( bird:country skos:broader ) ] ;
+    sh:property [ idx:field field:region ; sh:path ( bird:country skos:broader skos:broader ) ] ;
+    sh:property [ idx:field field:year ; sh:path dwc:year ] ;
+    sh:property [ idx:field field:month ; sh:path bird:month ] ;
+    sh:property [ idx:field field:date ; sh:path dwc:eventDate ] ;
+    sh:property [ idx:field field:location ; sh:path ( geo:hasGeometry geo:asWKT ) ] .
+
+:SiteShape a sh:NodeShape ;
+    sh:targetClass bird:Site ;
+    idx:facetHierarchy dim:geography ;
+    sh:property [ idx:field field:label ; sh:path rdfs:label ] ;
+    sh:property [ idx:field field:text ; sh:path dcterms:description ] ;
+    sh:property [ idx:field field:siteType ; sh:path bird:siteType ] ;
+    sh:property [ idx:field field:country ; sh:path bird:country ] ;
+    sh:property [ idx:field field:subregion ; sh:path ( bird:country skos:broader ) ] ;
+    sh:property [ idx:field field:region ; sh:path ( bird:country skos:broader skos:broader ) ] ;
+    sh:property [ idx:field field:location ; sh:path ( geo:hasGeometry geo:asWKT ) ] .
+
+:ResightingShape a sh:NodeShape ;
+    sh:targetClass bird:Resighting ;
+    sh:property [ idx:field field:text ; sh:path bird:note ] ;
+    sh:property [ idx:field field:label ; sh:path ( bird:bird bird:species skos:prefLabel ) ] ;
+    sh:property [ idx:field field:species ; sh:path ( bird:bird bird:species ) ] ;
+    sh:property [ idx:field field:date ; sh:path bird:date ] ;
+    sh:property [ idx:field field:country ; sh:path ( bird:site bird:country ) ] ;
+    sh:property [ idx:field field:location ; sh:path ( bird:site geo:hasGeometry geo:asWKT ) ] .
+
+:ConceptShape a sh:NodeShape ;
+    sh:targetClass skos:Concept ;
+    sh:property [ idx:field field:label ; sh:path [ sh:alternativePath ( skos:prefLabel skos:altLabel ) ] ] ;
+    sh:property [ idx:field field:labelPrefix ; sh:path [ sh:alternativePath ( skos:prefLabel skos:altLabel ) ] ] ;
+    sh:property [ idx:field field:text ; sh:path skos:definition ] ;
+    sh:property [ idx:field field:prefLabel ; sh:path skos:prefLabel ] ;
+    sh:property [ idx:field field:scheme ; sh:path skos:inScheme ] ;
+    sh:property [ idx:field field:notation ; sh:path skos:notation ] .

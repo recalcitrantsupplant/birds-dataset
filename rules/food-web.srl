@@ -1,0 +1,22 @@
+PREFIX bird: <https://example.org/birds/def/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+RULE { ?a bird:dependsOn ?f } WHERE { ?a bird:eats ?f }
+RULE { ?a bird:dependsOn ?g } WHERE { ?a bird:dependsOn ?f . ?f bird:eats ?g }
+RULE { ?a bird:dependsOn ?b } WHERE { ?a bird:dependsOn ?r . ?r a bird:FoodResource ; skos:broader ?b }
+
+RULE { ?a a bird:ApexPredator }
+WHERE { ?a bird:eats ?prey . ?prey a bird:Species NOT { ?other bird:eats ?a } }
+
+RULE { ?a a bird:MixedFeeder }
+WHERE { ?a bird:dependsOn <https://example.org/birds/vocab/food/animal-food> , <https://example.org/birds/vocab/food/plant-food> }
+
+RULE { ?r a bird:BasicFoodResource }
+WHERE { ?r a bird:FoodResource NOT { ?narrower skos:broader ?r } }
+
+RULE { ?a bird:foodResourceCount ?n }
+WHERE {
+  ?a a bird:Species .
+  GROUP BY ?a { ?a bird:dependsOn ?r . ?r a bird:BasicFoodResource }
+  [ ?n := COUNT(DISTINCT ?r) ]
+}

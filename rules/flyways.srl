@@ -1,0 +1,14 @@
+PREFIX bird: <https://example.org/birds/def/>
+
+RULE { ?a bird:flywayLink ?b }
+WHERE { ?x a bird:Resighting ; bird:site ?b ; bird:previous ?p . ?p bird:site ?a FILTER(?a != ?b) }
+
+RULE { ?a bird:reaches ?b } WHERE { ?a bird:flywayLink ?b }
+RULE { ?a bird:reaches ?c } WHERE { ?a bird:reaches ?b . ?b bird:flywayLink ?c FILTER(?a != ?c) }
+
+RULE { ?ca bird:connectedTo ?cb }
+WHERE { ?a bird:reaches ?b . ?a bird:country ?ca . ?b bird:country ?cb FILTER(?ca != ?cb) }
+
+RULE { ?s bird:usesSite ?site }
+WHERE { ?x a bird:Resighting ; bird:bird ?b ; bird:site ?site . ?b bird:species ?s }
+RULE { ?s bird:usesSite ?site } WHERE { ?b a bird:BandedBird ; bird:species ?s ; bird:bandedAt ?site }

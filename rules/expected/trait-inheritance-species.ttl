@@ -1,0 +1,446 @@
+@prefix bird: <https://example.org/birds/def/> .
+
+<https://example.org/birds/vocab/taxon/aix-galericulata> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/generalist> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/herbivore-aquatic> .
+
+<https://example.org/birds/vocab/taxon/anarhynchus-bicinctus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/riverine> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/anarhynchus-frontalis> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/riverine> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/anthochaera-phrygia> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/anthornis-melanura> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/nectarivore> .
+
+<https://example.org/birds/vocab/taxon/antigone-canadensis> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/wetland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/apteryx-mantelli> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/apus-apus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/human-modified> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/aerial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/aquila-adalberti> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/woodland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/generalist> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/vertivore> .
+
+<https://example.org/birds/vocab/taxon/aquila-audax> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/woodland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/generalist> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/vertivore> .
+
+<https://example.org/birds/vocab/taxon/archilochus-colubris> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/woodland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/generalist> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/nectarivore> .
+
+<https://example.org/birds/vocab/taxon/ardenna-grisea> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/marine> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/generalist> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/ardenna-tenuirostris> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/marine> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/generalist> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/arenaria-interpres> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/coastal> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/balearica-regulorum> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/wetland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/bostrychia-hagedash> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/grassland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/bubo-scandiacus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/grassland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/vertivore> .
+
+<https://example.org/birds/vocab/taxon/bucorvus-leadbeateri> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/grassland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/buteo-jamaicensis> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/woodland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/vertivore> .
+
+<https://example.org/birds/vocab/taxon/buteo-swainsoni> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/grassland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/vertivore> .
+
+<https://example.org/birds/vocab/taxon/cacatua-galerita> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/calidris-acuminata> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/wetland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/calidris-canutus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/coastal> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/calidris-pygmaea> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/coastal> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/calidris-ruficollis> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/grassland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/calidris-tenuirostris> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/grassland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/cardinalis-cardinalis> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/shrubland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/chalcites-lucidus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/chrysococcyx-caprius> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/shrubland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/ciconia-boyciana> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/wetland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/ciconia-ciconia> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/grassland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/circus-approximans> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/wetland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/aerial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/vertivore> .
+
+<https://example.org/birds/vocab/taxon/coracias-caudatus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/shrubland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/cuculus-canorus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/cyanistes-caeruleus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/cyanocitta-cristata> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/woodland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/dacelo-novaeguineae> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/diomedea-epomophora> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/marine> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/aquatic> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/dolichonyx-oryzivorus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/grassland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/generalist> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/granivore> .
+
+<https://example.org/birds/vocab/taxon/dromaius-novaehollandiae> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/grassland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/eolophus-roseicapilla> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/woodland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/granivore> .
+
+<https://example.org/birds/vocab/taxon/erithacus-rubecula> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/generalist> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/falco-amurensis> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/grassland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/falco-novaeseelandiae> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/aerial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/vertivore> .
+
+<https://example.org/birds/vocab/taxon/falco-peregrinus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/grassland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/aerial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/vertivore> .
+
+<https://example.org/birds/vocab/taxon/ficedula-hypoleuca> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/fratercula-arctica> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/marine> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/aquatic> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/grus-japonensis> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/wetland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/gymnorhina-tibicen> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/woodland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/gyps-africanus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/shrubland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-scavenger> .
+
+<https://example.org/birds/vocab/taxon/haematopus-finschi> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/coastal> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/haliaeetus-leucocephalus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/wetland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/generalist> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/hemiphaga-novaeseelandiae> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/frugivore> .
+
+<https://example.org/birds/vocab/taxon/himantopus-himantopus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/wetland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/himantopus-leucocephalus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/wetland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/himantopus-novaezelandiae> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/wetland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/hirundo-neoxena> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/wetland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/aerial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/hirundo-rustica> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/human-modified> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/aerial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/hymenolaimus-malacorhynchos> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/riverine> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/aquatic> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/icthyophaga-vocifer> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/wetland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/lamprotornis-superbus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/shrubland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/limosa-haemastica> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/wetland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/limosa-lapponica> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/wetland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/malurus-cyaneus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/shrubland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/megadyptes-antipodes> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/marine> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/aquatic> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/menura-novaehollandiae> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/merops-apiaster> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/woodland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/merops-ornatus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/woodland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/milvus-milvus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/shrubland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/generalist> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/nectarinia-famosa> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/shrubland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/neophema-chrysogaster> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/granivore> .
+
+<https://example.org/birds/vocab/taxon/nestor-meridionalis> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/nestor-notabilis> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/grassland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/numenius-madagascariensis> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/wetland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/pandion-haliaetus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/marine> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/aerial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/parus-major> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/woodland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/passer-domesticus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/human-modified> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/granivore> .
+
+<https://example.org/birds/vocab/taxon/passer-montanus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/woodland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/granivore> .
+
+<https://example.org/birds/vocab/taxon/pelecanus-conspicillatus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/wetland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/aquatic> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/phoeniconaias-minor> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/wetland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/herbivore-aquatic> .
+
+<https://example.org/birds/vocab/taxon/phoenicopterus-chilensis> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/wetland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/phoenicopterus-roseus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/wetland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/phylloscopus-trochilus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/platalea-minor> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/coastal> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/ploceus-capensis> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/woodland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/generalist> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/porphyrio-hochstetteri> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/grassland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/promerops-cafer> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/shrubland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/nectarivore> .
+
+<https://example.org/birds/vocab/taxon/prosthemadera-novaeseelandiae> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/nectarivore> .
+
+<https://example.org/birds/vocab/taxon/ptilonorhynchus-violaceus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/rhipidura-albiscapa> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/woodland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/rhipidura-fuliginosa> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/woodland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/sagittarius-serpentarius> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/grassland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/vertivore> .
+
+<https://example.org/birds/vocab/taxon/selasphorus-rufus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/aerial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/nectarivore> .
+
+<https://example.org/birds/vocab/taxon/spheniscus-demersus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/marine> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/aquatic> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/spheniscus-magellanicus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/marine> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/aquatic> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/sterna-paradisaea> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/coastal> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/aerial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/aquatic-predator> .
+
+<https://example.org/birds/vocab/taxon/strigops-habroptilus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/generalist> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/struthio-camelus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/shrubland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/sturnus-vulgaris> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/human-modified> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/tadorna-variegata> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/grassland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/trichoglossus-haematodus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/trichoglossus-moluccanus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/turdus-merula> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/generalist> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/turdus-migratorius> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/generalist> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/upupa-epops> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/grassland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/urodynamis-taitensis> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/vanellus-miles> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/grassland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/invertivore> .
+
+<https://example.org/birds/vocab/taxon/vanellus-vanellus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/wetland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/vultur-gryphus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/grassland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/terrestrial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-scavenger> .
+
+<https://example.org/birds/vocab/taxon/zosterops-japonicus> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/forest> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+
+<https://example.org/birds/vocab/taxon/zosterops-lateralis> bird:effectiveHabitat <https://example.org/birds/vocab/habitat/shrubland> ;
+    bird:effectiveLifestyle <https://example.org/birds/vocab/lifestyle/insessorial> ;
+    bird:effectiveTrophicNiche <https://example.org/birds/vocab/trophic/niche-omnivore> .
+

@@ -1,0 +1,48 @@
+PREFIX dcat:    <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX prov:    <http://www.w3.org/ns/prov#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
+
+<https://example.org/birds/>
+    a dcat:Dataset ;
+    dcterms:title "Birds dataset"@en ;
+    dcterms:description "111 bird species in 13 countries: taxonomy, traits, occurrences, monthly record counts, sites, banded birds, a food web and name changes, with an ontology, SKOS vocabularies and SRL rules."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:issued "2026-11-24"^^xsd:date ;
+    dcat:version "0.1.0" ;
+    dcterms:spatial <https://example.org/birds/vocab/region/m49-009> , <https://example.org/birds/vocab/region/m49-142> ,
+        <https://example.org/birds/vocab/region/m49-019> , <https://example.org/birds/vocab/region/m49-150> ,
+        <https://example.org/birds/vocab/region/m49-002> ;
+    dcterms:temporal [ a dcterms:PeriodOfTime ; dcat:startDate "2015-01-01"^^xsd:date ; dcat:endDate "2025-12-31"^^xsd:date ] ;
+    prov:wasDerivedFrom <https://doi.org/10.2173/avilist.v2025> , <https://doi.org/10.1111/ele.13898> ,
+        <https://www.gbif.org/> , <https://www.naturalearthdata.com/> ;
+    dcat:distribution <#ontology> , <#vocab> , <#data> , <#rules> , <#fuseki> , <#full> .
+
+<#ontology> a dcat:Distribution ;
+    dcterms:title "Ontology and SHACL shapes"@en ;
+    dcat:downloadURL <ontology.tar.gz> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+<#vocab> a dcat:Distribution ;
+    dcterms:title "SKOS vocabularies: taxonomy of the 111 species, regions, traits, seasons, food resources"@en ;
+    dcat:downloadURL <vocab.tar.gz> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+<#data> a dcat:Distribution ;
+    dcterms:title "Instance data: species traits, occurrences, monthly counts, sites, banded birds, food web, names"@en ;
+    dcat:downloadURL <data.tar.gz> ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle> .
+
+<#rules> a dcat:Distribution ;
+    dcterms:title "SRL rule sets and their expected results"@en ;
+    dcat:downloadURL <rules.tar.gz> .
+
+<#fuseki> a dcat:Distribution ;
+    dcterms:title "Fuseki configuration with the Lucene index shapes"@en ;
+    dcat:downloadURL <fuseki.tar.gz> .
+
+<#full> a dcat:Distribution ;
+    dcterms:title "Full tier: every AviList taxon and a larger GBIF pull"@en ;
+    dcterms:description "Built by `just full`. Published as a release asset, not kept in git."@en ;
+    dcat:downloadURL <full.tar.gz> .

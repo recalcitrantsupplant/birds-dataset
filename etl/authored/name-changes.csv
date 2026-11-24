@@ -1,0 +1,19 @@
+from_name,to_name,change_type,country,checklist,note
+Strix scandiaca,Nyctea scandiaca,genus-move,,Stephens 1826,Snowy owl placed in its own genus
+Nyctea scandiaca,Bubo scandiacus,genus-move,,IOC 2.0 (2009),Snowy owl merged into Bubo; ending changed to agree with the genus
+Notornis hochstetteri,Porphyrio mantelli,lump,,1990s checklists,South Island takahē merged with the extinct North Island takahē in Porphyrio
+Porphyrio mantelli,Porphyrio hochstetteri,split,NZ,Trewick 1996,Living South Island takahē separated from the extinct North Island form
+Charadrius bicinctus,Anarhynchus bicinctus,genus-move,,AviList v2025,Several Charadrius plovers moved to Anarhynchus
+Chrysococcyx lucidus,Chalcites lucidus,genus-move,,AviList v2025,Bronze cuckoos placed in Chalcites
+Haliaeetus vocifer,Icthyophaga vocifer,genus-move,,AviList v2025,Fish eagles placed in Icthyophaga
+Strigops habroptila,Strigops habroptilus,spelling,,AviList v2025,Ending changed to agree with the gender of the genus
+Puffinus griseus,Ardenna grisea,genus-move,,IOC 7.1 (2017),Large shearwaters placed in Ardenna
+Puffinus tenuirostris,Ardenna tenuirostris,genus-move,,IOC 7.1 (2017),Large shearwaters placed in Ardenna
+Eudynamys taitensis,Urodynamis taitensis,genus-move,,IOC 4.1 (2014),Long-tailed koel placed in its own genus
+Grus canadensis,Antigone canadensis,genus-move,,AOS 2016,Sandhill crane placed in Antigone
+Parus caeruleus,Cyanistes caeruleus,genus-move,,BOU 2005,Blue tits placed in Cyanistes
+Charadrius himantopus,Himantopus himantopus,genus-move,,Brisson 1760,Stilts placed in Himantopus
+Himantopus himantopus,Himantopus leucocephalus,split,NZ,IOC 2.0 (2009),Pied stilt of Australasia separated from the black-winged stilt
+Himantopus himantopus,Himantopus leucocephalus,split,AU,IOC 2.0 (2009),Pied stilt of Australasia separated from the black-winged stilt
+Rhipidura fuliginosa,Rhipidura albiscapa,split,AU,IOC 2.0 (2009),Grey fantail of Australia separated from the New Zealand fantail
+Trichoglossus haematodus,Trichoglossus moluccanus,split,AU,IOC 10.1 (2020),Rainbow lorikeet of Australia separated from the coconut lorikeet

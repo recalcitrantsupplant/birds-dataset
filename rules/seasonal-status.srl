@@ -1,0 +1,42 @@
+PREFIX bird:   <https://example.org/birds/def/>
+PREFIX status: <https://example.org/birds/vocab/seasonal-status/>
+
+RULE { ?mc bird:monthSeason ?s }
+WHERE { ?mc a bird:MonthlyCount ; bird:month ?m ; bird:country ?c . ?c bird:hemisphere ?h . ?s bird:hemisphere ?h ; bird:month ?m }
+
+RULE {
+  ?p a bird:Presence ; bird:presenceOf ?sp ; bird:presenceIn ?c .
+  ?sc a bird:SeasonCount ; bird:seasonPresence ?p ; bird:countSeason ?s ; bird:seasonRecords ?n .
+}
+WHERE {
+  GROUP BY ?sp ?c ?s { ?mc a bird:MonthlyCount ; bird:species ?sp ; bird:country ?c ; bird:monthSeason ?s ; bird:recordCount ?k }
+  [ ?n := SUM(?k) ]
+  SET ( ?p := IRI(CONCAT(STR(?sp), "/in/", STRAFTER(STR(?c), "/region/"))) )
+  SET ( ?sc := IRI(CONCAT(STR(?p), "/", STRAFTER(STR(?s), "/season/"))) )
+}
+
+RULE { ?sc a bird:PresentSeason }
+WHERE {
+  ?sc a bird:SeasonCount ; bird:seasonPresence ?p ; bird:seasonRecords ?n .
+  GROUP BY ?p { ?other a bird:SeasonCount ; bird:seasonPresence ?p ; bird:seasonRecords ?k }
+  [ ?max := MAX(?k) ]
+  FILTER(?n * 3 >= ?max)
+}
+
+RULE { ?p bird:presentIn ?name }
+WHERE { ?sc a bird:PresentSeason ; bird:seasonPresence ?p ; bird:countSeason ?s . ?s bird:seasonName ?name }
+
+RULE { ?p bird:seasonalStatus status:resident }
+WHERE { ?p bird:presentIn "spring" , "summer" , "autumn" , "winter" }
+
+RULE { ?p bird:seasonalStatus status:summer-visitor }
+WHERE { ?p bird:presentIn "summer" NOT { ?p bird:presentIn "winter" } }
+
+RULE { ?p bird:seasonalStatus status:winter-visitor }
+WHERE { ?p bird:presentIn "winter" NOT { ?p bird:presentIn "summer" } }
+
+RULE { ?p bird:seasonalStatus status:passage-migrant }
+WHERE { ?p a bird:Presence NOT { ?p bird:presentIn "summer" } NOT { ?p bird:presentIn "winter" } ?p bird:presentIn ?any }
+
+RULE { ?p bird:seasonalStatus status:summer-and-winter }
+WHERE { ?p bird:presentIn "summer" , "winter" NOT { ?p bird:presentIn "spring" ; bird:presentIn "autumn" } }

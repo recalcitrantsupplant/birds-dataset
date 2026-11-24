@@ -1,0 +1,769 @@
+@prefix bird: <https://example.org/birds/def/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix food: <https://example.org/birds/vocab/food/> .
+@prefix habitat: <https://example.org/birds/vocab/habitat/> .
+@prefix lifestyle: <https://example.org/birds/vocab/lifestyle/> .
+@prefix migration: <https://example.org/birds/vocab/migration/> .
+@prefix namechange: <https://example.org/birds/vocab/name-change/> .
+@prefix rank: <https://example.org/birds/vocab/rank/> .
+@prefix redlist: <https://example.org/birds/vocab/red-list/> .
+@prefix season: <https://example.org/birds/vocab/season/> .
+@prefix seasonalstatus: <https://example.org/birds/vocab/seasonal-status/> .
+@prefix sitetype: <https://example.org/birds/vocab/site-type/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix trophic: <https://example.org/birds/vocab/trophic/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+food:algae a skos:Concept,
+        bird:FoodResource ;
+    skos:broader food:plant-food ;
+    skos:definition "Blue-green algae and diatoms."@en ;
+    skos:inScheme <https://example.org/birds/vocab/food> ;
+    skos:prefLabel "Algae"@en .
+
+food:amphibians a skos:Concept,
+        bird:FoodResource ;
+    skos:broader food:animal-food ;
+    skos:definition "Frogs and tadpoles."@en ;
+    skos:inScheme <https://example.org/birds/vocab/food> ;
+    skos:prefLabel "Amphibians"@en .
+
+food:carrion a skos:Concept,
+        bird:FoodResource ;
+    skos:definition "The flesh of dead animals."@en ;
+    skos:inScheme <https://example.org/birds/vocab/food> ;
+    skos:prefLabel "Carrion"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/food> .
+
+food:crustaceans a skos:Concept,
+        bird:FoodResource ;
+    skos:broader food:animal-food ;
+    skos:definition "Crabs, shrimp, krill and other crustaceans."@en ;
+    skos:inScheme <https://example.org/birds/vocab/food> ;
+    skos:prefLabel "Crustaceans"@en .
+
+food:earthworms a skos:Concept,
+        bird:FoodResource ;
+    skos:broader food:animal-food ;
+    skos:definition "Earthworms of soil and lawns."@en ;
+    skos:inScheme <https://example.org/birds/vocab/food> ;
+    skos:prefLabel "Earthworms"@en .
+
+food:fish a skos:Concept,
+        bird:FoodResource ;
+    skos:broader food:animal-food ;
+    skos:definition "Live fish."@en ;
+    skos:inScheme <https://example.org/birds/vocab/food> ;
+    skos:prefLabel "Fish"@en .
+
+food:fruit a skos:Concept,
+        bird:FoodResource ;
+    skos:broader food:plant-food ;
+    skos:definition "Fleshy fruit and berries."@en ;
+    skos:inScheme <https://example.org/birds/vocab/food> ;
+    skos:prefLabel "Fruit"@en .
+
+food:horseshoe-crab-eggs a skos:Concept,
+        bird:FoodResource ;
+    skos:broader food:animal-food ;
+    skos:definition "Eggs of the Atlantic horseshoe crab, laid on beaches of Delaware Bay in May."@en ;
+    skos:inScheme <https://example.org/birds/vocab/food> ;
+    skos:prefLabel "Horseshoe crab eggs"@en .
+
+food:insects a skos:Concept,
+        bird:FoodResource ;
+    skos:broader food:animal-food ;
+    skos:definition "Adult and larval insects."@en ;
+    skos:inScheme <https://example.org/birds/vocab/food> ;
+    skos:prefLabel "Insects"@en .
+
+food:leaves a skos:Concept,
+        bird:FoodResource ;
+    skos:broader food:plant-food ;
+    skos:definition "Leaves, shoots, grass and roots."@en ;
+    skos:inScheme <https://example.org/birds/vocab/food> ;
+    skos:prefLabel "Leaves and grass"@en .
+
+food:marine-worms a skos:Concept,
+        bird:FoodResource ;
+    skos:broader food:animal-food ;
+    skos:definition "Polychaete worms of mudflats and sand."@en ;
+    skos:inScheme <https://example.org/birds/vocab/food> ;
+    skos:prefLabel "Marine worms"@en .
+
+food:molluscs a skos:Concept,
+        bird:FoodResource ;
+    skos:broader food:animal-food ;
+    skos:definition "Shellfish and snails."@en ;
+    skos:inScheme <https://example.org/birds/vocab/food> ;
+    skos:prefLabel "Molluscs"@en .
+
+food:nectar a skos:Concept,
+        bird:FoodResource ;
+    skos:broader food:plant-food ;
+    skos:definition "Sugary fluid from flowers."@en ;
+    skos:inScheme <https://example.org/birds/vocab/food> ;
+    skos:prefLabel "Nectar"@en .
+
+food:reptiles a skos:Concept,
+        bird:FoodResource ;
+    skos:broader food:animal-food ;
+    skos:definition "Lizards and snakes."@en ;
+    skos:inScheme <https://example.org/birds/vocab/food> ;
+    skos:prefLabel "Reptiles"@en .
+
+food:seeds a skos:Concept,
+        bird:FoodResource ;
+    skos:broader food:plant-food ;
+    skos:definition "Seeds and grain."@en ;
+    skos:inScheme <https://example.org/birds/vocab/food> ;
+    skos:prefLabel "Seeds"@en .
+
+food:small-mammals a skos:Concept,
+        bird:FoodResource ;
+    skos:broader food:animal-food ;
+    skos:definition "Rodents, rabbits and other small mammals."@en ;
+    skos:inScheme <https://example.org/birds/vocab/food> ;
+    skos:prefLabel "Small mammals"@en .
+
+habitat:coastal a skos:Concept ;
+    skos:broader habitat:aquatic ;
+    skos:definition "Beaches, estuaries and tidal flats."@en ;
+    skos:inScheme <https://example.org/birds/vocab/habitat> ;
+    skos:prefLabel "Coastal"@en .
+
+habitat:desert a skos:Concept ;
+    skos:broader habitat:terrestrial ;
+    skos:definition "Desert and semi-desert."@en ;
+    skos:inScheme <https://example.org/birds/vocab/habitat> ;
+    skos:prefLabel "Desert"@en .
+
+habitat:forest a skos:Concept ;
+    skos:broader habitat:terrestrial ;
+    skos:definition "Closed forest."@en ;
+    skos:inScheme <https://example.org/birds/vocab/habitat> ;
+    skos:prefLabel "Forest"@en .
+
+habitat:grassland a skos:Concept ;
+    skos:broader habitat:terrestrial ;
+    skos:definition "Grassland, savanna and tundra."@en ;
+    skos:inScheme <https://example.org/birds/vocab/habitat> ;
+    skos:prefLabel "Grassland"@en .
+
+habitat:human-modified a skos:Concept ;
+    skos:broader habitat:terrestrial ;
+    skos:definition "Farmland, gardens and towns."@en ;
+    skos:inScheme <https://example.org/birds/vocab/habitat> ;
+    skos:prefLabel "Human Modified"@en .
+
+habitat:marine a skos:Concept ;
+    skos:broader habitat:aquatic ;
+    skos:definition "The open sea."@en ;
+    skos:inScheme <https://example.org/birds/vocab/habitat> ;
+    skos:prefLabel "Marine"@en .
+
+habitat:riverine a skos:Concept ;
+    skos:broader habitat:aquatic ;
+    skos:definition "Rivers and streams."@en ;
+    skos:inScheme <https://example.org/birds/vocab/habitat> ;
+    skos:prefLabel "Riverine"@en .
+
+habitat:rock a skos:Concept ;
+    skos:broader habitat:terrestrial ;
+    skos:definition "Cliffs, scree and rocky ground."@en ;
+    skos:inScheme <https://example.org/birds/vocab/habitat> ;
+    skos:prefLabel "Rock"@en .
+
+habitat:shrubland a skos:Concept ;
+    skos:broader habitat:terrestrial ;
+    skos:definition "Scrub and heath."@en ;
+    skos:inScheme <https://example.org/birds/vocab/habitat> ;
+    skos:prefLabel "Shrubland"@en .
+
+habitat:wetland a skos:Concept ;
+    skos:broader habitat:aquatic ;
+    skos:definition "Marshes, swamps and lake margins."@en ;
+    skos:inScheme <https://example.org/birds/vocab/habitat> ;
+    skos:prefLabel "Wetland"@en .
+
+habitat:woodland a skos:Concept ;
+    skos:broader habitat:terrestrial ;
+    skos:definition "Open woodland and forest edge."@en ;
+    skos:inScheme <https://example.org/birds/vocab/habitat> ;
+    skos:prefLabel "Woodland"@en .
+
+lifestyle:aerial a skos:Concept ;
+    skos:definition "Forages in flight."@en ;
+    skos:inScheme <https://example.org/birds/vocab/lifestyle> ;
+    skos:prefLabel "Aerial"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/lifestyle> .
+
+lifestyle:aquatic a skos:Concept ;
+    skos:definition "Forages on or in water."@en ;
+    skos:inScheme <https://example.org/birds/vocab/lifestyle> ;
+    skos:prefLabel "Aquatic"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/lifestyle> .
+
+lifestyle:generalist a skos:Concept ;
+    skos:definition "Forages in several of these ways."@en ;
+    skos:inScheme <https://example.org/birds/vocab/lifestyle> ;
+    skos:prefLabel "Generalist"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/lifestyle> .
+
+lifestyle:insessorial a skos:Concept ;
+    skos:definition "Forages while perched in trees and shrubs."@en ;
+    skos:inScheme <https://example.org/birds/vocab/lifestyle> ;
+    skos:prefLabel "Insessorial"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/lifestyle> .
+
+lifestyle:terrestrial a skos:Concept ;
+    skos:definition "Forages on the ground."@en ;
+    skos:inScheme <https://example.org/birds/vocab/lifestyle> ;
+    skos:prefLabel "Terrestrial"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/lifestyle> .
+
+migration:migratory a skos:Concept ;
+    skos:definition "Most birds of the species leave their breeding area for part of the year."@en ;
+    skos:inScheme <https://example.org/birds/vocab/migration> ;
+    skos:notation "3" ;
+    skos:prefLabel "Migratory"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/migration> .
+
+migration:partial-migrant a skos:Concept ;
+    skos:definition "Some birds of the species migrate and others stay."@en ;
+    skos:inScheme <https://example.org/birds/vocab/migration> ;
+    skos:notation "2" ;
+    skos:prefLabel "Partial migrant"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/migration> .
+
+migration:sedentary a skos:Concept ;
+    skos:definition "Most birds stay in or near their breeding area all year."@en ;
+    skos:inScheme <https://example.org/birds/vocab/migration> ;
+    skos:notation "1" ;
+    skos:prefLabel "Sedentary"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/migration> .
+
+namechange:genus-move a skos:Concept ;
+    skos:definition "The species moved to another genus."@en ;
+    skos:inScheme <https://example.org/birds/vocab/name-change> ;
+    skos:prefLabel "Genus move"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/name-change> .
+
+namechange:lump a skos:Concept ;
+    skos:definition "Two or more species became one."@en ;
+    skos:inScheme <https://example.org/birds/vocab/name-change> ;
+    skos:prefLabel "Lump"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/name-change> .
+
+namechange:spelling a skos:Concept ;
+    skos:definition "The spelling of the name changed."@en ;
+    skos:inScheme <https://example.org/birds/vocab/name-change> ;
+    skos:prefLabel "Spelling"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/name-change> .
+
+namechange:split a skos:Concept ;
+    skos:definition "One species became two or more. The change applies in one region."@en ;
+    skos:inScheme <https://example.org/birds/vocab/name-change> ;
+    skos:prefLabel "Split"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/name-change> .
+
+rank:family a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/rank> ;
+    skos:notation "2" ;
+    skos:prefLabel "Family"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/rank> .
+
+rank:genus a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/rank> ;
+    skos:notation "3" ;
+    skos:prefLabel "Genus"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/rank> .
+
+rank:order a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/rank> ;
+    skos:notation "1" ;
+    skos:prefLabel "Order"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/rank> .
+
+rank:species a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/rank> ;
+    skos:notation "4" ;
+    skos:prefLabel "Species"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/rank> .
+
+redlist:cr a skos:Concept ;
+    skos:broader redlist:threatened ;
+    skos:inScheme <https://example.org/birds/vocab/red-list> ;
+    skos:notation "CR" ;
+    skos:prefLabel "Critically Endangered"@en .
+
+redlist:dd a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/red-list> ;
+    skos:notation "DD" ;
+    skos:prefLabel "Data Deficient"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/red-list> .
+
+redlist:en a skos:Concept ;
+    skos:broader redlist:threatened ;
+    skos:inScheme <https://example.org/birds/vocab/red-list> ;
+    skos:notation "EN" ;
+    skos:prefLabel "Endangered"@en .
+
+redlist:ex a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/red-list> ;
+    skos:notation "EX" ;
+    skos:prefLabel "Extinct"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/red-list> .
+
+redlist:lc a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/red-list> ;
+    skos:notation "LC" ;
+    skos:prefLabel "Least Concern"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/red-list> .
+
+redlist:ne a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/red-list> ;
+    skos:notation "NE" ;
+    skos:prefLabel "Not Evaluated"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/red-list> .
+
+redlist:nt a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/red-list> ;
+    skos:notation "NT" ;
+    skos:prefLabel "Near Threatened"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/red-list> .
+
+redlist:vu a skos:Concept ;
+    skos:broader redlist:threatened ;
+    skos:inScheme <https://example.org/birds/vocab/red-list> ;
+    skos:notation "VU" ;
+    skos:prefLabel "Vulnerable"@en .
+
+season:austral-autumn a skos:Concept ;
+    skos:broader season:south ;
+    skos:inScheme <https://example.org/birds/vocab/season> ;
+    skos:prefLabel "Austral autumn"@en ;
+    bird:hemisphere season:south ;
+    bird:month 3,
+        4,
+        5 ;
+    bird:seasonName "autumn" .
+
+season:austral-spring a skos:Concept ;
+    skos:broader season:south ;
+    skos:inScheme <https://example.org/birds/vocab/season> ;
+    skos:prefLabel "Austral spring"@en ;
+    bird:hemisphere season:south ;
+    bird:month 9,
+        10,
+        11 ;
+    bird:seasonName "spring" .
+
+season:austral-summer a skos:Concept ;
+    skos:broader season:south ;
+    skos:inScheme <https://example.org/birds/vocab/season> ;
+    skos:prefLabel "Austral summer"@en ;
+    bird:hemisphere season:south ;
+    bird:month 1,
+        2,
+        12 ;
+    bird:seasonName "summer" .
+
+season:austral-winter a skos:Concept ;
+    skos:broader season:south ;
+    skos:inScheme <https://example.org/birds/vocab/season> ;
+    skos:prefLabel "Austral winter"@en ;
+    bird:hemisphere season:south ;
+    bird:month 6,
+        7,
+        8 ;
+    bird:seasonName "winter" .
+
+season:boreal-autumn a skos:Concept ;
+    skos:broader season:north ;
+    skos:inScheme <https://example.org/birds/vocab/season> ;
+    skos:prefLabel "Boreal autumn"@en ;
+    bird:hemisphere season:north ;
+    bird:month 9,
+        10,
+        11 ;
+    bird:seasonName "autumn" .
+
+season:boreal-spring a skos:Concept ;
+    skos:broader season:north ;
+    skos:inScheme <https://example.org/birds/vocab/season> ;
+    skos:prefLabel "Boreal spring"@en ;
+    bird:hemisphere season:north ;
+    bird:month 3,
+        4,
+        5 ;
+    bird:seasonName "spring" .
+
+season:boreal-summer a skos:Concept ;
+    skos:broader season:north ;
+    skos:inScheme <https://example.org/birds/vocab/season> ;
+    skos:prefLabel "Boreal summer"@en ;
+    bird:hemisphere season:north ;
+    bird:month 6,
+        7,
+        8 ;
+    bird:seasonName "summer" .
+
+season:boreal-winter a skos:Concept ;
+    skos:broader season:north ;
+    skos:inScheme <https://example.org/birds/vocab/season> ;
+    skos:prefLabel "Boreal winter"@en ;
+    bird:hemisphere season:north ;
+    bird:month 1,
+        2,
+        12 ;
+    bird:seasonName "winter" .
+
+season:equatorial a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/season> ;
+    skos:prefLabel "Equatorial"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/season> .
+
+seasonalstatus:passage-migrant a skos:Concept ;
+    skos:definition "Present in spring or autumn only."@en ;
+    skos:inScheme <https://example.org/birds/vocab/seasonal-status> ;
+    skos:prefLabel "Passage migrant"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/seasonal-status> .
+
+seasonalstatus:resident a skos:Concept ;
+    skos:definition "Present in every season."@en ;
+    skos:inScheme <https://example.org/birds/vocab/seasonal-status> ;
+    skos:prefLabel "Resident"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/seasonal-status> .
+
+seasonalstatus:summer-and-winter a skos:Concept ;
+    skos:definition "Present in summer and winter, absent in spring or autumn."@en ;
+    skos:inScheme <https://example.org/birds/vocab/seasonal-status> ;
+    skos:prefLabel "Summer and winter"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/seasonal-status> .
+
+seasonalstatus:summer-visitor a skos:Concept ;
+    skos:definition "Present in summer and absent in winter."@en ;
+    skos:inScheme <https://example.org/birds/vocab/seasonal-status> ;
+    skos:prefLabel "Summer visitor"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/seasonal-status> .
+
+seasonalstatus:winter-visitor a skos:Concept ;
+    skos:definition "Present in winter and absent in summer."@en ;
+    skos:inScheme <https://example.org/birds/vocab/seasonal-status> ;
+    skos:prefLabel "Winter visitor"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/seasonal-status> .
+
+sitetype:bottleneck a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/site-type> ;
+    skos:prefLabel "Bottleneck"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/site-type> .
+
+sitetype:braided-river a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/site-type> ;
+    skos:prefLabel "Braided river"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/site-type> .
+
+sitetype:coast a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/site-type> ;
+    skos:prefLabel "Coast"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/site-type> .
+
+sitetype:estuary a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/site-type> ;
+    skos:prefLabel "Estuary"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/site-type> .
+
+sitetype:lake a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/site-type> ;
+    skos:prefLabel "Lake"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/site-type> .
+
+sitetype:tidal-flat a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/site-type> ;
+    skos:prefLabel "Tidal flat"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/site-type> .
+
+sitetype:wetland a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/site-type> ;
+    skos:prefLabel "Wetland"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/site-type> .
+
+trophic:aquatic-predator a skos:Concept ;
+    skos:broader trophic:carnivore ;
+    skos:definition "Mainly fish and aquatic animals."@en ;
+    skos:inScheme <https://example.org/birds/vocab/trophic> ;
+    skos:prefLabel "Aquatic predator"@en .
+
+trophic:frugivore a skos:Concept ;
+    skos:broader trophic:herbivore ;
+    skos:definition "Mainly fruit."@en ;
+    skos:inScheme <https://example.org/birds/vocab/trophic> ;
+    skos:prefLabel "Frugivore"@en .
+
+trophic:granivore a skos:Concept ;
+    skos:broader trophic:herbivore ;
+    skos:definition "Mainly seeds."@en ;
+    skos:inScheme <https://example.org/birds/vocab/trophic> ;
+    skos:prefLabel "Granivore"@en .
+
+trophic:herbivore-aquatic a skos:Concept ;
+    skos:broader trophic:herbivore ;
+    skos:definition "Mainly aquatic plants and algae."@en ;
+    skos:inScheme <https://example.org/birds/vocab/trophic> ;
+    skos:prefLabel "Herbivore aquatic"@en .
+
+trophic:herbivore-terrestrial a skos:Concept ;
+    skos:broader trophic:herbivore ;
+    skos:definition "Mainly leaves, grass and roots on land."@en ;
+    skos:inScheme <https://example.org/birds/vocab/trophic> ;
+    skos:prefLabel "Herbivore terrestrial"@en .
+
+trophic:invertivore a skos:Concept ;
+    skos:broader trophic:carnivore ;
+    skos:definition "Mainly insects and other invertebrates."@en ;
+    skos:inScheme <https://example.org/birds/vocab/trophic> ;
+    skos:prefLabel "Invertivore"@en .
+
+trophic:nectarivore a skos:Concept ;
+    skos:broader trophic:herbivore ;
+    skos:definition "Mainly nectar."@en ;
+    skos:inScheme <https://example.org/birds/vocab/trophic> ;
+    skos:prefLabel "Nectarivore"@en .
+
+trophic:niche-omnivore a skos:Concept ;
+    skos:broader trophic:omnivore ;
+    skos:definition "A mixed diet with no main source."@en ;
+    skos:inScheme <https://example.org/birds/vocab/trophic> ;
+    skos:prefLabel "Omnivore (niche)"@en .
+
+trophic:niche-scavenger a skos:Concept ;
+    skos:broader trophic:scavenger ;
+    skos:definition "Mainly carrion."@en ;
+    skos:inScheme <https://example.org/birds/vocab/trophic> ;
+    skos:prefLabel "Scavenger (niche)"@en .
+
+trophic:vertivore a skos:Concept ;
+    skos:broader trophic:carnivore ;
+    skos:definition "Mainly land vertebrates."@en ;
+    skos:inScheme <https://example.org/birds/vocab/trophic> ;
+    skos:prefLabel "Vertivore"@en .
+
+trophic:omnivore a skos:Concept ;
+    skos:definition "Both plant and animal food."@en ;
+    skos:inScheme <https://example.org/birds/vocab/trophic> ;
+    skos:narrower trophic:niche-omnivore ;
+    skos:prefLabel "Omnivore"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/trophic> .
+
+trophic:scavenger a skos:Concept ;
+    skos:definition "Mainly carrion."@en ;
+    skos:inScheme <https://example.org/birds/vocab/trophic> ;
+    skos:narrower trophic:niche-scavenger ;
+    skos:prefLabel "Scavenger"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/trophic> .
+
+redlist:threatened a skos:Concept ;
+    skos:definition "Critically endangered, endangered or vulnerable."@en ;
+    skos:inScheme <https://example.org/birds/vocab/red-list> ;
+    skos:narrower redlist:cr,
+        redlist:en,
+        redlist:vu ;
+    skos:prefLabel "Threatened"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/red-list> .
+
+trophic:carnivore a skos:Concept ;
+    skos:definition "Mainly animal food."@en ;
+    skos:inScheme <https://example.org/birds/vocab/trophic> ;
+    skos:narrower trophic:aquatic-predator,
+        trophic:invertivore,
+        trophic:vertivore ;
+    skos:prefLabel "Carnivore"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/trophic> .
+
+habitat:aquatic a skos:Concept ;
+    skos:definition "Habitats in or beside water."@en ;
+    skos:inScheme <https://example.org/birds/vocab/habitat> ;
+    skos:narrower habitat:coastal,
+        habitat:marine,
+        habitat:riverine,
+        habitat:wetland ;
+    skos:prefLabel "Aquatic"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/habitat> .
+
+food:plant-food a skos:Concept,
+        bird:FoodResource ;
+    skos:definition "Food that comes from plants, algae or fungi."@en ;
+    skos:inScheme <https://example.org/birds/vocab/food> ;
+    skos:narrower food:algae,
+        food:fruit,
+        food:leaves,
+        food:nectar,
+        food:seeds ;
+    skos:prefLabel "Plant food"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/food> .
+
+<https://example.org/birds/vocab/migration> a skos:ConceptScheme ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:source <https://doi.org/10.1111/ele.13898> ;
+    skos:definition "How far a species moves between seasons. The three categories of AVONET."@en ;
+    skos:hasTopConcept migration:migratory,
+        migration:partial-migrant,
+        migration:sedentary ;
+    skos:prefLabel "Migration"@en .
+
+trophic:herbivore a skos:Concept ;
+    skos:definition "Mainly plant food."@en ;
+    skos:inScheme <https://example.org/birds/vocab/trophic> ;
+    skos:narrower trophic:frugivore,
+        trophic:granivore,
+        trophic:herbivore-aquatic,
+        trophic:herbivore-terrestrial,
+        trophic:nectarivore ;
+    skos:prefLabel "Herbivore"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/trophic> .
+
+habitat:terrestrial a skos:Concept ;
+    skos:definition "Habitats on land."@en ;
+    skos:inScheme <https://example.org/birds/vocab/habitat> ;
+    skos:narrower habitat:desert,
+        habitat:forest,
+        habitat:grassland,
+        habitat:human-modified,
+        habitat:rock,
+        habitat:shrubland,
+        habitat:woodland ;
+    skos:prefLabel "Terrestrial"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/habitat> .
+
+<https://example.org/birds/vocab/name-change> a skos:ConceptScheme ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    skos:definition "Kinds of change to a scientific name between checklists."@en ;
+    skos:hasTopConcept namechange:genus-move,
+        namechange:lump,
+        namechange:spelling,
+        namechange:split ;
+    skos:prefLabel "Name change types"@en .
+
+<https://example.org/birds/vocab/rank> a skos:ConceptScheme ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    skos:definition "The ranks of the taxonomy, from order to species."@en ;
+    skos:hasTopConcept rank:family,
+        rank:genus,
+        rank:order,
+        rank:species ;
+    skos:prefLabel "Taxonomic ranks"@en .
+
+season:north a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/season> ;
+    skos:narrower season:boreal-autumn,
+        season:boreal-spring,
+        season:boreal-summer,
+        season:boreal-winter ;
+    skos:prefLabel "Northern hemisphere"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/season> .
+
+season:south a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/season> ;
+    skos:narrower season:austral-autumn,
+        season:austral-spring,
+        season:austral-summer,
+        season:austral-winter ;
+    skos:prefLabel "Southern hemisphere"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/season> .
+
+<https://example.org/birds/vocab/lifestyle> a skos:ConceptScheme ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:source <https://doi.org/10.1111/ele.13898> ;
+    skos:definition "Where a species spends most of its time when it forages. The five categories of AVONET."@en ;
+    skos:hasTopConcept lifestyle:aerial,
+        lifestyle:aquatic,
+        lifestyle:generalist,
+        lifestyle:insessorial,
+        lifestyle:terrestrial ;
+    skos:prefLabel "Lifestyles"@en .
+
+<https://example.org/birds/vocab/seasonal-status> a skos:ConceptScheme ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    skos:definition "How a species is present in a country through the year. A season counts as present when its GBIF records are at least a third of those of the busiest season."@en ;
+    skos:hasTopConcept seasonalstatus:passage-migrant,
+        seasonalstatus:resident,
+        seasonalstatus:summer-and-winter,
+        seasonalstatus:summer-visitor,
+        seasonalstatus:winter-visitor ;
+    skos:prefLabel "Seasonal status"@en .
+
+food:animal-food a skos:Concept,
+        bird:FoodResource ;
+    skos:definition "Food that comes from animals other than birds."@en ;
+    skos:inScheme <https://example.org/birds/vocab/food> ;
+    skos:narrower food:amphibians,
+        food:crustaceans,
+        food:earthworms,
+        food:fish,
+        food:horseshoe-crab-eggs,
+        food:insects,
+        food:marine-worms,
+        food:molluscs,
+        food:reptiles,
+        food:small-mammals ;
+    skos:prefLabel "Animal food"@en ;
+    skos:topConceptOf <https://example.org/birds/vocab/food> .
+
+<https://example.org/birds/vocab/season> a skos:ConceptScheme ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    skos:definition "Seasons by hemisphere. Each season names its months."@en ;
+    skos:hasTopConcept season:equatorial,
+        season:north,
+        season:south ;
+    skos:prefLabel "Seasons"@en .
+
+<https://example.org/birds/vocab/site-type> a skos:ConceptScheme ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    skos:definition "Kinds of site where birds gather."@en ;
+    skos:hasTopConcept sitetype:bottleneck,
+        sitetype:braided-river,
+        sitetype:coast,
+        sitetype:estuary,
+        sitetype:lake,
+        sitetype:tidal-flat,
+        sitetype:wetland ;
+    skos:prefLabel "Site types"@en .
+
+<https://example.org/birds/vocab/habitat> a skos:ConceptScheme ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:source <https://doi.org/10.1111/ele.13898> ;
+    skos:definition "Primary habitats of AVONET, grouped as terrestrial or aquatic."@en ;
+    skos:hasTopConcept habitat:aquatic,
+        habitat:terrestrial ;
+    skos:prefLabel "Habitats"@en .
+
+<https://example.org/birds/vocab/red-list> a skos:ConceptScheme ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    skos:definition "Categories of extinction risk, as AviList v2025 reports them."@en ;
+    skos:hasTopConcept redlist:dd,
+        redlist:ex,
+        redlist:lc,
+        redlist:ne,
+        redlist:nt,
+        redlist:threatened ;
+    skos:prefLabel "Red List categories"@en .
+
+<https://example.org/birds/vocab/trophic> a skos:ConceptScheme ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:source <https://doi.org/10.1111/ele.13898> ;
+    skos:definition "What a species mainly eats: the trophic levels and trophic niches of AVONET."@en ;
+    skos:hasTopConcept trophic:carnivore,
+        trophic:herbivore,
+        trophic:omnivore,
+        trophic:scavenger ;
+    skos:prefLabel "Trophic niches"@en .
+
+<https://example.org/birds/vocab/food> a skos:ConceptScheme ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    skos:definition "Kinds of food that are not bird species, for the food web."@en ;
+    skos:hasTopConcept food:animal-food,
+        food:carrion,
+        food:plant-food ;
+    skos:prefLabel "Food resources"@en .
+

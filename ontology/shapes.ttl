@@ -1,0 +1,74 @@
+PREFIX bird:    <https://example.org/birds/def/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dwc:     <http://rs.tdwg.org/dwc/terms/>
+PREFIX geo:     <http://www.opengis.net/ont/geosparql#>
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh:      <http://www.w3.org/ns/shacl#>
+PREFIX shape:   <https://example.org/birds/def/shape/>
+PREFIX skos:    <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
+
+shape:Species a sh:NodeShape ;
+    sh:targetClass bird:Species ;
+    sh:property [ sh:path skos:prefLabel ; sh:minCount 1 ; sh:languageIn ( "en" ) ; sh:uniqueLang true ] ;
+    sh:property [ sh:path skos:broader ; sh:minCount 1 ; sh:maxCount 1 ; sh:class bird:Genus ] ;
+    sh:property [ sh:path bird:acceptedName ; sh:minCount 1 ; sh:maxCount 1 ; sh:class bird:Name ] ;
+    sh:property [ sh:path bird:account ; sh:minCount 1 ; sh:datatype rdf:langString ] ;
+    sh:property [ sh:path bird:migration ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path bird:bodyMass ; sh:maxCount 1 ; sh:datatype xsd:decimal ; sh:minExclusive 0 ] .
+
+shape:Genus a sh:NodeShape ;
+    sh:targetClass bird:Genus ;
+    sh:property [ sh:path skos:broader ; sh:minCount 1 ; sh:maxCount 1 ; sh:class bird:Family ] .
+
+shape:Family a sh:NodeShape ;
+    sh:targetClass bird:Family ;
+    sh:property [ sh:path skos:broader ; sh:minCount 1 ; sh:maxCount 1 ; sh:class bird:Order ] .
+
+shape:Occurrence a sh:NodeShape ;
+    sh:targetClass bird:Occurrence ;
+    sh:property [ sh:path bird:species ; sh:minCount 1 ; sh:maxCount 1 ; sh:class bird:Species ] ;
+    sh:property [ sh:path bird:country ; sh:minCount 1 ; sh:maxCount 1 ; sh:class bird:Country ] ;
+    sh:property [ sh:path dwc:eventDate ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:date ] ;
+    sh:property [ sh:path bird:month ; sh:minCount 1 ; sh:minInclusive 1 ; sh:maxInclusive 12 ] ;
+    sh:property [ sh:path ( geo:hasGeometry geo:asWKT ) ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype geo:wktLiteral ] ;
+    sh:property [ sh:path dcterms:license ; sh:minCount 1 ; sh:in (
+        <https://creativecommons.org/publicdomain/zero/1.0/> <https://creativecommons.org/licenses/by/4.0/> ) ] .
+
+shape:MonthlyCount a sh:NodeShape ;
+    sh:targetClass bird:MonthlyCount ;
+    sh:property [ sh:path bird:species ; sh:minCount 1 ; sh:maxCount 1 ; sh:class bird:Species ] ;
+    sh:property [ sh:path bird:country ; sh:minCount 1 ; sh:maxCount 1 ; sh:class bird:Country ] ;
+    sh:property [ sh:path bird:month ; sh:minCount 1 ; sh:maxCount 1 ; sh:minInclusive 1 ; sh:maxInclusive 12 ] ;
+    sh:property [ sh:path bird:recordCount ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:integer ] .
+
+shape:Site a sh:NodeShape ;
+    sh:targetClass bird:Site ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ] ;
+    sh:property [ sh:path bird:country ; sh:minCount 1 ; sh:maxCount 1 ; sh:class bird:Country ] ;
+    sh:property [ sh:path ( geo:hasGeometry geo:asWKT ) ; sh:minCount 1 ; sh:datatype geo:wktLiteral ] .
+
+shape:BandedBird a sh:NodeShape ;
+    sh:targetClass bird:BandedBird ;
+    sh:property [ sh:path bird:species ; sh:minCount 1 ; sh:maxCount 1 ; sh:class bird:Species ] ;
+    sh:property [ sh:path bird:bandedAt ; sh:minCount 1 ; sh:maxCount 1 ; sh:class bird:Site ] ;
+    sh:property [ sh:path bird:bandedOn ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:date ] .
+
+shape:Resighting a sh:NodeShape ;
+    sh:targetClass bird:Resighting ;
+    sh:property [ sh:path bird:bird ; sh:minCount 1 ; sh:maxCount 1 ; sh:class bird:BandedBird ] ;
+    sh:property [ sh:path bird:previous ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path bird:site ; sh:minCount 1 ; sh:maxCount 1 ; sh:class bird:Site ] ;
+    sh:property [ sh:path bird:date ; sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:date ] .
+
+shape:NameChange a sh:NodeShape ;
+    sh:targetClass bird:NameChange ;
+    sh:property [ sh:path bird:fromName ; sh:minCount 1 ; sh:maxCount 1 ; sh:class bird:Name ] ;
+    sh:property [ sh:path bird:toName ; sh:minCount 1 ; sh:maxCount 1 ; sh:class bird:Name ] ;
+    sh:property [ sh:path bird:changeRegion ; sh:maxCount 1 ; sh:class bird:Country ] .
+
+shape:Eats a sh:NodeShape ;
+    sh:targetSubjectsOf bird:eats ;
+    sh:class bird:Species ;
+    sh:property [ sh:path bird:eats ; sh:or ( [ sh:class bird:Species ] [ sh:class bird:FoodResource ] ) ] .

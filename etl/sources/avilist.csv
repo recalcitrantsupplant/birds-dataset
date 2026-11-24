@@ -1,0 +1,277 @@
+Sequence,Taxon_rank,Order,Family,Family_English_name,Scientific_name,Authority,English_name_AviList,Range,Extinct_or_possibly_extinct,IUCN_Red_List_Category,AvibaseID,Protonym,Original_description_URL
+1.0,order,Struthioniformes,,,Struthioniformes,,,,,,,,
+2.0,family,Struthioniformes,Struthionidae,Ostriches,Struthionidae,,,,,,,,
+3.0,genus,Struthioniformes,Struthionidae,Ostriches,Struthio,"Linnaeus, C, 1758",,,,,,Struthio,https://www.biodiversitylibrary.org/item/10277#page/174/mode/1up
+5.0,species,Struthioniformes,Struthionidae,Ostriches,Struthio camelus,"Linnaeus, C, 1758",Common Ostrich,,,LC,avibase-2247CB05,Struthio Camelus,https://www.biodiversitylibrary.org/item/10277#page/174/mode/1up
+10.0,order,Casuariiformes,,,Casuariiformes,,,,,,,,
+11.0,family,Casuariiformes,Casuariidae,Emu and Cassowaries,Casuariidae,,,,,,,,
+12.0,genus,Casuariiformes,Casuariidae,Emu and Cassowaries,Dromaius,"Vieillot, LJP, 1816",,,,,,Dromaius,https://gallica.bnf.fr/ark:/12148/bpt6k9745205x/f76.item
+13.0,species,Casuariiformes,Casuariidae,Emu and Cassowaries,Dromaius novaehollandiae,"(Latham, J, 1790)",Emu,,,NE,avibase-FD2456D5,Casuarius N. Hollandiae,https://www.biodiversitylibrary.org/item/226469#page/205/mode/1up
+24.0,order,Apterygiformes,,,Apterygiformes,,,,,,,,
+25.0,family,Apterygiformes,Apterygidae,Kiwis,Apterygidae,,,,,,,,
+26.0,genus,Apterygiformes,Apterygidae,Kiwis,Apteryx,"Shaw, G, 1813",,,,,,Apteryx,https://www.biodiversitylibrary.org/item/296719#page/225/mode/1up
+33.0,species,Apterygiformes,Apterygidae,Kiwis,Apteryx mantelli,"Bartlett, AD, 1852",North Island Brown Kiwi,North Island (New Zealand),,VU,avibase-DB55CB8C,Apteryx Mantelli,https://www.biodiversitylibrary.org/item/276330#page/375/mode/1up
+230.0,order,Anseriformes,,,Anseriformes,,,,,,,,
+240.0,family,Anseriformes,Anatidae,"Ducks, Swans, and Geese",Anatidae,,,,,,,,
+364.0,genus,Anseriformes,Anatidae,"Ducks, Swans, and Geese",Aix,"Boie, F, 1828",,,,,,Aix,https://www.biodiversitylibrary.org/item/47585#page/173/mode/1up
+365.0,species,Anseriformes,Anatidae,"Ducks, Swans, and Geese",Aix galericulata,"(Linnaeus, C, 1758)",Mandarin Duck,"breeds wooded ponds, swamps, and streams of northeastern Asia from southeastern Siberia, eastern China, Korean Peninsula, Japan, and Taiwan; winters to southeastern China and northern southeast Asia; introduced in Western Europe, and escapes frequent in USA",,LC,avibase-E1714A09,Anas galericulata,https://www.biodiversitylibrary.org/item/10277#page/146/mode/1up
+387.0,genus,Anseriformes,Anatidae,"Ducks, Swans, and Geese",Tadorna,"Boie, F, 1822",,,,,,Tadorna,
+392.0,species,Anseriformes,Anatidae,"Ducks, Swans, and Geese",Tadorna variegata,"(Gmelin, JF, 1789)",Paradise Shelduck,"North, South, Stewart, and satellite islands (New Zealand)",,LC,avibase-AB08E5C4,Anas variegata,https://www.biodiversitylibrary.org/item/10286#page/6/mode/1up
+441.0,genus,Anseriformes,Anatidae,"Ducks, Swans, and Geese",Hymenolaimus,"Gray, GR, 1843",,,,,,Hymenolaimus,https://www.biodiversitylibrary.org/item/19570#page/396/mode/1up
+442.0,species,Anseriformes,Anatidae,"Ducks, Swans, and Geese",Hymenolaimus malacorhynchos,"(Gmelin, JF, 1789)",Blue Duck,,,EN,avibase-C7FB4E76,Anas malacorhynchos,https://www.biodiversitylibrary.org/item/10286#page/27/mode/1up
+1613.0,order,Phoenicopteriformes,,,Phoenicopteriformes,,,,,,,,
+1614.0,family,Phoenicopteriformes,Phoenicopteridae,Flamingos,Phoenicopteridae,,,,,,,,
+1615.0,genus,Phoenicopteriformes,Phoenicopteridae,Flamingos,Phoeniconaias,"Gray, GR, 1869",,,,,,Phoeniconaias,https://www.biodiversitylibrary.org/item/35145#page/492/mode/1up
+1616.0,species,Phoenicopteriformes,Phoenicopteridae,Flamingos,Phoeniconaias minor,"(Geoffroy Saint-Hilaire, É, 1798)",Lesser Flamingo,locally from Africa and Madagascar to far northwestern India (mainly Gujarat),,NT,avibase-B06A9079,Phoenicopterus minor,https://www.biodiversitylibrary.org/item/28082#page/258/mode/1up
+1620.0,genus,Phoenicopteriformes,Phoenicopteridae,Flamingos,Phoenicopterus,"Linnaeus, C, 1758",,,,,,Phoenicopterus,https://www.biodiversitylibrary.org/item/10277#page/157/mode/1up
+1621.0,species,Phoenicopteriformes,Phoenicopteridae,Flamingos,Phoenicopterus chilensis,"Molina, GI, 1782",Chilean Flamingo,Andes of southern South America; pampas of southern Brazil to southern Argentina,,NT,avibase-4F28673C,Phoenicopterus Chilensis,https://bibdigital.rjb.csic.es/viewer/9635/?offset=#page=242&viewer=picture&o=bookmark&n=0&q=
+1622.0,species,Phoenicopteriformes,Phoenicopteridae,Flamingos,Phoenicopterus roseus,"Pallas, PS, 1811",Greater Flamingo,"southern Europe and Mediterranean basin to southern Africa, Madagascar, and southern Asia",,LC,avibase-0F9B5174,Phoenicopterus roseus,https://www.biodiversitylibrary.org/item/92517#page/223/mode/1up
+1830.0,order,Cuculiformes,,,Cuculiformes,,,,,,,,
+1831.0,family,Cuculiformes,Cuculidae,Cuckoos,Cuculidae,,,,,,,,
+2085.0,genus,Cuculiformes,Cuculidae,Cuckoos,Urodynamis,"Salvadori, AT, 1880",,,,,,Urodynamis,https://www.biodiversitylibrary.org/item/34672#page/392/mode/1up
+2086.0,species,Cuculiformes,Cuculidae,Cuckoos,Urodynamis taitensis,"(Sparrman, A, 1787)",Long-tailed Koel,"breeds North, South, and Stewart islands and satellite islands (New Zealand); migrates to central and southern tropical Pacific, from Palau (western Caroline Islands) to Pitcairn group (southeastern Polynesia)",,LC,avibase-3BD58F08,Cuculus taitensis,https://www.biodiversitylibrary.org/item/128101#page/39/mode/1up
+2092.0,genus,Cuculiformes,Cuculidae,Cuckoos,Chrysococcyx,"Boie, F, 1826",,,,,,Chrysococcyx,https://www.biodiversitylibrary.org/item/87985#page/537/mode/1up
+2097.0,species,Cuculiformes,Cuculidae,Cuckoos,Chrysococcyx caprius,"(Boddaert, P, 1783)",Diederik Cuckoo,intra-African migrant in sub-Saharan Africa and southern Arabia,,LC,avibase-0482FA7E,Cuculus caprius,https://www.biodiversitylibrary.org/item/88617#page/62/mode/1up
+2101.0,genus,Cuculiformes,Cuculidae,Cuckoos,Chalcites,"Lesson, RP, 1837",,,,,,Chalcites,
+2106.0,species,Cuculiformes,Cuculidae,Cuckoos,Chalcites lucidus,"(Gmelin, JF, 1788)",Shining Bronze Cuckoo,,,LC,avibase-19268395,Cuculus lucidus,https://www.biodiversitylibrary.org/item/10285#page/433/mode/1up
+2199.0,genus,Cuculiformes,Cuculidae,Cuckoos,Cuculus,"Linnaeus, C, 1758",,,,,,Cuculus,https://www.biodiversitylibrary.org/item/10277#page/128/mode/1up
+2213.0,species,Cuculiformes,Cuculidae,Cuckoos,Cuculus canorus,"Linnaeus, C, 1758",Common Cuckoo,,,LC,avibase-B3D2C3C5,Cuculus canorus,https://www.biodiversitylibrary.org/item/10277#page/128/mode/1up
+2274.0,order,Columbiformes,,,Columbiformes,,,,,,,,
+2275.0,family,Columbiformes,Columbidae,Doves and Pigeons,Columbidae,,,,,,,,
+2977.0,genus,Columbiformes,Columbidae,Doves and Pigeons,Hemiphaga,"Bonaparte, CLJL, 1854",,,,,,Hemiphaga,https://www.biodiversitylibrary.org/item/21179#page/1086/mode/1up
+2979.0,species,Columbiformes,Columbidae,Doves and Pigeons,Hemiphaga novaeseelandiae,"(Gmelin, JF, 1789)",New Zealand Pigeon,,,LC,avibase-335C2C80,Columba novae Seelandiae,https://www.biodiversitylibrary.org/item/10286#page/274/mode/1up
+3237.0,order,Gruiformes,,,Gruiformes,,,,,,,,
+3256.0,family,Gruiformes,Gruidae,Cranes,Gruidae,,,,,,,,
+3257.0,genus,Gruiformes,Gruidae,Cranes,Balearica,"Brisson, MJ, 1760",,,,,,Balearica,
+3258.0,species,Gruiformes,Gruidae,Cranes,Balearica regulorum,"(Bennett, ET, 1834)",Grey Crowned Crane,,,EN,avibase-D10CAC5D,Anthropoïdes Regulorum,https://www.biodiversitylibrary.org/item/46213#page/132/mode/1up
+3266.0,genus,Gruiformes,Gruidae,Cranes,Antigone,"Reichenbach, HGL, 1853",,,,,,Antigone,https://www.biodiversitylibrary.org/item/103886#page/91/mode/1up
+3267.0,species,Gruiformes,Gruidae,Cranes,Antigone canadensis,"(Linnaeus, C, 1758)",Sandhill Crane,,,LC,avibase-E196D6F9,Ardea canadensis,https://www.biodiversitylibrary.org/item/10277#page/160/mode/1up
+3279.0,genus,Gruiformes,Gruidae,Cranes,Grus,"Brisson, MJ, 1760",,,,,,Grus,
+3283.0,species,Gruiformes,Gruidae,Cranes,Grus japonensis,"(Müller, PLS, 1776)",Red-crowned Crane,"breeds Siberia, Hokkaido and Mongolia; winters eastern China and Korea",,VU,avibase-0777AB3C,Ardea (Grus) Japonensis,https://www.biodiversitylibrary.org/item/218386#page/130/mode/1up
+3339.0,family,Gruiformes,Rallidae,"Rails, Gallinules, and Coots",Rallidae,,,,,,,,
+3597.0,genus,Gruiformes,Rallidae,"Rails, Gallinules, and Coots",Porphyrio,"Brisson, MJ, 1760",,,,,,Porphyrio,
+3615.0,species,Gruiformes,Rallidae,"Rails, Gallinules, and Coots",Porphyrio hochstetteri,"(Meyer, AB, 1883)",South Island Takahe,"mountains of southern South Island (New Zealand); reintroduced to several offshore islands and mainland sanctuaries, including on North Island; endangered",,EN,avibase-6001C6A8,Notornis Hochstetteri,https://www.biodiversitylibrary.org/item/110728#page/50/mode/1up
+3725.0,order,Charadriiformes,,,Charadriiformes,,,,,,,,
+3769.0,family,Charadriiformes,Recurvirostridae,Stilts and Avocets,Recurvirostridae,,,,,,,,
+3777.0,genus,Charadriiformes,Recurvirostridae,Stilts and Avocets,Himantopus,"Brisson, MJ, 1760",,,,,,Himantopus,
+3782.0,species,Charadriiformes,Recurvirostridae,Stilts and Avocets,Himantopus himantopus,"(Linnaeus, C, 1758)",Black-winged Stilt,"breeds from southern Europe, and Cape Verde Islands, northern and sub-Saharan Africa, Socotra, and coastal Madagascar eastward to southeastern Russia, eastern China, south-central Japan, Taiwan, east-central Philippines, southward to northern Middle East, Sri Lanka, Malayan Peninsula, eastward to western Java; winters to Greater Sundas and Philippines",,NE,avibase-3CAEB7CE,Charadrius Himantopus,https://www.biodiversitylibrary.org/item/10277#page/170/mode/1up
+3783.0,species,Charadriiformes,Recurvirostridae,Stilts and Avocets,Himantopus leucocephalus,"Gould, J, 1837",Pied Stilt,"Philippines, Indonesian Archipelago, New Guinea region, Australia (including Tasmania), North, South, Stewart, and Chatham islands (New Zealand), and New Britain",,NE,avibase-C2830C86,Himantopus leucocephalus,https://www.biodiversitylibrary.org/item/182460#page/145/mode/1up
+3784.0,species,Charadriiformes,Recurvirostridae,Stilts and Avocets,Himantopus novaezelandiae,"Gould, J, 1841",Black Stilt,"MacKenzie Basin (central South Island, New Zealand); winters to North Island",,CR,avibase-C26304D6,Himantopus novae-zelandiae,https://www.biodiversitylibrary.org/item/96442#page/20/mode/1up
+3788.0,family,Charadriiformes,Haematopodidae,Oystercatchers,Haematopodidae,,,,,,,,
+3789.0,genus,Charadriiformes,Haematopodidae,Oystercatchers,Haematopus,"Linnaeus, C, 1758",,,,,,Haematopus,https://www.biodiversitylibrary.org/item/10277#page/171/mode/1up
+3809.0,species,Charadriiformes,Haematopodidae,Oystercatchers,Haematopus finschi,"Martens, GH, 1897",South Island Oystercatcher,breeds inland South Island (New Zealand); winters coastally to North Island,,LC,avibase-3FCE29E8,Haematopus finschi,https://www.biodiversitylibrary.org/item/35483#page/206/mode/1up
+3810.0,family,Charadriiformes,Charadriidae,Plovers and Lapwings,Charadriidae,,,,,,,,
+3857.0,genus,Charadriiformes,Charadriidae,Plovers and Lapwings,Vanellus,"Brisson, MJ, 1760",,,,,,Vanellus,
+3858.0,species,Charadriiformes,Charadriidae,Plovers and Lapwings,Vanellus vanellus,"(Linnaeus, C, 1758)",Northern Lapwing,"breeds inland temperate and subarctic Eurasia from Scandinavia and Iberian Peninsula eastward to southeastern Russia and northeastern China; winters northern Africa eastward to Japan, Taiwan, and northern Vietnam",,NT,avibase-F029489A,Tringa Vanellus,https://www.biodiversitylibrary.org/item/10277#page/167/mode/1up
+3890.0,species,Charadriiformes,Charadriidae,Plovers and Lapwings,Vanellus miles,"(Boddaert, P, 1783)",Masked Lapwing,,,NE,avibase-B326F839,Tringa miles,https://www.biodiversitylibrary.org/item/88617#page/73/mode/1up
+3905.0,genus,Charadriiformes,Charadriidae,Plovers and Lapwings,Anarhynchus,"Quoy, JRC; Gaimard, JP, 1832",,,,,,Anarhynchus,https://www.biodiversitylibrary.org/item/18512#page/310/mode/1up
+3919.0,species,Charadriiformes,Charadriidae,Plovers and Lapwings,Anarhynchus bicinctus,"(Jardine, W; Selby, PJ, 1827)",Double-banded Plover,,,NT,avibase-79420720,Charadrius bicinctus,https://www.biodiversitylibrary.org/item/122925#page/167/mode/1up
+3925.0,species,Charadriiformes,Charadriidae,Plovers and Lapwings,Anarhynchus frontalis,"Quoy, JRC; Gaimard, JP, 1832",Wrybill,breeds rivers of northern South Island; winters to coastal northern North Island (New Zealand),,VU,avibase-719334FB,Anarhynchus frontalis,https://www.biodiversitylibrary.org/item/18512#page/310/mode/1up
+4002.0,family,Charadriiformes,Scolopacidae,Sandpipers and Allies,Scolopacidae,,,,,,,,
+4005.0,genus,Charadriiformes,Scolopacidae,Sandpipers and Allies,Numenius,"Brisson, MJ, 1760",,,,,,Numenius,
+4019.0,species,Charadriiformes,Scolopacidae,Sandpipers and Allies,Numenius madagascariensis,"(Linnaeus, C, 1766)",Far Eastern Curlew,"breeds inland wetlands from east-central Siberia to Kamchatka and Ussuriland (southeastern Russia) and Heilongjiang (northeastern China); winters to Philippines, Indonesia, Australia, and New Zealand (scarce)",,EN,avibase-DAF8F22B,Scolopax madagascariensis,https://www.biodiversitylibrary.org/item/137337#page/246/mode/1up
+4025.0,genus,Charadriiformes,Scolopacidae,Sandpipers and Allies,Limosa,"Brisson, MJ, 1760",,,,,,Limosa,
+4026.0,species,Charadriiformes,Scolopacidae,Sandpipers and Allies,Limosa lapponica,"(Linnaeus, C, 1758)",Bar-tailed Godwit,,,NT,avibase-9A684C99,Scolopax lapponica,https://www.biodiversitylibrary.org/item/10277#page/166/mode/1up
+4040.0,species,Charadriiformes,Scolopacidae,Sandpipers and Allies,Limosa haemastica,"(Linnaeus, C, 1758)",Hudsonian Godwit,"breeds patchily in low Arctic bogs near treeline, in western and south-central Alaska, northern and south-central Northwest Territories, and southwestern Hudson Bay (northwestern to east-central Canada); winters mainly to temperate coastal wetlands, where highly localized, in northern Peru to southern Chile and southern Brazil to southern Argentina",,VU,avibase-93013964,Scolopax Haemastica,https://www.biodiversitylibrary.org/item/10277#page/166/mode/1up
+4138.0,genus,Charadriiformes,Scolopacidae,Sandpipers and Allies,Arenaria,"Brisson, MJ, 1760",,,,,,Arenaria,
+4140.0,species,Charadriiformes,Scolopacidae,Sandpipers and Allies,Arenaria interpres,"(Linnaeus, C, 1758)",Ruddy Turnstone,,,NT,avibase-DC3050A9,Tringa Interpres,https://www.biodiversitylibrary.org/item/10277#page/167/mode/1up
+4143.0,genus,Charadriiformes,Scolopacidae,Sandpipers and Allies,Calidris,"Merrem, B, 1804",,,,,,Calidris,
+4144.0,species,Charadriiformes,Scolopacidae,Sandpipers and Allies,Calidris canutus,"(Linnaeus, C, 1758)",Red Knot,,,NT,avibase-B5CE8FAD,Tringa Canutus,https://www.biodiversitylibrary.org/item/10277#page/168/mode/1up
+4152.0,species,Charadriiformes,Scolopacidae,Sandpipers and Allies,Calidris tenuirostris,"(Horsfield, T, 1821)",Great Knot,"breeds montane tundra of northeastern Siberia from Yakutsk eastward to Anadyr Peninsula; winters coasts from northeastern Arabian Peninsula eastward to Taiwan, Phillipines, and Australia",,EN,avibase-09C51FA9,Totanus tenuirostris,https://www.biodiversitylibrary.org/item/13692#page/211/mode/1up
+4154.0,species,Charadriiformes,Scolopacidae,Sandpipers and Allies,Calidris acuminata,"(Horsfield, T, 1821)",Sharp-tailed Sandpiper,breeds low Arctic tundra from Lena to Kolyma rivers (northeastern Siberia); winters from Wallacea eastward through Australasia; prone to extreme vagrancy,,VU,avibase-A0A67A81,Totanus acuminatus,https://www.biodiversitylibrary.org/item/13692#page/211/mode/1up
+4160.0,species,Charadriiformes,Scolopacidae,Sandpipers and Allies,Calidris pygmaea,"(Linnaeus, C, 1758)",Spoon-billed Sandpiper,"breeds coastal tundra of eastern Chukotskiy Peninsula to northern Kamchatka (norhteastern Russia); winters coastal mudflats from Taiwan and east-central China to Bangladesh; mainly Thailand, Myanmar, and Bangladesh; rare and local",,CR,avibase-3FC8CA50,Platalea pygmea,https://www.biodiversitylibrary.org/item/10277#page/159/mode/1up
+4161.0,species,Charadriiformes,Scolopacidae,Sandpipers and Allies,Calidris ruficollis,"(Pallas, PS, 1776)",Red-necked Stint,"breeds coastal tundra of Taymyr Peninsula eastward to Chukotskiy Peninsula and northern Kamchatka Peninsula (north-central to north-eastern Siberia); breeds coastal northeastern India and Sri Lanka eastward to Philippines, Australasia, and Melanesia",,NT,avibase-BBDF2F1B,Trynga ruficollis,
+4322.0,family,Charadriiformes,Alcidae,"Auks, Puffins, and Murres",Alcidae,,,,,,,,
+4325.0,genus,Charadriiformes,Alcidae,"Auks, Puffins, and Murres",Fratercula,"Brisson, MJ, 1760",,,,,,Fratercula,
+4327.0,species,Charadriiformes,Alcidae,"Auks, Puffins, and Murres",Fratercula arctica,"(Linnaeus, C, 1758)",Atlantic Puffin,"breeds North Atlantic coasts from Greenland, Iceland and Faroes eastward through Scandinavia including Svalbard, and Novaya Zemlya (northwestern Russia), also northern Hudson Bay to southeastern Canada and Maine (northeastern USA); winters offshore in North Atlantic and marginal seas, to North Carolina Gulf Stream and to Azores and Iberian Peninsula",,VU,avibase-2771624B,Alca arctica,https://www.biodiversitylibrary.org/item/10277#page/148/mode/1up
+4386.0,family,Charadriiformes,Laridae,"Skimmers, Noddies, Terns, and Gulls",Laridae,,,,,,,,
+4502.0,genus,Charadriiformes,Laridae,"Skimmers, Noddies, Terns, and Gulls",Sterna,"Linnaeus, C, 1758",,,,,,Sterna,https://www.biodiversitylibrary.org/item/10277#page/155/mode/1up
+4506.0,species,Charadriiformes,Laridae,"Skimmers, Noddies, Terns, and Gulls",Sterna paradisaea,"Pontoppidan, E, 1763",Arctic Tern,"breeds circumpolarly, Arctic coasts and inland, from Greenland, Iceland, and British Isles eastward to Kamchatka (eastern Russia), through Aleutian Islands, Alaska mainland through Arctic and subarctic Canada to southeastern Canada; winters subantarctic and Antarctic Ocean to edge of pack-ice",,LC,avibase-BDC5CF80,Sterna Paradisaea,
+4678.0,order,Sphenisciformes,,,Sphenisciformes,,,,,,,,
+4679.0,family,Sphenisciformes,Spheniscidae,Penguins,Spheniscidae,,,,,,,,
+4699.0,genus,Sphenisciformes,Spheniscidae,Penguins,Spheniscus,"Brisson, MJ, 1760",,,,,,Spheniscus,
+4700.0,species,Sphenisciformes,Spheniscidae,Penguins,Spheniscus demersus,"(Linnaeus, C, 1758)",African Penguin,breeds coastal southern Namibia and southern South Africa; ranges to central Namibia and southeastern Africa,,CR,avibase-9B183BDD,Diomedea demersa,https://www.biodiversitylibrary.org/item/10277#page/150/mode/1up
+4703.0,species,Sphenisciformes,Spheniscidae,Penguins,Spheniscus magellanicus,"(Forster, JR, 1781)",Magellanic Penguin,breeds coastal central Chile and central Argentina to Cape Horn and Falkland Islands; winters to southeastern Brazil,,LC,avibase-3B4B29E0,Aptenodytes magellanicus,
+4704.0,genus,Sphenisciformes,Spheniscidae,Penguins,Megadyptes,"Milne-Edwards, A, 1880",,,,,,Megadyptes,https://www.biodiversitylibrary.org/item/109928#page/338/mode/1up
+4705.0,species,Sphenisciformes,Spheniscidae,Penguins,Megadyptes antipodes,"(Hombron, JB; Jacquinot, H, 1841)",Yellow-eyed Penguin,"very local on coasts of South (where now very rare), Stewart and satellites, Auckland, and Campbell islands (New Zealand)",,EN,avibase-9DF07165,Catarrhactes antipodes,https://www.biodiversitylibrary.org/item/110495#page/328/mode/1up
+4715.0,order,Procellariiformes,,,Procellariiformes,,,,,,,,
+4716.0,family,Procellariiformes,Diomedeidae,Albatrosses,Diomedeidae,,,,,,,,
+4722.0,genus,Procellariiformes,Diomedeidae,Albatrosses,Diomedea,"Linnaeus, C, 1758",,,,,,Diomedea,https://www.biodiversitylibrary.org/item/10277#page/150/mode/1up
+4724.0,species,Procellariiformes,Diomedeidae,Albatrosses,Diomedea epomophora,"Lesson, RP, 1825",Southern Royal Albatross,breeds Enderby Island (Auckland Islands) and Campbell Islands (New Zealand); ranges all south temperate and subantarctic oceans,,VU,avibase-4D8C9B97,Diomedaea epomophora,https://www.biodiversitylibrary.org/item/28624#page/103/mode/1up
+4810.0,family,Procellariiformes,Procellariidae,"Petrels, Shearwaters, and Diving Petrels",Procellariidae,,,,,,,,
+4852.0,genus,Procellariiformes,Procellariidae,"Petrels, Shearwaters, and Diving Petrels",Ardenna,"Reichenbach, HGL, 1853",,,,,,Ardenna,https://www.biodiversitylibrary.org/item/103886#page/72/mode/1up
+4855.0,species,Procellariiformes,Procellariidae,"Petrels, Shearwaters, and Diving Petrels",Ardenna tenuirostris,"(Temminck, CJ, 1836)",Short-tailed Shearwater,"breeds islets off southern Australia, including Bass Strait and Tasmania; ranges to Antarctic ice edge waters, then to Sea of Okhotsk, Bering Sea (North Pacific Ocean)",,LC,avibase-60825BF6,Procellaria tenuirostris,https://www.biodiversitylibrary.org/item/110039#page/596/mode/1up
+4856.0,species,Procellariiformes,Procellariidae,"Petrels, Shearwaters, and Diving Petrels",Ardenna grisea,"(Gmelin, JF, 1789)",Sooty Shearwater,"breeds southeastern Australia (including Macquarie Island), New Zealand including associated subantarctic island groups, far southern South America (including the Falkland Islands), and Tristan da Cunha (south Atlantic Ocean); winters northward in North Atlantic to Greenland and northwestern Europe, and in northern Pacific to Gulf of Alaska and western USA",,NT,avibase-1725B07D,Procellaria grisea,https://www.biodiversitylibrary.org/item/10286#page/65/mode/1up
+4970.0,order,Ciconiiformes,,,Ciconiiformes,,,,,,,,
+4971.0,family,Ciconiiformes,Ciconiidae,Storks,Ciconiidae,,,,,,,,
+4993.0,genus,Ciconiiformes,Ciconiidae,Storks,Ciconia,"Brisson, MJ, 1760",,,,,,Ciconia,
+4996.0,species,Ciconiiformes,Ciconiidae,Storks,Ciconia boyciana,"Swinhoe, R, 1873",Oriental Stork,"Siberia, Manchuria, and Korea; winters to southern China and northern India",,EN,avibase-C417573F,Ciconia boyciana,https://www.biodiversitylibrary.org/item/90422#page/627/mode/1up
+4997.0,species,Ciconiiformes,Ciconiidae,Storks,Ciconia ciconia,"(Linnaeus, C, 1758)",White Stork,,,LC,avibase-28825494,Ardea Ciconia,https://www.biodiversitylibrary.org/item/10277#page/161/mode/1up
+5142.0,order,Pelecaniformes,,,Pelecaniformes,,,,,,,,
+5143.0,family,Pelecaniformes,Threskiornithidae,Ibises and Spoonbills,Threskiornithidae,,,,,,,,
+5173.0,genus,Pelecaniformes,Threskiornithidae,Ibises and Spoonbills,Bostrychia,"Gray, GR, 1847",,,,,,Bostrychia,https://www.biodiversitylibrary.org/item/148103#page/210/mode/1up
+5181.0,species,Pelecaniformes,Threskiornithidae,Ibises and Spoonbills,Bostrychia hagedash,"(Latham, J, 1790)",Hadada Ibis,,,LC,avibase-CAFBA217,Tantalus Hagedash,https://www.biodiversitylibrary.org/item/226469#page/249/mode/1up
+5195.0,genus,Pelecaniformes,Threskiornithidae,Ibises and Spoonbills,Platalea,"Linnaeus, C, 1758",,,,,,Platalea,https://www.biodiversitylibrary.org/item/10277#page/157/mode/1up
+5204.0,species,Pelecaniformes,Threskiornithidae,Ibises and Spoonbills,Platalea minor,"Temminck, CJ; Schlegel, H, 1849",Black-faced Spoonbill,breeds northeastern China and Korea; winters to southeastern Asia,,EN,avibase-DFD1DDFF,Platalea minor,https://www.biodiversitylibrary.org/item/223586#page/130/mode/1up
+5224.0,family,Pelecaniformes,Pelecanidae,Pelicans,Pelecanidae,,,,,,,,
+5225.0,genus,Pelecaniformes,Pelecanidae,Pelicans,Pelecanus,"Linnaeus, C, 1758",,,,,,Pelecanus,https://www.biodiversitylibrary.org/item/10277#page/150/mode/1up
+5235.0,species,Pelecaniformes,Pelecanidae,Pelicans,Pelecanus conspicillatus,"Temminck, CJ, 1824",Australian Pelican,breeds Australia including Tasmania; winters to New Guinea region and central and eastern Indonesia,,LC,avibase-507E4975,Pelecanus conspicillatus,https://www.biodiversitylibrary.org/item/110039#page/647/mode/1up
+5803.0,order,Apodiformes,,,Apodiformes,,,,,,,,
+5822.0,family,Apodiformes,Apodidae,Swifts,Apodidae,,,,,,,,
+5987.0,genus,Apodiformes,Apodidae,Swifts,Apus,"Scopoli, GA, 1777",,,,,,Apus,https://www.biodiversitylibrary.org/item/42076#page/490/mode/1up
+6032.0,species,Apodiformes,Apodidae,Swifts,Apus apus,"(Linnaeus, C, 1758)",Common Swift,,,LC,avibase-4E6EF3F9,Hirundo Apus,https://www.biodiversitylibrary.org/item/10277#page/212/mode/1up
+6175.0,family,Apodiformes,Trochilidae,Hummingbirds,Trochilidae,,,,,,,,
+6780.0,genus,Apodiformes,Trochilidae,Hummingbirds,Archilochus,"Reichenbach, HGL, 1854",,,,,,Archilochus,https://www.biodiversitylibrary.org/item/49195#page/609/mode/1up
+6781.0,species,Apodiformes,Trochilidae,Hummingbirds,Archilochus colubris,"(Linnaeus, C, 1758)",Ruby-throated Hummingbird,breeds eastern Canada and USA; winters Mexico to Panama,,LC,avibase-DEC3D8D0,Trochilus Colubris,https://www.biodiversitylibrary.org/item/10277#page/138/mode/1up
+6794.0,genus,Apodiformes,Trochilidae,Hummingbirds,Selasphorus,"Swainson, WJ, 1832",,,,,,Selasphorus,https://www.biodiversitylibrary.org/item/87232#page/464/mode/1up
+6796.0,species,Apodiformes,Trochilidae,Hummingbirds,Selasphorus rufus,"(Gmelin, JF, 1788)",Rufous Hummingbird,breeds Alaska to northwestern USA; winters to southern Mexico,,NT,avibase-1E1B6D19,Trochilus rufus,https://www.biodiversitylibrary.org/item/10285#page/509/mode/1up
+7156.0,order,Strigiformes,,,Strigiformes,,,,,,,,
+7233.0,family,Strigiformes,Strigidae,Owls,Strigidae,,,,,,,,
+7653.0,genus,Strigiformes,Strigidae,Owls,Bubo,"Duméril, AMC, 1805",,,,,,Bubo,https://www.biodiversitylibrary.org/item/97389#page/74/mode/1up
+7654.0,species,Strigiformes,Strigidae,Owls,Bubo scandiacus,"(Linnaeus, C, 1758)",Snowy Owl,Arctic circumpolar; irregular southern post-breeding irruptions,,VU,avibase-5B23B360,Strix scandiaca,https://www.biodiversitylibrary.org/item/10277#page/110/mode/1up
+7920.0,order,Cathartiformes,,,Cathartiformes,,,,,,,,
+7921.0,family,Cathartiformes,Cathartidae,New World Vultures,Cathartidae,,,,,,,,
+7926.0,genus,Cathartiformes,Cathartidae,New World Vultures,Vultur,"Linnaeus, C, 1758",,,,,,Vultur,https://www.biodiversitylibrary.org/item/10277#page/101/mode/1up
+7927.0,species,Cathartiformes,Cathartidae,New World Vultures,Vultur gryphus,"Linnaeus, C, 1758",Andean Condor,Andes and coasts of Colombia to Tierra del Fuego,,VU,avibase-659E8F5C,Vultur Gryphus,https://www.biodiversitylibrary.org/item/10277#page/101/mode/1up
+7942.0,order,Accipitriformes,,,Accipitriformes,,,,,,,,
+7943.0,family,Accipitriformes,Sagittariidae,Secretarybird,Sagittariidae,,,,,,,,
+7944.0,genus,Accipitriformes,Sagittariidae,Secretarybird,Sagittarius,"Hermann, J, 1783",,,,,,Sagittarius,https://www.biodiversitylibrary.org/item/120418#page/156/mode/1up
+7945.0,species,Accipitriformes,Sagittariidae,Secretarybird,Sagittarius serpentarius,"(Miller, JF, 1779)",Secretarybird,savanna and grassland of sub-Saharan Africa,,EN,avibase-DCBCCEB8,Falco serpentarius,https://www.biodiversitylibrary.org/item/196473#page/73/mode/1up
+7946.0,family,Accipitriformes,Pandionidae,Osprey,Pandionidae,,,,,,,,
+7947.0,genus,Accipitriformes,Pandionidae,Osprey,Pandion,"de Savigny, MJCL, 1809",,,,,,Pandion,https://www.biodiversitylibrary.org/item/128879#page/81/mode/1up
+7948.0,species,Accipitriformes,Pandionidae,Osprey,Pandion haliaetus,"(Linnaeus, C, 1758)",Osprey,,,LC,avibase-1327AC55,Falco Haliaetus,https://www.biodiversitylibrary.org/item/10277#page/109/mode/1up
+7953.0,family,Accipitriformes,Accipitridae,"Kites, Old World Vultures, Eagles, and Hawks",Accipitridae,,,,,,,,
+8065.0,genus,Accipitriformes,Accipitridae,"Kites, Old World Vultures, Eagles, and Hawks",Gyps,"de Savigny, MJCL, 1809",,,,,,Gyps,https://www.biodiversitylibrary.org/item/128879#page/80/mode/1up
+8068.0,species,Accipitriformes,Accipitridae,"Kites, Old World Vultures, Eagles, and Hawks",Gyps africanus,"Salvadori, AT, 1865",White-backed Vulture,open plains and savanna of sub-Saharan Africa,,CR,avibase-0419DDC2,Gyps africanus,
+8177.0,genus,Accipitriformes,Accipitridae,"Kites, Old World Vultures, Eagles, and Hawks",Aquila,"Brisson, MJ, 1760",,,,,,Aquila,
+8186.0,species,Accipitriformes,Accipitridae,"Kites, Old World Vultures, Eagles, and Hawks",Aquila adalberti,"Brehm, CL, 1861",Spanish Imperial Eagle,locally in Iberian Peninsula; formerly Morocco,,VU,avibase-69742EE4,Aquila Adalberti,
+8189.0,species,Accipitriformes,Accipitridae,"Kites, Old World Vultures, Eagles, and Hawks",Aquila audax,"(Latham, J, 1801)",Wedge-tailed Eagle,,,LC,avibase-5E574D70,Vultur audax,https://www.biodiversitylibrary.org/item/313412#page/8/mode/1up
+8426.0,genus,Accipitriformes,Accipitridae,"Kites, Old World Vultures, Eagles, and Hawks",Circus,"de Lacépède, BGE, 1799",,,,,,Circus,
+8442.0,species,Accipitriformes,Accipitridae,"Kites, Old World Vultures, Eagles, and Hawks",Circus approximans,"Peale, TR, 1849",Swamp Harrier,"breeds Australia (except south-central), North, South, Stewart, and Chatham islands (New Zealand), Vanuatu, New Caledonia including Loyalty Islands, to Fiji and Tonga; non-breeders range to Trans-Fly (south-central New Guinea) and Kermadec Islands (northeast of New Zealand)",,LC,avibase-1ACF5A6E,Circus approximans,
+8462.0,genus,Accipitriformes,Accipitridae,"Kites, Old World Vultures, Eagles, and Hawks",Milvus,"de Lacépède, BGE, 1799",,,,,,Milvus,
+8463.0,species,Accipitriformes,Accipitridae,"Kites, Old World Vultures, Eagles, and Hawks",Milvus milvus,"(Linnaeus, C, 1758)",Red Kite,,,LC,avibase-451D6FC8,Falco Milvus,https://www.biodiversitylibrary.org/item/10277#page/106/mode/1up
+8474.0,genus,Accipitriformes,Accipitridae,"Kites, Old World Vultures, Eagles, and Hawks",Haliaeetus,"de Savigny, MJCL, 1809",,,,,,Haliaeetus,https://www.biodiversitylibrary.org/item/128879#page/80/mode/1up
+8480.0,species,Accipitriformes,Accipitridae,"Kites, Old World Vultures, Eagles, and Hawks",Haliaeetus leucocephalus,"(Linnaeus, C, 1766)",Bald Eagle,,,LC,avibase-FED3756C,Falco leucocephalus,https://www.biodiversitylibrary.org/item/137337#page/128/mode/1up
+8483.0,genus,Accipitriformes,Accipitridae,"Kites, Old World Vultures, Eagles, and Hawks",Icthyophaga,"Lesson, RP, 1843",,,,,,Icthyophaga,https://www.biodiversitylibrary.org/item/180983#page/17/mode/1up
+8484.0,species,Accipitriformes,Accipitridae,"Kites, Old World Vultures, Eagles, and Hawks",Icthyophaga vocifer,"(Daudin, FM, 1800)",African Fish Eagle,sub-Saharan Africa,,LC,avibase-A19B0CF4,Falco vocifer,https://www.biodiversitylibrary.org/item/122045#page/79/mode/1up
+8588.0,genus,Accipitriformes,Accipitridae,"Kites, Old World Vultures, Eagles, and Hawks",Buteo,"de Lacépède, BGE, 1799",,,,,,Buteo,
+8615.0,species,Accipitriformes,Accipitridae,"Kites, Old World Vultures, Eagles, and Hawks",Buteo swainsoni,"Bonaparte, CLJL, 1838",Swainson's Hawk,"western North America; winters to northern Argentina, southern Brazil, and Paraguay",,LC,avibase-DE473F42,Buteo Swainsoni,https://www.biodiversitylibrary.org/item/71558#page/15/mode/1up
+8617.0,species,Accipitriformes,Accipitridae,"Kites, Old World Vultures, Eagles, and Hawks",Buteo jamaicensis,"(Gmelin, JF, 1788)",Red-tailed Hawk,,,LC,avibase-536A5157,Falco jamaicensis,https://www.biodiversitylibrary.org/item/10285#page/278/mode/1up
+8858.0,order,Bucerotiformes,,,Bucerotiformes,,,,,,,,
+8859.0,family,Bucerotiformes,Upupidae,Hoopoes,Upupidae,,,,,,,,
+8860.0,genus,Bucerotiformes,Upupidae,Hoopoes,Upupa,"Linnaeus, C, 1758",,,,,,Upupa,https://www.biodiversitylibrary.org/item/10277#page/135/mode/1up
+8861.0,species,Bucerotiformes,Upupidae,Hoopoes,Upupa epops,"Linnaeus, C, 1758",Common Hoopoe,,,LC,avibase-FA2F9125,Upupa Epops,https://www.biodiversitylibrary.org/item/10277#page/135/mode/1up
+8907.0,family,Bucerotiformes,Bucerotidae,Hornbills,Bucerotidae,,,,,,,,
+8908.0,genus,Bucerotiformes,Bucerotidae,Hornbills,Bucorvus,"Lesson, RP, 1830",,,,,,Bucorvus,https://www.biodiversitylibrary.org/item/111050#page/294/mode/1up
+8910.0,species,Bucerotiformes,Bucerotidae,Hornbills,Bucorvus leadbeateri,"(Vigors, NA, 1825)",Southern Ground Hornbill,savanna of eastern and southern Africa,,VU,avibase-4192DE77,Buceros Leadbeateri,https://www.biodiversitylibrary.org/item/13693#page/485/mode/1up
+9017.0,order,Coraciiformes,,,Coraciiformes,,,,,,,,
+9028.0,family,Coraciiformes,Coraciidae,Rollers,Coraciidae,,,,,,,,
+9050.0,genus,Coraciiformes,Coraciidae,Rollers,Coracias,"Linnaeus, C, 1758",,,,,,Coracias,https://www.biodiversitylibrary.org/item/10277#page/125/mode/1up
+9061.0,species,Coraciiformes,Coraciidae,Rollers,Coracias caudatus,"Linnaeus, C, 1766",Lilac-breasted Roller,,,LC,avibase-9E9B6EF9,Coracias caudata,https://www.biodiversitylibrary.org/item/137337#page/164/mode/1up
+9068.0,family,Coraciiformes,Meropidae,Bee-eaters,Meropidae,,,,,,,,
+9076.0,genus,Coraciiformes,Meropidae,Bee-eaters,Merops,"Linnaeus, C, 1758",,,,,,Merops,https://www.biodiversitylibrary.org/item/10277#page/135/mode/1up
+9128.0,species,Coraciiformes,Meropidae,Bee-eaters,Merops apiaster,"Linnaeus, C, 1758",European Bee-eater,breeds southern Palearctic; winters to sub-Saharan Africa and western India,,LC,avibase-66AA3934,Merops Apiaster,https://www.biodiversitylibrary.org/item/10277#page/135/mode/1up
+9129.0,species,Coraciiformes,Meropidae,Bee-eaters,Merops ornatus,"Latham, J, 1801",Rainbow Bee-eater,"breeds in eastern New Guinea and Australia, including Rottnest Island (off southwestern Australia), and islands in Torres Strait; winters mainly north of breeding range in New Guinea region and westward to Wallacea",,LC,avibase-3EDF8B55,Merops ornatus,https://www.biodiversitylibrary.org/item/313412#page/41/mode/1up
+9205.0,family,Coraciiformes,Alcedinidae,Kingfishers,Alcedinidae,,,,,,,,
+9455.0,genus,Coraciiformes,Alcedinidae,Kingfishers,Dacelo,"Leach, WE, 1815",,,,,,Dacelo,
+9456.0,species,Coraciiformes,Alcedinidae,Kingfishers,Dacelo novaeguineae,"(Hermann, J, 1783)",Laughing Kookaburra,,,LC,avibase-94AF4A47,Alcedo novae Guineae,https://www.biodiversitylibrary.org/item/120418#page/212/mode/1up
+11087.0,order,Falconiformes,,,Falconiformes,,,,,,,,
+11088.0,family,Falconiformes,Falconidae,Falcons and Caracaras,Falconidae,,,,,,,,
+11149.0,genus,Falconiformes,Falconidae,Falcons and Caracaras,Falco,"Linnaeus, C, 1758",,,,,,Falco,https://www.biodiversitylibrary.org/item/10277#page/105/mode/1up
+11201.0,species,Falconiformes,Falconidae,Falcons and Caracaras,Falco amurensis,"Radde, GFR, 1863",Amur Falcon,breeds steppes of northeastern Asia; winters from Malawi to South Africa,,LC,avibase-E6137E65,Falco vespertinus var. amurensis,https://www.biodiversitylibrary.org/item/50507#page/116/mode/1up
+11233.0,species,Falconiformes,Falconidae,Falcons and Caracaras,Falco novaeseelandiae,"Gmelin, JF, 1788",New Zealand Falcon,"locally in New Zealand, including Stewart and Auckland islands",,LC,avibase-38FA4FF0,Falco novae-Seelandiae,https://www.biodiversitylibrary.org/item/10285#page/280/mode/1up
+11245.0,species,Falconiformes,Falconidae,Falcons and Caracaras,Falco peregrinus,"Tunstall, M, 1771",Peregrine Falcon,,,LC,avibase-47E58408,Falco Peregrinus,https://www.biodiversitylibrary.org/item/49445#page/11/mode/1up
+11278.0,order,Psittaciformes,,,Psittaciformes,,,,,,,,
+11279.0,family,Psittaciformes,Strigopidae,New Zealand Parrots,Strigopidae,,,,,,,,
+11280.0,genus,Psittaciformes,Strigopidae,New Zealand Parrots,Strigops,"Gray, GR, 1845",,,,,,Strigops,https://www.biodiversitylibrary.org/item/148321#page/269/mode/1up
+11281.0,species,Psittaciformes,Strigopidae,New Zealand Parrots,Strigops habroptilus,"Gray, GR, 1845",Kakapo,"now mostly Codfish Island (=Whenua Hou, west of Stewart Island); formerly North, South, and Stewart islands (New Zealand); extremely rare and intensively managed",,CR,avibase-16804FAF,Strigops habroptilus,https://www.biodiversitylibrary.org/item/219462#page/262/mode/1up
+11282.0,genus,Psittaciformes,Strigopidae,New Zealand Parrots,Nestor,"Lesson, RP, 1830",,,,,,Nestor,https://www.biodiversitylibrary.org/item/111050#page/228/mode/1up
+11283.0,species,Psittaciformes,Strigopidae,New Zealand Parrots,Nestor notabilis,"Gould, J, 1856",Kea,mountains of South Island (New Zealand),,EN,avibase-D2E2AE57,Nestor notabilis,https://www.biodiversitylibrary.org/item/46214#page/130/mode/1up
+11285.0,species,Psittaciformes,Strigopidae,New Zealand Parrots,Nestor meridionalis,"(Gmelin, JF, 1788)",New Zealand Kaka,,,VU,avibase-B6353CFD,Psittacus meridionalis,https://www.biodiversitylibrary.org/item/10285#page/345/mode/1up
+11288.0,family,Psittaciformes,Cacatuidae,Cockatoos,Cacatuidae,,,,,,,,
+11317.0,genus,Psittaciformes,Cacatuidae,Cockatoos,Eolophus,"Bonaparte, CLJL, 1854",,,,,,Eolophus,https://www.biodiversitylibrary.org/item/48620#page/165/mode/1up
+11318.0,species,Psittaciformes,Cacatuidae,Cockatoos,Eolophus roseicapilla,"(Vieillot, LJP, 1817)",Galah,,,LC,avibase-155F5285,Cacatua roseicapilla,https://www.biodiversitylibrary.org/item/60153#page/20/mode/1up
+11322.0,genus,Psittaciformes,Cacatuidae,Cockatoos,Cacatua,"Vieillot, LJP, 1817",,,,,,Cacatua,https://www.biodiversitylibrary.org/item/60153#page/14/mode/1up
+11350.0,species,Psittaciformes,Cacatuidae,Cockatoos,Cacatua galerita,"(Latham, J, 1790)",Sulphur-crested Cockatoo,,,LC,avibase-3F907C52,Psittacus galeritus,https://www.biodiversitylibrary.org/item/226470#page/131/mode/1up
+11789.0,family,Psittaciformes,Psittaculidae,Old World Parrots,Psittaculidae,,,,,,,,
+12009.0,genus,Psittaciformes,Psittaculidae,Old World Parrots,Neophema,"Salvadori, AT, 1891",,,,,,Neophema,https://www.biodiversitylibrary.org/item/34476#page/591/mode/1up
+12017.0,species,Psittaciformes,Psittaculidae,Old World Parrots,Neophema chrysogaster,"(Latham, J, 1790)",Orange-bellied Parrot,"breeds Melaleuca inlet, southwestern Tasmania; winters to coastal mainland Australia (southeastern South Australia to central Victoria); very rare",,CR,avibase-7FB356E8,Psittacus chrysogaster,https://www.biodiversitylibrary.org/item/226470#page/119/mode/1up
+12273.0,genus,Psittaciformes,Psittaculidae,Old World Parrots,Trichoglossus,"Stephens, JF, 1827",,,,,,Trichoglossus,https://www.biodiversitylibrary.org/item/75732#page/137/mode/1up
+12299.0,species,Psittaciformes,Psittaculidae,Old World Parrots,Trichoglossus haematodus,"(Linnaeus, C, 1771)",Coconut Lorikeet,,,LC,avibase-BA1FA66D,Psittacus haematod.,http://bibdigital.rjb.csic.es/ing/Libro.php?Libro=947
+12309.0,species,Psittaciformes,Psittaculidae,Old World Parrots,Trichoglossus moluccanus,"(Gmelin, JF, 1788)",Rainbow Lorikeet,,,LC,avibase-DF6532E2,Psittacus moluccanus,https://www.biodiversitylibrary.org/item/10285#page/328/mode/1up
+12324.0,order,Passeriformes,,,Passeriformes,,,,,,,,
+16501.0,family,Passeriformes,Menuridae,Lyrebirds,Menuridae,,,,,,,,
+16502.0,genus,Passeriformes,Menuridae,Lyrebirds,Menura,"Latham, J, 1801",,,,,,Menura,https://www.biodiversitylibrary.org/item/313412#page/67/mode/1up
+16504.0,species,Passeriformes,Menuridae,Lyrebirds,Menura novaehollandiae,"Latham, J, 1801",Superb Lyrebird,,,LC,avibase-952F5682,Menura novaehollandiae,https://www.biodiversitylibrary.org/item/313412#page/67/mode/1up
+16538.0,family,Passeriformes,Ptilonorhynchidae,Bowerbirds,Ptilonorhynchidae,,,,,,,,
+16544.0,genus,Passeriformes,Ptilonorhynchidae,Bowerbirds,Ptilonorhynchus,"Kuhl, H, 1820",,,,,,Ptilonorhynchus,
+16545.0,species,Passeriformes,Ptilonorhynchidae,Bowerbirds,Ptilonorhynchus violaceus,"(Vieillot, LJP, 1816)",Satin Bowerbird,,,LC,avibase-5CF4CE65,Pyrrhocorax violaceus,https://www.biodiversitylibrary.org/item/60102#page/595/mode/1up
+16595.0,family,Passeriformes,Maluridae,"Grasswrens, Fairywrens, and Emu-wrens",Maluridae,,,,,,,,
+16652.0,genus,Passeriformes,Maluridae,"Grasswrens, Fairywrens, and Emu-wrens",Malurus,"Vieillot, LJP, 1816",,,,,,Malurus,https://gallica.bnf.fr/ark:/12148/bpt6k9745205x/f50.item
+16674.0,species,Passeriformes,Maluridae,"Grasswrens, Fairywrens, and Emu-wrens",Malurus cyaneus,"(Ellis, WW, 1782)",Superb Fairywren,,,LC,avibase-DAC72D07,Motacilla cyanea,
+16959.0,family,Passeriformes,Meliphagidae,Honeyeaters,Meliphagidae,,,,,,,,
+17047.0,genus,Passeriformes,Meliphagidae,Honeyeaters,Prosthemadera,"Gray, GR, 1840",,,,,,Prosthemadera,https://www.biodiversitylibrary.org/item/48588#page/29/mode/1up
+17048.0,species,Passeriformes,Meliphagidae,Honeyeaters,Prosthemadera novaeseelandiae,"(Gmelin, JF, 1788)",Tui,,,LC,avibase-0A0D3BB9,Merops novaeSeelandiae,https://www.biodiversitylibrary.org/item/10285#page/476/mode/1up
+17051.0,genus,Passeriformes,Meliphagidae,Honeyeaters,Anthornis,"Gray, GR, 1840",,,,,,Anthornis,https://www.biodiversitylibrary.org/item/48588#page/29/mode/1up
+17053.0,species,Passeriformes,Meliphagidae,Honeyeaters,Anthornis melanura,"(Sparrman, A, 1786)",New Zealand Bellbird,,,LC,avibase-73A0AA07,Certhia melanura,https://www.biodiversitylibrary.org/item/128098#page/33/mode/1up
+17393.0,genus,Passeriformes,Meliphagidae,Honeyeaters,Anthochaera,"Vigors, NA; Horsfield, T, 1827",,,,,,Anthochaera,https://www.biodiversitylibrary.org/item/13694#page/329/mode/1up
+17399.0,species,Passeriformes,Meliphagidae,Honeyeaters,Anthochaera phrygia,"(Shaw, G, 1794)",Regent Honeyeater,southeastern Australia (mostly east-central New South Wales; formerly southeastern Queensland to southeastern South Australia),,CR,avibase-1C525B4A,Merops phrygius,https://www.biodiversitylibrary.org/item/126030#page/29/mode/1up
+17879.0,family,Passeriformes,Artamidae,"Woodswallows, Bellmagpies, and Allies",Artamidae,,,,,,,,
+17939.0,genus,Passeriformes,Artamidae,"Woodswallows, Bellmagpies, and Allies",Gymnorhina,"Gray, GR, 1840",,,,,,Gymnorhina,https://www.biodiversitylibrary.org/item/48588#page/51/mode/1up
+17940.0,species,Passeriformes,Artamidae,"Woodswallows, Bellmagpies, and Allies",Gymnorhina tibicen,"(Latham, J, 1801)",Australian Magpie,,,LC,avibase-3CE2F51F,C[oracias] tibicen,https://www.biodiversitylibrary.org/item/313412#page/23/mode/1up
+19038.0,family,Passeriformes,Rhipiduridae,Fantails and Silktails,Rhipiduridae,,,,,,,,
+19046.0,genus,Passeriformes,Rhipiduridae,Fantails and Silktails,Rhipidura,"Vigors, NA; Horsfield, T, 1827",,,,,,Rhipidura,https://www.biodiversitylibrary.org/item/13694#page/255/mode/1up
+19205.0,species,Passeriformes,Rhipiduridae,Fantails and Silktails,Rhipidura albiscapa,"Gould, J, 1840",Grey Fantail,,,LC,avibase-A98285EB,Rhipidura albiscapa,https://www.biodiversitylibrary.org/item/187062#page/341/mode/1up
+19215.0,species,Passeriformes,Rhipiduridae,Fantails and Silktails,Rhipidura fuliginosa,"(Sparrman, A, 1787)",New Zealand Fantail,,,LC,avibase-ACD8630F,Muscicapa fuliginosa,https://www.biodiversitylibrary.org/item/128101#page/99/mode/1up
+19917.0,family,Passeriformes,Corvidae,"Crows, Jays, and Magpies",Corvidae,,,,,,,,
+20044.0,genus,Passeriformes,Corvidae,"Crows, Jays, and Magpies",Cyanocitta,"Strickland, HE, 1845",,,,,,Cyanocitta,https://www.biodiversitylibrary.org/item/61866#page/274/mode/1up
+20045.0,species,Passeriformes,Corvidae,"Crows, Jays, and Magpies",Cyanocitta cristata,"(Linnaeus, C, 1758)",Blue Jay,,,LC,avibase-1DA430B8,Corvus cristatus,https://www.biodiversitylibrary.org/item/10277#page/124/mode/1up
+20682.0,family,Passeriformes,Paridae,"Tits, Chickadees, and Titmice",Paridae,,,,,,,,
+20698.0,genus,Passeriformes,Paridae,"Tits, Chickadees, and Titmice",Cyanistes,"Kaup, JJ, 1829",,,,,,Cyanistes,
+20716.0,species,Passeriformes,Paridae,"Tits, Chickadees, and Titmice",Cyanistes caeruleus,"(Linnaeus, C, 1758)",Eurasian Blue Tit,,,LC,avibase-9BE53D34,Parus caeruleus,https://www.biodiversitylibrary.org/item/10277#page/210/mode/1up
+20728.0,genus,Passeriformes,Paridae,"Tits, Chickadees, and Titmice",Parus,"Linnaeus, C, 1758",,,,,,Parus,https://www.biodiversitylibrary.org/item/10277#page/209/mode/1up
+20734.0,species,Passeriformes,Paridae,"Tits, Chickadees, and Titmice",Parus major,"Linnaeus, C, 1758",Great Tit,,,NE,avibase-E15BC0CB,Parus major,https://www.biodiversitylibrary.org/item/10277#page/209/mode/1up
+22575.0,family,Passeriformes,Hirundinidae,Swallows,Hirundinidae,,,,,,,,
+22733.0,genus,Passeriformes,Hirundinidae,Swallows,Hirundo,"Linnaeus, C, 1758",,,,,,Hirundo,https://www.biodiversitylibrary.org/item/10277#page/211/mode/1up
+22741.0,species,Passeriformes,Hirundinidae,Swallows,Hirundo neoxena,"Gould, J, 1842",Welcome Swallow,,,LC,avibase-F8F6B795,Hirundo neoxena,https://www.biodiversitylibrary.org/item/96442#page/283/mode/1up
+22758.0,species,Passeriformes,Hirundinidae,Swallows,Hirundo rustica,"Linnaeus, C, 1758",Barn Swallow,,,LC,avibase-58C502EA,Hirundo rustica,https://www.biodiversitylibrary.org/item/10277#page/211/mode/1up
+23062.0,family,Passeriformes,Phylloscopidae,Leaf Warblers,Phylloscopidae,,,,,,,,
+23063.0,genus,Passeriformes,Phylloscopidae,Leaf Warblers,Phylloscopus,"Boie, F, 1826",,,,,,Phylloscopus,https://www.biodiversitylibrary.org/item/87985#page/534/mode/1up
+23105.0,species,Passeriformes,Phylloscopidae,Leaf Warblers,Phylloscopus trochilus,"(Linnaeus, C, 1758)",Willow Warbler,,,LC,avibase-88F4B969,Motacilla Trochilus,https://www.biodiversitylibrary.org/item/10277#page/208/mode/1up
+23971.0,family,Passeriformes,Zosteropidae,"White-eyes, Yuhinas, and Allies",Zosteropidae,,,,,,,,
+24067.0,genus,Passeriformes,Zosteropidae,"White-eyes, Yuhinas, and Allies",Zosterops,"Vigors, NA; Horsfield, T, 1827",,,,,,Zosterops,https://www.biodiversitylibrary.org/item/13694#page/243/mode/1up
+24097.0,species,Passeriformes,Zosteropidae,"White-eyes, Yuhinas, and Allies",Zosterops japonicus,"Temminck, CJ; Schlegel, H, 1845",Warbling White-eye,,,LC,avibase-D0E2DCAD,Zosterops japonicus,https://www.biodiversitylibrary.org/item/223586#page/67/mode/1up
+24225.0,species,Passeriformes,Zosteropidae,"White-eyes, Yuhinas, and Allies",Zosterops lateralis,"(Latham, J, 1801)",Silvereye,,,LC,avibase-EA151AD8,Sylvia lateralis,https://www.biodiversitylibrary.org/item/313412#page/61/mode/1up
+26183.0,family,Passeriformes,Sturnidae,"Rhabdornis, Starlings, and Mynas",Sturnidae,,,,,,,,
+26319.0,genus,Passeriformes,Sturnidae,"Rhabdornis, Starlings, and Mynas",Sturnus,"Linnaeus, C, 1758",,,,,,Sturnus,https://www.biodiversitylibrary.org/item/10277#page/186/mode/1up
+26321.0,species,Passeriformes,Sturnidae,"Rhabdornis, Starlings, and Mynas",Sturnus vulgaris,"Linnaeus, C, 1758",Common Starling,,,LC,avibase-94A44032,Sturnus vulgaris,https://www.biodiversitylibrary.org/item/10277#page/186/mode/1up
+26453.0,genus,Passeriformes,Sturnidae,"Rhabdornis, Starlings, and Mynas",Lamprotornis,"Temminck, CJ, 1820",,,,,,Lamprotornis,
+26494.0,species,Passeriformes,Sturnidae,"Rhabdornis, Starlings, and Mynas",Lamprotornis superbus,"Rüppell, WPES, 1845",Superb Starling,"southeastern South Sudan, Ethiopia, Somalia, northern Uganda, Kenya, and Tanzania",,LC,avibase-405CCAAE,Lamprotornis superbus,https://www.biodiversitylibrary.org/item/111053#page/79/mode/1up
+26531.0,family,Passeriformes,Turdidae,Thrushes and Allies,Turdidae,,,,,,,,
+26801.0,genus,Passeriformes,Turdidae,Thrushes and Allies,Turdus,"Linnaeus, C, 1758",,,,,,Turdus,https://www.biodiversitylibrary.org/item/10277#page/187/mode/1up
+26869.0,species,Passeriformes,Turdidae,Thrushes and Allies,Turdus merula,"Linnaeus, C, 1758",Common Blackbird,,,LC,avibase-88BB4F2A,Turdus Merula,https://www.biodiversitylibrary.org/item/10277#page/189/mode/1up
+26982.0,species,Passeriformes,Turdidae,Thrushes and Allies,Turdus migratorius,"Linnaeus, C, 1766",American Robin,,,NE,avibase-D77E4B41,[Turdus] migratorius,https://www.biodiversitylibrary.org/item/137337#page/296/mode/1up
+27122.0,family,Passeriformes,Muscicapidae,"Chats, Old World Flycatchers, and Allies",Muscicapidae,,,,,,,,
+27513.0,genus,Passeriformes,Muscicapidae,"Chats, Old World Flycatchers, and Allies",Erithacus,"Cuvier, GLCFD, 1800",,,,,,Erithacus,
+27514.0,species,Passeriformes,Muscicapidae,"Chats, Old World Flycatchers, and Allies",Erithacus rubecula,"(Linnaeus, C, 1758)",European Robin,,,LC,avibase-C809B2B9,Motacilla Rubecula,https://www.biodiversitylibrary.org/item/10277#page/208/mode/1up
+27792.0,genus,Passeriformes,Muscicapidae,"Chats, Old World Flycatchers, and Allies",Ficedula,"Brisson, MJ, 1760",,,,,,Ficedula,
+27849.0,species,Passeriformes,Muscicapidae,"Chats, Old World Flycatchers, and Allies",Ficedula hypoleuca,"(Pallas, PS, 1764)",European Pied Flycatcher,,,NE,avibase-6E352E18,Motacilla hypoleuca,
+28151.0,family,Passeriformes,Promeropidae,Sugarbirds,Promeropidae,,,,,,,,
+28152.0,genus,Passeriformes,Promeropidae,Sugarbirds,Promerops,"Brisson, MJ, 1760",,,,,,Promerops,
+28153.0,species,Passeriformes,Promeropidae,Sugarbirds,Promerops cafer,"(Linnaeus, C, 1758)",Cape Sugarbird,South Africa (mountains of Cape Province),,LC,avibase-AEE09552,Merops cafer,https://www.biodiversitylibrary.org/item/10277#page/135/mode/1up
+28343.0,family,Passeriformes,Nectariniidae,Spiderhunters and Sunbirds,Nectariniidae,,,,,,,,
+28631.0,genus,Passeriformes,Nectariniidae,Spiderhunters and Sunbirds,Nectarinia,"Illiger, JKW, 1811",,,,,,Nectarinia,https://www.biodiversitylibrary.org/item/92917#page/234/mode/1up
+28641.0,species,Passeriformes,Nectariniidae,Spiderhunters and Sunbirds,Nectarinia famosa,"(Linnaeus, C, 1766)",Malachite Sunbird,,,LC,avibase-26F27894,Certhia famosa,https://www.biodiversitylibrary.org/item/137337#page/191/mode/1up
+28889.0,family,Passeriformes,Ploceidae,Weavers and Allies,Ploceidae,,,,,,,,
+28937.0,genus,Passeriformes,Ploceidae,Weavers and Allies,Ploceus,"Cuvier, GLCFD, 1816",,,,,,Ploceus,
+28971.0,species,Passeriformes,Ploceidae,Weavers and Allies,Ploceus capensis,"(Linnaeus, C, 1766)",Cape Weaver,South Africa,,LC,avibase-9526D2F3,Oriolus capensis,https://www.biodiversitylibrary.org/item/137337#page/167/mode/1up
+29689.0,family,Passeriformes,Passeridae,Snowfinches and Old World Sparrows,Passeridae,,,,,,,,
+29743.0,genus,Passeriformes,Passeridae,Snowfinches and Old World Sparrows,Passer,"Brisson, MJ, 1760",,,,,,Passer,
+29772.0,species,Passeriformes,Passeridae,Snowfinches and Old World Sparrows,Passer montanus,"(Linnaeus, C, 1758)",Eurasian Tree Sparrow,,,LC,avibase-C22FBF8D,Fringilla montana,https://www.biodiversitylibrary.org/item/10277#page/202/mode/1up
+29807.0,species,Passeriformes,Passeridae,Snowfinches and Old World Sparrows,Passer domesticus,"(Linnaeus, C, 1758)",House Sparrow,,,LC,avibase-240E3390,Fringilla domestica,https://www.biodiversitylibrary.org/item/10277#page/202/mode/1up
+31521.0,family,Passeriformes,Icteridae,"New World Blackbirds, Troupials, and Allies",Icteridae,,,,,,,,
+31528.0,genus,Passeriformes,Icteridae,"New World Blackbirds, Troupials, and Allies",Dolichonyx,"Swainson, WJ, 1827",,,,,,Dolichonyx,https://www.biodiversitylibrary.org/item/53108#page/451/mode/1up
+31529.0,species,Passeriformes,Icteridae,"New World Blackbirds, Troupials, and Allies",Dolichonyx oryzivorus,"(Linnaeus, C, 1758)",Bobolink,breeds grassland and meadows of North America; winters to southern South America,,LC,avibase-F845062F,Fringilla oryzivora,https://www.biodiversitylibrary.org/item/10277#page/198/mode/1up
+32245.0,family,Passeriformes,Cardinalidae,Cardinals and Allies,Cardinalidae,,,,,,,,
+32366.0,genus,Passeriformes,Cardinalidae,Cardinals and Allies,Cardinalis,"Bonaparte, CLJL, 1838",,,,,,Cardinalis,https://www.biodiversitylibrary.org/item/96163#page/283/mode/1up
+32368.0,species,Passeriformes,Cardinalidae,Cardinals and Allies,Cardinalis cardinalis,"(Linnaeus, C, 1758)",Northern Cardinal,,,LC,avibase-4E74AE22,Loxia cardinalis,https://www.biodiversitylibrary.org/item/10277#page/191/mode/1up

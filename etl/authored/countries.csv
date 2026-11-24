@@ -1,0 +1,14 @@
+iso2,name,m49,subregion,subregion_name,region,region_name,hemisphere,mi_name
+NZ,New Zealand,554,053,Australia and New Zealand,009,Oceania,south,Aotearoa
+AU,Australia,036,053,Australia and New Zealand,009,Oceania,south,Ahitereiria
+KR,Republic of Korea,410,030,Eastern Asia,142,Asia,north,
+JP,Japan,392,030,Eastern Asia,142,Asia,north,
+CN,China,156,030,Eastern Asia,142,Asia,north,
+US,United States of America,840,021,Northern America,019,Americas,north,
+CA,Canada,124,021,Northern America,019,Americas,north,
+GB,United Kingdom,826,154,Northern Europe,150,Europe,north,
+ES,Spain,724,039,Southern Europe,150,Europe,north,
+ZA,South Africa,710,018,Southern Africa,002,Africa,south,
+KE,Kenya,404,014,Eastern Africa,002,Africa,equatorial,
+CL,Chile,152,005,South America,019,Americas,south,
+AR,Argentina,032,005,South America,019,Americas,south,
