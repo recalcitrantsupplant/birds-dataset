@@ -1,0 +1,28 @@
+PREFIX bird: <https://example.org/birds/def/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX id: <https://example.org/birds/id/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT {
+  ?site a bird:Site, geo:Feature ;
+    rdfs:label ?name ;
+    dcterms:description ?description ;
+    bird:country ?country ;
+    bird:siteType ?type ;
+    bird:latitude ?latitude ;
+    bird:longitude ?longitude ;
+    geo:hasGeometry ?geometry .
+  ?geometry a geo:Geometry ;
+    geo:asWKT ?wkt ;
+    rdfs:comment "An approximate rectangle around the site."@en .
+}
+WHERE {
+  VALUES (?siteKey ?name ?description ?countryKey ?siteType ?latitude ?longitude ?wkt) {
+    (UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF)
+  }
+  BIND(IRI(CONCAT(STR(id:), "site/", ?siteKey)) AS ?site)
+  BIND(IRI(CONCAT(STR(?site), "/geometry")) AS ?geometry)
+  BIND(IRI(CONCAT("https://example.org/birds/vocab/region/", ?countryKey)) AS ?country)
+  BIND(IRI(CONCAT("https://example.org/birds/vocab/site-type/", ?siteType)) AS ?type)
+}

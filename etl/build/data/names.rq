@@ -1,0 +1,28 @@
+PREFIX bird: <https://example.org/birds/def/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX id: <https://example.org/birds/id/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT {
+  ?nameNode a bird:Name ;
+    bird:nameString ?name ;
+    rdfs:label ?name .
+  ?changeNode a bird:NameChange ;
+    bird:fromName ?from ;
+    bird:toName ?to ;
+    bird:changeType ?type ;
+    bird:changeRegion ?country ;
+    dcterms:source ?checklist ;
+    rdfs:comment ?note .
+}
+WHERE {
+  VALUES (?nameKey ?name ?change ?fromKey ?toKey ?changeType ?countryKey ?checklist ?note) {
+    (UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF)
+  }
+  BIND(IRI(CONCAT(STR(id:), "name/", ?nameKey)) AS ?nameNode)
+  BIND(IRI(CONCAT(STR(id:), "name-change/", ?change)) AS ?changeNode)
+  BIND(IRI(CONCAT(STR(id:), "name/", ?fromKey)) AS ?from)
+  BIND(IRI(CONCAT(STR(id:), "name/", ?toKey)) AS ?to)
+  BIND(IRI(CONCAT("https://example.org/birds/vocab/name-change/", ?changeType)) AS ?type)
+  BIND(IRI(CONCAT("https://example.org/birds/vocab/region/", ?countryKey)) AS ?country)
+}

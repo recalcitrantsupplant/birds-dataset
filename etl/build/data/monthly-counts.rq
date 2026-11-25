@@ -1,0 +1,19 @@
+PREFIX bird: <https://example.org/birds/def/>
+PREFIX id: <https://example.org/birds/id/>
+PREFIX region: <https://example.org/birds/vocab/region/>
+PREFIX taxon: <https://example.org/birds/vocab/taxon/>
+
+CONSTRUCT {
+  ?count a bird:MonthlyCount ;
+    bird:species ?species ;
+    bird:country ?country ;
+    bird:month ?month ;
+    bird:recordCount ?recordCount .
+  ?species bird:recordedIn ?country .
+}
+WHERE {
+  VALUES (?speciesKey ?countryKey ?month ?recordCount) { (UNDEF UNDEF UNDEF UNDEF) }
+  BIND(IRI(CONCAT(STR(id:), "monthly-count/", ?speciesKey, "/", ?countryKey, "/", STR(?month))) AS ?count)
+  BIND(IRI(CONCAT(STR(taxon:), ?speciesKey)) AS ?species)
+  BIND(IRI(CONCAT(STR(region:), ?countryKey)) AS ?country)
+}

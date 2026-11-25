@@ -1,0 +1,12 @@
+{
+  "description": "The AVONET trophic niche, habitat and lifestyle of each species, read straight from the source. The rule set Trait inheritance must infer the same values from data/species.ttl.",
+  "sqlFile": "trait-inheritance-species.sql",
+  "templateFile": "trait-inheritance-species.rq",
+  "chunkSize": 100000,
+  "columns": [
+    { "columnName": "speciesKey", "termType": "literal" },
+    { "columnName": "trophicNiche", "termType": "literal" },
+    { "columnName": "habitat", "termType": "literal" },
+    { "columnName": "lifestyle", "termType": "literal" }
+  ]
+}

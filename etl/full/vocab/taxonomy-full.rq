@@ -1,0 +1,26 @@
+PREFIX bird: <https://example.org/birds/def/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX taxon: <https://example.org/birds/vocab/taxon/>
+
+CONSTRUCT {
+  <https://example.org/birds/vocab/taxon> skos:hasTopConcept ?top .
+  ?top skos:topConceptOf <https://example.org/birds/vocab/taxon> .
+  ?c a skos:Concept, ?class ;
+    skos:inScheme <https://example.org/birds/vocab/taxon> ;
+    skos:notation ?notation ;
+    skos:prefLabel ?englishName, ?scientificLabel ;
+    skos:altLabel ?scientificAltLabel, ?familyName ;
+    skos:broader ?parent ;
+    bird:rank ?rankConcept ;
+    bird:scientificName ?scientificName .
+}
+WHERE {
+  VALUES (?rank ?className ?key ?parentKey ?topKey ?notation ?scientificName ?englishName ?scientificAltLabel ?scientificLabel ?familyName) {
+    (UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF)
+  }
+  BIND(IRI(CONCAT(STR(taxon:), ?key)) AS ?c)
+  BIND(IRI(CONCAT(STR(taxon:), ?parentKey)) AS ?parent)
+  BIND(IRI(CONCAT(STR(taxon:), ?topKey)) AS ?top)
+  BIND(IRI(CONCAT(STR(bird:), ?className)) AS ?class)
+  BIND(IRI(CONCAT("https://example.org/birds/vocab/rank/", ?rank)) AS ?rankConcept)
+}

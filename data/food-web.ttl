@@ -1,222 +1,91 @@
-@prefix bird: <https://example.org/birds/def/> .
-
-<https://example.org/birds/vocab/taxon/anarhynchus-bicinctus> bird:eats <https://example.org/birds/vocab/food/crustaceans>,
-        <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/anarhynchus-frontalis> bird:eats <https://example.org/birds/vocab/food/insects>,
-        <https://example.org/birds/vocab/food/marine-worms> .
-
-<https://example.org/birds/vocab/taxon/anthochaera-phrygia> bird:eats <https://example.org/birds/vocab/food/nectar> .
-
-<https://example.org/birds/vocab/taxon/anthornis-melanura> bird:eats <https://example.org/birds/vocab/food/insects>,
-        <https://example.org/birds/vocab/food/nectar> .
-
-<https://example.org/birds/vocab/taxon/antigone-canadensis> bird:eats <https://example.org/birds/vocab/food/seeds> .
-
-<https://example.org/birds/vocab/taxon/apteryx-mantelli> bird:eats <https://example.org/birds/vocab/food/earthworms>,
-        <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/apus-apus> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/aquila-adalberti> bird:eats <https://example.org/birds/vocab/food/small-mammals> .
-
-<https://example.org/birds/vocab/taxon/aquila-audax> bird:eats <https://example.org/birds/vocab/food/carrion>,
-        <https://example.org/birds/vocab/food/small-mammals>,
-        <https://example.org/birds/vocab/taxon/eolophus-roseicapilla> .
-
-<https://example.org/birds/vocab/taxon/archilochus-colubris> bird:eats <https://example.org/birds/vocab/food/nectar> .
-
-<https://example.org/birds/vocab/taxon/ardenna-grisea> bird:eats <https://example.org/birds/vocab/food/crustaceans>,
-        <https://example.org/birds/vocab/food/fish> .
-
-<https://example.org/birds/vocab/taxon/ardenna-tenuirostris> bird:eats <https://example.org/birds/vocab/food/crustaceans> .
-
-<https://example.org/birds/vocab/taxon/balearica-regulorum> bird:eats <https://example.org/birds/vocab/food/seeds> .
-
-<https://example.org/birds/vocab/taxon/bubo-scandiacus> bird:eats <https://example.org/birds/vocab/food/small-mammals> .
-
-<https://example.org/birds/vocab/taxon/bucorvus-leadbeateri> bird:eats <https://example.org/birds/vocab/food/amphibians>,
-        <https://example.org/birds/vocab/food/insects>,
-        <https://example.org/birds/vocab/food/reptiles> .
-
-<https://example.org/birds/vocab/taxon/buteo-jamaicensis> bird:eats <https://example.org/birds/vocab/food/small-mammals> .
-
-<https://example.org/birds/vocab/taxon/buteo-swainsoni> bird:eats <https://example.org/birds/vocab/food/insects>,
-        <https://example.org/birds/vocab/food/small-mammals> .
-
-<https://example.org/birds/vocab/taxon/cacatua-galerita> bird:eats <https://example.org/birds/vocab/food/seeds> .
-
-<https://example.org/birds/vocab/taxon/calidris-acuminata> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/calidris-pygmaea> bird:eats <https://example.org/birds/vocab/food/marine-worms> .
-
-<https://example.org/birds/vocab/taxon/calidris-ruficollis> bird:eats <https://example.org/birds/vocab/food/marine-worms> .
-
-<https://example.org/birds/vocab/taxon/calidris-tenuirostris> bird:eats <https://example.org/birds/vocab/food/molluscs> .
-
-<https://example.org/birds/vocab/taxon/chalcites-lucidus> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/ciconia-boyciana> bird:eats <https://example.org/birds/vocab/food/fish> .
-
-<https://example.org/birds/vocab/taxon/ciconia-ciconia> bird:eats <https://example.org/birds/vocab/food/amphibians>,
-        <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/circus-approximans> bird:eats <https://example.org/birds/vocab/food/carrion>,
-        <https://example.org/birds/vocab/food/small-mammals>,
-        <https://example.org/birds/vocab/taxon/tadorna-variegata> .
-
-<https://example.org/birds/vocab/taxon/coracias-caudatus> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/cuculus-canorus> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/cyanistes-caeruleus> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/diomedea-epomophora> bird:eats <https://example.org/birds/vocab/food/fish> .
-
-<https://example.org/birds/vocab/taxon/dromaius-novaehollandiae> bird:eats <https://example.org/birds/vocab/food/fruit>,
-        <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/erithacus-rubecula> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/falco-amurensis> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/falco-novaeseelandiae> bird:eats <https://example.org/birds/vocab/taxon/prosthemadera-novaeseelandiae>,
-        <https://example.org/birds/vocab/taxon/turdus-merula>,
-        <https://example.org/birds/vocab/taxon/zosterops-lateralis> .
-
-<https://example.org/birds/vocab/taxon/falco-peregrinus> bird:eats <https://example.org/birds/vocab/taxon/arenaria-interpres>,
-        <https://example.org/birds/vocab/taxon/calidris-canutus>,
-        <https://example.org/birds/vocab/taxon/hemiphaga-novaeseelandiae>,
-        <https://example.org/birds/vocab/taxon/sturnus-vulgaris> .
-
-<https://example.org/birds/vocab/taxon/fratercula-arctica> bird:eats <https://example.org/birds/vocab/food/fish> .
-
-<https://example.org/birds/vocab/taxon/grus-japonensis> bird:eats <https://example.org/birds/vocab/food/fish> .
-
-<https://example.org/birds/vocab/taxon/gyps-africanus> bird:eats <https://example.org/birds/vocab/food/carrion> .
-
-<https://example.org/birds/vocab/taxon/haematopus-finschi> bird:eats <https://example.org/birds/vocab/food/earthworms>,
-        <https://example.org/birds/vocab/food/molluscs> .
-
-<https://example.org/birds/vocab/taxon/haliaeetus-leucocephalus> bird:eats <https://example.org/birds/vocab/food/carrion>,
-        <https://example.org/birds/vocab/food/fish>,
-        <https://example.org/birds/vocab/taxon/aix-galericulata> .
-
-<https://example.org/birds/vocab/taxon/himantopus-himantopus> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/himantopus-leucocephalus> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/himantopus-novaezelandiae> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/hirundo-neoxena> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/hirundo-rustica> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/icthyophaga-vocifer> bird:eats <https://example.org/birds/vocab/food/fish>,
-        <https://example.org/birds/vocab/taxon/phoeniconaias-minor> .
-
-<https://example.org/birds/vocab/taxon/limosa-lapponica> bird:eats <https://example.org/birds/vocab/food/marine-worms>,
-        <https://example.org/birds/vocab/food/molluscs> .
-
-<https://example.org/birds/vocab/taxon/malurus-cyaneus> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/megadyptes-antipodes> bird:eats <https://example.org/birds/vocab/food/fish> .
-
-<https://example.org/birds/vocab/taxon/menura-novaehollandiae> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/merops-apiaster> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/merops-ornatus> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/milvus-milvus> bird:eats <https://example.org/birds/vocab/food/carrion>,
-        <https://example.org/birds/vocab/food/small-mammals> .
-
-<https://example.org/birds/vocab/taxon/nectarinia-famosa> bird:eats <https://example.org/birds/vocab/food/nectar> .
-
-<https://example.org/birds/vocab/taxon/neophema-chrysogaster> bird:eats <https://example.org/birds/vocab/food/seeds> .
-
-<https://example.org/birds/vocab/taxon/nestor-meridionalis> bird:eats <https://example.org/birds/vocab/food/fruit>,
-        <https://example.org/birds/vocab/food/insects>,
-        <https://example.org/birds/vocab/food/nectar> .
-
-<https://example.org/birds/vocab/taxon/nestor-notabilis> bird:eats <https://example.org/birds/vocab/food/carrion>,
-        <https://example.org/birds/vocab/food/fruit>,
-        <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/numenius-madagascariensis> bird:eats <https://example.org/birds/vocab/food/crustaceans> .
-
-<https://example.org/birds/vocab/taxon/pandion-haliaetus> bird:eats <https://example.org/birds/vocab/food/fish> .
-
-<https://example.org/birds/vocab/taxon/parus-major> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/pelecanus-conspicillatus> bird:eats <https://example.org/birds/vocab/food/fish> .
-
-<https://example.org/birds/vocab/taxon/phoenicopterus-chilensis> bird:eats <https://example.org/birds/vocab/food/crustaceans> .
-
-<https://example.org/birds/vocab/taxon/phoenicopterus-roseus> bird:eats <https://example.org/birds/vocab/food/crustaceans> .
-
-<https://example.org/birds/vocab/taxon/platalea-minor> bird:eats <https://example.org/birds/vocab/food/fish> .
-
-<https://example.org/birds/vocab/taxon/porphyrio-hochstetteri> bird:eats <https://example.org/birds/vocab/food/leaves> .
-
-<https://example.org/birds/vocab/taxon/promerops-cafer> bird:eats <https://example.org/birds/vocab/food/nectar> .
-
-<https://example.org/birds/vocab/taxon/ptilonorhynchus-violaceus> bird:eats <https://example.org/birds/vocab/food/fruit> .
-
-<https://example.org/birds/vocab/taxon/rhipidura-albiscapa> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/rhipidura-fuliginosa> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/sagittarius-serpentarius> bird:eats <https://example.org/birds/vocab/food/reptiles>,
-        <https://example.org/birds/vocab/food/small-mammals> .
-
-<https://example.org/birds/vocab/taxon/selasphorus-rufus> bird:eats <https://example.org/birds/vocab/food/nectar> .
-
-<https://example.org/birds/vocab/taxon/spheniscus-demersus> bird:eats <https://example.org/birds/vocab/food/fish> .
-
-<https://example.org/birds/vocab/taxon/spheniscus-magellanicus> bird:eats <https://example.org/birds/vocab/food/fish> .
-
-<https://example.org/birds/vocab/taxon/sterna-paradisaea> bird:eats <https://example.org/birds/vocab/food/fish> .
-
-<https://example.org/birds/vocab/taxon/strigops-habroptilus> bird:eats <https://example.org/birds/vocab/food/fruit>,
-        <https://example.org/birds/vocab/food/leaves> .
-
-<https://example.org/birds/vocab/taxon/struthio-camelus> bird:eats <https://example.org/birds/vocab/food/leaves> .
-
-<https://example.org/birds/vocab/taxon/trichoglossus-moluccanus> bird:eats <https://example.org/birds/vocab/food/nectar> .
-
-<https://example.org/birds/vocab/taxon/turdus-migratorius> bird:eats <https://example.org/birds/vocab/food/earthworms> .
-
-<https://example.org/birds/vocab/taxon/upupa-epops> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/urodynamis-taitensis> bird:eats <https://example.org/birds/vocab/food/insects>,
-        <https://example.org/birds/vocab/taxon/zosterops-lateralis> .
-
-<https://example.org/birds/vocab/taxon/vanellus-miles> bird:eats <https://example.org/birds/vocab/food/insects> .
-
-<https://example.org/birds/vocab/taxon/vultur-gryphus> bird:eats <https://example.org/birds/vocab/food/carrion> .
-
-<https://example.org/birds/vocab/taxon/arenaria-interpres> bird:eats <https://example.org/birds/vocab/food/crustaceans>,
-        <https://example.org/birds/vocab/food/horseshoe-crab-eggs> .
-
-<https://example.org/birds/vocab/taxon/calidris-canutus> bird:eats <https://example.org/birds/vocab/food/horseshoe-crab-eggs>,
-        <https://example.org/birds/vocab/food/molluscs> .
-
-<https://example.org/birds/vocab/taxon/dacelo-novaeguineae> bird:eats <https://example.org/birds/vocab/food/insects>,
-        <https://example.org/birds/vocab/food/reptiles>,
-        <https://example.org/birds/vocab/taxon/gymnorhina-tibicen> .
-
-<https://example.org/birds/vocab/taxon/eolophus-roseicapilla> bird:eats <https://example.org/birds/vocab/food/seeds> .
-
-<https://example.org/birds/vocab/taxon/gymnorhina-tibicen> bird:eats <https://example.org/birds/vocab/food/insects>,
-        <https://example.org/birds/vocab/taxon/dacelo-novaeguineae> .
-
-<https://example.org/birds/vocab/taxon/hemiphaga-novaeseelandiae> bird:eats <https://example.org/birds/vocab/food/fruit> .
-
-<https://example.org/birds/vocab/taxon/phoeniconaias-minor> bird:eats <https://example.org/birds/vocab/food/algae> .
-
-<https://example.org/birds/vocab/taxon/prosthemadera-novaeseelandiae> bird:eats <https://example.org/birds/vocab/food/fruit>,
-        <https://example.org/birds/vocab/food/nectar> .
-
-<https://example.org/birds/vocab/taxon/turdus-merula> bird:eats <https://example.org/birds/vocab/food/earthworms> .
-
+<https://example.org/birds/vocab/taxon/anarhynchus-frontalis> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> , <https://example.org/birds/vocab/food/marine-worms> .
+<https://example.org/birds/vocab/taxon/anarhynchus-bicinctus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> , <https://example.org/birds/vocab/food/crustaceans> .
+<https://example.org/birds/vocab/taxon/nestor-notabilis> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/fruit> , <https://example.org/birds/vocab/food/insects> , <https://example.org/birds/vocab/food/carrion> .
+<https://example.org/birds/vocab/taxon/nestor-meridionalis> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/fruit> , <https://example.org/birds/vocab/food/nectar> , <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/strigops-habroptilus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/fruit> , <https://example.org/birds/vocab/food/leaves> .
+<https://example.org/birds/vocab/taxon/porphyrio-hochstetteri> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/leaves> .
+<https://example.org/birds/vocab/taxon/apteryx-mantelli> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/earthworms> , <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/prosthemadera-novaeseelandiae> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/nectar> , <https://example.org/birds/vocab/food/fruit> .
+<https://example.org/birds/vocab/taxon/anthornis-melanura> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/nectar> , <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/rhipidura-fuliginosa> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/rhipidura-albiscapa> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/hemiphaga-novaeseelandiae> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/fruit> .
+<https://example.org/birds/vocab/taxon/chalcites-lucidus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/urodynamis-taitensis> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> , <https://example.org/birds/vocab/taxon/zosterops-lateralis> .
+<https://example.org/birds/vocab/taxon/falco-novaeseelandiae> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/taxon/zosterops-lateralis> , <https://example.org/birds/vocab/taxon/prosthemadera-novaeseelandiae> , <https://example.org/birds/vocab/taxon/turdus-merula> .
+<https://example.org/birds/vocab/taxon/circus-approximans> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/small-mammals> , <https://example.org/birds/vocab/food/carrion> , <https://example.org/birds/vocab/taxon/tadorna-variegata> .
+<https://example.org/birds/vocab/taxon/megadyptes-antipodes> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/fish> .
+<https://example.org/birds/vocab/taxon/diomedea-epomophora> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/fish> .
+<https://example.org/birds/vocab/taxon/ardenna-grisea> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/crustaceans> , <https://example.org/birds/vocab/food/fish> .
+<https://example.org/birds/vocab/taxon/ardenna-tenuirostris> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/crustaceans> .
+<https://example.org/birds/vocab/taxon/limosa-lapponica> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/marine-worms> , <https://example.org/birds/vocab/food/molluscs> .
+<https://example.org/birds/vocab/taxon/calidris-canutus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/molluscs> , <https://example.org/birds/vocab/food/horseshoe-crab-eggs> .
+<https://example.org/birds/vocab/taxon/calidris-tenuirostris> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/molluscs> .
+<https://example.org/birds/vocab/taxon/calidris-acuminata> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/calidris-ruficollis> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/marine-worms> .
+<https://example.org/birds/vocab/taxon/calidris-pygmaea> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/marine-worms> .
+<https://example.org/birds/vocab/taxon/numenius-madagascariensis> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/crustaceans> .
+<https://example.org/birds/vocab/taxon/arenaria-interpres> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/crustaceans> , <https://example.org/birds/vocab/food/horseshoe-crab-eggs> .
+<https://example.org/birds/vocab/taxon/haematopus-finschi> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/molluscs> , <https://example.org/birds/vocab/food/earthworms> .
+<https://example.org/birds/vocab/taxon/himantopus-leucocephalus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/himantopus-novaezelandiae> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/himantopus-himantopus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/dacelo-novaeguineae> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/reptiles> , <https://example.org/birds/vocab/food/insects> , <https://example.org/birds/vocab/taxon/gymnorhina-tibicen> .
+<https://example.org/birds/vocab/taxon/gymnorhina-tibicen> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> , <https://example.org/birds/vocab/taxon/dacelo-novaeguineae> .
+<https://example.org/birds/vocab/taxon/aquila-audax> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/small-mammals> , <https://example.org/birds/vocab/food/carrion> , <https://example.org/birds/vocab/taxon/eolophus-roseicapilla> .
+<https://example.org/birds/vocab/taxon/pelecanus-conspicillatus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/fish> .
+<https://example.org/birds/vocab/taxon/dromaius-novaehollandiae> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/fruit> , <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/eolophus-roseicapilla> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/seeds> .
+<https://example.org/birds/vocab/taxon/cacatua-galerita> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/seeds> .
+<https://example.org/birds/vocab/taxon/trichoglossus-moluccanus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/nectar> .
+<https://example.org/birds/vocab/taxon/anthochaera-phrygia> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/nectar> .
+<https://example.org/birds/vocab/taxon/neophema-chrysogaster> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/seeds> .
+<https://example.org/birds/vocab/taxon/merops-ornatus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/malurus-cyaneus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/ptilonorhynchus-violaceus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/fruit> .
+<https://example.org/birds/vocab/taxon/menura-novaehollandiae> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/vanellus-miles> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/falco-peregrinus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/taxon/sturnus-vulgaris> , <https://example.org/birds/vocab/taxon/hemiphaga-novaeseelandiae> , <https://example.org/birds/vocab/taxon/arenaria-interpres> , <https://example.org/birds/vocab/taxon/calidris-canutus> .
+<https://example.org/birds/vocab/taxon/pandion-haliaetus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/fish> .
+<https://example.org/birds/vocab/taxon/haliaeetus-leucocephalus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/fish> , <https://example.org/birds/vocab/food/carrion> , <https://example.org/birds/vocab/taxon/aix-galericulata> .
+<https://example.org/birds/vocab/taxon/icthyophaga-vocifer> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/fish> , <https://example.org/birds/vocab/taxon/phoeniconaias-minor> .
+<https://example.org/birds/vocab/taxon/phoeniconaias-minor> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/algae> .
+<https://example.org/birds/vocab/taxon/phoenicopterus-roseus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/crustaceans> .
+<https://example.org/birds/vocab/taxon/phoenicopterus-chilensis> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/crustaceans> .
+<https://example.org/birds/vocab/taxon/gyps-africanus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/carrion> .
+<https://example.org/birds/vocab/taxon/vultur-gryphus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/carrion> .
+<https://example.org/birds/vocab/taxon/milvus-milvus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/carrion> , <https://example.org/birds/vocab/food/small-mammals> .
+<https://example.org/birds/vocab/taxon/aquila-adalberti> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/small-mammals> .
+<https://example.org/birds/vocab/taxon/sagittarius-serpentarius> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/reptiles> , <https://example.org/birds/vocab/food/small-mammals> .
+<https://example.org/birds/vocab/taxon/bucorvus-leadbeateri> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/reptiles> , <https://example.org/birds/vocab/food/amphibians> , <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/buteo-jamaicensis> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/small-mammals> .
+<https://example.org/birds/vocab/taxon/buteo-swainsoni> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> , <https://example.org/birds/vocab/food/small-mammals> .
+<https://example.org/birds/vocab/taxon/bubo-scandiacus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/small-mammals> .
+<https://example.org/birds/vocab/taxon/falco-amurensis> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/cuculus-canorus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/hirundo-rustica> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/hirundo-neoxena> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/apus-apus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/sterna-paradisaea> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/fish> .
+<https://example.org/birds/vocab/taxon/fratercula-arctica> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/fish> .
+<https://example.org/birds/vocab/taxon/spheniscus-demersus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/fish> .
+<https://example.org/birds/vocab/taxon/spheniscus-magellanicus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/fish> .
+<https://example.org/birds/vocab/taxon/ciconia-ciconia> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/amphibians> , <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/ciconia-boyciana> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/fish> .
+<https://example.org/birds/vocab/taxon/grus-japonensis> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/fish> .
+<https://example.org/birds/vocab/taxon/antigone-canadensis> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/seeds> .
+<https://example.org/birds/vocab/taxon/balearica-regulorum> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/seeds> .
+<https://example.org/birds/vocab/taxon/platalea-minor> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/fish> .
+<https://example.org/birds/vocab/taxon/struthio-camelus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/leaves> .
+<https://example.org/birds/vocab/taxon/upupa-epops> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/merops-apiaster> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/coracias-caudatus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/turdus-merula> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/earthworms> .
+<https://example.org/birds/vocab/taxon/turdus-migratorius> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/earthworms> .
+<https://example.org/birds/vocab/taxon/erithacus-rubecula> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/parus-major> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/cyanistes-caeruleus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/insects> .
+<https://example.org/birds/vocab/taxon/promerops-cafer> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/nectar> .
+<https://example.org/birds/vocab/taxon/nectarinia-famosa> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/nectar> .
+<https://example.org/birds/vocab/taxon/archilochus-colubris> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/nectar> .
+<https://example.org/birds/vocab/taxon/selasphorus-rufus> <https://example.org/birds/def/eats> <https://example.org/birds/vocab/food/nectar> .

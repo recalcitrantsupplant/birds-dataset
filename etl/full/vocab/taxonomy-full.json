@@ -1,0 +1,19 @@
+{
+  "description": "Every order, family, genus and species of AviList v2025, with the same IRIs as vocab/taxonomy.ttl.",
+  "sqlFile": "taxonomy-full.sql",
+  "templateFile": "taxonomy-full.rq",
+  "chunkSize": 20000,
+  "columns": [
+    { "columnName": "rank", "termType": "literal" },
+    { "columnName": "className", "termType": "literal" },
+    { "columnName": "key", "termType": "literal" },
+    { "columnName": "parentKey", "termType": "literal" },
+    { "columnName": "topKey", "termType": "literal" },
+    { "columnName": "notation", "termType": "literal" },
+    { "columnName": "scientificName", "termType": "literal" },
+    { "columnName": "englishName", "termType": "literal", "lang": "en" },
+    { "columnName": "scientificAltLabel", "termType": "literal" },
+    { "columnName": "scientificLabel", "termType": "literal" },
+    { "columnName": "familyName", "termType": "literal", "lang": "en" }
+  ]
+}

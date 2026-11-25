@@ -1,0 +1,20 @@
+{
+  "description": "Authored banded birds and their resightings. Each resighting links to the one before it, and the first links to the bird.",
+  "sqlFile": "banded-birds.sql",
+  "templateFile": "banded-birds.rq",
+  "chunkSize": 100000,
+  "columns": [
+    { "columnName": "bandKey", "termType": "literal" },
+    { "columnName": "bandNumber", "termType": "literal" },
+    { "columnName": "speciesKey", "termType": "literal" },
+    { "columnName": "bandingSiteKey", "termType": "literal" },
+    { "columnName": "bandingDate", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#date" },
+    { "columnName": "colours", "termType": "literal" },
+    { "columnName": "resightingKey", "termType": "literal" },
+    { "columnName": "resightingBandKey", "termType": "literal" },
+    { "columnName": "siteKey", "termType": "literal" },
+    { "columnName": "date", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#date" },
+    { "columnName": "previousPath", "termType": "literal" },
+    { "columnName": "note", "termType": "literal", "lang": "en" }
+  ]
+}

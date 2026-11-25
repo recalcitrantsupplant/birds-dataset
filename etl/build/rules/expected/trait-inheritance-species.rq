@@ -1,0 +1,16 @@
+PREFIX bird: <https://example.org/birds/def/>
+PREFIX taxon: <https://example.org/birds/vocab/taxon/>
+PREFIX vocab: <https://example.org/birds/vocab/>
+
+CONSTRUCT {
+  ?species bird:effectiveTrophicNiche ?trophicConcept ;
+    bird:effectiveHabitat ?habitatConcept ;
+    bird:effectiveLifestyle ?lifestyleConcept .
+}
+WHERE {
+  VALUES (?speciesKey ?trophicNiche ?habitat ?lifestyle) { (UNDEF UNDEF UNDEF UNDEF) }
+  BIND(IRI(CONCAT(STR(taxon:), ?speciesKey)) AS ?species)
+  BIND(IRI(CONCAT(STR(vocab:), ?trophicNiche)) AS ?trophicConcept)
+  BIND(IRI(CONCAT(STR(vocab:), ?habitat)) AS ?habitatConcept)
+  BIND(IRI(CONCAT(STR(vocab:), ?lifestyle)) AS ?lifestyleConcept)
+}

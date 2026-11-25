@@ -1,0 +1,112 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+CONSTRUCT {
+  ?result a sh:ValidationResult ;
+    sh:sourceShape ?shape ;
+    sh:focusNode ?focus ;
+    sh:resultPath ?path ;
+    sh:sourceConstraintComponent ?constraint ;
+    sh:value ?value .
+}
+WHERE {
+  {
+    SELECT ?shape ?focus ?path (sh:MinCountConstraintComponent AS ?constraint) (COUNT(DISTINCT ?v) AS ?value)
+    WHERE {
+      {
+        SELECT DISTINCT ?shape ?focus WHERE {
+          { ?shape sh:targetClass ?class . ?focus rdf:type/rdfs:subClassOf* ?class }
+          UNION { ?shape sh:targetSubjectsOf ?p . ?focus ?p ?o }
+        }
+      }
+      ?shape sh:property ?ps .
+      ?ps sh:path ?path ; sh:minCount ?min .
+      OPTIONAL {
+        { ?focus ?path ?v }
+        UNION { ?anyShape sh:path ?path . ?path rdf:first ?p1 ; rdf:rest/rdf:first ?p2 . ?focus ?p1 ?m . ?m ?p2 ?v }
+      }
+    }
+    GROUP BY ?shape ?focus ?path ?min
+    HAVING (COUNT(DISTINCT ?v) < ?min)
+  }
+  UNION
+  {
+    SELECT ?shape ?focus ?path (sh:MaxCountConstraintComponent AS ?constraint) (COUNT(DISTINCT ?v) AS ?value)
+    WHERE {
+      {
+        SELECT DISTINCT ?shape ?focus WHERE {
+          { ?shape sh:targetClass ?class . ?focus rdf:type/rdfs:subClassOf* ?class }
+          UNION { ?shape sh:targetSubjectsOf ?p . ?focus ?p ?o }
+        }
+      }
+      ?shape sh:property ?ps .
+      ?ps sh:path ?path ; sh:maxCount ?max .
+      { ?focus ?path ?v }
+      UNION { ?anyShape sh:path ?path . ?path rdf:first ?p1 ; rdf:rest/rdf:first ?p2 . ?focus ?p1 ?m . ?m ?p2 ?v }
+    }
+    GROUP BY ?shape ?focus ?path ?max
+    HAVING (COUNT(DISTINCT ?v) > ?max)
+  }
+  UNION
+  {
+    {
+      SELECT DISTINCT ?shape ?focus WHERE {
+        { ?shape sh:targetClass ?class . ?focus rdf:type/rdfs:subClassOf* ?class }
+        UNION { ?shape sh:targetSubjectsOf ?p . ?focus ?p ?o }
+      }
+    }
+    ?shape sh:class ?nodeClass .
+    FILTER NOT EXISTS { ?focus rdf:type/rdfs:subClassOf* ?nodeClass }
+    BIND(sh:ClassConstraintComponent AS ?constraint)
+    BIND(?focus AS ?value)
+  }
+  UNION
+  {
+    {
+      SELECT DISTINCT ?shape ?focus ?ps ?path ?value WHERE {
+        {
+          SELECT DISTINCT ?shape ?focus WHERE {
+            { ?shape sh:targetClass ?class . ?focus rdf:type/rdfs:subClassOf* ?class }
+            UNION { ?shape sh:targetSubjectsOf ?p . ?focus ?p ?o }
+          }
+        }
+        ?shape sh:property ?ps .
+        ?ps sh:path ?path .
+        { ?focus ?path ?value }
+        UNION { ?anyShape sh:path ?path . ?path rdf:first ?p1 ; rdf:rest/rdf:first ?p2 . ?focus ?p1 ?m . ?m ?p2 ?value }
+      }
+    }
+    { ?ps sh:datatype ?param . BIND(sh:DatatypeConstraintComponent AS ?constraint) }
+    UNION { ?ps sh:class ?param . BIND(sh:ClassConstraintComponent AS ?constraint) }
+    UNION { ?ps sh:minInclusive ?param . BIND(sh:MinInclusiveConstraintComponent AS ?constraint) }
+    UNION { ?ps sh:maxInclusive ?param . BIND(sh:MaxInclusiveConstraintComponent AS ?constraint) }
+    UNION { ?ps sh:minExclusive ?param . BIND(sh:MinExclusiveConstraintComponent AS ?constraint) }
+    UNION { ?ps sh:in ?param . BIND(sh:InConstraintComponent AS ?constraint) }
+    UNION { ?ps sh:languageIn ?param . BIND(sh:LanguageInConstraintComponent AS ?constraint) }
+    UNION { ?ps sh:uniqueLang true . BIND(true AS ?param) BIND(sh:UniqueLangConstraintComponent AS ?constraint) }
+    UNION { ?ps sh:or ?param . BIND(sh:OrConstraintComponent AS ?constraint) }
+    FILTER(
+      IF(?constraint = sh:DatatypeConstraintComponent, COALESCE(IF(?param = rdf:langString, !isLiteral(?value) || LANG(?value) = "",
+              !isLiteral(?value) || DATATYPE(?value) != ?param), false), false)
+      || IF(?constraint = sh:ClassConstraintComponent, COALESCE(NOT EXISTS { ?value rdf:type/rdfs:subClassOf* ?param }, false), false)
+      || IF(?constraint = sh:MinInclusiveConstraintComponent, COALESCE(!COALESCE(?value >= ?param, false), false), false)
+      || IF(?constraint = sh:MaxInclusiveConstraintComponent, COALESCE(!COALESCE(?value <= ?param, false), false), false)
+      || IF(?constraint = sh:MinExclusiveConstraintComponent, COALESCE(!COALESCE(?value > ?param, false), false), false)
+      || IF(?constraint = sh:InConstraintComponent, COALESCE(NOT EXISTS { ?param rdf:rest*/rdf:first ?allowed FILTER(sameTerm(?allowed, ?value)) }, false), false)
+      || IF(?constraint = sh:LanguageInConstraintComponent, COALESCE(NOT EXISTS { ?param rdf:rest*/rdf:first ?language FILTER(LANGMATCHES(LANG(?value), ?language)) }, false), false)
+      || IF(?constraint = sh:UniqueLangConstraintComponent, COALESCE(LANG(?value) != ""
+        && EXISTS {
+          { ?focus ?path ?other }
+          UNION { ?path rdf:first ?q1 ; rdf:rest/rdf:first ?q2 . ?focus ?q1 ?n . ?n ?q2 ?other }
+          FILTER(!sameTerm(?other, ?value) && LANG(?other) = LANG(?value))
+        }, false), false)
+      || IF(?constraint = sh:OrConstraintComponent, COALESCE(NOT EXISTS {
+          ?param rdf:rest*/rdf:first/sh:class ?alternative .
+          ?value rdf:type/rdfs:subClassOf* ?alternative
+        }, false), false)
+    )
+  }
+  BIND(IRI(CONCAT("urn:birds:validation-result:", MD5(CONCAT(STR(?shape), STR(?focus), STR(?constraint),
+    COALESCE(STR(?path), ""), COALESCE(STR(?value), ""))))) AS ?result)
+}

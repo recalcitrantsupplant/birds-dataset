@@ -1,0 +1,39 @@
+PREFIX bird: <https://example.org/birds/def/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dwc: <http://rs.tdwg.org/dwc/terms/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX id: <https://example.org/birds/id/>
+PREFIX taxon: <https://example.org/birds/vocab/taxon/>
+
+CONSTRUCT {
+  ?o a bird:Occurrence ;
+    bird:species ?species ;
+    bird:identifiedAs ?identifiedAs ;
+    bird:country ?country ;
+    dwc:eventDate ?eventDate ;
+    bird:month ?month ;
+    dwc:year ?year ;
+    dwc:basisOfRecord ?basisOfRecord ;
+    dwc:individualCount ?individualCount ;
+    dwc:coordinateUncertaintyInMeters ?uncertainty ;
+    geo:hasGeometry ?geometry ;
+    bird:site ?site ;
+    dcterms:source ?gbifRecord ;
+    dcterms:isPartOf ?dataset ;
+    dcterms:license ?license .
+  ?geometry a geo:Geometry ;
+    geo:asWKT ?wkt .
+}
+WHERE {
+  VALUES (?gbifId ?speciesKey ?identifiedAsKey ?countryKey ?eventDate ?month ?year ?basisOfRecord ?individualCount ?uncertainty ?wkt ?siteKey ?datasetKey ?license) {
+    (UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF)
+  }
+  BIND(IRI(CONCAT(STR(id:), "occurrence/", ?gbifId)) AS ?o)
+  BIND(IRI(CONCAT(STR(?o), "/geometry")) AS ?geometry)
+  BIND(IRI(CONCAT(STR(taxon:), ?speciesKey)) AS ?species)
+  BIND(IRI(CONCAT(STR(id:), "name/", ?identifiedAsKey)) AS ?identifiedAs)
+  BIND(IRI(CONCAT("https://example.org/birds/vocab/region/", ?countryKey)) AS ?country)
+  BIND(IRI(CONCAT(STR(id:), "site/", ?siteKey)) AS ?site)
+  BIND(IRI(CONCAT("https://www.gbif.org/occurrence/", ?gbifId)) AS ?gbifRecord)
+  BIND(IRI(CONCAT("https://www.gbif.org/dataset/", ?datasetKey)) AS ?dataset)
+}

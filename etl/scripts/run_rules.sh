@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# Run each rule set in rules/ over the files it reads, with the sqlib command
-# line, and write its inferred triples to rules/expected/<rule set>.nt, sorted.
-# Then copy the inferred traits to data/inferred-traits.nt for the Lucene index.
-# SQLIB_CLI is the command, for example "node ../sqlib/packages/cli/dist/cli.js".
+# Run each rule set in rules/ over the files it reads, and write its inferred
+# triples to rules/expected/<rule set>.nt, sorted. Then check that the rule set
+# Trait inheritance reproduces the AVONET values in
+# rules/expected/trait-inheritance-species.nt, which build.sh writes.
 set -euo pipefail
-cd "$(dirname "$0")/../.."
-cli=${SQLIB_CLI:-sqlib}
-tmp=$(mktemp -d)
+source "$(dirname "$0")/lib.sh"
+cd "$root"
+tmp=$(mktemp -d -p "$root/etl/.cache" 2>/dev/null || mktemp -d)
 trap 'rm -rf "$tmp"' EXIT
 
 declare -A inputs=(
@@ -21,7 +21,18 @@ mkdir -p rules/expected
 for rs in "${!inputs[@]}"; do
   # shellcheck disable=SC2086
   cat ${inputs[$rs]} > "$tmp/$rs.ttl"
-  $cli rules run --srl "rules/$rs.srl" --data "$tmp/$rs.ttl" --out "$tmp/$rs.nt" --max-iterations 20
+  sqlib rules run --srl "rules/$rs.srl" --data "$tmp/$rs.ttl" --out "$tmp/$rs.nt" --max-iterations 20
   LC_ALL=C sort -u "$tmp/$rs.nt" > "rules/expected/$rs.nt"
 done
-cp rules/expected/trait-inheritance.nt data/inferred-traits.nt
+
+expected=rules/expected/trait-inheritance-species.nt
+awk 'NR == FNR { species[$1] = 1; next } ($1 in species) && $2 ~ /def\/effective(TrophicNiche|Habitat|Lifestyle)>$/' \
+  "$expected" rules/expected/trait-inheritance.nt | LC_ALL=C sort -u > "$tmp/species.nt"
+species=$(cut -d" " -f1 "$tmp/species.nt" | sort -u | grep -c .)
+if ! LC_ALL=C comm -3 "$tmp/species.nt" "$expected" | grep -q .; then
+  echo "trait-inheritance: the $species species values match AVONET"
+else
+  echo "trait-inheritance: the species values differ from AVONET:" >&2
+  LC_ALL=C comm -3 "$tmp/species.nt" "$expected" | head -20 >&2
+  exit 1
+fi

@@ -27,12 +27,11 @@ It is the shared demo dataset for:
 | `data/banded-birds.ttl` | 16 banded birds and 40 resightings with notes | 368 |
 | `data/food-web.ttl` | 129 links from a species to a food resource or to another species | 129 |
 | `data/names.ttl` | Scientific names and 18 name changes: genus moves, splits by country, a lump | 488 |
-| `data/inferred-traits.nt` | The output of the rule set `trait-inheritance`, for the Lucene index | 819 |
 | `rules/*.srl` | Five SRL rule sets. See [rules/README.md](rules/README.md) | |
 | `rules/expected/` | The triples that each rule set infers | |
 | `fuseki/config.ttl` | A Fuseki dataset with two Lucene indexes, `birds` and `vocab` | |
 | `catalogue.ttl` | DCAT description of the dataset and its parts | |
-| `etl/` | Source extracts, authored CSV files and the scripts that build everything | |
+| `etl/` | Source extracts, authored CSV files, and the sqlib jobs and scripts that build everything | |
 
 [NOTICE.md](NOTICE.md) lists each source, its licence and its citation.
 
@@ -70,7 +69,8 @@ flowchart LR
   all AVONET species in that taxon. A species or lower taxon states its own
   value only where it differs. The rule set `trait-inheritance` restores the
   value of each species. Its output matches the AVONET value for all 111
-  species ([rules/expected/trait-inheritance-species.ttl](rules/expected/trait-inheritance-species.ttl)).
+  species ([rules/expected/trait-inheritance-species.nt](rules/expected/trait-inheritance-species.nt)).
+  `just rules` checks this on each run.
 - **Old names.** 109 occurrences carry `bird:identifiedAs` with an earlier
   name. GBIF files Australian records of the grey fantail, the pied stilt and
   the rainbow lorikeet under names that a split now limits to other
@@ -89,18 +89,46 @@ flowchart LR
 
 ## Build
 
-The checked-in files are the build output. To build again:
+The checked-in files are the build output. The build is a one-off, offline
+step: consumers load the Turtle files and do not run it.
 
-1. Run `just setup` to install the Python packages.
-2. Run `just extract` to download AviList and AVONET and extract the rows.
-3. Run `just fetch` to fetch GBIF records. It takes about 40 minutes.
-4. Run `just build` to write `vocab/` and `data/`.
-5. Run `just rules` to run the rule sets. Set `SQLIB_CLI` to the sqlib command
-   line, for example `SQLIB_CLI="node ../sqlib/packages/cli/dist/cli.js"`.
-6. Run `just validate` to check the data against the shapes.
+Each step runs the sqlib command line. A step uses `$SQLIB` if it is set, for
+example `SQLIB="node ../sqlib/packages/cli/dist/cli.js"`. Otherwise it runs
+the `sqlib-cli` Docker image, which you build from the sqlib repository with
+`docker build -f examples/docker/cli-minimal/Dockerfile -t sqlib-cli .`.
+
+1. Run `just extract` to download AviList and AVONET and extract the rows.
+2. Run `just fetch` to fetch GBIF records. It takes about 3 minutes.
+3. Run `just build` to write `vocab/` and `data/`. It takes about 5 seconds.
+4. Run `just rules` to run the rule sets into `rules/expected/`.
+5. Run `just validate` to check the data against the shapes.
+
+Steps 1 and 2 download, so they run DuckDB with `--allow-http` and
+`--allow-extension-install`.
+
+### How the build works
+
+Each output file has one sqlib ETL job: a DuckDB SQL query, a SPARQL
+CONSTRUCT template and a column mapping. The SQL reads the CSV files and
+returns one row per resource. The mapping gives each column its term type and
+datatype. The template builds the IRIs and the triples.
+
+| Path | Contents |
+| --- | --- |
+| `etl/build/<dir>/<name>.json` | The job that writes `<dir>/<name>.ttl`, with its `.sql` and `.rq` |
+| `etl/extract/` | The jobs that write `etl/sources/`: AviList and AVONET from the workbooks, GBIF from its API |
+| `etl/full/` | The job for the full taxonomy of the full tier |
+| `etl/checks/shacl-core.rq` | A SPARQL CONSTRUCT that reports violations of the SHACL Core constraints in `ontology/shapes.ttl` |
+| `etl/scripts/` | One shell script for each recipe |
+| `etl/gbif.csv` | The size of the GBIF sample: records per month, countries per species, the countries and the years |
 
 The authored inputs are in `etl/authored/`: species accounts, sites, banded
-birds, resightings, the food web, name changes, countries and Māori names.
+birds, resightings, the food web, name changes, countries, Māori names, and
+the names that BirdLife and GBIF use where they differ from AviList.
+`vocab/concepts.ttl` is authored Turtle.
+
+The output Turtle has no prefix declarations, because the sqlib command line
+writes full IRIs. The `data/` files are about 4.1 MB.
 
 ## Full tier
 
@@ -116,7 +144,7 @@ GitHub release.
 | --- | --- | --- |
 | sqlib-demo | `data`, `vocab`, `rules` | Pin a release tag and download its archives in the seed step |
 | Wrybill | `ontology`, `vocab`, and `data` for the search pages | Load the archives of a pinned tag in `scripts/jena-demo.sh` |
-| Fuseki | All parts, and `full` if wanted | Download the archives at build time, load them into TDB2 with `data/inferred-traits.nt`, then build the indexes |
+| Fuseki | All parts, and `full` if wanted | Download the archives at build time, load them into TDB2 with `rules/expected/trait-inheritance.nt`, then build the indexes |
 
 ## Not done yet
 
@@ -124,11 +152,14 @@ GitHub release.
   Check it with `luc:config` and `luc:stats` before you rely on it.
 - No release is published yet.
 - No GBIF derived-dataset DOI. It needs a GBIF account.
+- The AviList extract reads the AviList workbook from avilist.org. The site
+  refused the build machine, so the extract was tested on a workbook made from
+  the same data. Check the column names on the first real run.
 - Names in languages other than English and Māori. Wikidata (CC0) has them,
   but its API refused requests from the build machine.
 
 ## Licence
 
-The data, vocabularies, ontology and rules are CC BY 4.0. The scripts in
-`etl/scripts/` are MIT. Source data keeps its own licence, as
+The data, vocabularies, ontology and rules are CC BY 4.0. The jobs and scripts in
+`etl/` are MIT. Source data keeps its own licence, as
 [NOTICE.md](NOTICE.md) lists.

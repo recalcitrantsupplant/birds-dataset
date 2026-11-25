@@ -1,0 +1,33 @@
+PREFIX bird: <https://example.org/birds/def/>
+PREFIX id: <https://example.org/birds/id/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX taxon: <https://example.org/birds/vocab/taxon/>
+
+CONSTRUCT {
+  ?banded a bird:BandedBird ;
+    bird:bandNumber ?bandNumber ;
+    bird:species ?species ;
+    bird:bandedAt ?bandingSite ;
+    bird:site ?bandingSite ;
+    bird:bandedOn ?bandingDate ;
+    bird:date ?bandingDate ;
+    rdfs:comment ?colours .
+  ?resighting a bird:Resighting ;
+    bird:bird ?resighted ;
+    bird:site ?site ;
+    bird:date ?date ;
+    bird:previous ?previous ;
+    bird:note ?note .
+}
+WHERE {
+  VALUES (?bandKey ?bandNumber ?speciesKey ?bandingSiteKey ?bandingDate ?colours ?resightingKey ?resightingBandKey ?siteKey ?date ?previousPath ?note) {
+    (UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF)
+  }
+  BIND(IRI(CONCAT(STR(id:), "bird/", ?bandKey)) AS ?banded)
+  BIND(IRI(CONCAT(STR(taxon:), ?speciesKey)) AS ?species)
+  BIND(IRI(CONCAT(STR(id:), "site/", ?bandingSiteKey)) AS ?bandingSite)
+  BIND(IRI(CONCAT(STR(id:), "resighting/", ?resightingKey)) AS ?resighting)
+  BIND(IRI(CONCAT(STR(id:), "bird/", ?resightingBandKey)) AS ?resighted)
+  BIND(IRI(CONCAT(STR(id:), "site/", ?siteKey)) AS ?site)
+  BIND(IRI(CONCAT(STR(id:), ?previousPath)) AS ?previous)
+}

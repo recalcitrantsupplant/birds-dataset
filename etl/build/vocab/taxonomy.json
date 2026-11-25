@@ -1,0 +1,26 @@
+{
+  "description": "The orders, families, genera and species of the species list, from AviList v2025, as a SKOS scheme. A species has its English, scientific and Māori names.",
+  "sqlFile": "taxonomy.sql",
+  "templateFile": "taxonomy.rq",
+  "chunkSize": 100000,
+  "columns": [
+    { "columnName": "rank", "termType": "literal" },
+    { "columnName": "className", "termType": "literal" },
+    { "columnName": "key", "termType": "literal" },
+    { "columnName": "parentKey", "termType": "literal" },
+    { "columnName": "topKey", "termType": "literal" },
+    { "columnName": "notation", "termType": "literal" },
+    { "columnName": "scientificName", "termType": "literal" },
+    { "columnName": "label", "termType": "literal", "lang": "en" },
+    { "columnName": "familyName", "termType": "literal", "lang": "en" },
+    { "columnName": "scientificAltLabel", "termType": "literal" },
+    { "columnName": "miName", "termType": "literal", "lang": "mi" },
+    { "columnName": "authority", "termType": "literal" },
+    { "columnName": "rangeText", "termType": "literal" },
+    { "columnName": "protonym", "termType": "literal" },
+    { "columnName": "seeAlso", "termType": "uri" },
+    { "columnName": "identifier", "termType": "literal" },
+    { "columnName": "extinct", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#boolean" },
+    { "columnName": "nameKey", "termType": "literal" }
+  ]
+}

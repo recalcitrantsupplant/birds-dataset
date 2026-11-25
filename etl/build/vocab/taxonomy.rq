@@ -1,0 +1,43 @@
+PREFIX bird: <https://example.org/birds/def/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX taxon: <https://example.org/birds/vocab/taxon/>
+
+CONSTRUCT {
+  <https://example.org/birds/vocab/taxon> a skos:ConceptScheme ;
+    skos:prefLabel "Bird taxonomy"@en ;
+    skos:definition "The orders, families, genera and species of the dataset, from AviList v2025. Notations are AviList sequence numbers."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:source <https://doi.org/10.2173/avilist.v2025> ;
+    dcterms:creator "AviList Core Team" ;
+    skos:hasTopConcept ?top .
+  ?top skos:topConceptOf <https://example.org/birds/vocab/taxon> .
+  ?c a skos:Concept, ?class ;
+    skos:inScheme <https://example.org/birds/vocab/taxon> ;
+    skos:notation ?notation ;
+    skos:prefLabel ?label ;
+    skos:altLabel ?familyName, ?scientificAltLabel, ?miName ;
+    skos:broader ?parent ;
+    bird:rank ?rankConcept ;
+    bird:scientificName ?scientificName ;
+    bird:authority ?authority ;
+    bird:rangeText ?rangeText ;
+    bird:protonym ?protonym ;
+    rdfs:seeAlso ?seeAlso ;
+    dcterms:identifier ?identifier ;
+    bird:extinct ?extinct ;
+    bird:acceptedName ?name .
+  ?parent skos:narrower ?c .
+}
+WHERE {
+  VALUES (?rank ?className ?key ?parentKey ?topKey ?notation ?scientificName ?label ?familyName ?scientificAltLabel ?miName ?authority ?rangeText ?protonym ?seeAlso ?identifier ?extinct ?nameKey) {
+    (UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF)
+  }
+  BIND(IRI(CONCAT(STR(taxon:), ?key)) AS ?c)
+  BIND(IRI(CONCAT(STR(taxon:), ?parentKey)) AS ?parent)
+  BIND(IRI(CONCAT(STR(taxon:), ?topKey)) AS ?top)
+  BIND(IRI(CONCAT(STR(bird:), ?className)) AS ?class)
+  BIND(IRI(CONCAT("https://example.org/birds/vocab/rank/", ?rank)) AS ?rankConcept)
+  BIND(IRI(CONCAT("https://example.org/birds/id/name/", ?nameKey)) AS ?name)
+}

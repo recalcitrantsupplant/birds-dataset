@@ -1,0 +1,19 @@
+{
+  "description": "UN M49 regions, subregions and the countries of the dataset as SKOS, with Natural Earth 1:110m boundaries as WKT.",
+  "sqlFile": "regions.sql",
+  "templateFile": "regions.rq",
+  "chunkSize": 100000,
+  "columns": [
+    { "columnName": "iso2", "termType": "literal" },
+    { "columnName": "countryKey", "termType": "literal" },
+    { "columnName": "name", "termType": "literal", "lang": "en" },
+    { "columnName": "m49", "termType": "literal" },
+    { "columnName": "region", "termType": "literal" },
+    { "columnName": "regionName", "termType": "literal", "lang": "en" },
+    { "columnName": "subregion", "termType": "literal" },
+    { "columnName": "subregionName", "termType": "literal", "lang": "en" },
+    { "columnName": "hemisphere", "termType": "literal" },
+    { "columnName": "miName", "termType": "literal", "lang": "mi" },
+    { "columnName": "wkt", "termType": "literal", "datatypeIri": "http://www.opengis.net/ont/geosparql#wktLiteral" }
+  ]
+}

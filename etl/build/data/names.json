@@ -1,0 +1,17 @@
+{
+  "description": "Scientific names, and the authored changes between them. A split names the country where it applies.",
+  "sqlFile": "names.sql",
+  "templateFile": "names.rq",
+  "chunkSize": 100000,
+  "columns": [
+    { "columnName": "nameKey", "termType": "literal" },
+    { "columnName": "name", "termType": "literal" },
+    { "columnName": "change", "termType": "literal" },
+    { "columnName": "fromKey", "termType": "literal" },
+    { "columnName": "toKey", "termType": "literal" },
+    { "columnName": "changeType", "termType": "literal" },
+    { "columnName": "countryKey", "termType": "literal" },
+    { "columnName": "checklist", "termType": "literal" },
+    { "columnName": "note", "termType": "literal", "lang": "en" }
+  ]
+}

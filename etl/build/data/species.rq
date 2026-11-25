@@ -1,0 +1,34 @@
+PREFIX bird: <https://example.org/birds/def/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX taxon: <https://example.org/birds/vocab/taxon/>
+PREFIX vocab: <https://example.org/birds/vocab/>
+
+CONSTRUCT {
+  ?taxon ?traitPredicate ?traitValue .
+  ?species bird:migration ?migrationConcept ;
+    bird:bodyMass ?bodyMass ;
+    bird:wingLength ?wingLength ;
+    bird:beakLength ?beakLength ;
+    bird:tailLength ?tailLength ;
+    bird:handWingIndex ?handWingIndex ;
+    bird:rangeSize ?rangeSize ;
+    bird:minLatitude ?minLatitude ;
+    bird:maxLatitude ?maxLatitude ;
+    bird:rangeCentroid ?centroidNode ;
+    bird:redListCategory ?redList ;
+    bird:account ?account .
+  ?centroidNode a geo:Geometry ;
+    geo:asWKT ?centroid .
+}
+WHERE {
+  VALUES (?taxonKey ?traitProperty ?traitConcept ?speciesKey ?migration ?bodyMass ?wingLength ?beakLength ?tailLength ?handWingIndex ?rangeSize ?minLatitude ?maxLatitude ?centroid ?redListCategory ?account) {
+    (UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF)
+  }
+  BIND(IRI(CONCAT(STR(taxon:), ?taxonKey)) AS ?taxon)
+  BIND(IRI(CONCAT(STR(bird:), ?traitProperty)) AS ?traitPredicate)
+  BIND(IRI(CONCAT(STR(vocab:), ?traitConcept)) AS ?traitValue)
+  BIND(IRI(CONCAT(STR(taxon:), ?speciesKey)) AS ?species)
+  BIND(IRI(CONCAT(STR(vocab:), "migration/", ?migration)) AS ?migrationConcept)
+  BIND(IRI(CONCAT(STR(?species), "/range-centroid")) AS ?centroidNode)
+  BIND(IRI(CONCAT(STR(vocab:), "red-list/", ?redListCategory)) AS ?redList)
+}

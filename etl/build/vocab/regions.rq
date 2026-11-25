@@ -1,0 +1,48 @@
+PREFIX bird: <https://example.org/birds/def/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX region: <https://example.org/birds/vocab/region/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+CONSTRUCT {
+  <https://example.org/birds/vocab/region> a skos:ConceptScheme ;
+    skos:prefLabel "Regions and countries"@en ;
+    skos:definition "UN M49 regions and subregions, and the countries of the dataset. Boundaries from Natural Earth 1:110m (public domain)."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:source <https://unstats.un.org/unsd/methodology/m49/> ;
+    skos:hasTopConcept ?reg .
+  ?reg a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/region> ;
+    skos:topConceptOf <https://example.org/birds/vocab/region> ;
+    skos:prefLabel ?regionName ;
+    skos:notation ?region ;
+    skos:narrower ?sub .
+  ?sub a skos:Concept ;
+    skos:inScheme <https://example.org/birds/vocab/region> ;
+    skos:prefLabel ?subregionName ;
+    skos:notation ?subregion ;
+    skos:broader ?reg ;
+    skos:narrower ?country .
+  ?country a skos:Concept, bird:Country, geo:Feature ;
+    skos:inScheme <https://example.org/birds/vocab/region> ;
+    skos:prefLabel ?name ;
+    skos:altLabel ?miName ;
+    skos:notation ?iso2 ;
+    skos:broader ?sub ;
+    bird:region ?reg ;
+    bird:hemisphere ?hemisphereConcept ;
+    dcterms:identifier ?m49 ;
+    geo:hasGeometry ?geometry .
+  ?geometry a geo:Geometry ;
+    geo:asWKT ?wkt .
+}
+WHERE {
+  VALUES (?iso2 ?countryKey ?name ?m49 ?region ?regionName ?subregion ?subregionName ?hemisphere ?miName ?wkt) {
+    (UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF)
+  }
+  BIND(IRI(CONCAT(STR(region:), "m49-", ?region)) AS ?reg)
+  BIND(IRI(CONCAT(STR(region:), "m49-", ?subregion)) AS ?sub)
+  BIND(IRI(CONCAT(STR(region:), ?countryKey)) AS ?country)
+  BIND(IRI(CONCAT(STR(?country), "/geometry")) AS ?geometry)
+  BIND(IRI(CONCAT("https://example.org/birds/vocab/season/", ?hemisphere)) AS ?hemisphereConcept)
+}

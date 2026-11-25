@@ -1,0 +1,16 @@
+{
+  "description": "Authored sites where birds gather, each with a centre point and an approximate rectangle as WKT.",
+  "sqlFile": "sites.sql",
+  "templateFile": "sites.rq",
+  "chunkSize": 100000,
+  "columns": [
+    { "columnName": "siteKey", "termType": "literal" },
+    { "columnName": "name", "termType": "literal", "lang": "en" },
+    { "columnName": "description", "termType": "literal", "lang": "en" },
+    { "columnName": "countryKey", "termType": "literal" },
+    { "columnName": "siteType", "termType": "literal" },
+    { "columnName": "latitude", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#decimal" },
+    { "columnName": "longitude", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#decimal" },
+    { "columnName": "wkt", "termType": "literal", "datatypeIri": "http://www.opengis.net/ont/geosparql#wktLiteral" }
+  ]
+}

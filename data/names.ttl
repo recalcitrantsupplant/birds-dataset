@@ -1,635 +1,488 @@
-@prefix bird: <https://example.org/birds/def/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-<https://example.org/birds/id/name-change/1> a bird:NameChange ;
-    dcterms:source "Stephens 1826" ;
-    rdfs:comment "Snowy owl placed in its own genus"@en ;
-    bird:changeType <https://example.org/birds/vocab/name-change/genus-move> ;
-    bird:fromName <https://example.org/birds/id/name/strix-scandiaca> ;
-    bird:toName <https://example.org/birds/id/name/nyctea-scandiaca> .
-
-<https://example.org/birds/id/name-change/10> a bird:NameChange ;
-    dcterms:source "IOC 7.1 (2017)" ;
-    rdfs:comment "Large shearwaters placed in Ardenna"@en ;
-    bird:changeType <https://example.org/birds/vocab/name-change/genus-move> ;
-    bird:fromName <https://example.org/birds/id/name/puffinus-tenuirostris> ;
-    bird:toName <https://example.org/birds/id/name/ardenna-tenuirostris> .
-
-<https://example.org/birds/id/name-change/11> a bird:NameChange ;
-    dcterms:source "IOC 4.1 (2014)" ;
-    rdfs:comment "Long-tailed koel placed in its own genus"@en ;
-    bird:changeType <https://example.org/birds/vocab/name-change/genus-move> ;
-    bird:fromName <https://example.org/birds/id/name/eudynamys-taitensis> ;
-    bird:toName <https://example.org/birds/id/name/urodynamis-taitensis> .
-
-<https://example.org/birds/id/name-change/12> a bird:NameChange ;
-    dcterms:source "AOS 2016" ;
-    rdfs:comment "Sandhill crane placed in Antigone"@en ;
-    bird:changeType <https://example.org/birds/vocab/name-change/genus-move> ;
-    bird:fromName <https://example.org/birds/id/name/grus-canadensis> ;
-    bird:toName <https://example.org/birds/id/name/antigone-canadensis> .
-
-<https://example.org/birds/id/name-change/13> a bird:NameChange ;
-    dcterms:source "BOU 2005" ;
-    rdfs:comment "Blue tits placed in Cyanistes"@en ;
-    bird:changeType <https://example.org/birds/vocab/name-change/genus-move> ;
-    bird:fromName <https://example.org/birds/id/name/parus-caeruleus> ;
-    bird:toName <https://example.org/birds/id/name/cyanistes-caeruleus> .
-
-<https://example.org/birds/id/name-change/14> a bird:NameChange ;
-    dcterms:source "Brisson 1760" ;
-    rdfs:comment "Stilts placed in Himantopus"@en ;
-    bird:changeType <https://example.org/birds/vocab/name-change/genus-move> ;
-    bird:fromName <https://example.org/birds/id/name/charadrius-himantopus> ;
-    bird:toName <https://example.org/birds/id/name/himantopus-himantopus> .
-
-<https://example.org/birds/id/name-change/15> a bird:NameChange ;
-    dcterms:source "IOC 2.0 (2009)" ;
-    rdfs:comment "Pied stilt of Australasia separated from the black-winged stilt"@en ;
-    bird:changeRegion <https://example.org/birds/vocab/region/nz> ;
-    bird:changeType <https://example.org/birds/vocab/name-change/split> ;
-    bird:fromName <https://example.org/birds/id/name/himantopus-himantopus> ;
-    bird:toName <https://example.org/birds/id/name/himantopus-leucocephalus> .
-
-<https://example.org/birds/id/name-change/16> a bird:NameChange ;
-    dcterms:source "IOC 2.0 (2009)" ;
-    rdfs:comment "Pied stilt of Australasia separated from the black-winged stilt"@en ;
-    bird:changeRegion <https://example.org/birds/vocab/region/au> ;
-    bird:changeType <https://example.org/birds/vocab/name-change/split> ;
-    bird:fromName <https://example.org/birds/id/name/himantopus-himantopus> ;
-    bird:toName <https://example.org/birds/id/name/himantopus-leucocephalus> .
-
-<https://example.org/birds/id/name-change/17> a bird:NameChange ;
-    dcterms:source "IOC 2.0 (2009)" ;
-    rdfs:comment "Grey fantail of Australia separated from the New Zealand fantail"@en ;
-    bird:changeRegion <https://example.org/birds/vocab/region/au> ;
-    bird:changeType <https://example.org/birds/vocab/name-change/split> ;
-    bird:fromName <https://example.org/birds/id/name/rhipidura-fuliginosa> ;
-    bird:toName <https://example.org/birds/id/name/rhipidura-albiscapa> .
-
-<https://example.org/birds/id/name-change/18> a bird:NameChange ;
-    dcterms:source "IOC 10.1 (2020)" ;
-    rdfs:comment "Rainbow lorikeet of Australia separated from the coconut lorikeet"@en ;
-    bird:changeRegion <https://example.org/birds/vocab/region/au> ;
-    bird:changeType <https://example.org/birds/vocab/name-change/split> ;
-    bird:fromName <https://example.org/birds/id/name/trichoglossus-haematodus> ;
-    bird:toName <https://example.org/birds/id/name/trichoglossus-moluccanus> .
-
-<https://example.org/birds/id/name-change/2> a bird:NameChange ;
-    dcterms:source "IOC 2.0 (2009)" ;
-    rdfs:comment "Snowy owl merged into Bubo; ending changed to agree with the genus"@en ;
-    bird:changeType <https://example.org/birds/vocab/name-change/genus-move> ;
-    bird:fromName <https://example.org/birds/id/name/nyctea-scandiaca> ;
-    bird:toName <https://example.org/birds/id/name/bubo-scandiacus> .
-
-<https://example.org/birds/id/name-change/3> a bird:NameChange ;
-    dcterms:source "1990s checklists" ;
-    rdfs:comment "South Island takahē merged with the extinct North Island takahē in Porphyrio"@en ;
-    bird:changeType <https://example.org/birds/vocab/name-change/lump> ;
-    bird:fromName <https://example.org/birds/id/name/notornis-hochstetteri> ;
-    bird:toName <https://example.org/birds/id/name/porphyrio-mantelli> .
-
-<https://example.org/birds/id/name-change/4> a bird:NameChange ;
-    dcterms:source "Trewick 1996" ;
-    rdfs:comment "Living South Island takahē separated from the extinct North Island form"@en ;
-    bird:changeRegion <https://example.org/birds/vocab/region/nz> ;
-    bird:changeType <https://example.org/birds/vocab/name-change/split> ;
-    bird:fromName <https://example.org/birds/id/name/porphyrio-mantelli> ;
-    bird:toName <https://example.org/birds/id/name/porphyrio-hochstetteri> .
-
-<https://example.org/birds/id/name-change/5> a bird:NameChange ;
-    dcterms:source "AviList v2025" ;
-    rdfs:comment "Several Charadrius plovers moved to Anarhynchus"@en ;
-    bird:changeType <https://example.org/birds/vocab/name-change/genus-move> ;
-    bird:fromName <https://example.org/birds/id/name/charadrius-bicinctus> ;
-    bird:toName <https://example.org/birds/id/name/anarhynchus-bicinctus> .
-
-<https://example.org/birds/id/name-change/6> a bird:NameChange ;
-    dcterms:source "AviList v2025" ;
-    rdfs:comment "Bronze cuckoos placed in Chalcites"@en ;
-    bird:changeType <https://example.org/birds/vocab/name-change/genus-move> ;
-    bird:fromName <https://example.org/birds/id/name/chrysococcyx-lucidus> ;
-    bird:toName <https://example.org/birds/id/name/chalcites-lucidus> .
-
-<https://example.org/birds/id/name-change/7> a bird:NameChange ;
-    dcterms:source "AviList v2025" ;
-    rdfs:comment "Fish eagles placed in Icthyophaga"@en ;
-    bird:changeType <https://example.org/birds/vocab/name-change/genus-move> ;
-    bird:fromName <https://example.org/birds/id/name/haliaeetus-vocifer> ;
-    bird:toName <https://example.org/birds/id/name/icthyophaga-vocifer> .
-
-<https://example.org/birds/id/name-change/8> a bird:NameChange ;
-    dcterms:source "AviList v2025" ;
-    rdfs:comment "Ending changed to agree with the gender of the genus"@en ;
-    bird:changeType <https://example.org/birds/vocab/name-change/spelling> ;
-    bird:fromName <https://example.org/birds/id/name/strigops-habroptila> ;
-    bird:toName <https://example.org/birds/id/name/strigops-habroptilus> .
-
-<https://example.org/birds/id/name-change/9> a bird:NameChange ;
-    dcterms:source "IOC 7.1 (2017)" ;
-    rdfs:comment "Large shearwaters placed in Ardenna"@en ;
-    bird:changeType <https://example.org/birds/vocab/name-change/genus-move> ;
-    bird:fromName <https://example.org/birds/id/name/puffinus-griseus> ;
-    bird:toName <https://example.org/birds/id/name/ardenna-grisea> .
-
-<https://example.org/birds/id/name/aix-galericulata> a bird:Name ;
-    rdfs:label "Aix galericulata" ;
-    bird:nameString "Aix galericulata" .
-
-<https://example.org/birds/id/name/anarhynchus-frontalis> a bird:Name ;
-    rdfs:label "Anarhynchus frontalis" ;
-    bird:nameString "Anarhynchus frontalis" .
-
-<https://example.org/birds/id/name/anthochaera-phrygia> a bird:Name ;
-    rdfs:label "Anthochaera phrygia" ;
-    bird:nameString "Anthochaera phrygia" .
-
-<https://example.org/birds/id/name/anthornis-melanura> a bird:Name ;
-    rdfs:label "Anthornis melanura" ;
-    bird:nameString "Anthornis melanura" .
-
-<https://example.org/birds/id/name/apteryx-mantelli> a bird:Name ;
-    rdfs:label "Apteryx mantelli" ;
-    bird:nameString "Apteryx mantelli" .
-
-<https://example.org/birds/id/name/apus-apus> a bird:Name ;
-    rdfs:label "Apus apus" ;
-    bird:nameString "Apus apus" .
-
-<https://example.org/birds/id/name/aquila-adalberti> a bird:Name ;
-    rdfs:label "Aquila adalberti" ;
-    bird:nameString "Aquila adalberti" .
-
-<https://example.org/birds/id/name/aquila-audax> a bird:Name ;
-    rdfs:label "Aquila audax" ;
-    bird:nameString "Aquila audax" .
-
-<https://example.org/birds/id/name/archilochus-colubris> a bird:Name ;
-    rdfs:label "Archilochus colubris" ;
-    bird:nameString "Archilochus colubris" .
-
-<https://example.org/birds/id/name/arenaria-interpres> a bird:Name ;
-    rdfs:label "Arenaria interpres" ;
-    bird:nameString "Arenaria interpres" .
-
-<https://example.org/birds/id/name/balearica-regulorum> a bird:Name ;
-    rdfs:label "Balearica regulorum" ;
-    bird:nameString "Balearica regulorum" .
-
-<https://example.org/birds/id/name/bostrychia-hagedash> a bird:Name ;
-    rdfs:label "Bostrychia hagedash" ;
-    bird:nameString "Bostrychia hagedash" .
-
-<https://example.org/birds/id/name/bucorvus-leadbeateri> a bird:Name ;
-    rdfs:label "Bucorvus leadbeateri" ;
-    bird:nameString "Bucorvus leadbeateri" .
-
-<https://example.org/birds/id/name/buteo-jamaicensis> a bird:Name ;
-    rdfs:label "Buteo jamaicensis" ;
-    bird:nameString "Buteo jamaicensis" .
-
-<https://example.org/birds/id/name/buteo-swainsoni> a bird:Name ;
-    rdfs:label "Buteo swainsoni" ;
-    bird:nameString "Buteo swainsoni" .
-
-<https://example.org/birds/id/name/cacatua-galerita> a bird:Name ;
-    rdfs:label "Cacatua galerita" ;
-    bird:nameString "Cacatua galerita" .
-
-<https://example.org/birds/id/name/calidris-acuminata> a bird:Name ;
-    rdfs:label "Calidris acuminata" ;
-    bird:nameString "Calidris acuminata" .
-
-<https://example.org/birds/id/name/calidris-canutus> a bird:Name ;
-    rdfs:label "Calidris canutus" ;
-    bird:nameString "Calidris canutus" .
-
-<https://example.org/birds/id/name/calidris-pygmaea> a bird:Name ;
-    rdfs:label "Calidris pygmaea" ;
-    bird:nameString "Calidris pygmaea" .
-
-<https://example.org/birds/id/name/calidris-ruficollis> a bird:Name ;
-    rdfs:label "Calidris ruficollis" ;
-    bird:nameString "Calidris ruficollis" .
-
-<https://example.org/birds/id/name/calidris-tenuirostris> a bird:Name ;
-    rdfs:label "Calidris tenuirostris" ;
-    bird:nameString "Calidris tenuirostris" .
-
-<https://example.org/birds/id/name/cardinalis-cardinalis> a bird:Name ;
-    rdfs:label "Cardinalis cardinalis" ;
-    bird:nameString "Cardinalis cardinalis" .
-
-<https://example.org/birds/id/name/chrysococcyx-caprius> a bird:Name ;
-    rdfs:label "Chrysococcyx caprius" ;
-    bird:nameString "Chrysococcyx caprius" .
-
-<https://example.org/birds/id/name/ciconia-boyciana> a bird:Name ;
-    rdfs:label "Ciconia boyciana" ;
-    bird:nameString "Ciconia boyciana" .
-
-<https://example.org/birds/id/name/ciconia-ciconia> a bird:Name ;
-    rdfs:label "Ciconia ciconia" ;
-    bird:nameString "Ciconia ciconia" .
-
-<https://example.org/birds/id/name/circus-approximans> a bird:Name ;
-    rdfs:label "Circus approximans" ;
-    bird:nameString "Circus approximans" .
-
-<https://example.org/birds/id/name/coracias-caudatus> a bird:Name ;
-    rdfs:label "Coracias caudatus" ;
-    bird:nameString "Coracias caudatus" .
-
-<https://example.org/birds/id/name/cuculus-canorus> a bird:Name ;
-    rdfs:label "Cuculus canorus" ;
-    bird:nameString "Cuculus canorus" .
-
-<https://example.org/birds/id/name/cyanocitta-cristata> a bird:Name ;
-    rdfs:label "Cyanocitta cristata" ;
-    bird:nameString "Cyanocitta cristata" .
-
-<https://example.org/birds/id/name/dacelo-novaeguineae> a bird:Name ;
-    rdfs:label "Dacelo novaeguineae" ;
-    bird:nameString "Dacelo novaeguineae" .
-
-<https://example.org/birds/id/name/diomedea-epomophora> a bird:Name ;
-    rdfs:label "Diomedea epomophora" ;
-    bird:nameString "Diomedea epomophora" .
-
-<https://example.org/birds/id/name/dolichonyx-oryzivorus> a bird:Name ;
-    rdfs:label "Dolichonyx oryzivorus" ;
-    bird:nameString "Dolichonyx oryzivorus" .
-
-<https://example.org/birds/id/name/dromaius-novaehollandiae> a bird:Name ;
-    rdfs:label "Dromaius novaehollandiae" ;
-    bird:nameString "Dromaius novaehollandiae" .
-
-<https://example.org/birds/id/name/eolophus-roseicapilla> a bird:Name ;
-    rdfs:label "Eolophus roseicapilla" ;
-    bird:nameString "Eolophus roseicapilla" .
-
-<https://example.org/birds/id/name/erithacus-rubecula> a bird:Name ;
-    rdfs:label "Erithacus rubecula" ;
-    bird:nameString "Erithacus rubecula" .
-
-<https://example.org/birds/id/name/falco-amurensis> a bird:Name ;
-    rdfs:label "Falco amurensis" ;
-    bird:nameString "Falco amurensis" .
-
-<https://example.org/birds/id/name/falco-novaeseelandiae> a bird:Name ;
-    rdfs:label "Falco novaeseelandiae" ;
-    bird:nameString "Falco novaeseelandiae" .
-
-<https://example.org/birds/id/name/falco-peregrinus> a bird:Name ;
-    rdfs:label "Falco peregrinus" ;
-    bird:nameString "Falco peregrinus" .
-
-<https://example.org/birds/id/name/ficedula-hypoleuca> a bird:Name ;
-    rdfs:label "Ficedula hypoleuca" ;
-    bird:nameString "Ficedula hypoleuca" .
-
-<https://example.org/birds/id/name/fratercula-arctica> a bird:Name ;
-    rdfs:label "Fratercula arctica" ;
-    bird:nameString "Fratercula arctica" .
-
-<https://example.org/birds/id/name/grus-japonensis> a bird:Name ;
-    rdfs:label "Grus japonensis" ;
-    bird:nameString "Grus japonensis" .
-
-<https://example.org/birds/id/name/gymnorhina-tibicen> a bird:Name ;
-    rdfs:label "Gymnorhina tibicen" ;
-    bird:nameString "Gymnorhina tibicen" .
-
-<https://example.org/birds/id/name/gyps-africanus> a bird:Name ;
-    rdfs:label "Gyps africanus" ;
-    bird:nameString "Gyps africanus" .
-
-<https://example.org/birds/id/name/haematopus-finschi> a bird:Name ;
-    rdfs:label "Haematopus finschi" ;
-    bird:nameString "Haematopus finschi" .
-
-<https://example.org/birds/id/name/haliaeetus-leucocephalus> a bird:Name ;
-    rdfs:label "Haliaeetus leucocephalus" ;
-    bird:nameString "Haliaeetus leucocephalus" .
-
-<https://example.org/birds/id/name/hemiphaga-novaeseelandiae> a bird:Name ;
-    rdfs:label "Hemiphaga novaeseelandiae" ;
-    bird:nameString "Hemiphaga novaeseelandiae" .
-
-<https://example.org/birds/id/name/himantopus-novaezelandiae> a bird:Name ;
-    rdfs:label "Himantopus novaezelandiae" ;
-    bird:nameString "Himantopus novaezelandiae" .
-
-<https://example.org/birds/id/name/hirundo-neoxena> a bird:Name ;
-    rdfs:label "Hirundo neoxena" ;
-    bird:nameString "Hirundo neoxena" .
-
-<https://example.org/birds/id/name/hirundo-rustica> a bird:Name ;
-    rdfs:label "Hirundo rustica" ;
-    bird:nameString "Hirundo rustica" .
-
-<https://example.org/birds/id/name/hymenolaimus-malacorhynchos> a bird:Name ;
-    rdfs:label "Hymenolaimus malacorhynchos" ;
-    bird:nameString "Hymenolaimus malacorhynchos" .
-
-<https://example.org/birds/id/name/lamprotornis-superbus> a bird:Name ;
-    rdfs:label "Lamprotornis superbus" ;
-    bird:nameString "Lamprotornis superbus" .
-
-<https://example.org/birds/id/name/limosa-haemastica> a bird:Name ;
-    rdfs:label "Limosa haemastica" ;
-    bird:nameString "Limosa haemastica" .
-
-<https://example.org/birds/id/name/limosa-lapponica> a bird:Name ;
-    rdfs:label "Limosa lapponica" ;
-    bird:nameString "Limosa lapponica" .
-
-<https://example.org/birds/id/name/malurus-cyaneus> a bird:Name ;
-    rdfs:label "Malurus cyaneus" ;
-    bird:nameString "Malurus cyaneus" .
-
-<https://example.org/birds/id/name/megadyptes-antipodes> a bird:Name ;
-    rdfs:label "Megadyptes antipodes" ;
-    bird:nameString "Megadyptes antipodes" .
-
-<https://example.org/birds/id/name/menura-novaehollandiae> a bird:Name ;
-    rdfs:label "Menura novaehollandiae" ;
-    bird:nameString "Menura novaehollandiae" .
-
-<https://example.org/birds/id/name/merops-apiaster> a bird:Name ;
-    rdfs:label "Merops apiaster" ;
-    bird:nameString "Merops apiaster" .
-
-<https://example.org/birds/id/name/merops-ornatus> a bird:Name ;
-    rdfs:label "Merops ornatus" ;
-    bird:nameString "Merops ornatus" .
-
-<https://example.org/birds/id/name/milvus-milvus> a bird:Name ;
-    rdfs:label "Milvus milvus" ;
-    bird:nameString "Milvus milvus" .
-
-<https://example.org/birds/id/name/nectarinia-famosa> a bird:Name ;
-    rdfs:label "Nectarinia famosa" ;
-    bird:nameString "Nectarinia famosa" .
-
-<https://example.org/birds/id/name/neophema-chrysogaster> a bird:Name ;
-    rdfs:label "Neophema chrysogaster" ;
-    bird:nameString "Neophema chrysogaster" .
-
-<https://example.org/birds/id/name/nestor-meridionalis> a bird:Name ;
-    rdfs:label "Nestor meridionalis" ;
-    bird:nameString "Nestor meridionalis" .
-
-<https://example.org/birds/id/name/nestor-notabilis> a bird:Name ;
-    rdfs:label "Nestor notabilis" ;
-    bird:nameString "Nestor notabilis" .
-
-<https://example.org/birds/id/name/numenius-madagascariensis> a bird:Name ;
-    rdfs:label "Numenius madagascariensis" ;
-    bird:nameString "Numenius madagascariensis" .
-
-<https://example.org/birds/id/name/pandion-haliaetus> a bird:Name ;
-    rdfs:label "Pandion haliaetus" ;
-    bird:nameString "Pandion haliaetus" .
-
-<https://example.org/birds/id/name/parus-major> a bird:Name ;
-    rdfs:label "Parus major" ;
-    bird:nameString "Parus major" .
-
-<https://example.org/birds/id/name/passer-domesticus> a bird:Name ;
-    rdfs:label "Passer domesticus" ;
-    bird:nameString "Passer domesticus" .
-
-<https://example.org/birds/id/name/passer-montanus> a bird:Name ;
-    rdfs:label "Passer montanus" ;
-    bird:nameString "Passer montanus" .
-
-<https://example.org/birds/id/name/pelecanus-conspicillatus> a bird:Name ;
-    rdfs:label "Pelecanus conspicillatus" ;
-    bird:nameString "Pelecanus conspicillatus" .
-
-<https://example.org/birds/id/name/phoeniconaias-minor> a bird:Name ;
-    rdfs:label "Phoeniconaias minor" ;
-    bird:nameString "Phoeniconaias minor" .
-
-<https://example.org/birds/id/name/phoenicopterus-chilensis> a bird:Name ;
-    rdfs:label "Phoenicopterus chilensis" ;
-    bird:nameString "Phoenicopterus chilensis" .
-
-<https://example.org/birds/id/name/phoenicopterus-roseus> a bird:Name ;
-    rdfs:label "Phoenicopterus roseus" ;
-    bird:nameString "Phoenicopterus roseus" .
-
-<https://example.org/birds/id/name/phylloscopus-trochilus> a bird:Name ;
-    rdfs:label "Phylloscopus trochilus" ;
-    bird:nameString "Phylloscopus trochilus" .
-
-<https://example.org/birds/id/name/platalea-minor> a bird:Name ;
-    rdfs:label "Platalea minor" ;
-    bird:nameString "Platalea minor" .
-
-<https://example.org/birds/id/name/ploceus-capensis> a bird:Name ;
-    rdfs:label "Ploceus capensis" ;
-    bird:nameString "Ploceus capensis" .
-
-<https://example.org/birds/id/name/promerops-cafer> a bird:Name ;
-    rdfs:label "Promerops cafer" ;
-    bird:nameString "Promerops cafer" .
-
-<https://example.org/birds/id/name/prosthemadera-novaeseelandiae> a bird:Name ;
-    rdfs:label "Prosthemadera novaeseelandiae" ;
-    bird:nameString "Prosthemadera novaeseelandiae" .
-
-<https://example.org/birds/id/name/ptilonorhynchus-violaceus> a bird:Name ;
-    rdfs:label "Ptilonorhynchus violaceus" ;
-    bird:nameString "Ptilonorhynchus violaceus" .
-
-<https://example.org/birds/id/name/sagittarius-serpentarius> a bird:Name ;
-    rdfs:label "Sagittarius serpentarius" ;
-    bird:nameString "Sagittarius serpentarius" .
-
-<https://example.org/birds/id/name/selasphorus-rufus> a bird:Name ;
-    rdfs:label "Selasphorus rufus" ;
-    bird:nameString "Selasphorus rufus" .
-
-<https://example.org/birds/id/name/spheniscus-demersus> a bird:Name ;
-    rdfs:label "Spheniscus demersus" ;
-    bird:nameString "Spheniscus demersus" .
-
-<https://example.org/birds/id/name/spheniscus-magellanicus> a bird:Name ;
-    rdfs:label "Spheniscus magellanicus" ;
-    bird:nameString "Spheniscus magellanicus" .
-
-<https://example.org/birds/id/name/sterna-paradisaea> a bird:Name ;
-    rdfs:label "Sterna paradisaea" ;
-    bird:nameString "Sterna paradisaea" .
-
-<https://example.org/birds/id/name/struthio-camelus> a bird:Name ;
-    rdfs:label "Struthio camelus" ;
-    bird:nameString "Struthio camelus" .
-
-<https://example.org/birds/id/name/sturnus-vulgaris> a bird:Name ;
-    rdfs:label "Sturnus vulgaris" ;
-    bird:nameString "Sturnus vulgaris" .
-
-<https://example.org/birds/id/name/tadorna-variegata> a bird:Name ;
-    rdfs:label "Tadorna variegata" ;
-    bird:nameString "Tadorna variegata" .
-
-<https://example.org/birds/id/name/turdus-merula> a bird:Name ;
-    rdfs:label "Turdus merula" ;
-    bird:nameString "Turdus merula" .
-
-<https://example.org/birds/id/name/turdus-migratorius> a bird:Name ;
-    rdfs:label "Turdus migratorius" ;
-    bird:nameString "Turdus migratorius" .
-
-<https://example.org/birds/id/name/upupa-epops> a bird:Name ;
-    rdfs:label "Upupa epops" ;
-    bird:nameString "Upupa epops" .
-
-<https://example.org/birds/id/name/vanellus-miles> a bird:Name ;
-    rdfs:label "Vanellus miles" ;
-    bird:nameString "Vanellus miles" .
-
-<https://example.org/birds/id/name/vanellus-vanellus> a bird:Name ;
-    rdfs:label "Vanellus vanellus" ;
-    bird:nameString "Vanellus vanellus" .
-
-<https://example.org/birds/id/name/vultur-gryphus> a bird:Name ;
-    rdfs:label "Vultur gryphus" ;
-    bird:nameString "Vultur gryphus" .
-
-<https://example.org/birds/id/name/zosterops-japonicus> a bird:Name ;
-    rdfs:label "Zosterops japonicus" ;
-    bird:nameString "Zosterops japonicus" .
-
-<https://example.org/birds/id/name/zosterops-lateralis> a bird:Name ;
-    rdfs:label "Zosterops lateralis" ;
-    bird:nameString "Zosterops lateralis" .
-
-<https://example.org/birds/id/name/anarhynchus-bicinctus> a bird:Name ;
-    rdfs:label "Anarhynchus bicinctus" ;
-    bird:nameString "Anarhynchus bicinctus" .
-
-<https://example.org/birds/id/name/antigone-canadensis> a bird:Name ;
-    rdfs:label "Antigone canadensis" ;
-    bird:nameString "Antigone canadensis" .
-
-<https://example.org/birds/id/name/ardenna-grisea> a bird:Name ;
-    rdfs:label "Ardenna grisea" ;
-    bird:nameString "Ardenna grisea" .
-
-<https://example.org/birds/id/name/ardenna-tenuirostris> a bird:Name ;
-    rdfs:label "Ardenna tenuirostris" ;
-    bird:nameString "Ardenna tenuirostris" .
-
-<https://example.org/birds/id/name/bubo-scandiacus> a bird:Name ;
-    rdfs:label "Bubo scandiacus" ;
-    bird:nameString "Bubo scandiacus" .
-
-<https://example.org/birds/id/name/chalcites-lucidus> a bird:Name ;
-    rdfs:label "Chalcites lucidus" ;
-    bird:nameString "Chalcites lucidus" .
-
-<https://example.org/birds/id/name/charadrius-bicinctus> a bird:Name ;
-    rdfs:label "Charadrius bicinctus" ;
-    bird:nameString "Charadrius bicinctus" .
-
-<https://example.org/birds/id/name/charadrius-himantopus> a bird:Name ;
-    rdfs:label "Charadrius himantopus" ;
-    bird:nameString "Charadrius himantopus" .
-
-<https://example.org/birds/id/name/chrysococcyx-lucidus> a bird:Name ;
-    rdfs:label "Chrysococcyx lucidus" ;
-    bird:nameString "Chrysococcyx lucidus" .
-
-<https://example.org/birds/id/name/cyanistes-caeruleus> a bird:Name ;
-    rdfs:label "Cyanistes caeruleus" ;
-    bird:nameString "Cyanistes caeruleus" .
-
-<https://example.org/birds/id/name/eudynamys-taitensis> a bird:Name ;
-    rdfs:label "Eudynamys taitensis" ;
-    bird:nameString "Eudynamys taitensis" .
-
-<https://example.org/birds/id/name/grus-canadensis> a bird:Name ;
-    rdfs:label "Grus canadensis" ;
-    bird:nameString "Grus canadensis" .
-
-<https://example.org/birds/id/name/haliaeetus-vocifer> a bird:Name ;
-    rdfs:label "Haliaeetus vocifer" ;
-    bird:nameString "Haliaeetus vocifer" .
-
-<https://example.org/birds/id/name/icthyophaga-vocifer> a bird:Name ;
-    rdfs:label "Icthyophaga vocifer" ;
-    bird:nameString "Icthyophaga vocifer" .
-
-<https://example.org/birds/id/name/notornis-hochstetteri> a bird:Name ;
-    rdfs:label "Notornis hochstetteri" ;
-    bird:nameString "Notornis hochstetteri" .
-
-<https://example.org/birds/id/name/parus-caeruleus> a bird:Name ;
-    rdfs:label "Parus caeruleus" ;
-    bird:nameString "Parus caeruleus" .
-
-<https://example.org/birds/id/name/porphyrio-hochstetteri> a bird:Name ;
-    rdfs:label "Porphyrio hochstetteri" ;
-    bird:nameString "Porphyrio hochstetteri" .
-
-<https://example.org/birds/id/name/puffinus-griseus> a bird:Name ;
-    rdfs:label "Puffinus griseus" ;
-    bird:nameString "Puffinus griseus" .
-
-<https://example.org/birds/id/name/puffinus-tenuirostris> a bird:Name ;
-    rdfs:label "Puffinus tenuirostris" ;
-    bird:nameString "Puffinus tenuirostris" .
-
-<https://example.org/birds/id/name/rhipidura-albiscapa> a bird:Name ;
-    rdfs:label "Rhipidura albiscapa" ;
-    bird:nameString "Rhipidura albiscapa" .
-
-<https://example.org/birds/id/name/rhipidura-fuliginosa> a bird:Name ;
-    rdfs:label "Rhipidura fuliginosa" ;
-    bird:nameString "Rhipidura fuliginosa" .
-
-<https://example.org/birds/id/name/strigops-habroptila> a bird:Name ;
-    rdfs:label "Strigops habroptila" ;
-    bird:nameString "Strigops habroptila" .
-
-<https://example.org/birds/id/name/strigops-habroptilus> a bird:Name ;
-    rdfs:label "Strigops habroptilus" ;
-    bird:nameString "Strigops habroptilus" .
-
-<https://example.org/birds/id/name/strix-scandiaca> a bird:Name ;
-    rdfs:label "Strix scandiaca" ;
-    bird:nameString "Strix scandiaca" .
-
-<https://example.org/birds/id/name/trichoglossus-haematodus> a bird:Name ;
-    rdfs:label "Trichoglossus haematodus" ;
-    bird:nameString "Trichoglossus haematodus" .
-
-<https://example.org/birds/id/name/trichoglossus-moluccanus> a bird:Name ;
-    rdfs:label "Trichoglossus moluccanus" ;
-    bird:nameString "Trichoglossus moluccanus" .
-
-<https://example.org/birds/id/name/urodynamis-taitensis> a bird:Name ;
-    rdfs:label "Urodynamis taitensis" ;
-    bird:nameString "Urodynamis taitensis" .
-
-<https://example.org/birds/id/name/himantopus-leucocephalus> a bird:Name ;
-    rdfs:label "Himantopus leucocephalus" ;
-    bird:nameString "Himantopus leucocephalus" .
-
-<https://example.org/birds/id/name/nyctea-scandiaca> a bird:Name ;
-    rdfs:label "Nyctea scandiaca" ;
-    bird:nameString "Nyctea scandiaca" .
-
-<https://example.org/birds/id/name/porphyrio-mantelli> a bird:Name ;
-    rdfs:label "Porphyrio mantelli" ;
-    bird:nameString "Porphyrio mantelli" .
-
-<https://example.org/birds/id/name/himantopus-himantopus> a bird:Name ;
-    rdfs:label "Himantopus himantopus" ;
-    bird:nameString "Himantopus himantopus" .
-
+<https://example.org/birds/id/name/phoeniconaias-minor> <http://www.w3.org/2000/01/rdf-schema#label> "Phoeniconaias minor" ;
+	<https://example.org/birds/def/nameString> "Phoeniconaias minor" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/chalcites-lucidus> <http://www.w3.org/2000/01/rdf-schema#label> "Chalcites lucidus" ;
+	<https://example.org/birds/def/nameString> "Chalcites lucidus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/antigone-canadensis> <http://www.w3.org/2000/01/rdf-schema#label> "Antigone canadensis" ;
+	<https://example.org/birds/def/nameString> "Antigone canadensis" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/himantopus-novaezelandiae> <http://www.w3.org/2000/01/rdf-schema#label> "Himantopus novaezelandiae" ;
+	<https://example.org/birds/def/nameString> "Himantopus novaezelandiae" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/vanellus-miles> <http://www.w3.org/2000/01/rdf-schema#label> "Vanellus miles" ;
+	<https://example.org/birds/def/nameString> "Vanellus miles" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/arenaria-interpres> <http://www.w3.org/2000/01/rdf-schema#label> "Arenaria interpres" ;
+	<https://example.org/birds/def/nameString> "Arenaria interpres" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/ardenna-grisea> <http://www.w3.org/2000/01/rdf-schema#label> "Ardenna grisea" ;
+	<https://example.org/birds/def/nameString> "Ardenna grisea" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/bucorvus-leadbeateri> <http://www.w3.org/2000/01/rdf-schema#label> "Bucorvus leadbeateri" ;
+	<https://example.org/birds/def/nameString> "Bucorvus leadbeateri" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/coracias-caudatus> <http://www.w3.org/2000/01/rdf-schema#label> "Coracias caudatus" ;
+	<https://example.org/birds/def/nameString> "Coracias caudatus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/falco-peregrinus> <http://www.w3.org/2000/01/rdf-schema#label> "Falco peregrinus" ;
+	<https://example.org/birds/def/nameString> "Falco peregrinus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/strigops-habroptilus> <http://www.w3.org/2000/01/rdf-schema#label> "Strigops habroptilus" ;
+	<https://example.org/birds/def/nameString> "Strigops habroptilus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/nestor-notabilis> <http://www.w3.org/2000/01/rdf-schema#label> "Nestor notabilis" ;
+	<https://example.org/birds/def/nameString> "Nestor notabilis" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/nestor-meridionalis> <http://www.w3.org/2000/01/rdf-schema#label> "Nestor meridionalis" ;
+	<https://example.org/birds/def/nameString> "Nestor meridionalis" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/trichoglossus-moluccanus> <http://www.w3.org/2000/01/rdf-schema#label> "Trichoglossus moluccanus" ;
+	<https://example.org/birds/def/nameString> "Trichoglossus moluccanus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/rhipidura-albiscapa> <http://www.w3.org/2000/01/rdf-schema#label> "Rhipidura albiscapa" ;
+	<https://example.org/birds/def/nameString> "Rhipidura albiscapa" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/erithacus-rubecula> <http://www.w3.org/2000/01/rdf-schema#label> "Erithacus rubecula" ;
+	<https://example.org/birds/def/nameString> "Erithacus rubecula" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/nectarinia-famosa> <http://www.w3.org/2000/01/rdf-schema#label> "Nectarinia famosa" ;
+	<https://example.org/birds/def/nameString> "Nectarinia famosa" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/passer-domesticus> <http://www.w3.org/2000/01/rdf-schema#label> "Passer domesticus" ;
+	<https://example.org/birds/def/nameString> "Passer domesticus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/strix-scandiaca> <http://www.w3.org/2000/01/rdf-schema#label> "Strix scandiaca" ;
+	<https://example.org/birds/def/nameString> "Strix scandiaca" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/notornis-hochstetteri> <http://www.w3.org/2000/01/rdf-schema#label> "Notornis hochstetteri" ;
+	<https://example.org/birds/def/nameString> "Notornis hochstetteri" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/charadrius-bicinctus> <http://www.w3.org/2000/01/rdf-schema#label> "Charadrius bicinctus" ;
+	<https://example.org/birds/def/nameString> "Charadrius bicinctus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/chrysococcyx-lucidus> <http://www.w3.org/2000/01/rdf-schema#label> "Chrysococcyx lucidus" ;
+	<https://example.org/birds/def/nameString> "Chrysococcyx lucidus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/puffinus-tenuirostris> <http://www.w3.org/2000/01/rdf-schema#label> "Puffinus tenuirostris" ;
+	<https://example.org/birds/def/nameString> "Puffinus tenuirostris" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/parus-caeruleus> <http://www.w3.org/2000/01/rdf-schema#label> "Parus caeruleus" ;
+	<https://example.org/birds/def/nameString> "Parus caeruleus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/tadorna-variegata> <http://www.w3.org/2000/01/rdf-schema#label> "Tadorna variegata" ;
+	<https://example.org/birds/def/nameString> "Tadorna variegata" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/hymenolaimus-malacorhynchos> <http://www.w3.org/2000/01/rdf-schema#label> "Hymenolaimus malacorhynchos" ;
+	<https://example.org/birds/def/nameString> "Hymenolaimus malacorhynchos" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/phoenicopterus-chilensis> <http://www.w3.org/2000/01/rdf-schema#label> "Phoenicopterus chilensis" ;
+	<https://example.org/birds/def/nameString> "Phoenicopterus chilensis" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/urodynamis-taitensis> <http://www.w3.org/2000/01/rdf-schema#label> "Urodynamis taitensis" ;
+	<https://example.org/birds/def/nameString> "Urodynamis taitensis" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/hemiphaga-novaeseelandiae> <http://www.w3.org/2000/01/rdf-schema#label> "Hemiphaga novaeseelandiae" ;
+	<https://example.org/birds/def/nameString> "Hemiphaga novaeseelandiae" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/porphyrio-hochstetteri> <http://www.w3.org/2000/01/rdf-schema#label> "Porphyrio hochstetteri" ;
+	<https://example.org/birds/def/nameString> "Porphyrio hochstetteri" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/anarhynchus-bicinctus> <http://www.w3.org/2000/01/rdf-schema#label> "Anarhynchus bicinctus" ;
+	<https://example.org/birds/def/nameString> "Anarhynchus bicinctus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/anarhynchus-frontalis> <http://www.w3.org/2000/01/rdf-schema#label> "Anarhynchus frontalis" ;
+	<https://example.org/birds/def/nameString> "Anarhynchus frontalis" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/limosa-lapponica> <http://www.w3.org/2000/01/rdf-schema#label> "Limosa lapponica" ;
+	<https://example.org/birds/def/nameString> "Limosa lapponica" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/limosa-haemastica> <http://www.w3.org/2000/01/rdf-schema#label> "Limosa haemastica" ;
+	<https://example.org/birds/def/nameString> "Limosa haemastica" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/calidris-canutus> <http://www.w3.org/2000/01/rdf-schema#label> "Calidris canutus" ;
+	<https://example.org/birds/def/nameString> "Calidris canutus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/calidris-acuminata> <http://www.w3.org/2000/01/rdf-schema#label> "Calidris acuminata" ;
+	<https://example.org/birds/def/nameString> "Calidris acuminata" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/sterna-paradisaea> <http://www.w3.org/2000/01/rdf-schema#label> "Sterna paradisaea" ;
+	<https://example.org/birds/def/nameString> "Sterna paradisaea" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/megadyptes-antipodes> <http://www.w3.org/2000/01/rdf-schema#label> "Megadyptes antipodes" ;
+	<https://example.org/birds/def/nameString> "Megadyptes antipodes" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/ciconia-boyciana> <http://www.w3.org/2000/01/rdf-schema#label> "Ciconia boyciana" ;
+	<https://example.org/birds/def/nameString> "Ciconia boyciana" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/ciconia-ciconia> <http://www.w3.org/2000/01/rdf-schema#label> "Ciconia ciconia" ;
+	<https://example.org/birds/def/nameString> "Ciconia ciconia" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/apus-apus> <http://www.w3.org/2000/01/rdf-schema#label> "Apus apus" ;
+	<https://example.org/birds/def/nameString> "Apus apus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/archilochus-colubris> <http://www.w3.org/2000/01/rdf-schema#label> "Archilochus colubris" ;
+	<https://example.org/birds/def/nameString> "Archilochus colubris" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/gyps-africanus> <http://www.w3.org/2000/01/rdf-schema#label> "Gyps africanus" ;
+	<https://example.org/birds/def/nameString> "Gyps africanus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/milvus-milvus> <http://www.w3.org/2000/01/rdf-schema#label> "Milvus milvus" ;
+	<https://example.org/birds/def/nameString> "Milvus milvus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/haliaeetus-leucocephalus> <http://www.w3.org/2000/01/rdf-schema#label> "Haliaeetus leucocephalus" ;
+	<https://example.org/birds/def/nameString> "Haliaeetus leucocephalus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/buteo-swainsoni> <http://www.w3.org/2000/01/rdf-schema#label> "Buteo swainsoni" ;
+	<https://example.org/birds/def/nameString> "Buteo swainsoni" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/buteo-jamaicensis> <http://www.w3.org/2000/01/rdf-schema#label> "Buteo jamaicensis" ;
+	<https://example.org/birds/def/nameString> "Buteo jamaicensis" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/dacelo-novaeguineae> <http://www.w3.org/2000/01/rdf-schema#label> "Dacelo novaeguineae" ;
+	<https://example.org/birds/def/nameString> "Dacelo novaeguineae" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/falco-amurensis> <http://www.w3.org/2000/01/rdf-schema#label> "Falco amurensis" ;
+	<https://example.org/birds/def/nameString> "Falco amurensis" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/falco-novaeseelandiae> <http://www.w3.org/2000/01/rdf-schema#label> "Falco novaeseelandiae" ;
+	<https://example.org/birds/def/nameString> "Falco novaeseelandiae" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/cacatua-galerita> <http://www.w3.org/2000/01/rdf-schema#label> "Cacatua galerita" ;
+	<https://example.org/birds/def/nameString> "Cacatua galerita" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/neophema-chrysogaster> <http://www.w3.org/2000/01/rdf-schema#label> "Neophema chrysogaster" ;
+	<https://example.org/birds/def/nameString> "Neophema chrysogaster" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/menura-novaehollandiae> <http://www.w3.org/2000/01/rdf-schema#label> "Menura novaehollandiae" ;
+	<https://example.org/birds/def/nameString> "Menura novaehollandiae" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/malurus-cyaneus> <http://www.w3.org/2000/01/rdf-schema#label> "Malurus cyaneus" ;
+	<https://example.org/birds/def/nameString> "Malurus cyaneus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/anthochaera-phrygia> <http://www.w3.org/2000/01/rdf-schema#label> "Anthochaera phrygia" ;
+	<https://example.org/birds/def/nameString> "Anthochaera phrygia" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/turdus-merula> <http://www.w3.org/2000/01/rdf-schema#label> "Turdus merula" ;
+	<https://example.org/birds/def/nameString> "Turdus merula" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/ploceus-capensis> <http://www.w3.org/2000/01/rdf-schema#label> "Ploceus capensis" ;
+	<https://example.org/birds/def/nameString> "Ploceus capensis" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/passer-montanus> <http://www.w3.org/2000/01/rdf-schema#label> "Passer montanus" ;
+	<https://example.org/birds/def/nameString> "Passer montanus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/strigops-habroptila> <http://www.w3.org/2000/01/rdf-schema#label> "Strigops habroptila" ;
+	<https://example.org/birds/def/nameString> "Strigops habroptila" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/eudynamys-taitensis> <http://www.w3.org/2000/01/rdf-schema#label> "Eudynamys taitensis" ;
+	<https://example.org/birds/def/nameString> "Eudynamys taitensis" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/chrysococcyx-caprius> <http://www.w3.org/2000/01/rdf-schema#label> "Chrysococcyx caprius" ;
+	<https://example.org/birds/def/nameString> "Chrysococcyx caprius" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/cuculus-canorus> <http://www.w3.org/2000/01/rdf-schema#label> "Cuculus canorus" ;
+	<https://example.org/birds/def/nameString> "Cuculus canorus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/balearica-regulorum> <http://www.w3.org/2000/01/rdf-schema#label> "Balearica regulorum" ;
+	<https://example.org/birds/def/nameString> "Balearica regulorum" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/grus-japonensis> <http://www.w3.org/2000/01/rdf-schema#label> "Grus japonensis" ;
+	<https://example.org/birds/def/nameString> "Grus japonensis" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/numenius-madagascariensis> <http://www.w3.org/2000/01/rdf-schema#label> "Numenius madagascariensis" ;
+	<https://example.org/birds/def/nameString> "Numenius madagascariensis" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/calidris-ruficollis> <http://www.w3.org/2000/01/rdf-schema#label> "Calidris ruficollis" ;
+	<https://example.org/birds/def/nameString> "Calidris ruficollis" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/spheniscus-demersus> <http://www.w3.org/2000/01/rdf-schema#label> "Spheniscus demersus" ;
+	<https://example.org/birds/def/nameString> "Spheniscus demersus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/diomedea-epomophora> <http://www.w3.org/2000/01/rdf-schema#label> "Diomedea epomophora" ;
+	<https://example.org/birds/def/nameString> "Diomedea epomophora" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/bostrychia-hagedash> <http://www.w3.org/2000/01/rdf-schema#label> "Bostrychia hagedash" ;
+	<https://example.org/birds/def/nameString> "Bostrychia hagedash" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/pelecanus-conspicillatus> <http://www.w3.org/2000/01/rdf-schema#label> "Pelecanus conspicillatus" ;
+	<https://example.org/birds/def/nameString> "Pelecanus conspicillatus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/selasphorus-rufus> <http://www.w3.org/2000/01/rdf-schema#label> "Selasphorus rufus" ;
+	<https://example.org/birds/def/nameString> "Selasphorus rufus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/bubo-scandiacus> <http://www.w3.org/2000/01/rdf-schema#label> "Bubo scandiacus" ;
+	<https://example.org/birds/def/nameString> "Bubo scandiacus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/vultur-gryphus> <http://www.w3.org/2000/01/rdf-schema#label> "Vultur gryphus" ;
+	<https://example.org/birds/def/nameString> "Vultur gryphus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/sagittarius-serpentarius> <http://www.w3.org/2000/01/rdf-schema#label> "Sagittarius serpentarius" ;
+	<https://example.org/birds/def/nameString> "Sagittarius serpentarius" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/pandion-haliaetus> <http://www.w3.org/2000/01/rdf-schema#label> "Pandion haliaetus" ;
+	<https://example.org/birds/def/nameString> "Pandion haliaetus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/aquila-adalberti> <http://www.w3.org/2000/01/rdf-schema#label> "Aquila adalberti" ;
+	<https://example.org/birds/def/nameString> "Aquila adalberti" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/icthyophaga-vocifer> <http://www.w3.org/2000/01/rdf-schema#label> "Icthyophaga vocifer" ;
+	<https://example.org/birds/def/nameString> "Icthyophaga vocifer" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/merops-apiaster> <http://www.w3.org/2000/01/rdf-schema#label> "Merops apiaster" ;
+	<https://example.org/birds/def/nameString> "Merops apiaster" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/eolophus-roseicapilla> <http://www.w3.org/2000/01/rdf-schema#label> "Eolophus roseicapilla" ;
+	<https://example.org/birds/def/nameString> "Eolophus roseicapilla" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/ptilonorhynchus-violaceus> <http://www.w3.org/2000/01/rdf-schema#label> "Ptilonorhynchus violaceus" ;
+	<https://example.org/birds/def/nameString> "Ptilonorhynchus violaceus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/anthornis-melanura> <http://www.w3.org/2000/01/rdf-schema#label> "Anthornis melanura" ;
+	<https://example.org/birds/def/nameString> "Anthornis melanura" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/gymnorhina-tibicen> <http://www.w3.org/2000/01/rdf-schema#label> "Gymnorhina tibicen" ;
+	<https://example.org/birds/def/nameString> "Gymnorhina tibicen" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/rhipidura-fuliginosa> <http://www.w3.org/2000/01/rdf-schema#label> "Rhipidura fuliginosa" ;
+	<https://example.org/birds/def/nameString> "Rhipidura fuliginosa" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/cyanocitta-cristata> <http://www.w3.org/2000/01/rdf-schema#label> "Cyanocitta cristata" ;
+	<https://example.org/birds/def/nameString> "Cyanocitta cristata" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/parus-major> <http://www.w3.org/2000/01/rdf-schema#label> "Parus major" ;
+	<https://example.org/birds/def/nameString> "Parus major" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/phylloscopus-trochilus> <http://www.w3.org/2000/01/rdf-schema#label> "Phylloscopus trochilus" ;
+	<https://example.org/birds/def/nameString> "Phylloscopus trochilus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/zosterops-japonicus> <http://www.w3.org/2000/01/rdf-schema#label> "Zosterops japonicus" ;
+	<https://example.org/birds/def/nameString> "Zosterops japonicus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/sturnus-vulgaris> <http://www.w3.org/2000/01/rdf-schema#label> "Sturnus vulgaris" ;
+	<https://example.org/birds/def/nameString> "Sturnus vulgaris" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/lamprotornis-superbus> <http://www.w3.org/2000/01/rdf-schema#label> "Lamprotornis superbus" ;
+	<https://example.org/birds/def/nameString> "Lamprotornis superbus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/ficedula-hypoleuca> <http://www.w3.org/2000/01/rdf-schema#label> "Ficedula hypoleuca" ;
+	<https://example.org/birds/def/nameString> "Ficedula hypoleuca" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/promerops-cafer> <http://www.w3.org/2000/01/rdf-schema#label> "Promerops cafer" ;
+	<https://example.org/birds/def/nameString> "Promerops cafer" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/cardinalis-cardinalis> <http://www.w3.org/2000/01/rdf-schema#label> "Cardinalis cardinalis" ;
+	<https://example.org/birds/def/nameString> "Cardinalis cardinalis" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/porphyrio-mantelli> <http://www.w3.org/2000/01/rdf-schema#label> "Porphyrio mantelli" ;
+	<https://example.org/birds/def/nameString> "Porphyrio mantelli" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/haliaeetus-vocifer> <http://www.w3.org/2000/01/rdf-schema#label> "Haliaeetus vocifer" ;
+	<https://example.org/birds/def/nameString> "Haliaeetus vocifer" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/puffinus-griseus> <http://www.w3.org/2000/01/rdf-schema#label> "Puffinus griseus" ;
+	<https://example.org/birds/def/nameString> "Puffinus griseus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/charadrius-himantopus> <http://www.w3.org/2000/01/rdf-schema#label> "Charadrius himantopus" ;
+	<https://example.org/birds/def/nameString> "Charadrius himantopus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/struthio-camelus> <http://www.w3.org/2000/01/rdf-schema#label> "Struthio camelus" ;
+	<https://example.org/birds/def/nameString> "Struthio camelus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/dromaius-novaehollandiae> <http://www.w3.org/2000/01/rdf-schema#label> "Dromaius novaehollandiae" ;
+	<https://example.org/birds/def/nameString> "Dromaius novaehollandiae" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/apteryx-mantelli> <http://www.w3.org/2000/01/rdf-schema#label> "Apteryx mantelli" ;
+	<https://example.org/birds/def/nameString> "Apteryx mantelli" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/aix-galericulata> <http://www.w3.org/2000/01/rdf-schema#label> "Aix galericulata" ;
+	<https://example.org/birds/def/nameString> "Aix galericulata" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/phoenicopterus-roseus> <http://www.w3.org/2000/01/rdf-schema#label> "Phoenicopterus roseus" ;
+	<https://example.org/birds/def/nameString> "Phoenicopterus roseus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/himantopus-himantopus> <http://www.w3.org/2000/01/rdf-schema#label> "Himantopus himantopus" ;
+	<https://example.org/birds/def/nameString> "Himantopus himantopus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/himantopus-leucocephalus> <http://www.w3.org/2000/01/rdf-schema#label> "Himantopus leucocephalus" ;
+	<https://example.org/birds/def/nameString> "Himantopus leucocephalus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/haematopus-finschi> <http://www.w3.org/2000/01/rdf-schema#label> "Haematopus finschi" ;
+	<https://example.org/birds/def/nameString> "Haematopus finschi" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/vanellus-vanellus> <http://www.w3.org/2000/01/rdf-schema#label> "Vanellus vanellus" ;
+	<https://example.org/birds/def/nameString> "Vanellus vanellus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/calidris-tenuirostris> <http://www.w3.org/2000/01/rdf-schema#label> "Calidris tenuirostris" ;
+	<https://example.org/birds/def/nameString> "Calidris tenuirostris" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/calidris-pygmaea> <http://www.w3.org/2000/01/rdf-schema#label> "Calidris pygmaea" ;
+	<https://example.org/birds/def/nameString> "Calidris pygmaea" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/fratercula-arctica> <http://www.w3.org/2000/01/rdf-schema#label> "Fratercula arctica" ;
+	<https://example.org/birds/def/nameString> "Fratercula arctica" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/spheniscus-magellanicus> <http://www.w3.org/2000/01/rdf-schema#label> "Spheniscus magellanicus" ;
+	<https://example.org/birds/def/nameString> "Spheniscus magellanicus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/ardenna-tenuirostris> <http://www.w3.org/2000/01/rdf-schema#label> "Ardenna tenuirostris" ;
+	<https://example.org/birds/def/nameString> "Ardenna tenuirostris" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/platalea-minor> <http://www.w3.org/2000/01/rdf-schema#label> "Platalea minor" ;
+	<https://example.org/birds/def/nameString> "Platalea minor" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/aquila-audax> <http://www.w3.org/2000/01/rdf-schema#label> "Aquila audax" ;
+	<https://example.org/birds/def/nameString> "Aquila audax" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/circus-approximans> <http://www.w3.org/2000/01/rdf-schema#label> "Circus approximans" ;
+	<https://example.org/birds/def/nameString> "Circus approximans" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/upupa-epops> <http://www.w3.org/2000/01/rdf-schema#label> "Upupa epops" ;
+	<https://example.org/birds/def/nameString> "Upupa epops" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/merops-ornatus> <http://www.w3.org/2000/01/rdf-schema#label> "Merops ornatus" ;
+	<https://example.org/birds/def/nameString> "Merops ornatus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/trichoglossus-haematodus> <http://www.w3.org/2000/01/rdf-schema#label> "Trichoglossus haematodus" ;
+	<https://example.org/birds/def/nameString> "Trichoglossus haematodus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/prosthemadera-novaeseelandiae> <http://www.w3.org/2000/01/rdf-schema#label> "Prosthemadera novaeseelandiae" ;
+	<https://example.org/birds/def/nameString> "Prosthemadera novaeseelandiae" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/cyanistes-caeruleus> <http://www.w3.org/2000/01/rdf-schema#label> "Cyanistes caeruleus" ;
+	<https://example.org/birds/def/nameString> "Cyanistes caeruleus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/hirundo-neoxena> <http://www.w3.org/2000/01/rdf-schema#label> "Hirundo neoxena" ;
+	<https://example.org/birds/def/nameString> "Hirundo neoxena" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/hirundo-rustica> <http://www.w3.org/2000/01/rdf-schema#label> "Hirundo rustica" ;
+	<https://example.org/birds/def/nameString> "Hirundo rustica" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/zosterops-lateralis> <http://www.w3.org/2000/01/rdf-schema#label> "Zosterops lateralis" ;
+	<https://example.org/birds/def/nameString> "Zosterops lateralis" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/turdus-migratorius> <http://www.w3.org/2000/01/rdf-schema#label> "Turdus migratorius" ;
+	<https://example.org/birds/def/nameString> "Turdus migratorius" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/dolichonyx-oryzivorus> <http://www.w3.org/2000/01/rdf-schema#label> "Dolichonyx oryzivorus" ;
+	<https://example.org/birds/def/nameString> "Dolichonyx oryzivorus" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/nyctea-scandiaca> <http://www.w3.org/2000/01/rdf-schema#label> "Nyctea scandiaca" ;
+	<https://example.org/birds/def/nameString> "Nyctea scandiaca" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name/grus-canadensis> <http://www.w3.org/2000/01/rdf-schema#label> "Grus canadensis" ;
+	<https://example.org/birds/def/nameString> "Grus canadensis" ;
+	a <https://example.org/birds/def/Name> .
+<https://example.org/birds/id/name-change/1> <http://www.w3.org/2000/01/rdf-schema#comment> "Snowy owl placed in its own genus"@en ;
+	<http://purl.org/dc/terms/source> "Stephens 1826" ;
+	<https://example.org/birds/def/changeType> <https://example.org/birds/vocab/name-change/genus-move> ;
+	<https://example.org/birds/def/toName> <https://example.org/birds/id/name/nyctea-scandiaca> ;
+	<https://example.org/birds/def/fromName> <https://example.org/birds/id/name/strix-scandiaca> ;
+	a <https://example.org/birds/def/NameChange> .
+<https://example.org/birds/id/name-change/2> <http://www.w3.org/2000/01/rdf-schema#comment> "Snowy owl merged into Bubo; ending changed to agree with the genus"@en ;
+	<http://purl.org/dc/terms/source> "IOC 2.0 (2009)" ;
+	<https://example.org/birds/def/changeType> <https://example.org/birds/vocab/name-change/genus-move> ;
+	<https://example.org/birds/def/toName> <https://example.org/birds/id/name/bubo-scandiacus> ;
+	<https://example.org/birds/def/fromName> <https://example.org/birds/id/name/nyctea-scandiaca> ;
+	a <https://example.org/birds/def/NameChange> .
+<https://example.org/birds/id/name-change/3> <http://www.w3.org/2000/01/rdf-schema#comment> "South Island takahē merged with the extinct North Island takahē in Porphyrio"@en ;
+	<http://purl.org/dc/terms/source> "1990s checklists" ;
+	<https://example.org/birds/def/changeType> <https://example.org/birds/vocab/name-change/lump> ;
+	<https://example.org/birds/def/toName> <https://example.org/birds/id/name/porphyrio-mantelli> ;
+	<https://example.org/birds/def/fromName> <https://example.org/birds/id/name/notornis-hochstetteri> ;
+	a <https://example.org/birds/def/NameChange> .
+<https://example.org/birds/id/name-change/4> <http://www.w3.org/2000/01/rdf-schema#comment> "Living South Island takahē separated from the extinct North Island form"@en ;
+	<http://purl.org/dc/terms/source> "Trewick 1996" ;
+	<https://example.org/birds/def/changeRegion> <https://example.org/birds/vocab/region/nz> ;
+	<https://example.org/birds/def/changeType> <https://example.org/birds/vocab/name-change/split> ;
+	<https://example.org/birds/def/toName> <https://example.org/birds/id/name/porphyrio-hochstetteri> ;
+	<https://example.org/birds/def/fromName> <https://example.org/birds/id/name/porphyrio-mantelli> ;
+	a <https://example.org/birds/def/NameChange> .
+<https://example.org/birds/id/name-change/5> <http://www.w3.org/2000/01/rdf-schema#comment> "Several Charadrius plovers moved to Anarhynchus"@en ;
+	<http://purl.org/dc/terms/source> "AviList v2025" ;
+	<https://example.org/birds/def/changeType> <https://example.org/birds/vocab/name-change/genus-move> ;
+	<https://example.org/birds/def/toName> <https://example.org/birds/id/name/anarhynchus-bicinctus> ;
+	<https://example.org/birds/def/fromName> <https://example.org/birds/id/name/charadrius-bicinctus> ;
+	a <https://example.org/birds/def/NameChange> .
+<https://example.org/birds/id/name-change/6> <http://www.w3.org/2000/01/rdf-schema#comment> "Bronze cuckoos placed in Chalcites"@en ;
+	<http://purl.org/dc/terms/source> "AviList v2025" ;
+	<https://example.org/birds/def/changeType> <https://example.org/birds/vocab/name-change/genus-move> ;
+	<https://example.org/birds/def/toName> <https://example.org/birds/id/name/chalcites-lucidus> ;
+	<https://example.org/birds/def/fromName> <https://example.org/birds/id/name/chrysococcyx-lucidus> ;
+	a <https://example.org/birds/def/NameChange> .
+<https://example.org/birds/id/name-change/7> <http://www.w3.org/2000/01/rdf-schema#comment> "Fish eagles placed in Icthyophaga"@en ;
+	<http://purl.org/dc/terms/source> "AviList v2025" ;
+	<https://example.org/birds/def/changeType> <https://example.org/birds/vocab/name-change/genus-move> ;
+	<https://example.org/birds/def/toName> <https://example.org/birds/id/name/icthyophaga-vocifer> ;
+	<https://example.org/birds/def/fromName> <https://example.org/birds/id/name/haliaeetus-vocifer> ;
+	a <https://example.org/birds/def/NameChange> .
+<https://example.org/birds/id/name-change/8> <http://www.w3.org/2000/01/rdf-schema#comment> "Ending changed to agree with the gender of the genus"@en ;
+	<http://purl.org/dc/terms/source> "AviList v2025" ;
+	<https://example.org/birds/def/changeType> <https://example.org/birds/vocab/name-change/spelling> ;
+	<https://example.org/birds/def/toName> <https://example.org/birds/id/name/strigops-habroptilus> ;
+	<https://example.org/birds/def/fromName> <https://example.org/birds/id/name/strigops-habroptila> ;
+	a <https://example.org/birds/def/NameChange> .
+<https://example.org/birds/id/name-change/9> <http://www.w3.org/2000/01/rdf-schema#comment> "Large shearwaters placed in Ardenna"@en ;
+	<http://purl.org/dc/terms/source> "IOC 7.1 (2017)" ;
+	<https://example.org/birds/def/changeType> <https://example.org/birds/vocab/name-change/genus-move> ;
+	<https://example.org/birds/def/toName> <https://example.org/birds/id/name/ardenna-grisea> ;
+	<https://example.org/birds/def/fromName> <https://example.org/birds/id/name/puffinus-griseus> ;
+	a <https://example.org/birds/def/NameChange> .
+<https://example.org/birds/id/name-change/10> <http://www.w3.org/2000/01/rdf-schema#comment> "Large shearwaters placed in Ardenna"@en ;
+	<http://purl.org/dc/terms/source> "IOC 7.1 (2017)" ;
+	<https://example.org/birds/def/changeType> <https://example.org/birds/vocab/name-change/genus-move> ;
+	<https://example.org/birds/def/toName> <https://example.org/birds/id/name/ardenna-tenuirostris> ;
+	<https://example.org/birds/def/fromName> <https://example.org/birds/id/name/puffinus-tenuirostris> ;
+	a <https://example.org/birds/def/NameChange> .
+<https://example.org/birds/id/name-change/11> <http://www.w3.org/2000/01/rdf-schema#comment> "Long-tailed koel placed in its own genus"@en ;
+	<http://purl.org/dc/terms/source> "IOC 4.1 (2014)" ;
+	<https://example.org/birds/def/changeType> <https://example.org/birds/vocab/name-change/genus-move> ;
+	<https://example.org/birds/def/toName> <https://example.org/birds/id/name/urodynamis-taitensis> ;
+	<https://example.org/birds/def/fromName> <https://example.org/birds/id/name/eudynamys-taitensis> ;
+	a <https://example.org/birds/def/NameChange> .
+<https://example.org/birds/id/name-change/12> <http://www.w3.org/2000/01/rdf-schema#comment> "Sandhill crane placed in Antigone"@en ;
+	<http://purl.org/dc/terms/source> "AOS 2016" ;
+	<https://example.org/birds/def/changeType> <https://example.org/birds/vocab/name-change/genus-move> ;
+	<https://example.org/birds/def/toName> <https://example.org/birds/id/name/antigone-canadensis> ;
+	<https://example.org/birds/def/fromName> <https://example.org/birds/id/name/grus-canadensis> ;
+	a <https://example.org/birds/def/NameChange> .
+<https://example.org/birds/id/name-change/13> <http://www.w3.org/2000/01/rdf-schema#comment> "Blue tits placed in Cyanistes"@en ;
+	<http://purl.org/dc/terms/source> "BOU 2005" ;
+	<https://example.org/birds/def/changeType> <https://example.org/birds/vocab/name-change/genus-move> ;
+	<https://example.org/birds/def/toName> <https://example.org/birds/id/name/cyanistes-caeruleus> ;
+	<https://example.org/birds/def/fromName> <https://example.org/birds/id/name/parus-caeruleus> ;
+	a <https://example.org/birds/def/NameChange> .
+<https://example.org/birds/id/name-change/14> <http://www.w3.org/2000/01/rdf-schema#comment> "Stilts placed in Himantopus"@en ;
+	<http://purl.org/dc/terms/source> "Brisson 1760" ;
+	<https://example.org/birds/def/changeType> <https://example.org/birds/vocab/name-change/genus-move> ;
+	<https://example.org/birds/def/toName> <https://example.org/birds/id/name/himantopus-himantopus> ;
+	<https://example.org/birds/def/fromName> <https://example.org/birds/id/name/charadrius-himantopus> ;
+	a <https://example.org/birds/def/NameChange> .
+<https://example.org/birds/id/name-change/15> <http://www.w3.org/2000/01/rdf-schema#comment> "Pied stilt of Australasia separated from the black-winged stilt"@en ;
+	<http://purl.org/dc/terms/source> "IOC 2.0 (2009)" ;
+	<https://example.org/birds/def/changeRegion> <https://example.org/birds/vocab/region/nz> ;
+	<https://example.org/birds/def/changeType> <https://example.org/birds/vocab/name-change/split> ;
+	<https://example.org/birds/def/toName> <https://example.org/birds/id/name/himantopus-leucocephalus> ;
+	<https://example.org/birds/def/fromName> <https://example.org/birds/id/name/himantopus-himantopus> ;
+	a <https://example.org/birds/def/NameChange> .
+<https://example.org/birds/id/name-change/16> <http://www.w3.org/2000/01/rdf-schema#comment> "Pied stilt of Australasia separated from the black-winged stilt"@en ;
+	<http://purl.org/dc/terms/source> "IOC 2.0 (2009)" ;
+	<https://example.org/birds/def/changeRegion> <https://example.org/birds/vocab/region/au> ;
+	<https://example.org/birds/def/changeType> <https://example.org/birds/vocab/name-change/split> ;
+	<https://example.org/birds/def/toName> <https://example.org/birds/id/name/himantopus-leucocephalus> ;
+	<https://example.org/birds/def/fromName> <https://example.org/birds/id/name/himantopus-himantopus> ;
+	a <https://example.org/birds/def/NameChange> .
+<https://example.org/birds/id/name-change/17> <http://www.w3.org/2000/01/rdf-schema#comment> "Grey fantail of Australia separated from the New Zealand fantail"@en ;
+	<http://purl.org/dc/terms/source> "IOC 2.0 (2009)" ;
+	<https://example.org/birds/def/changeRegion> <https://example.org/birds/vocab/region/au> ;
+	<https://example.org/birds/def/changeType> <https://example.org/birds/vocab/name-change/split> ;
+	<https://example.org/birds/def/toName> <https://example.org/birds/id/name/rhipidura-albiscapa> ;
+	<https://example.org/birds/def/fromName> <https://example.org/birds/id/name/rhipidura-fuliginosa> ;
+	a <https://example.org/birds/def/NameChange> .
+<https://example.org/birds/id/name-change/18> <http://www.w3.org/2000/01/rdf-schema#comment> "Rainbow lorikeet of Australia separated from the coconut lorikeet"@en ;
+	<http://purl.org/dc/terms/source> "IOC 10.1 (2020)" ;
+	<https://example.org/birds/def/changeRegion> <https://example.org/birds/vocab/region/au> ;
+	<https://example.org/birds/def/changeType> <https://example.org/birds/vocab/name-change/split> ;
+	<https://example.org/birds/def/toName> <https://example.org/birds/id/name/trichoglossus-moluccanus> ;
+	<https://example.org/birds/def/fromName> <https://example.org/birds/id/name/trichoglossus-haematodus> ;
+	a <https://example.org/birds/def/NameChange> .

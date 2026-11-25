@@ -1,314 +1,242 @@
-@prefix bird: <https://example.org/birds/def/> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix geo: <http://www.opengis.net/ont/geosparql#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<https://example.org/birds/id/site/bahia-lomas> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Bahía Lomas"@en ;
-    dcterms:description "A bay in Tierra del Fuego with mudflats that extend 7 km at low tide, a winter site of red knots."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/bahia-lomas/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/cl> ;
-    bird:latitude -52.6 ;
-    bird:longitude -69.0 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
-
-<https://example.org/birds/id/site/chiloe> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Chiloé Island"@en ;
-    dcterms:description "Tidal flats on the inner coast of Chiloé, the main non-breeding site of the Hudsonian godwit."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/chiloe/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/cl> ;
-    bird:latitude -41.85 ;
-    bird:longitude -73.8 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
-
-<https://example.org/birds/id/site/delaware-bay> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Delaware Bay"@en ;
-    dcterms:description "A bay between New Jersey and Delaware, where red knots feed on horseshoe crab eggs in May."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/delaware-bay/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/us> ;
-    bird:latitude 39.1 ;
-    bird:longitude -75.05 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
-
-<https://example.org/birds/id/site/donana> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Doñana"@en ;
-    dcterms:description "Marshes, dunes and lagoons at the mouth of the Guadalquivir in southern Spain, a national park."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/donana/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/es> ;
-    bird:latitude 37.0 ;
-    bird:longitude -6.4 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/wetland> .
-
-<https://example.org/birds/id/site/farewell-spit> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Farewell Spit"@en ;
-    dcterms:description "A 30 km sand spit at the north-west tip of the South Island, with tidal flats on its sheltered side."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/farewell-spit/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/nz> ;
-    bird:latitude -40.53 ;
-    bird:longitude 172.85 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
-
-<https://example.org/birds/id/site/firth-of-thames> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Firth of Thames"@en ;
-    dcterms:description "Wide tidal flats at the south end of the Hauraki Gulf, with a shorebird centre at Pūkorokoro Miranda. Godwits, knots and wrybills gather here in thousands."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/firth-of-thames/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/nz> ;
-    bird:latitude -37.2 ;
-    bird:longitude 175.33 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
-
-<https://example.org/birds/id/site/kaikoura> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Kaikōura Canyon"@en ;
-    dcterms:description "A deep submarine canyon close to shore, where albatrosses, shearwaters and petrels feed."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/kaikoura/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/nz> ;
-    bird:latitude -42.45 ;
-    bird:longitude 173.7 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/coast> .
-
-<https://example.org/birds/id/site/kushiro-marsh> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Kushiro Marsh"@en ;
-    dcterms:description "The largest wetland in Japan, in eastern Hokkaido, home of the resident red-crowned cranes."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/kushiro-marsh/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/jp> ;
-    bird:latitude 43.1 ;
-    bird:longitude 144.4 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/wetland> .
-
-<https://example.org/birds/id/site/lake-nakuru> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Lake Nakuru"@en ;
-    dcterms:description "A soda lake in the Kenyan Rift Valley, famous for its flocks of lesser flamingos."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/lake-nakuru/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/ke> ;
-    bird:latitude -0.36 ;
-    bird:longitude 36.09 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/lake> .
-
-<https://example.org/birds/id/site/langebaan-lagoon> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Langebaan Lagoon"@en ;
-    dcterms:description "A shallow coastal lagoon on the west coast of South Africa, a Ramsar site."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/langebaan-lagoon/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/za> ;
-    bird:latitude -33.12 ;
-    bird:longitude 18.05 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/estuary> .
-
-<https://example.org/birds/id/site/manawatu-estuary> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Manawatū Estuary"@en ;
-    dcterms:description "A small estuary at Foxton Beach, a Ramsar site and a stopover for migratory waders."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/manawatu-estuary/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/nz> ;
-    bird:latitude -40.47 ;
-    bird:longitude 175.22 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/estuary> .
-
-<https://example.org/birds/id/site/moreton-bay> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Moreton Bay"@en ;
-    dcterms:description "A large bay east of Brisbane with sand islands, mangroves and mudflats."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/moreton-bay/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/au> ;
-    bird:latitude -27.35 ;
-    bird:longitude 153.25 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
-
-<https://example.org/birds/id/site/platte-river> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Platte River"@en ;
-    dcterms:description "A shallow, braided river in Nebraska, where sandhill cranes roost in March."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/platte-river/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/us> ;
-    bird:latitude 40.7 ;
-    bird:longitude -98.9 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/braided-river> .
-
-<https://example.org/birds/id/site/rakaia-river> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Rakaia River"@en ;
-    dcterms:description "A wide braided river of grey gravel on the Canterbury Plains, where wrybills and banded dotterels nest."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/rakaia-river/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/nz> ;
-    bird:latitude -43.55 ;
-    bird:longitude 171.95 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/braided-river> .
-
-<https://example.org/birds/id/site/roebuck-bay> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Roebuck Bay"@en ;
-    dcterms:description "Tropical mudflats near Broome, one of the most important non-breeding sites for migratory waders in the world."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/roebuck-bay/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/au> ;
-    bird:latitude -18.05 ;
-    bird:longitude 122.3 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
-
-<https://example.org/birds/id/site/saemangeum> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Saemangeum"@en ;
-    dcterms:description "A former estuary on the west coast of Korea, closed by a 33 km seawall in 2006."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/saemangeum/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/kr> ;
-    bird:latitude 35.8 ;
-    bird:longitude 126.62 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
-
-<https://example.org/birds/id/site/san-antonio-oeste> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Bahía San Antonio"@en ;
-    dcterms:description "A bay in Patagonia where red knots stop on their way north."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/san-antonio-oeste/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/ar> ;
-    bird:latitude -40.78 ;
-    bird:longitude -64.9 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
-
-<https://example.org/birds/id/site/strait-of-gibraltar> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Strait of Gibraltar"@en ;
-    dcterms:description "The narrowest crossing between Europe and Africa, where storks and birds of prey cross on thermals."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/strait-of-gibraltar/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/es> ;
-    bird:latitude 36.02 ;
-    bird:longitude -5.6 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/bottleneck> .
-
-<https://example.org/birds/id/site/the-wash> a geo:Feature,
-        bird:Site ;
-    rdfs:label "The Wash"@en ;
-    dcterms:description "A large bay on the east coast of England with mudflats and salt marsh, a winter site for waders and geese."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/the-wash/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/gb> ;
-    bird:latitude 52.9 ;
-    bird:longitude 0.3 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
-
-<https://example.org/birds/id/site/western-port> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Western Port"@en ;
-    dcterms:description "A bay south-east of Melbourne with wide mudflats and salt marsh."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/western-port/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/au> ;
-    bird:latitude -38.35 ;
-    bird:longitude 145.3 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
-
-<https://example.org/birds/id/site/yalu-jiang> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Yalu Jiang"@en ;
-    dcterms:description "Mudflats at the mouth of the Yalu River on the Yellow Sea, a spring staging site for bar-tailed godwits."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/yalu-jiang/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/cn> ;
-    bird:latitude 39.82 ;
-    bird:longitude 123.95 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
-
-<https://example.org/birds/id/site/yukon-kuskokwim-delta> a geo:Feature,
-        bird:Site ;
-    rdfs:label "Yukon-Kuskokwim Delta"@en ;
-    dcterms:description "A vast delta of tundra, lakes and coastal flats in western Alaska, a breeding area for shorebirds and geese."@en ;
-    geo:hasGeometry <https://example.org/birds/id/site/yukon-kuskokwim-delta/geometry> ;
-    bird:country <https://example.org/birds/vocab/region/us> ;
-    bird:latitude 61.2 ;
-    bird:longitude -164.5 ;
-    bird:siteType <https://example.org/birds/vocab/site-type/wetland> .
-
-<https://example.org/birds/id/site/bahia-lomas/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((-68.8 -52.7, -68.8 -52.5, -69.2 -52.5, -69.2 -52.7, -68.8 -52.7))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/chiloe/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((-73.6 -42, -73.6 -41.7, -74 -41.7, -74 -42, -73.6 -42))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/delaware-bay/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((-74.85 38.9, -74.85 39.300000000000004, -75.25 39.300000000000004, -75.25 38.9, -74.85 38.9))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/donana/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((-6.2 36.85, -6.2 37.15, -6.6000000000000005 37.15, -6.6000000000000005 36.85, -6.2 36.85))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/farewell-spit/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((173.04999999999998 -40.59, 173.04999999999998 -40.47, 172.65 -40.47, 172.65 -40.59, 173.04999999999998 -40.59))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/firth-of-thames/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((175.45000000000002 -37.300000000000004, 175.45000000000002 -37.1, 175.21 -37.1, 175.21 -37.300000000000004, 175.45000000000002 -37.300000000000004))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/kaikoura/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((173.85 -42.57, 173.85 -42.330000000000005, 173.54999999999998 -42.330000000000005, 173.54999999999998 -42.57, 173.85 -42.57))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/kushiro-marsh/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((144.52 43, 144.52 43.2, 144.28 43.2, 144.28 43, 144.52 43))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/lake-nakuru/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((36.14 -0.42, 36.14 -0.3, 36.040000000000006 -0.3, 36.040000000000006 -0.42, 36.14 -0.42))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/langebaan-lagoon/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((18.1 -33.199999999999996, 18.1 -33.04, 18 -33.04, 18 -33.199999999999996, 18.1 -33.199999999999996))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/manawatu-estuary/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((175.26 -40.5, 175.26 -40.44, 175.18 -40.44, 175.18 -40.5, 175.26 -40.5))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/moreton-bay/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((153.4 -27.55, 153.4 -27.150000000000002, 153.1 -27.150000000000002, 153.1 -27.55, 153.4 -27.55))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/platte-river/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((-98.5 40.620000000000005, -98.5 40.78, -99.30000000000001 40.78, -99.30000000000001 40.620000000000005, -98.5 40.620000000000005))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/rakaia-river/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((172.2 -43.699999999999996, 172.2 -43.4, 171.7 -43.4, 171.7 -43.699999999999996, 172.2 -43.699999999999996))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/roebuck-bay/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((122.45 -18.17, 122.45 -17.93, 122.14999999999999 -17.93, 122.14999999999999 -18.17, 122.45 -18.17))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/saemangeum/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((126.77000000000001 35.68, 126.77000000000001 35.919999999999995, 126.47 35.919999999999995, 126.47 35.68, 126.77000000000001 35.68))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/san-antonio-oeste/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((-64.80000000000001 -40.86, -64.80000000000001 -40.7, -65 -40.7, -65 -40.86, -64.80000000000001 -40.86))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/strait-of-gibraltar/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((-5.5 35.970000000000006, -5.5 36.07, -5.699999999999999 36.07, -5.699999999999999 35.970000000000006, -5.5 35.970000000000006))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/the-wash/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((0.5 52.78, 0.5 53.019999999999996, 0.1 53.019999999999996, 0.1 52.78, 0.5 52.78))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/western-port/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((145.45000000000002 -38.47, 145.45000000000002 -38.230000000000004, 145.15 -38.230000000000004, 145.15 -38.47, 145.45000000000002 -38.47))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/yalu-jiang/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((124.15 39.72, 124.15 39.92, 123.75 39.92, 123.75 39.72, 124.15 39.72))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
-<https://example.org/birds/id/site/yukon-kuskokwim-delta/geometry> a geo:Geometry ;
-    geo:asWKT "POLYGON ((-163.3 60.6, -163.3 61.800000000000004, -165.7 61.800000000000004, -165.7 60.6, -163.3 60.6))"^^geo:wktLiteral ;
-    rdfs:comment "An approximate rectangle around the site."@en .
-
+<https://example.org/birds/id/site/firth-of-thames/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((175.45 -37.3, 175.45 -37.1, 175.21 -37.1, 175.21 -37.3, 175.45 -37.3))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/firth-of-thames> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/firth-of-thames/geometry> ;
+	<https://example.org/birds/def/longitude> 175.33 ;
+	<https://example.org/birds/def/latitude> -37.2 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/tidal-flat> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/nz> ;
+	<http://purl.org/dc/terms/description> "Wide tidal flats at the south end of the Hauraki Gulf, with a shorebird centre at Pūkorokoro Miranda. Godwits, knots and wrybills gather here in thousands."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Firth of Thames"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/farewell-spit/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((173.05 -40.59, 173.05 -40.47, 172.65 -40.47, 172.65 -40.59, 173.05 -40.59))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/farewell-spit> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/farewell-spit/geometry> ;
+	<https://example.org/birds/def/longitude> 172.85 ;
+	<https://example.org/birds/def/latitude> -40.53 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/tidal-flat> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/nz> ;
+	<http://purl.org/dc/terms/description> "A 30 km sand spit at the north-west tip of the South Island, with tidal flats on its sheltered side."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Farewell Spit"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/rakaia-river/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((172.2 -43.7, 172.2 -43.4, 171.7 -43.4, 171.7 -43.7, 172.2 -43.7))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/rakaia-river> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/rakaia-river/geometry> ;
+	<https://example.org/birds/def/longitude> 171.95 ;
+	<https://example.org/birds/def/latitude> -43.55 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/braided-river> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/nz> ;
+	<http://purl.org/dc/terms/description> "A wide braided river of grey gravel on the Canterbury Plains, where wrybills and banded dotterels nest."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Rakaia River"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/manawatu-estuary/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((175.26 -40.5, 175.26 -40.44, 175.18 -40.44, 175.18 -40.5, 175.26 -40.5))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/manawatu-estuary> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/manawatu-estuary/geometry> ;
+	<https://example.org/birds/def/longitude> 175.22 ;
+	<https://example.org/birds/def/latitude> -40.47 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/estuary> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/nz> ;
+	<http://purl.org/dc/terms/description> "A small estuary at Foxton Beach, a Ramsar site and a stopover for migratory waders."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Manawatū Estuary"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/kaikoura/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((173.85 -42.57, 173.85 -42.33, 173.55 -42.33, 173.55 -42.57, 173.85 -42.57))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/kaikoura> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/kaikoura/geometry> ;
+	<https://example.org/birds/def/longitude> 173.7 ;
+	<https://example.org/birds/def/latitude> -42.45 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/coast> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/nz> ;
+	<http://purl.org/dc/terms/description> "A deep submarine canyon close to shore, where albatrosses, shearwaters and petrels feed."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Kaikōura Canyon"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/roebuck-bay/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((122.45 -18.17, 122.45 -17.93, 122.15 -17.93, 122.15 -18.17, 122.45 -18.17))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/roebuck-bay> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/roebuck-bay/geometry> ;
+	<https://example.org/birds/def/longitude> 122.3 ;
+	<https://example.org/birds/def/latitude> -18.05 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/tidal-flat> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/au> ;
+	<http://purl.org/dc/terms/description> "Tropical mudflats near Broome, one of the most important non-breeding sites for migratory waders in the world."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Roebuck Bay"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/moreton-bay/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((153.4 -27.55, 153.4 -27.15, 153.1 -27.15, 153.1 -27.55, 153.4 -27.55))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/moreton-bay> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/moreton-bay/geometry> ;
+	<https://example.org/birds/def/longitude> 153.25 ;
+	<https://example.org/birds/def/latitude> -27.35 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/tidal-flat> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/au> ;
+	<http://purl.org/dc/terms/description> "A large bay east of Brisbane with sand islands, mangroves and mudflats."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Moreton Bay"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/western-port/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((145.45 -38.47, 145.45 -38.23, 145.15 -38.23, 145.15 -38.47, 145.45 -38.47))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/western-port> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/western-port/geometry> ;
+	<https://example.org/birds/def/longitude> 145.3 ;
+	<https://example.org/birds/def/latitude> -38.35 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/tidal-flat> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/au> ;
+	<http://purl.org/dc/terms/description> "A bay south-east of Melbourne with wide mudflats and salt marsh."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Western Port"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/yalu-jiang/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((124.15 39.72, 124.15 39.92, 123.75 39.92, 123.75 39.72, 124.15 39.72))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/yalu-jiang> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/yalu-jiang/geometry> ;
+	<https://example.org/birds/def/longitude> 123.95 ;
+	<https://example.org/birds/def/latitude> 39.82 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/tidal-flat> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/cn> ;
+	<http://purl.org/dc/terms/description> "Mudflats at the mouth of the Yalu River on the Yellow Sea, a spring staging site for bar-tailed godwits."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Yalu Jiang"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/saemangeum/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((126.77 35.68, 126.77 35.92, 126.47 35.92, 126.47 35.68, 126.77 35.68))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/saemangeum> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/saemangeum/geometry> ;
+	<https://example.org/birds/def/longitude> 126.62 ;
+	<https://example.org/birds/def/latitude> 35.8 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/tidal-flat> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/kr> ;
+	<http://purl.org/dc/terms/description> "A former estuary on the west coast of Korea, closed by a 33 km seawall in 2006."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Saemangeum"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/kushiro-marsh/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((144.52 43, 144.52 43.2, 144.28 43.2, 144.28 43, 144.52 43))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/kushiro-marsh> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/kushiro-marsh/geometry> ;
+	<https://example.org/birds/def/longitude> 144.4 ;
+	<https://example.org/birds/def/latitude> 43.1 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/wetland> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/jp> ;
+	<http://purl.org/dc/terms/description> "The largest wetland in Japan, in eastern Hokkaido, home of the resident red-crowned cranes."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Kushiro Marsh"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/yukon-kuskokwim-delta/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((-163.3 60.6, -163.3 61.8, -165.7 61.8, -165.7 60.6, -163.3 60.6))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/yukon-kuskokwim-delta> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/yukon-kuskokwim-delta/geometry> ;
+	<https://example.org/birds/def/longitude> -164.5 ;
+	<https://example.org/birds/def/latitude> 61.2 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/wetland> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/us> ;
+	<http://purl.org/dc/terms/description> "A vast delta of tundra, lakes and coastal flats in western Alaska, a breeding area for shorebirds and geese."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Yukon-Kuskokwim Delta"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/delaware-bay/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((-74.85 38.9, -74.85 39.3, -75.25 39.3, -75.25 38.9, -74.85 38.9))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/delaware-bay> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/delaware-bay/geometry> ;
+	<https://example.org/birds/def/longitude> -75.05 ;
+	<https://example.org/birds/def/latitude> 39.1 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/tidal-flat> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/us> ;
+	<http://purl.org/dc/terms/description> "A bay between New Jersey and Delaware, where red knots feed on horseshoe crab eggs in May."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Delaware Bay"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/platte-river/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((-98.5 40.62, -98.5 40.78, -99.3 40.78, -99.3 40.62, -98.5 40.62))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/platte-river> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/platte-river/geometry> ;
+	<https://example.org/birds/def/longitude> -98.9 ;
+	<https://example.org/birds/def/latitude> 40.7 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/braided-river> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/us> ;
+	<http://purl.org/dc/terms/description> "A shallow, braided river in Nebraska, where sandhill cranes roost in March."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Platte River"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/the-wash/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((0.5 52.78, 0.5 53.02, 0.1 53.02, 0.1 52.78, 0.5 52.78))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/the-wash> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/the-wash/geometry> ;
+	<https://example.org/birds/def/longitude> 0.3 ;
+	<https://example.org/birds/def/latitude> 52.9 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/tidal-flat> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/gb> ;
+	<http://purl.org/dc/terms/description> "A large bay on the east coast of England with mudflats and salt marsh, a winter site for waders and geese."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "The Wash"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/donana/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((-6.2 36.85, -6.2 37.15, -6.6 37.15, -6.6 36.85, -6.2 36.85))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/donana> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/donana/geometry> ;
+	<https://example.org/birds/def/longitude> -6.4 ;
+	<https://example.org/birds/def/latitude> "37"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/wetland> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/es> ;
+	<http://purl.org/dc/terms/description> "Marshes, dunes and lagoons at the mouth of the Guadalquivir in southern Spain, a national park."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Doñana"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/strait-of-gibraltar/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((-5.5 35.97, -5.5 36.07, -5.7 36.07, -5.7 35.97, -5.5 35.97))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/strait-of-gibraltar> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/strait-of-gibraltar/geometry> ;
+	<https://example.org/birds/def/longitude> -5.6 ;
+	<https://example.org/birds/def/latitude> 36.02 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/bottleneck> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/es> ;
+	<http://purl.org/dc/terms/description> "The narrowest crossing between Europe and Africa, where storks and birds of prey cross on thermals."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Strait of Gibraltar"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/langebaan-lagoon/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((18.1 -33.2, 18.1 -33.04, 18 -33.04, 18 -33.2, 18.1 -33.2))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/langebaan-lagoon> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/langebaan-lagoon/geometry> ;
+	<https://example.org/birds/def/longitude> 18.05 ;
+	<https://example.org/birds/def/latitude> -33.12 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/estuary> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/za> ;
+	<http://purl.org/dc/terms/description> "A shallow coastal lagoon on the west coast of South Africa, a Ramsar site."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Langebaan Lagoon"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/lake-nakuru/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((36.14 -0.42, 36.14 -0.3, 36.04 -0.3, 36.04 -0.42, 36.14 -0.42))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/lake-nakuru> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/lake-nakuru/geometry> ;
+	<https://example.org/birds/def/longitude> 36.09 ;
+	<https://example.org/birds/def/latitude> -0.36 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/lake> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/ke> ;
+	<http://purl.org/dc/terms/description> "A soda lake in the Kenyan Rift Valley, famous for its flocks of lesser flamingos."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Lake Nakuru"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/chiloe/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((-73.6 -42, -73.6 -41.7, -74 -41.7, -74 -42, -73.6 -42))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/chiloe> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/chiloe/geometry> ;
+	<https://example.org/birds/def/longitude> -73.8 ;
+	<https://example.org/birds/def/latitude> -41.85 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/tidal-flat> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/cl> ;
+	<http://purl.org/dc/terms/description> "Tidal flats on the inner coast of Chiloé, the main non-breeding site of the Hudsonian godwit."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Chiloé Island"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/bahia-lomas/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((-68.8 -52.7, -68.8 -52.5, -69.2 -52.5, -69.2 -52.7, -68.8 -52.7))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/bahia-lomas> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/bahia-lomas/geometry> ;
+	<https://example.org/birds/def/longitude> "-69"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+	<https://example.org/birds/def/latitude> -52.6 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/tidal-flat> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/cl> ;
+	<http://purl.org/dc/terms/description> "A bay in Tierra del Fuego with mudflats that extend 7 km at low tide, a winter site of red knots."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Bahía Lomas"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .
+<https://example.org/birds/id/site/san-antonio-oeste/geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate rectangle around the site."@en ;
+	<http://www.opengis.net/ont/geosparql#asWKT> "POLYGON ((-64.8 -40.86, -64.8 -40.7, -65 -40.7, -65 -40.86, -64.8 -40.86))"^^<http://www.opengis.net/ont/geosparql#wktLiteral> ;
+	a <http://www.opengis.net/ont/geosparql#Geometry> .
+<https://example.org/birds/id/site/san-antonio-oeste> <http://www.opengis.net/ont/geosparql#hasGeometry> <https://example.org/birds/id/site/san-antonio-oeste/geometry> ;
+	<https://example.org/birds/def/longitude> -64.9 ;
+	<https://example.org/birds/def/latitude> -40.78 ;
+	<https://example.org/birds/def/siteType> <https://example.org/birds/vocab/site-type/tidal-flat> ;
+	<https://example.org/birds/def/country> <https://example.org/birds/vocab/region/ar> ;
+	<http://purl.org/dc/terms/description> "A bay in Patagonia where red knots stop on their way north."@en ;
+	<http://www.w3.org/2000/01/rdf-schema#label> "Bahía San Antonio"@en ;
+	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Site> .

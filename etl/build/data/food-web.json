@@ -1,0 +1,11 @@
+{
+  "description": "Authored food web: what each species eats, another species or a food resource.",
+  "sqlFile": "food-web.sql",
+  "templateFile": "food-web.rq",
+  "chunkSize": 100000,
+  "columns": [
+    { "columnName": "eaterKey", "termType": "literal" },
+    { "columnName": "foodScheme", "termType": "literal" },
+    { "columnName": "foodKey", "termType": "literal" }
+  ]
+}

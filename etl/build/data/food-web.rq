@@ -1,0 +1,9 @@
+PREFIX bird: <https://example.org/birds/def/>
+PREFIX taxon: <https://example.org/birds/vocab/taxon/>
+
+CONSTRUCT { ?eater bird:eats ?food }
+WHERE {
+  VALUES (?eaterKey ?foodScheme ?foodKey) { (UNDEF UNDEF UNDEF) }
+  BIND(IRI(CONCAT(STR(taxon:), ?eaterKey)) AS ?eater)
+  BIND(IRI(CONCAT("https://example.org/birds/vocab/", ?foodScheme, "/", ?foodKey)) AS ?food)
+}

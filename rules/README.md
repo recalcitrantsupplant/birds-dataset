@@ -4,7 +4,8 @@ Each rule set is SRL (SHACL 1.2 rules). Each one needs a feature that one
 SPARQL query does not have: recursion over facts that a rule derived, or a
 chain of rules where a later rule reads an earlier rule's output.
 `rules/expected/<rule set>.nt` holds the triples it infers from the files in
-`etl/scripts/run_rules.sh`.
+`etl/scripts/run_rules.sh`. The script also checks that `trait-inheritance`
+reproduces the AVONET value of each species.
 
 | Rule set | Reads | Infers | SRL features |
 | --- | --- | --- | --- |

@@ -1,0 +1,10 @@
+{
+  "description": "Extract AviList v2025 and AVONET rows for the species list from the downloaded workbooks into etl/sources, with the most common trait of each AVONET order, family and genus. The RDF describes each file written.",
+  "sqlFile": "avilist-avonet.sql",
+  "templateFile": "sources.rq",
+  "columns": [
+    { "columnName": "file", "termType": "literal" },
+    { "columnName": "rows", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#integer" },
+    { "columnName": "source", "termType": "literal" }
+  ]
+}

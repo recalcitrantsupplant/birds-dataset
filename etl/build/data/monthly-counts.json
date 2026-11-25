@@ -1,0 +1,12 @@
+{
+  "description": "GBIF record counts for each species, country and month, CC0 and CC BY 4.0 records only. Counts under an old and a new name of one species take the larger count, because one record can match both names.",
+  "sqlFile": "monthly-counts.sql",
+  "templateFile": "monthly-counts.rq",
+  "chunkSize": 100000,
+  "columns": [
+    { "columnName": "speciesKey", "termType": "literal" },
+    { "columnName": "countryKey", "termType": "literal" },
+    { "columnName": "month", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#integer" },
+    { "columnName": "recordCount", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#integer" }
+  ]
+}

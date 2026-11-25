@@ -1,0 +1,10 @@
+{
+  "description": "Fetch GBIF occurrences and monthly record counts, CC0 and CC BY 4.0 only, for the species in etl/.cache/fetch-species.csv. Rows of other species in etl/sources stay. etl/gbif.csv sets the sample size, countries and years. The RDF describes each file written.",
+  "sqlFile": "gbif.sql",
+  "templateFile": "sources.rq",
+  "columns": [
+    { "columnName": "file", "termType": "literal" },
+    { "columnName": "rows", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#integer" },
+    { "columnName": "source", "termType": "literal" }
+  ]
+}

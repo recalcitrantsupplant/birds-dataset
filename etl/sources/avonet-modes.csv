@@ -1,0 +1,162 @@
+rank,name,Trophic.Niche,Habitat,Primary.Lifestyle
+family,Accipitridae,Vertivore,Forest,Insessorial
+family,Alcedinidae,Invertivore,Forest,Insessorial
+family,Alcidae,Aquatic predator,Marine,Aquatic
+family,Anatidae,Herbivore aquatic,Wetland,Aquatic
+family,Apodidae,Invertivore,Forest,Aerial
+family,Apterygidae,Invertivore,Forest,Terrestrial
+family,Artamidae,Invertivore,Woodland,Aerial
+family,Bucerotidae,Frugivore,Forest,Insessorial
+family,Cacatuidae,Granivore,Forest,Insessorial
+family,Cardinalidae,Invertivore,Forest,Insessorial
+family,Casuariidae,Frugivore,Forest,Terrestrial
+family,Cathartidae,Scavenger,Human Modified,Terrestrial
+family,Charadriidae,Aquatic predator,Grassland,Terrestrial
+family,Ciconiidae,Aquatic predator,Wetland,Terrestrial
+family,Columbidae,Frugivore,Forest,Insessorial
+family,Coraciidae,Invertivore,Woodland,Insessorial
+family,Corvidae,Omnivore,Forest,Insessorial
+family,Cuculidae,Invertivore,Forest,Insessorial
+family,Diomedeidae,Aquatic predator,Marine,Aquatic
+family,Falconidae,Vertivore,Forest,Insessorial
+family,Gruidae,Omnivore,Wetland,Terrestrial
+family,Haematopodidae,Aquatic predator,Coastal,Terrestrial
+family,Hirundinidae,Invertivore,Grassland,Aerial
+family,Icteridae,Omnivore,Forest,Insessorial
+family,Laridae,Aquatic predator,Coastal,Aerial
+family,Maluridae,Invertivore,Shrubland,Terrestrial
+family,Meliphagidae,Omnivore,Forest,Insessorial
+family,Menuridae,Invertivore,Forest,Terrestrial
+family,Meropidae,Invertivore,Woodland,Insessorial
+family,Muscicapidae,Invertivore,Forest,Insessorial
+family,Nectariniidae,Omnivore,Forest,Insessorial
+family,Pandionidae,Aquatic predator,Marine,Aerial
+family,Paridae,Invertivore,Forest,Insessorial
+family,Passeridae,Granivore,Shrubland,Terrestrial
+family,Pelecanidae,Aquatic predator,Wetland,Aquatic
+family,Phoenicopteridae,Herbivore aquatic,Wetland,Terrestrial
+family,Phylloscopidae,Invertivore,Forest,Insessorial
+family,Ploceidae,Granivore,Forest,Insessorial
+family,Procellariidae,Aquatic predator,Marine,Generalist
+family,Promeropidae,Nectarivore,Shrubland,Insessorial
+family,Ptilonorhynchidae,Frugivore,Forest,Insessorial
+family,Rallidae,Omnivore,Wetland,Terrestrial
+family,Recurvirostridae,Aquatic predator,Wetland,Terrestrial
+family,Rhipiduridae,Invertivore,Forest,Insessorial
+family,Sagittariidae,Vertivore,Grassland,Terrestrial
+family,Scolopacidae,Aquatic predator,Wetland,Terrestrial
+family,Spheniscidae,Aquatic predator,Marine,Aquatic
+family,Strigidae,Invertivore,Forest,Insessorial
+family,Strigopidae,Omnivore,Forest,Insessorial
+family,Struthionidae,Omnivore,Shrubland,Terrestrial
+family,Sturnidae,Frugivore,Forest,Insessorial
+family,Threskiornithidae,Aquatic predator,Wetland,Terrestrial
+family,Trochilidae,Nectarivore,Forest,Aerial
+family,Turdidae,Invertivore,Forest,Insessorial
+family,Upupidae,Invertivore,Grassland,Terrestrial
+family,Zosteropidae,Invertivore,Forest,Insessorial
+genus,Aix,Herbivore aquatic,Forest,Generalist
+genus,Anarhynchus,Aquatic predator,Riverine,Terrestrial
+genus,Anthochaera,Nectarivore,Forest,Insessorial
+genus,Anthornis,Nectarivore,Forest,Insessorial
+genus,Antigone,Omnivore,Wetland,Terrestrial
+genus,Apteryx,Invertivore,Forest,Terrestrial
+genus,Apus,Invertivore,Rock,Aerial
+genus,Aquila,Vertivore,Woodland,Generalist
+genus,Archilochus,Nectarivore,Forest,Aerial
+genus,Ardenna,Aquatic predator,Marine,Generalist
+genus,Arenaria,Aquatic predator,Coastal,Terrestrial
+genus,Balearica,Omnivore,Wetland,Terrestrial
+genus,Bostrychia,Invertivore,Forest,Terrestrial
+genus,Bubo,Vertivore,Forest,Insessorial
+genus,Bucorvus,Omnivore,Grassland,Terrestrial
+genus,Buteo,Vertivore,Forest,Insessorial
+genus,Cacatua,Granivore,Forest,Insessorial
+genus,Calidris,Aquatic predator,Wetland,Terrestrial
+genus,Cardinalis,Omnivore,Shrubland,Insessorial
+genus,Chalcites,Invertivore,Forest,Insessorial
+genus,Chrysococcyx,Invertivore,Forest,Insessorial
+genus,Ciconia,Aquatic predator,Wetland,Terrestrial
+genus,Circus,Vertivore,Grassland,Aerial
+genus,Coracias,Invertivore,Woodland,Insessorial
+genus,Cuculus,Invertivore,Forest,Insessorial
+genus,Cyanistes,Invertivore,Forest,Insessorial
+genus,Cyanocitta,Omnivore,Woodland,Terrestrial
+genus,Dacelo,Invertivore,Forest,Insessorial
+genus,Diomedea,Aquatic predator,Marine,Aquatic
+genus,Dolichonyx,Granivore,Grassland,Generalist
+genus,Dromaius,Omnivore,Grassland,Terrestrial
+genus,Eolophus,Granivore,Woodland,Terrestrial
+genus,Erithacus,Omnivore,Forest,Generalist
+genus,Falco,Vertivore,Woodland,Aerial
+genus,Ficedula,Invertivore,Forest,Insessorial
+genus,Fratercula,Aquatic predator,Marine,Aquatic
+genus,Grus,Omnivore,Wetland,Terrestrial
+genus,Gymnorhina,Invertivore,Woodland,Terrestrial
+genus,Gyps,Scavenger,Grassland,Terrestrial
+genus,Haematopus,Aquatic predator,Coastal,Terrestrial
+genus,Haliaeetus,Aquatic predator,Wetland,Aerial
+genus,Hemiphaga,Frugivore,Forest,Insessorial
+genus,Himantopus,Aquatic predator,Wetland,Terrestrial
+genus,Hirundo,Invertivore,Grassland,Aerial
+genus,Hymenolaimus,Aquatic predator,Riverine,Aquatic
+genus,Icthyophaga,Aquatic predator,Wetland,Insessorial
+genus,Lamprotornis,Invertivore,Shrubland,Insessorial
+genus,Limosa,Aquatic predator,Wetland,Terrestrial
+genus,Malurus,Invertivore,Shrubland,Insessorial
+genus,Megadyptes,Aquatic predator,Marine,Aquatic
+genus,Menura,Invertivore,Forest,Terrestrial
+genus,Merops,Invertivore,Woodland,Insessorial
+genus,Milvus,Omnivore,Woodland,Aerial
+genus,Nectarinia,Nectarivore,Woodland,Insessorial
+genus,Neophema,Granivore,Woodland,Terrestrial
+genus,Nestor,Omnivore,Forest,Insessorial
+genus,Numenius,Aquatic predator,Grassland,Terrestrial
+genus,Pandion,Aquatic predator,Marine,Aerial
+genus,Parus,Invertivore,Woodland,Insessorial
+genus,Passer,Granivore,Shrubland,Terrestrial
+genus,Pelecanus,Aquatic predator,Wetland,Aquatic
+genus,Phoeniconaias,Herbivore aquatic,Wetland,Terrestrial
+genus,Phoenicopterus,Aquatic predator,Wetland,Terrestrial
+genus,Phylloscopus,Invertivore,Forest,Insessorial
+genus,Platalea,Aquatic predator,Wetland,Terrestrial
+genus,Ploceus,Granivore,Wetland,Insessorial
+genus,Porphyrio,Herbivore aquatic,Wetland,Terrestrial
+genus,Promerops,Nectarivore,Shrubland,Insessorial
+genus,Prosthemadera,Nectarivore,Forest,Insessorial
+genus,Ptilonorhynchus,Omnivore,Forest,Insessorial
+genus,Rhipidura,Invertivore,Forest,Insessorial
+genus,Sagittarius,Vertivore,Grassland,Terrestrial
+genus,Selasphorus,Nectarivore,Shrubland,Aerial
+genus,Spheniscus,Aquatic predator,Marine,Aquatic
+genus,Sterna,Aquatic predator,Marine,Aerial
+genus,Strigops,Omnivore,Forest,Generalist
+genus,Struthio,Omnivore,Shrubland,Terrestrial
+genus,Sturnus,Omnivore,Forest,Generalist
+genus,Tadorna,Omnivore,Wetland,Terrestrial
+genus,Trichoglossus,Omnivore,Forest,Insessorial
+genus,Turdus,Invertivore,Forest,Generalist
+genus,Upupa,Invertivore,Grassland,Terrestrial
+genus,Urodynamis,Invertivore,Forest,Insessorial
+genus,Vanellus,Invertivore,Grassland,Terrestrial
+genus,Vultur,Scavenger,Grassland,Terrestrial
+genus,Zosterops,Omnivore,Forest,Insessorial
+order,Accipitriformes,Vertivore,Forest,Insessorial
+order,Anseriformes,Herbivore aquatic,Wetland,Aquatic
+order,Bucerotiformes,Frugivore,Forest,Insessorial
+order,Cathartiformes,Scavenger,Human Modified,Terrestrial
+order,Charadriiformes,Aquatic predator,Wetland,Terrestrial
+order,Ciconiiformes,Aquatic predator,Wetland,Terrestrial
+order,Columbiformes,Frugivore,Forest,Insessorial
+order,Coraciiformes,Invertivore,Forest,Insessorial
+order,Cuculiformes,Invertivore,Forest,Insessorial
+order,Falconiformes,Vertivore,Forest,Insessorial
+order,Gruiformes,Omnivore,Wetland,Terrestrial
+order,Passeriformes,Invertivore,Forest,Insessorial
+order,Pelecaniformes,Aquatic predator,Wetland,Terrestrial
+order,Phoenicopteriformes,Herbivore aquatic,Wetland,Terrestrial
+order,Procellariiformes,Aquatic predator,Marine,Generalist
+order,Psittaciformes,Omnivore,Forest,Insessorial
+order,Sphenisciformes,Aquatic predator,Marine,Aquatic
+order,Strigiformes,Invertivore,Forest,Insessorial
+order,Struthioniformes,Omnivore,Forest,Terrestrial

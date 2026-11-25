@@ -1,0 +1,16 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX void: <http://rdfs.org/ns/void#>
+
+CONSTRUCT {
+  ?distribution a dcat:Distribution ;
+    dcterms:title ?file ;
+    dcat:mediaType <https://www.iana.org/assignments/media-types/text/csv> ;
+    dcterms:source ?sourceIri ;
+    void:entities ?rows .
+}
+WHERE {
+  VALUES (?file ?rows ?source) { (UNDEF UNDEF UNDEF) }
+  BIND(IRI(CONCAT("https://example.org/birds/etl/sources/", ?file)) AS ?distribution)
+  BIND(IRI(?source) AS ?sourceIri)
+}

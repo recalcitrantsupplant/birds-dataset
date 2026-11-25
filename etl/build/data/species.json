@@ -1,0 +1,24 @@
+{
+  "description": "Species traits from AVONET, Red List categories from AviList and authored accounts. Trophic niche, habitat and lifestyle are stated on a taxon only where they differ from the nearest broader taxon, so the rule set Trait inheritance can restore them.",
+  "sqlFile": "species.sql",
+  "templateFile": "species.rq",
+  "chunkSize": 100000,
+  "columns": [
+    { "columnName": "taxonKey", "termType": "literal" },
+    { "columnName": "traitProperty", "termType": "literal" },
+    { "columnName": "traitConcept", "termType": "literal" },
+    { "columnName": "speciesKey", "termType": "literal" },
+    { "columnName": "migration", "termType": "literal" },
+    { "columnName": "bodyMass", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#decimal" },
+    { "columnName": "wingLength", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#decimal" },
+    { "columnName": "beakLength", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#decimal" },
+    { "columnName": "tailLength", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#decimal" },
+    { "columnName": "handWingIndex", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#decimal" },
+    { "columnName": "rangeSize", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#decimal" },
+    { "columnName": "minLatitude", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#decimal" },
+    { "columnName": "maxLatitude", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#decimal" },
+    { "columnName": "centroid", "termType": "literal", "datatypeIri": "http://www.opengis.net/ont/geosparql#wktLiteral" },
+    { "columnName": "redListCategory", "termType": "literal" },
+    { "columnName": "account", "termType": "literal", "lang": "en" }
+  ]
+}

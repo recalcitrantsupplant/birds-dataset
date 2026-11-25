@@ -1,0 +1,22 @@
+{
+  "description": "GBIF occurrences of the listed species in the dataset's countries, CC0 and CC BY 4.0 only. Each is filed under its current species through the name changes that apply in its country, and links to the sites that contain it.",
+  "sqlFile": "occurrences.sql",
+  "templateFile": "occurrences.rq",
+  "chunkSize": 100000,
+  "columns": [
+    { "columnName": "gbifId", "termType": "literal" },
+    { "columnName": "speciesKey", "termType": "literal" },
+    { "columnName": "identifiedAsKey", "termType": "literal" },
+    { "columnName": "countryKey", "termType": "literal" },
+    { "columnName": "eventDate", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#date" },
+    { "columnName": "month", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#integer" },
+    { "columnName": "year", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#integer" },
+    { "columnName": "basisOfRecord", "termType": "literal" },
+    { "columnName": "individualCount", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#integer" },
+    { "columnName": "uncertainty", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#decimal" },
+    { "columnName": "wkt", "termType": "literal", "datatypeIri": "http://www.opengis.net/ont/geosparql#wktLiteral" },
+    { "columnName": "siteKey", "termType": "literal" },
+    { "columnName": "datasetKey", "termType": "literal" },
+    { "columnName": "license", "termType": "uri" }
+  ]
+}
