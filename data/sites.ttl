@@ -2,6 +2,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://example.org/birds/id/site/bahia-lomas> a geo:Feature,
         bird:Site ;
@@ -9,6 +10,8 @@
     dcterms:description "A bay in Tierra del Fuego with mudflats that extend 7 km at low tide, a winter site of red knots."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/bahia-lomas/geometry> ;
     bird:country <https://example.org/birds/vocab/region/cl> ;
+    bird:latitude -52.6 ;
+    bird:longitude -69.0 ;
     bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
 
 <https://example.org/birds/id/site/chiloe> a geo:Feature,
@@ -17,6 +20,8 @@
     dcterms:description "Tidal flats on the inner coast of Chiloé, the main non-breeding site of the Hudsonian godwit."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/chiloe/geometry> ;
     bird:country <https://example.org/birds/vocab/region/cl> ;
+    bird:latitude -41.85 ;
+    bird:longitude -73.8 ;
     bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
 
 <https://example.org/birds/id/site/delaware-bay> a geo:Feature,
@@ -25,6 +30,8 @@
     dcterms:description "A bay between New Jersey and Delaware, where red knots feed on horseshoe crab eggs in May."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/delaware-bay/geometry> ;
     bird:country <https://example.org/birds/vocab/region/us> ;
+    bird:latitude 39.1 ;
+    bird:longitude -75.05 ;
     bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
 
 <https://example.org/birds/id/site/donana> a geo:Feature,
@@ -33,6 +40,8 @@
     dcterms:description "Marshes, dunes and lagoons at the mouth of the Guadalquivir in southern Spain, a national park."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/donana/geometry> ;
     bird:country <https://example.org/birds/vocab/region/es> ;
+    bird:latitude 37.0 ;
+    bird:longitude -6.4 ;
     bird:siteType <https://example.org/birds/vocab/site-type/wetland> .
 
 <https://example.org/birds/id/site/farewell-spit> a geo:Feature,
@@ -41,6 +50,8 @@
     dcterms:description "A 30 km sand spit at the north-west tip of the South Island, with tidal flats on its sheltered side."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/farewell-spit/geometry> ;
     bird:country <https://example.org/birds/vocab/region/nz> ;
+    bird:latitude -40.53 ;
+    bird:longitude 172.85 ;
     bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
 
 <https://example.org/birds/id/site/firth-of-thames> a geo:Feature,
@@ -49,6 +60,8 @@
     dcterms:description "Wide tidal flats at the south end of the Hauraki Gulf, with a shorebird centre at Pūkorokoro Miranda. Godwits, knots and wrybills gather here in thousands."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/firth-of-thames/geometry> ;
     bird:country <https://example.org/birds/vocab/region/nz> ;
+    bird:latitude -37.2 ;
+    bird:longitude 175.33 ;
     bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
 
 <https://example.org/birds/id/site/kaikoura> a geo:Feature,
@@ -57,6 +70,8 @@
     dcterms:description "A deep submarine canyon close to shore, where albatrosses, shearwaters and petrels feed."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/kaikoura/geometry> ;
     bird:country <https://example.org/birds/vocab/region/nz> ;
+    bird:latitude -42.45 ;
+    bird:longitude 173.7 ;
     bird:siteType <https://example.org/birds/vocab/site-type/coast> .
 
 <https://example.org/birds/id/site/kushiro-marsh> a geo:Feature,
@@ -65,6 +80,8 @@
     dcterms:description "The largest wetland in Japan, in eastern Hokkaido, home of the resident red-crowned cranes."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/kushiro-marsh/geometry> ;
     bird:country <https://example.org/birds/vocab/region/jp> ;
+    bird:latitude 43.1 ;
+    bird:longitude 144.4 ;
     bird:siteType <https://example.org/birds/vocab/site-type/wetland> .
 
 <https://example.org/birds/id/site/lake-nakuru> a geo:Feature,
@@ -73,6 +90,8 @@
     dcterms:description "A soda lake in the Kenyan Rift Valley, famous for its flocks of lesser flamingos."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/lake-nakuru/geometry> ;
     bird:country <https://example.org/birds/vocab/region/ke> ;
+    bird:latitude -0.36 ;
+    bird:longitude 36.09 ;
     bird:siteType <https://example.org/birds/vocab/site-type/lake> .
 
 <https://example.org/birds/id/site/langebaan-lagoon> a geo:Feature,
@@ -81,6 +100,8 @@
     dcterms:description "A shallow coastal lagoon on the west coast of South Africa, a Ramsar site."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/langebaan-lagoon/geometry> ;
     bird:country <https://example.org/birds/vocab/region/za> ;
+    bird:latitude -33.12 ;
+    bird:longitude 18.05 ;
     bird:siteType <https://example.org/birds/vocab/site-type/estuary> .
 
 <https://example.org/birds/id/site/manawatu-estuary> a geo:Feature,
@@ -89,6 +110,8 @@
     dcterms:description "A small estuary at Foxton Beach, a Ramsar site and a stopover for migratory waders."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/manawatu-estuary/geometry> ;
     bird:country <https://example.org/birds/vocab/region/nz> ;
+    bird:latitude -40.47 ;
+    bird:longitude 175.22 ;
     bird:siteType <https://example.org/birds/vocab/site-type/estuary> .
 
 <https://example.org/birds/id/site/moreton-bay> a geo:Feature,
@@ -97,6 +120,8 @@
     dcterms:description "A large bay east of Brisbane with sand islands, mangroves and mudflats."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/moreton-bay/geometry> ;
     bird:country <https://example.org/birds/vocab/region/au> ;
+    bird:latitude -27.35 ;
+    bird:longitude 153.25 ;
     bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
 
 <https://example.org/birds/id/site/platte-river> a geo:Feature,
@@ -105,6 +130,8 @@
     dcterms:description "A shallow, braided river in Nebraska, where sandhill cranes roost in March."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/platte-river/geometry> ;
     bird:country <https://example.org/birds/vocab/region/us> ;
+    bird:latitude 40.7 ;
+    bird:longitude -98.9 ;
     bird:siteType <https://example.org/birds/vocab/site-type/braided-river> .
 
 <https://example.org/birds/id/site/rakaia-river> a geo:Feature,
@@ -113,6 +140,8 @@
     dcterms:description "A wide braided river of grey gravel on the Canterbury Plains, where wrybills and banded dotterels nest."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/rakaia-river/geometry> ;
     bird:country <https://example.org/birds/vocab/region/nz> ;
+    bird:latitude -43.55 ;
+    bird:longitude 171.95 ;
     bird:siteType <https://example.org/birds/vocab/site-type/braided-river> .
 
 <https://example.org/birds/id/site/roebuck-bay> a geo:Feature,
@@ -121,6 +150,8 @@
     dcterms:description "Tropical mudflats near Broome, one of the most important non-breeding sites for migratory waders in the world."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/roebuck-bay/geometry> ;
     bird:country <https://example.org/birds/vocab/region/au> ;
+    bird:latitude -18.05 ;
+    bird:longitude 122.3 ;
     bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
 
 <https://example.org/birds/id/site/saemangeum> a geo:Feature,
@@ -129,6 +160,8 @@
     dcterms:description "A former estuary on the west coast of Korea, closed by a 33 km seawall in 2006."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/saemangeum/geometry> ;
     bird:country <https://example.org/birds/vocab/region/kr> ;
+    bird:latitude 35.8 ;
+    bird:longitude 126.62 ;
     bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
 
 <https://example.org/birds/id/site/san-antonio-oeste> a geo:Feature,
@@ -137,6 +170,8 @@
     dcterms:description "A bay in Patagonia where red knots stop on their way north."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/san-antonio-oeste/geometry> ;
     bird:country <https://example.org/birds/vocab/region/ar> ;
+    bird:latitude -40.78 ;
+    bird:longitude -64.9 ;
     bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
 
 <https://example.org/birds/id/site/strait-of-gibraltar> a geo:Feature,
@@ -145,6 +180,8 @@
     dcterms:description "The narrowest crossing between Europe and Africa, where storks and birds of prey cross on thermals."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/strait-of-gibraltar/geometry> ;
     bird:country <https://example.org/birds/vocab/region/es> ;
+    bird:latitude 36.02 ;
+    bird:longitude -5.6 ;
     bird:siteType <https://example.org/birds/vocab/site-type/bottleneck> .
 
 <https://example.org/birds/id/site/the-wash> a geo:Feature,
@@ -153,6 +190,8 @@
     dcterms:description "A large bay on the east coast of England with mudflats and salt marsh, a winter site for waders and geese."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/the-wash/geometry> ;
     bird:country <https://example.org/birds/vocab/region/gb> ;
+    bird:latitude 52.9 ;
+    bird:longitude 0.3 ;
     bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
 
 <https://example.org/birds/id/site/western-port> a geo:Feature,
@@ -161,6 +200,8 @@
     dcterms:description "A bay south-east of Melbourne with wide mudflats and salt marsh."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/western-port/geometry> ;
     bird:country <https://example.org/birds/vocab/region/au> ;
+    bird:latitude -38.35 ;
+    bird:longitude 145.3 ;
     bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
 
 <https://example.org/birds/id/site/yalu-jiang> a geo:Feature,
@@ -169,6 +210,8 @@
     dcterms:description "Mudflats at the mouth of the Yalu River on the Yellow Sea, a spring staging site for bar-tailed godwits."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/yalu-jiang/geometry> ;
     bird:country <https://example.org/birds/vocab/region/cn> ;
+    bird:latitude 39.82 ;
+    bird:longitude 123.95 ;
     bird:siteType <https://example.org/birds/vocab/site-type/tidal-flat> .
 
 <https://example.org/birds/id/site/yukon-kuskokwim-delta> a geo:Feature,
@@ -177,6 +220,8 @@
     dcterms:description "A vast delta of tundra, lakes and coastal flats in western Alaska, a breeding area for shorebirds and geese."@en ;
     geo:hasGeometry <https://example.org/birds/id/site/yukon-kuskokwim-delta/geometry> ;
     bird:country <https://example.org/birds/vocab/region/us> ;
+    bird:latitude 61.2 ;
+    bird:longitude -164.5 ;
     bird:siteType <https://example.org/birds/vocab/site-type/wetland> .
 
 <https://example.org/birds/id/site/bahia-lomas/geometry> a geo:Geometry ;

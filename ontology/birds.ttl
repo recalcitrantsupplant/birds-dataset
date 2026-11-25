@@ -172,6 +172,13 @@ bird:region a owl:ObjectProperty ;
 bird:hemisphere a owl:ObjectProperty ;
     rdfs:label "hemisphere"@en ; rdfs:range skos:Concept .
 
+bird:latitude a owl:DatatypeProperty ;
+    rdfs:label "latitude"@en ; rdfs:domain bird:Site ; rdfs:range xsd:decimal ;
+    skos:definition "The latitude of the centre of the site, in decimal degrees."@en .
+bird:longitude a owl:DatatypeProperty ;
+    rdfs:label "longitude"@en ; rdfs:domain bird:Site ; rdfs:range xsd:decimal ;
+    skos:definition "The longitude of the centre of the site, in decimal degrees."@en .
+
 # Banded birds
 
 bird:bandNumber a owl:DatatypeProperty ;
@@ -209,6 +216,18 @@ bird:effectiveHabitat a owl:ObjectProperty ;
 bird:effectiveLifestyle a owl:ObjectProperty ;
     rdfs:subPropertyOf bird:lifestyle ;
     rdfs:label "effective lifestyle"@en .
+bird:levelAtLeast a owl:ObjectProperty ;
+    rdfs:label "trophic level at least"@en ; rdfs:domain bird:Species ;
+    skos:definition "A step of the step table that the species's longest food chain reaches. The rule set Food web infers it."@en .
+bird:trophicLevel a owl:DatatypeProperty ;
+    rdfs:label "trophic level"@en ; rdfs:domain bird:Species ; rdfs:range xsd:integer ;
+    skos:definition "1 for a food resource; for a species, 1 more than the highest level of its food. Food in a feeding cycle with the species is not counted."@en .
+bird:hopNumber a owl:DatatypeProperty ;
+    rdfs:label "hop number"@en ; rdfs:domain bird:Resighting ; rdfs:range xsd:integer ;
+    skos:definition "The position of the resighting in its bird's sequence: 1 for the first resighting after banding."@en .
+bird:northSouthKm a owl:DatatypeProperty ;
+    rdfs:label "north-south distance (km)"@en ; rdfs:domain bird:BandedBird ; rdfs:range xsd:decimal ;
+    skos:definition "The sum of the changes in latitude between consecutive sites of the bird, at 111.2 km for each degree."@en .
 bird:resolvesTo a owl:ObjectProperty ;
     rdfs:label "resolves to"@en ;
     skos:definition "The accepted species for a record, through every name change that applies in its country."@en .

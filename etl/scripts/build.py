@@ -504,6 +504,8 @@ def sites_data(v, countries):
         g.add((s, DCTERMS.description, Literal(r["description"], lang="en")))
         g.add((s, BIRD.country, countries[r["country"]]))
         g.add((s, BIRD.siteType, v["site_type"][r["site_type"]]))
+        g.add((s, BIRD.latitude, Literal(lat, datatype=XSD.decimal)))
+        g.add((s, BIRD.longitude, Literal(lon, datatype=XSD.decimal)))
         gn = URIRef(f"{s}/geometry")
         g.add((s, GEO.hasGeometry, gn))
         g.add((gn, RDF.type, GEO.Geometry))

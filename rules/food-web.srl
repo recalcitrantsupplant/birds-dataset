@@ -20,3 +20,31 @@ WHERE {
   GROUP BY ?a { ?a bird:dependsOn ?r . ?r a bird:BasicFoodResource }
   [ ?n := COUNT(DISTINCT ?r) ]
 }
+
+DATA {
+  bird:step1 bird:depth 1 ; bird:nextStep bird:step2 .
+  bird:step2 bird:depth 2 ; bird:nextStep bird:step3 .
+  bird:step3 bird:depth 3 ; bird:nextStep bird:step4 .
+  bird:step4 bird:depth 4 ; bird:nextStep bird:step5 .
+  bird:step5 bird:depth 5 ; bird:nextStep bird:step6 .
+  bird:step6 bird:depth 6 .
+}
+
+RULE { ?a a bird:InFeedingCycle } WHERE { ?a bird:dependsOn ?a }
+
+RULE { ?a bird:levelAtLeast bird:step2 } WHERE { ?a bird:eats ?r . ?r a bird:FoodResource }
+
+RULE { ?a bird:levelAtLeast ?n }
+WHERE {
+  ?a bird:eats ?b .
+  ?b bird:levelAtLeast ?m .
+  ?m bird:nextStep ?n
+  NOT { ?b bird:dependsOn ?a }
+}
+
+RULE { ?a bird:trophicLevel ?level }
+WHERE {
+  ?a a bird:Species .
+  GROUP BY ?a { ?a bird:levelAtLeast ?s . ?s bird:depth ?d }
+  [ ?level := MAX(?d) ]
+}

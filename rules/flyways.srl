@@ -12,3 +12,40 @@ WHERE { ?a bird:reaches ?b . ?a bird:country ?ca . ?b bird:country ?cb FILTER(?c
 RULE { ?s bird:usesSite ?site }
 WHERE { ?x a bird:Resighting ; bird:bird ?b ; bird:site ?site . ?b bird:species ?s }
 RULE { ?s bird:usesSite ?site } WHERE { ?b a bird:BandedBird ; bird:species ?s ; bird:bandedAt ?site }
+
+DATA {
+  bird:step1 bird:depth 1 ; bird:nextStep bird:step2 .
+  bird:step2 bird:depth 2 ; bird:nextStep bird:step3 .
+  bird:step3 bird:depth 3 ; bird:nextStep bird:step4 .
+  bird:step4 bird:depth 4 ; bird:nextStep bird:step5 .
+  bird:step5 bird:depth 5 ; bird:nextStep bird:step6 .
+  bird:step6 bird:depth 6 ; bird:nextStep bird:step7 .
+  bird:step7 bird:depth 7 ; bird:nextStep bird:step8 .
+  bird:step8 bird:depth 8 .
+}
+
+RULE { ?x bird:atStep bird:step1 } WHERE { ?x a bird:Resighting ; bird:previous ?b . ?b a bird:BandedBird }
+RULE { ?x bird:atStep ?n } WHERE { ?x a bird:Resighting ; bird:previous ?p . ?p bird:atStep ?m . ?m bird:nextStep ?n }
+
+RULE { ?x bird:hopNumber ?d } WHERE { ?x bird:atStep ?s . ?s bird:depth ?d }
+
+RULE { ?b bird:firstReturnHop ?first }
+WHERE {
+  ?b a bird:BandedBird .
+  GROUP BY ?b { ?x bird:bird ?b ; bird:site ?home ; bird:hopNumber ?h . ?b bird:bandedAt ?home }
+  [ ?first := MIN(?h) ]
+}
+
+RULE { ?b bird:northSouthKm ?km }
+WHERE {
+  ?b a bird:BandedBird .
+  GROUP BY ?b {
+    ?x bird:bird ?b ; bird:site ?to ; bird:previous ?p .
+    ?p bird:site ?from .
+    ?from bird:latitude ?lat1 .
+    ?to bird:latitude ?lat2
+    SET ( ?leg := ABS(?lat2 - ?lat1) * 111.2 )
+  }
+  [ ?total := SUM(?leg) ]
+  SET ( ?km := ROUND(?total) )
+}

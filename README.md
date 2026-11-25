@@ -23,7 +23,7 @@ It is the shared demo dataset for:
 | `data/species.ttl` | Traits from AVONET, Red List category, AviList range text and a species account | 1,792 |
 | `data/occurrences.ttl` | 2,081 GBIF occurrences with points, 2015 to 2025, CC0 and CC BY 4.0 only | 29,114 |
 | `data/monthly-counts.ttl` | GBIF record counts for each species, country and month | 16,861 |
-| `data/sites.ttl` | 22 sites (estuaries, tidal flats, wetlands) with approximate boundaries | 220 |
+| `data/sites.ttl` | 22 sites (estuaries, tidal flats, wetlands) with approximate boundaries and a centre point | 264 |
 | `data/banded-birds.ttl` | 16 banded birds and 40 resightings with notes | 368 |
 | `data/food-web.ttl` | 129 links from a species to a food resource or to another species | 129 |
 | `data/names.ttl` | Scientific names and 18 name changes: genus moves, splits by country, a lump | 488 |
