@@ -1,0 +1,36 @@
+@prefix bird: <https://example.org/birds/def/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rank: <https://example.org/birds/vocab/rank/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix taxon: <https://example.org/birds/vocab/taxon/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Genera that the name changes in etl/authored/name-changes.csv retired. Each is a deprecated
+# concept of the taxonomy scheme, under the family it was in, and names the genus that replaced it.
+# Authored, and kept apart from vocab/taxonomy.ttl, which the build writes from AviList v2025.
+
+taxon:notornis a skos:Concept,
+        bird:Genus ;
+    bird:rank rank:genus ;
+    bird:scientificName "Notornis" ;
+    dcterms:isReplacedBy taxon:porphyrio ;
+    owl:deprecated true ;
+    skos:broader taxon:rallidae ;
+    skos:historyNote "The South Island takahē was described as Notornis hochstetteri. It was merged into Porphyrio in the 1990s checklists."@en ;
+    skos:inScheme <https://example.org/birds/vocab/taxon> ;
+    skos:prefLabel "Notornis"@en .
+
+taxon:nyctea a skos:Concept,
+        bird:Genus ;
+    bird:rank rank:genus ;
+    bird:scientificName "Nyctea" ;
+    dcterms:isReplacedBy taxon:bubo ;
+    owl:deprecated true ;
+    skos:broader taxon:strigidae ;
+    skos:historyNote "Stephens placed the snowy owl in its own genus Nyctea in 1826. IOC 2.0 (2009) merged it into Bubo."@en ;
+    skos:inScheme <https://example.org/birds/vocab/taxon> ;
+    skos:prefLabel "Nyctea"@en .
+
+taxon:rallidae skos:narrower taxon:notornis .
+taxon:strigidae skos:narrower taxon:nyctea .

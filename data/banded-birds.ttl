@@ -366,3 +366,59 @@
 	<https://example.org/birds/def/site> <https://example.org/birds/id/site/langebaan-lagoon> ;
 	<https://example.org/birds/def/bird> <https://example.org/birds/id/bird/gb-t-90544> ;
 	a <https://example.org/birds/def/Resighting> .
+<https://example.org/birds/id/bird/nz-b-40101> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-B-40101, Bar-tailed Godwit"@en .
+<https://example.org/birds/id/bird/nz-b-40102> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-B-40102, Bar-tailed Godwit"@en .
+<https://example.org/birds/id/bird/nz-b-40117> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-B-40117, Bar-tailed Godwit"@en .
+<https://example.org/birds/id/bird/nz-b-40233> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-B-40233, Red Knot"@en .
+<https://example.org/birds/id/bird/au-k-55801> <http://www.w3.org/2000/01/rdf-schema#label> "AU-K-55801, Red Knot"@en .
+<https://example.org/birds/id/bird/au-k-55920> <http://www.w3.org/2000/01/rdf-schema#label> "AU-K-55920, Great Knot"@en .
+<https://example.org/birds/id/bird/ar-k-11204> <http://www.w3.org/2000/01/rdf-schema#label> "AR-K-11204, Red Knot"@en .
+<https://example.org/birds/id/bird/ar-k-11251> <http://www.w3.org/2000/01/rdf-schema#label> "AR-K-11251, Red Knot"@en .
+<https://example.org/birds/id/bird/cl-g-30087> <http://www.w3.org/2000/01/rdf-schema#label> "CL-G-30087, Hudsonian Godwit"@en .
+<https://example.org/birds/id/bird/nz-w-20014> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-W-20014, Wrybill"@en .
+<https://example.org/birds/id/bird/nz-w-20029> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-W-20029, Wrybill"@en .
+<https://example.org/birds/id/bird/nz-o-31502> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-O-31502, South Island Oystercatcher"@en .
+<https://example.org/birds/id/bird/gb-s-88123> <http://www.w3.org/2000/01/rdf-schema#label> "GB-S-88123, Barn Swallow"@en .
+<https://example.org/birds/id/bird/gb-t-90544> <http://www.w3.org/2000/01/rdf-schema#label> "GB-T-90544, Arctic Tern"@en .
+<https://example.org/birds/id/bird/es-c-61210> <http://www.w3.org/2000/01/rdf-schema#label> "ES-C-61210, White Stork"@en .
+<https://example.org/birds/id/bird/us-s-70345> <http://www.w3.org/2000/01/rdf-schema#label> "US-S-70345, Sandhill Crane"@en .
+<https://example.org/birds/id/resighting/au-k-55920/1> <http://www.w3.org/2000/01/rdf-schema#label> "AU-K-55920 at Saemangeum, 2020-04-14"@en .
+<https://example.org/birds/id/resighting/au-k-55920/2> <http://www.w3.org/2000/01/rdf-schema#label> "AU-K-55920 at Roebuck Bay, 2020-08-29"@en .
+<https://example.org/birds/id/resighting/au-k-55920/3> <http://www.w3.org/2000/01/rdf-schema#label> "AU-K-55920 at Saemangeum, 2021-04-19"@en .
+<https://example.org/birds/id/resighting/au-k-55920/4> <http://www.w3.org/2000/01/rdf-schema#label> "AU-K-55920 at Roebuck Bay, 2021-09-05"@en .
+<https://example.org/birds/id/resighting/nz-w-20014/1> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-W-20014 at Firth of Thames, 2021-02-17"@en .
+<https://example.org/birds/id/resighting/nz-w-20014/2> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-W-20014 at Rakaia River, 2021-09-28"@en .
+<https://example.org/birds/id/resighting/nz-w-20014/3> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-W-20014 at Firth of Thames, 2022-02-01"@en .
+<https://example.org/birds/id/resighting/cl-g-30087/1> <http://www.w3.org/2000/01/rdf-schema#label> "CL-G-30087 at Platte River, 2022-04-22"@en .
+<https://example.org/birds/id/resighting/cl-g-30087/2> <http://www.w3.org/2000/01/rdf-schema#label> "CL-G-30087 at Chiloé Island, 2022-10-02"@en .
+<https://example.org/birds/id/resighting/gb-t-90544/1> <http://www.w3.org/2000/01/rdf-schema#label> "GB-T-90544 at Langebaan Lagoon, 2022-12-04"@en .
+<https://example.org/birds/id/resighting/us-s-70345/1> <http://www.w3.org/2000/01/rdf-schema#label> "US-S-70345 at Yukon-Kuskokwim Delta, 2022-06-10"@en .
+<https://example.org/birds/id/resighting/us-s-70345/2> <http://www.w3.org/2000/01/rdf-schema#label> "US-S-70345 at Platte River, 2023-03-12"@en .
+<https://example.org/birds/id/resighting/au-k-55801/1> <http://www.w3.org/2000/01/rdf-schema#label> "AU-K-55801 at Yalu Jiang, 2022-04-26"@en .
+<https://example.org/birds/id/resighting/au-k-55801/2> <http://www.w3.org/2000/01/rdf-schema#label> "AU-K-55801 at Roebuck Bay, 2022-09-02"@en .
+<https://example.org/birds/id/resighting/gb-s-88123/1> <http://www.w3.org/2000/01/rdf-schema#label> "GB-S-88123 at Langebaan Lagoon, 2022-01-11"@en .
+<https://example.org/birds/id/resighting/gb-s-88123/2> <http://www.w3.org/2000/01/rdf-schema#label> "GB-S-88123 at The Wash, 2022-05-06"@en .
+<https://example.org/birds/id/resighting/nz-b-40102/1> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-B-40102 at Yalu Jiang, 2021-04-05"@en .
+<https://example.org/birds/id/resighting/nz-b-40102/2> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-B-40102 at Firth of Thames, 2021-10-01"@en .
+<https://example.org/birds/id/resighting/nz-b-40117/1> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-B-40117 at Saemangeum, 2021-04-08"@en .
+<https://example.org/birds/id/resighting/nz-b-40117/2> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-B-40117 at Yukon-Kuskokwim Delta, 2021-06-02"@en .
+<https://example.org/birds/id/resighting/nz-b-40117/3> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-B-40117 at Farewell Spit, 2021-09-30"@en .
+<https://example.org/birds/id/resighting/nz-b-40117/4> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-B-40117 at Manawatū Estuary, 2022-01-15"@en .
+<https://example.org/birds/id/resighting/ar-k-11251/1> <http://www.w3.org/2000/01/rdf-schema#label> "AR-K-11251 at Bahía San Antonio, 2022-04-02"@en .
+<https://example.org/birds/id/resighting/ar-k-11251/2> <http://www.w3.org/2000/01/rdf-schema#label> "AR-K-11251 at Delaware Bay, 2022-05-25"@en .
+<https://example.org/birds/id/resighting/nz-b-40233/1> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-B-40233 at Yalu Jiang, 2022-04-20"@en .
+<https://example.org/birds/id/resighting/nz-b-40233/2> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-B-40233 at Firth of Thames, 2022-10-11"@en .
+<https://example.org/birds/id/resighting/nz-b-40101/1> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-B-40101 at Yalu Jiang, 2021-04-02"@en .
+<https://example.org/birds/id/resighting/nz-b-40101/2> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-B-40101 at Yukon-Kuskokwim Delta, 2021-06-11"@en .
+<https://example.org/birds/id/resighting/nz-b-40101/3> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-B-40101 at Firth of Thames, 2021-09-20"@en .
+<https://example.org/birds/id/resighting/nz-b-40101/4> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-B-40101 at Yalu Jiang, 2022-03-30"@en .
+<https://example.org/birds/id/resighting/nz-b-40101/5> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-B-40101 at Firth of Thames, 2022-09-25"@en .
+<https://example.org/birds/id/resighting/nz-o-31502/1> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-O-31502 at Firth of Thames, 2022-04-10"@en .
+<https://example.org/birds/id/resighting/nz-o-31502/2> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-O-31502 at Rakaia River, 2022-09-01"@en .
+<https://example.org/birds/id/resighting/nz-w-20029/1> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-W-20029 at Firth of Thames, 2022-03-03"@en .
+<https://example.org/birds/id/resighting/nz-w-20029/2> <http://www.w3.org/2000/01/rdf-schema#label> "NZ-W-20029 at Manawatū Estuary, 2022-06-18"@en .
+<https://example.org/birds/id/resighting/es-c-61210/1> <http://www.w3.org/2000/01/rdf-schema#label> "ES-C-61210 at Strait of Gibraltar, 2021-08-19"@en .
+<https://example.org/birds/id/resighting/es-c-61210/2> <http://www.w3.org/2000/01/rdf-schema#label> "ES-C-61210 at Doñana, 2022-02-07"@en .
+<https://example.org/birds/id/resighting/ar-k-11204/1> <http://www.w3.org/2000/01/rdf-schema#label> "AR-K-11204 at Bahía San Antonio, 2022-03-28"@en .
+<https://example.org/birds/id/resighting/ar-k-11204/2> <http://www.w3.org/2000/01/rdf-schema#label> "AR-K-11204 at Delaware Bay, 2022-05-21"@en .
+<https://example.org/birds/id/resighting/ar-k-11204/3> <http://www.w3.org/2000/01/rdf-schema#label> "AR-K-11204 at Bahía Lomas, 2022-11-30"@en .

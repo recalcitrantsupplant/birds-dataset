@@ -5,6 +5,7 @@ PREFIX taxon: <https://example.org/birds/vocab/taxon/>
 
 CONSTRUCT {
   ?banded a bird:BandedBird ;
+    rdfs:label ?birdLabel ;
     bird:bandNumber ?bandNumber ;
     bird:species ?species ;
     bird:bandedAt ?bandingSite ;
@@ -13,6 +14,7 @@ CONSTRUCT {
     bird:date ?bandingDate ;
     rdfs:comment ?colours .
   ?resighting a bird:Resighting ;
+    rdfs:label ?resightingLabel ;
     bird:bird ?resighted ;
     bird:site ?site ;
     bird:date ?date ;
@@ -20,8 +22,8 @@ CONSTRUCT {
     bird:note ?note .
 }
 WHERE {
-  VALUES (?bandKey ?bandNumber ?speciesKey ?bandingSiteKey ?bandingDate ?colours ?resightingKey ?resightingBandKey ?siteKey ?date ?previousPath ?note) {
-    (UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF)
+  VALUES (?bandKey ?bandNumber ?speciesKey ?bandingSiteKey ?bandingDate ?colours ?resightingKey ?resightingBandKey ?siteKey ?date ?previousPath ?note ?birdLabel ?resightingLabel) {
+    (UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF)
   }
   BIND(IRI(CONCAT(STR(id:), "bird/", ?bandKey)) AS ?banded)
   BIND(IRI(CONCAT(STR(taxon:), ?speciesKey)) AS ?species)

@@ -2,10 +2,10 @@ CREATE MACRO slug(s) AS trim(regexp_replace(lower(strip_accents(s)), '[^a-z0-9]+
 CREATE MACRO num(x) AS regexp_replace(round(x, 6)::VARCHAR, '\.0$', '');
 
 CREATE TEMP TABLE countries AS
-SELECT iso2 FROM read_csv('etl/authored/countries.csv', all_varchar = true);
+SELECT iso2, name FROM read_csv('etl/authored/countries.csv', all_varchar = true);
 
 CREATE TEMP TABLE species AS
-SELECT Scientific_name AS name FROM read_csv('etl/sources/avilist.csv', all_varchar = true) WHERE Taxon_rank = 'species';
+SELECT Scientific_name AS name, English_name_AviList AS english FROM read_csv('etl/sources/avilist.csv', all_varchar = true) WHERE Taxon_rank = 'species';
 
 CREATE TEMP TABLE changes AS
 SELECT row_number() OVER () AS n, from_name, to_name, country
@@ -73,7 +73,10 @@ SELECT
   'POINT(' || i.lon || ' ' || i.lat || ')' AS wkt,
   s.slug AS siteKey,
   i.dataset_key AS datasetKey,
-  regexp_replace(replace(i.license, 'http://', 'https://'), 'legalcode$', '') AS license
+  regexp_replace(replace(i.license, 'http://', 'https://'), 'legalcode$', '') AS license,
+  sp.english || ', ' || k.name || ', ' || i.event_date AS label
 FROM identified AS i
+JOIN species AS sp ON sp.name = i.true_name
+JOIN countries AS k ON k.iso2 = i.country
 LEFT JOIN sites AS s ON i.x > s.lon - s.ho AND i.x < s.lon + s.ho AND i.y > s.lat - s.hl AND i.y < s.lat + s.hl
 ORDER BY i.line

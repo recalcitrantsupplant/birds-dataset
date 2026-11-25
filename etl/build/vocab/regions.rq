@@ -25,8 +25,7 @@ CONSTRUCT {
     skos:narrower ?country .
   ?country a skos:Concept, bird:Country, geo:Feature ;
     skos:inScheme <https://example.org/birds/vocab/region> ;
-    skos:prefLabel ?name ;
-    skos:altLabel ?miName ;
+    skos:prefLabel ?name, ?miName ;
     skos:notation ?iso2 ;
     skos:broader ?sub ;
     bird:region ?reg ;

@@ -3,10 +3,12 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dwc: <http://rs.tdwg.org/dwc/terms/>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX id: <https://example.org/birds/id/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX taxon: <https://example.org/birds/vocab/taxon/>
 
 CONSTRUCT {
   ?o a bird:Occurrence ;
+    rdfs:label ?label ;
     bird:species ?species ;
     bird:identifiedAs ?identifiedAs ;
     bird:country ?country ;
@@ -25,8 +27,8 @@ CONSTRUCT {
     geo:asWKT ?wkt .
 }
 WHERE {
-  VALUES (?gbifId ?speciesKey ?identifiedAsKey ?countryKey ?eventDate ?month ?year ?basisOfRecord ?individualCount ?uncertainty ?wkt ?siteKey ?datasetKey ?license) {
-    (UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF)
+  VALUES (?gbifId ?speciesKey ?identifiedAsKey ?countryKey ?eventDate ?month ?year ?basisOfRecord ?individualCount ?uncertainty ?wkt ?siteKey ?datasetKey ?license ?label) {
+    (UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF)
   }
   BIND(IRI(CONCAT(STR(id:), "occurrence/", ?gbifId)) AS ?o)
   BIND(IRI(CONCAT(STR(?o), "/geometry")) AS ?geometry)

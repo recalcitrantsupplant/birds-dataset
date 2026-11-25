@@ -11,7 +11,7 @@ PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
 
 shape:Species a sh:NodeShape ;
     sh:targetClass bird:Species ;
-    sh:property [ sh:path skos:prefLabel ; sh:minCount 1 ; sh:languageIn ( "en" ) ; sh:uniqueLang true ] ;
+    sh:property [ sh:path skos:prefLabel ; sh:minCount 1 ; sh:languageIn ( "en" "mi" ) ; sh:uniqueLang true ] ;
     sh:property [ sh:path skos:broader ; sh:minCount 1 ; sh:maxCount 1 ; sh:class bird:Genus ] ;
     sh:property [ sh:path bird:acceptedName ; sh:minCount 1 ; sh:maxCount 1 ; sh:class bird:Name ] ;
     sh:property [ sh:path bird:account ; sh:minCount 1 ; sh:datatype rdf:langString ] ;

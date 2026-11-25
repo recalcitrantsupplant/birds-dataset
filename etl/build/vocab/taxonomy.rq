@@ -16,8 +16,12 @@ CONSTRUCT {
   ?c a skos:Concept, ?class ;
     skos:inScheme <https://example.org/birds/vocab/taxon> ;
     skos:notation ?notation ;
-    skos:prefLabel ?label ;
-    skos:altLabel ?familyName, ?scientificAltLabel, ?miName ;
+    skos:prefLabel ?label, ?miName ;
+    skos:altLabel ?familyName, ?scientificAltLabel ;
+    skos:hiddenLabel ?hiddenLabel ;
+    skos:definition ?definition ;
+    skos:exactMatch ?exactMatch ;
+    skos:related ?related ;
     skos:broader ?parent ;
     bird:rank ?rankConcept ;
     bird:scientificName ?scientificName ;
@@ -31,11 +35,12 @@ CONSTRUCT {
   ?parent skos:narrower ?c .
 }
 WHERE {
-  VALUES (?rank ?className ?key ?parentKey ?topKey ?notation ?scientificName ?label ?familyName ?scientificAltLabel ?miName ?authority ?rangeText ?protonym ?seeAlso ?identifier ?extinct ?nameKey) {
-    (UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF)
+  VALUES (?rank ?className ?key ?parentKey ?topKey ?notation ?scientificName ?label ?familyName ?scientificAltLabel ?miName ?hiddenLabel ?definition ?exactMatch ?relatedKey ?authority ?rangeText ?protonym ?seeAlso ?identifier ?extinct ?nameKey) {
+    (UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF UNDEF)
   }
   BIND(IRI(CONCAT(STR(taxon:), ?key)) AS ?c)
   BIND(IRI(CONCAT(STR(taxon:), ?parentKey)) AS ?parent)
+  BIND(IRI(CONCAT(STR(taxon:), ?relatedKey)) AS ?related)
   BIND(IRI(CONCAT(STR(taxon:), ?topKey)) AS ?top)
   BIND(IRI(CONCAT(STR(bird:), ?className)) AS ?class)
   BIND(IRI(CONCAT("https://example.org/birds/vocab/rank/", ?rank)) AS ?rankConcept)

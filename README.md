@@ -15,16 +15,17 @@ It is the shared demo dataset for:
 
 | Path | Contents | Triples |
 | --- | --- | --- |
-| `ontology/birds.ttl` | Classes and properties | 268 |
+| `ontology/birds.ttl` | Classes and properties, with the classes and properties that the rule sets infer | 423 |
 | `ontology/shapes.ttl` | SHACL shapes that the data conforms to | 192 |
-| `vocab/taxonomy.ttl` | 22 orders, 57 families, 86 genera and 111 species from AviList v2025 | 3,485 |
+| `vocab/taxonomy.ttl` | 22 orders, 57 families, 86 genera and 111 species from AviList v2025. Each species has its GBIF taxon, a definition, earlier names as hidden labels, and the species a split separated it from | 3,739 |
+| `vocab/former-genera.ttl` | Two genera that name changes retired, *Notornis* and *Nyctea*, as deprecated concepts of the taxonomy | 22 |
 | `vocab/regions.ttl` | UN M49 regions and subregions, and 13 countries with Natural Earth boundaries | 267 |
-| `vocab/concepts.ttl` | Ranks, migration, habitats, trophic niches, lifestyles, Red List categories, seasons, seasonal status, site types, name change types, food resources | 649 |
+| `vocab/concepts.ttl` | Ranks, migration, habitats, trophic niches, lifestyles, Red List categories, seasons, seasonal status, site types, name change types, food resources | 663 |
 | `data/species.ttl` | Traits from AVONET, Red List category, AviList range text and a species account | 1,792 |
-| `data/occurrences.ttl` | 2,081 GBIF occurrences with points, 2015 to 2025, CC0 and CC BY 4.0 only | 29,114 |
+| `data/occurrences.ttl` | 2,081 GBIF occurrences with points, 2015 to 2025, CC0 and CC BY 4.0 only | 31,195 |
 | `data/monthly-counts.ttl` | GBIF record counts for each species, country and month | 16,861 |
 | `data/sites.ttl` | 22 sites (estuaries, tidal flats, wetlands) with approximate boundaries and a centre point | 264 |
-| `data/banded-birds.ttl` | 16 banded birds and 40 resightings with notes | 368 |
+| `data/banded-birds.ttl` | 16 banded birds and 40 resightings with notes | 424 |
 | `data/food-web.ttl` | 129 links from a species to a food resource or to another species | 129 |
 | `data/names.ttl` | Scientific names and 18 name changes: genus moves, splits by country, a lump | 488 |
 | `rules/*.srl` | Five SRL rule sets. See [rules/README.md](rules/README.md) | |
@@ -83,6 +84,19 @@ flowchart LR
 - **Facet hierarchies have a fixed depth.** The Kurrawong index can facet a
   hierarchy only when every level is a fixed path. Taxonomy (order, family,
   genus) and geography (region, subregion, country) both have three levels.
+- **Labels and names.** A species has its English name as `skos:prefLabel`, and
+  its Māori name, where it has one, as a second `skos:prefLabel` in `mi`. Its
+  scientific name is a `skos:altLabel`. Earlier scientific names from genus
+  moves and spelling changes, and Māori names without macrons, are
+  `skos:hiddenLabel`s, so a search finds them. Earlier names from splits and
+  lumps are not, because they belong to another taxon. Occurrences, banded birds
+  and resightings have an `rdfs:label` made from the species, country, site and
+  date, such as "Bar-tailed Godwit, New Zealand, 2021-06-23".
+- **Links between species.** The species that a split separated, where both are
+  in the list, are `skos:related`. Each species has `skos:exactMatch` to its GBIF
+  taxon, from `etl/sources/gbif-taxa.csv`. GBIF matched 110 names exactly; it
+  matched the kākāpō to the earlier spelling *Strigops habroptila*, which is the
+  same taxon.
 - **Made-up data is marked.** The banded birds, their resightings, the site
   boundaries and the assignment of old names to records are made up.
   [NOTICE.md](NOTICE.md) says so.
@@ -125,10 +139,10 @@ datatype. The template builds the IRIs and the triples.
 The authored inputs are in `etl/authored/`: species accounts, sites, banded
 birds, resightings, the food web, name changes, countries, Māori names, and
 the names that BirdLife and GBIF use where they differ from AviList.
-`vocab/concepts.ttl` is authored Turtle.
+`vocab/concepts.ttl` and `vocab/former-genera.ttl` are authored Turtle.
 
 The output Turtle has no prefix declarations, because the sqlib command line
-writes full IRIs. The `data/` files are about 4.1 MB.
+writes full IRIs. The `data/` files are about 4.6 MB.
 
 ## Full tier
 

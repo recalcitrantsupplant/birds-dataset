@@ -4,6 +4,7 @@ PREFIX dwc:     <http://rs.tdwg.org/dwc/terms/>
 PREFIX geo:     <http://www.opengis.net/ont/geosparql#>
 PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl:     <http://www.w3.org/2002/07/owl#>
+PREFIX rank:    <https://example.org/birds/vocab/rank/>
 PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos:    <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
@@ -34,6 +35,8 @@ bird:Species a owl:Class ; rdfs:subClassOf bird:Taxon ; rdfs:label "Species"@en 
 
 bird:Occurrence a owl:Class ;
     rdfs:subClassOf geo:Feature ;
+    rdfs:subClassOf [ a owl:Restriction ; owl:onProperty bird:species ;
+        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ; owl:onClass bird:Species ] ;
     owl:equivalentClass dwc:Occurrence ;
     rdfs:label "Occurrence"@en ;
     skos:definition "A record of one or more birds of one species at a place and date."@en .
@@ -73,10 +76,34 @@ bird:FoodResource a owl:Class ;
     rdfs:label "Food resource"@en ;
     skos:definition "A kind of food that is not a bird species, such as fish, nectar or insects."@en .
 
+[] a owl:AllDisjointClasses ;
+    rdfs:comment "Each taxon has one rank."@en ;
+    owl:members ( bird:Order bird:Family bird:Genus bird:Species ) .
+
+bird:Rank a owl:Class ;
+    rdfs:label "Taxonomic rank"@en ;
+    skos:definition "One of the four ranks that the taxonomy of this dataset uses."@en ;
+    owl:equivalentClass [ a owl:Class ; owl:oneOf ( rank:order rank:family rank:genus rank:species ) ] .
+
+# Classes that the rule set Food web infers
+
+bird:ApexPredator a owl:Class ; rdfs:subClassOf bird:Species ; rdfs:label "Apex predator"@en ;
+    skos:definition "A species that eats other species in the dataset and that no species in the dataset eats. The rule set Food web infers it."@en .
+bird:MixedFeeder a owl:Class ; rdfs:subClassOf bird:Species ; rdfs:label "Mixed feeder"@en ;
+    skos:definition "A species that depends on both animal food and plant food. The rule set Food web infers it."@en .
+bird:InFeedingCycle a owl:Class ; rdfs:subClassOf bird:Species ; rdfs:label "In a feeding cycle"@en ;
+    skos:definition "A species that depends on itself through its food, such as two species that take each other's nestlings. The rule set Food web infers it."@en .
+bird:BasicFoodResource a owl:Class ; rdfs:subClassOf bird:FoodResource ; rdfs:label "Basic food resource"@en ;
+    skos:definition "A food resource with no narrower food resource. The rule set Food web infers it."@en .
+
 # Taxonomy and names
 
 bird:rank a owl:ObjectProperty ;
-    rdfs:label "rank"@en ; rdfs:domain bird:Taxon ; rdfs:range skos:Concept .
+    rdfs:label "rank"@en ; rdfs:domain bird:Taxon ; rdfs:range bird:Rank .
+
+bird:scientificName a owl:DatatypeProperty ;
+    rdfs:label "scientific name"@en ; rdfs:domain bird:Taxon ; rdfs:range xsd:string ;
+    skos:definition "The scientific name of the taxon in AviList v2025, as a string."@en .
 
 bird:acceptedName a owl:ObjectProperty ;
     rdfs:label "accepted name"@en ; rdfs:domain bird:Taxon ; rdfs:range bird:Name ;
@@ -105,20 +132,20 @@ bird:changeType a owl:ObjectProperty ;
 # Traits
 
 bird:migration a owl:ObjectProperty ;
-    rdfs:label "migration"@en ; rdfs:range skos:Concept ;
+    rdfs:label "migration"@en ; rdfs:domain bird:Species ; rdfs:range skos:Concept ;
     skos:definition "How far the species moves between seasons, from AVONET: sedentary, partial migrant or migratory."@en .
 bird:habitat a owl:ObjectProperty ;
-    rdfs:label "habitat"@en ; rdfs:range skos:Concept .
+    rdfs:label "habitat"@en ; rdfs:domain bird:Taxon ; rdfs:range skos:Concept .
 bird:trophicNiche a owl:ObjectProperty ;
-    rdfs:label "trophic niche"@en ; rdfs:range skos:Concept .
+    rdfs:label "trophic niche"@en ; rdfs:domain bird:Taxon ; rdfs:range skos:Concept .
 bird:lifestyle a owl:ObjectProperty ;
-    rdfs:label "lifestyle"@en ; rdfs:range skos:Concept .
+    rdfs:label "lifestyle"@en ; rdfs:domain bird:Taxon ; rdfs:range skos:Concept .
 bird:redListCategory a owl:ObjectProperty ;
     rdfs:label "Red List category"@en ; rdfs:domain bird:Species ; rdfs:range skos:Concept .
 bird:extinct a owl:DatatypeProperty ;
     rdfs:label "extinct or possibly extinct"@en ; rdfs:domain bird:Species ; rdfs:range xsd:boolean .
 
-bird:bodyMass a owl:DatatypeProperty ;
+bird:bodyMass a owl:DatatypeProperty , owl:FunctionalProperty ;
     rdfs:label "body mass (g)"@en ; rdfs:domain bird:Species ; rdfs:range xsd:decimal .
 bird:wingLength a owl:DatatypeProperty ;
     rdfs:label "wing length (mm)"@en ; rdfs:domain bird:Species ; rdfs:range xsd:decimal .
@@ -150,22 +177,26 @@ bird:recordedIn a owl:ObjectProperty ;
     rdfs:label "recorded in"@en ; rdfs:domain bird:Species ; rdfs:range bird:Country ;
     skos:definition "A country in the species's checklist for this dataset."@en .
 bird:species a owl:ObjectProperty ;
-    rdfs:label "species"@en ; rdfs:range bird:Species .
+    rdfs:label "species"@en ; rdfs:range bird:Species ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( bird:Occurrence bird:MonthlyCount bird:BandedBird ) ] .
 bird:identifiedAs a owl:ObjectProperty ;
     rdfs:label "identified as"@en ; rdfs:domain bird:Occurrence ; rdfs:range bird:Name ;
     skos:definition "The scientific name that the observer gave. It can be an old name."@en .
 bird:country a owl:ObjectProperty ;
-    rdfs:label "country"@en ; rdfs:range bird:Country .
+    rdfs:label "country"@en ; rdfs:range bird:Country ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( bird:Occurrence bird:MonthlyCount bird:Site ) ] .
 bird:site a owl:ObjectProperty ;
-    rdfs:label "site"@en ; rdfs:range bird:Site .
+    rdfs:label "site"@en ; rdfs:range bird:Site ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( bird:Occurrence bird:Resighting bird:BandedBird ) ] .
 bird:month a owl:DatatypeProperty ;
-    rdfs:label "month"@en ; rdfs:range xsd:integer .
+    rdfs:label "month"@en ; rdfs:range xsd:integer ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( bird:Occurrence bird:MonthlyCount ) ] .
 bird:recordCount a owl:DatatypeProperty ;
     rdfs:label "record count"@en ; rdfs:domain bird:MonthlyCount ; rdfs:range xsd:integer .
 bird:siteType a owl:ObjectProperty ;
     rdfs:label "site type"@en ; rdfs:domain bird:Site ; rdfs:range skos:Concept .
 bird:note a owl:DatatypeProperty ;
-    rdfs:label "note"@en ; rdfs:range rdf:langString ;
+    rdfs:label "note"@en ; rdfs:domain bird:Resighting ; rdfs:range rdf:langString ;
     skos:definition "Free text that the observer wrote."@en .
 bird:region a owl:ObjectProperty ;
     rdfs:label "region"@en ; rdfs:domain bird:Country ; rdfs:range skos:Concept .
@@ -181,7 +212,7 @@ bird:longitude a owl:DatatypeProperty ;
 
 # Banded birds
 
-bird:bandNumber a owl:DatatypeProperty ;
+bird:bandNumber a owl:DatatypeProperty , owl:FunctionalProperty ;
     rdfs:label "band number"@en ; rdfs:domain bird:BandedBird ; rdfs:range xsd:string .
 bird:bandedAt a owl:ObjectProperty ;
     rdfs:label "banded at"@en ; rdfs:domain bird:BandedBird ; rdfs:range bird:Site .
@@ -193,7 +224,8 @@ bird:previous a owl:ObjectProperty ;
     rdfs:label "previous"@en ; rdfs:domain bird:Resighting ;
     skos:definition "The sighting or banding just before this one: a resighting, or the banded bird for the first resighting."@en .
 bird:date a owl:DatatypeProperty ;
-    rdfs:label "date"@en ; rdfs:range xsd:date .
+    rdfs:label "date"@en ; rdfs:range xsd:date ;
+    rdfs:domain [ a owl:Class ; owl:unionOf ( bird:Resighting bird:BandedBird ) ] .
 
 # Food web
 
@@ -207,13 +239,16 @@ bird:dependsOn a owl:ObjectProperty , owl:TransitiveProperty ;
 # Inferred by the rules
 
 bird:effectiveTrophicNiche a owl:ObjectProperty ;
+    rdfs:domain bird:Taxon ;
     rdfs:subPropertyOf bird:trophicNiche ;
     rdfs:label "effective trophic niche"@en ;
     skos:definition "The trophic niche of the taxon, or of its nearest broader taxon that states one."@en .
 bird:effectiveHabitat a owl:ObjectProperty ;
+    rdfs:domain bird:Taxon ;
     rdfs:subPropertyOf bird:habitat ;
     rdfs:label "effective habitat"@en .
 bird:effectiveLifestyle a owl:ObjectProperty ;
+    rdfs:domain bird:Taxon ;
     rdfs:subPropertyOf bird:lifestyle ;
     rdfs:label "effective lifestyle"@en .
 bird:levelAtLeast a owl:ObjectProperty ;
@@ -239,3 +274,21 @@ bird:flywayLink a owl:ObjectProperty ;
     rdfs:label "flyway link"@en ; rdfs:domain bird:Site ; rdfs:range bird:Site .
 bird:reaches a owl:ObjectProperty , owl:TransitiveProperty ;
     rdfs:label "reaches"@en ; rdfs:domain bird:Site ; rdfs:range bird:Site .
+bird:foodResourceCount a owl:DatatypeProperty ;
+    rdfs:label "food resource count"@en ; rdfs:domain bird:Species ; rdfs:range xsd:integer ;
+    skos:definition "How many basic food resources the species depends on. The rule set Food web infers it."@en .
+bird:usesSite a owl:ObjectProperty ;
+    rdfs:label "uses site"@en ; rdfs:domain bird:Species ; rdfs:range bird:Site ;
+    skos:definition "A site where a banded bird of the species was banded or resighted. The rule set Flyways infers it."@en .
+bird:connectedTo a owl:ObjectProperty ;
+    rdfs:label "connected to"@en ; rdfs:domain bird:Country ; rdfs:range bird:Country ;
+    skos:definition "A country that a site in this country reaches through flyway links. The rule set Flyways infers it."@en .
+bird:firstReturnHop a owl:DatatypeProperty ;
+    rdfs:label "first return hop"@en ; rdfs:domain bird:BandedBird ; rdfs:range xsd:integer ;
+    skos:definition "The hop number of the first resighting at the site where the bird was banded. The rule set Flyways infers it."@en .
+
+# Concepts
+
+bird:seasonName a owl:DatatypeProperty ;
+    rdfs:label "season name"@en ; rdfs:range xsd:string ;
+    skos:definition "The name of the season without its hemisphere, such as \"spring\", which the rule set Seasonal status uses."@en .

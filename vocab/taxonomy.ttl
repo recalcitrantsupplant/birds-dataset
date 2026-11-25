@@ -123,7 +123,7 @@
 	<https://example.org/birds/def/scientificName> "Apteryx mantelli" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/apteryx> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Kiwi-nui"@mi , "Apteryx mantelli" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Apteryx mantelli" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "North Island Brown Kiwi"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "33" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -190,7 +190,7 @@
 	<https://example.org/birds/def/scientificName> "Tadorna variegata" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/tadorna> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Pūtangitangi"@mi , "Tadorna variegata" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Tadorna variegata" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Paradise Shelduck"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "392" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -214,7 +214,7 @@
 	<https://example.org/birds/def/scientificName> "Hymenolaimus malacorhynchos" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/hymenolaimus> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Whio"@mi , "Hymenolaimus malacorhynchos" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Hymenolaimus malacorhynchos" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Blue Duck"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "442" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -339,7 +339,7 @@
 	<https://example.org/birds/def/scientificName> "Urodynamis taitensis" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/urodynamis> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Koekoeā"@mi , "Urodynamis taitensis" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Urodynamis taitensis" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Long-tailed Koel"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "2086" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -388,7 +388,7 @@
 	<https://example.org/birds/def/scientificName> "Chalcites lucidus" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/chalcites> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Pīpīwharauroa"@mi , "Chalcites lucidus" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Chalcites lucidus" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Shining Bronze Cuckoo"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "2106" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -453,7 +453,7 @@
 	<https://example.org/birds/def/scientificName> "Hemiphaga novaeseelandiae" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/hemiphaga> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Kererū"@mi , "Hemiphaga novaeseelandiae" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Hemiphaga novaeseelandiae" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "New Zealand Pigeon"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "2979" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -577,7 +577,7 @@
 	<https://example.org/birds/def/scientificName> "Porphyrio hochstetteri" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/porphyrio> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Takahē"@mi , "Porphyrio hochstetteri" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Porphyrio hochstetteri" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "South Island Takahe"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "3615" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -635,7 +635,7 @@
 	<https://example.org/birds/def/scientificName> "Himantopus leucocephalus" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/himantopus> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Poaka"@mi , "Himantopus leucocephalus" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Himantopus leucocephalus" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Pied Stilt"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "3783" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -651,7 +651,7 @@
 	<https://example.org/birds/def/scientificName> "Himantopus novaezelandiae" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/himantopus> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Kakī"@mi , "Himantopus novaezelandiae" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Himantopus novaezelandiae" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Black Stilt"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "3784" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -685,7 +685,7 @@
 	<https://example.org/birds/def/scientificName> "Haematopus finschi" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/haematopus> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Tōrea"@mi , "Haematopus finschi" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Haematopus finschi" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "South Island Oystercatcher"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "3809" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -758,7 +758,7 @@
 	<https://example.org/birds/def/scientificName> "Anarhynchus bicinctus" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/anarhynchus> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Pohowera"@mi , "Anarhynchus bicinctus" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Anarhynchus bicinctus" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Double-banded Plover"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "3919" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -774,7 +774,7 @@
 	<https://example.org/birds/def/scientificName> "Anarhynchus frontalis" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/anarhynchus> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Ngutuparore"@mi , "Anarhynchus frontalis" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Anarhynchus frontalis" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Wrybill"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "3925" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -832,7 +832,7 @@
 	<https://example.org/birds/def/scientificName> "Limosa lapponica" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/limosa> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Kuaka"@mi , "Limosa lapponica" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Limosa lapponica" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Bar-tailed Godwit"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "4026" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -896,7 +896,7 @@
 	<https://example.org/birds/def/scientificName> "Calidris canutus" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/calidris> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Huahou"@mi , "Calidris canutus" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Calidris canutus" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Red Knot"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "4144" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -1108,7 +1108,7 @@
 	<https://example.org/birds/def/scientificName> "Megadyptes antipodes" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/megadyptes> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Hoiho"@mi , "Megadyptes antipodes" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Megadyptes antipodes" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Yellow-eyed Penguin"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "4705" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -1150,7 +1150,7 @@
 	<https://example.org/birds/def/scientificName> "Diomedea epomophora" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/diomedea> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Toroa"@mi , "Diomedea epomophora" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Diomedea epomophora" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Southern Royal Albatross"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "4724" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -1200,7 +1200,7 @@
 	<https://example.org/birds/def/scientificName> "Ardenna grisea" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/ardenna> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Tītī"@mi , "Ardenna grisea" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Ardenna grisea" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Sooty Shearwater"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "4856" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -1712,7 +1712,7 @@
 	<https://example.org/birds/def/scientificName> "Circus approximans" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/circus> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Kāhu"@mi , "Circus approximans" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Circus approximans" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Swamp Harrier"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "8442" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -2082,7 +2082,7 @@
 	<https://example.org/birds/def/scientificName> "Falco novaeseelandiae" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/falco> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Kārearea"@mi , "Falco novaeseelandiae" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Falco novaeseelandiae" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "New Zealand Falcon"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "11233" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -2139,7 +2139,7 @@
 	<https://example.org/birds/def/scientificName> "Strigops habroptilus" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/strigops> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Kākāpō"@mi , "Strigops habroptilus" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Strigops habroptilus" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Kakapo"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "11281" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -2164,7 +2164,7 @@
 	<https://example.org/birds/def/scientificName> "Nestor notabilis" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/nestor> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Kea"@mi , "Nestor notabilis" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Nestor notabilis" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Kea"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "11283" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -2179,7 +2179,7 @@
 	<https://example.org/birds/def/scientificName> "Nestor meridionalis" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/nestor> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Kākā"@mi , "Nestor meridionalis" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Nestor meridionalis" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "New Zealand Kaka"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "11285" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -2448,7 +2448,7 @@
 	<https://example.org/birds/def/scientificName> "Prosthemadera novaeseelandiae" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/prosthemadera> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Tūī"@mi , "Prosthemadera novaeseelandiae" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Prosthemadera novaeseelandiae" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Tui"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "17048" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -2472,7 +2472,7 @@
 	<https://example.org/birds/def/scientificName> "Anthornis melanura" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/anthornis> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Korimako"@mi , "Anthornis melanura" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Anthornis melanura" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "New Zealand Bellbird"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "17053" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -2578,7 +2578,7 @@
 	<https://example.org/birds/def/scientificName> "Rhipidura fuliginosa" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/rhipidura> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Pīwakawaka"@mi , "Rhipidura fuliginosa" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Rhipidura fuliginosa" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "New Zealand Fantail"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "19215" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -2701,7 +2701,7 @@
 	<https://example.org/birds/def/scientificName> "Hirundo neoxena" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/hirundo> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Warou"@mi , "Hirundo neoxena" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Hirundo neoxena" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Welcome Swallow"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "22741" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -2797,7 +2797,7 @@
 	<https://example.org/birds/def/scientificName> "Zosterops lateralis" ;
 	<https://example.org/birds/def/rank> <https://example.org/birds/vocab/rank/species> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/taxon/zosterops> ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Tauhou"@mi , "Zosterops lateralis" ;
+	<http://www.w3.org/2004/02/skos/core#altLabel> "Zosterops lateralis" ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Silvereye"@en ;
 	<http://www.w3.org/2004/02/skos/core#notation> "24225" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
@@ -3180,3 +3180,283 @@
 	<http://www.w3.org/2004/02/skos/core#notation> "32368" ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/taxon> ;
 	a <https://example.org/birds/def/Species> , <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://example.org/birds/vocab/taxon/struthio-camelus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2495150> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "The largest living bird, flightless, with a long neck and powerful legs that can run at 70 km/h."@en .
+<https://example.org/birds/vocab/taxon/dromaius-novaehollandiae> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2495134> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "The tallest bird in Australia, flightless, with shaggy grey-brown feathers and long legs that can carry it at 50 km/h."@en .
+<https://example.org/birds/vocab/taxon/apteryx-mantelli> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2495144> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A flightless, nocturnal bird with coarse brown feathers like hair, and nostrils at the tip of its long bill."@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Kiwi-nui"@mi .
+<https://example.org/birds/vocab/taxon/aix-galericulata> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2498388> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small duck of wooded rivers and lakes in East Asia."@en .
+<https://example.org/birds/vocab/taxon/tadorna-variegata> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2498011> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large goose-like duck."@en ;
+	<http://www.w3.org/2004/02/skos/core#hiddenLabel> "Putangitangi" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Pūtangitangi"@mi .
+<https://example.org/birds/vocab/taxon/hymenolaimus-malacorhynchos> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2498332> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A blue-grey duck of fast, clear mountain rivers, with a pale pink bill and a chestnut-speckled breast."@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Whio"@mi .
+<https://example.org/birds/vocab/taxon/phoeniconaias-minor> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2481104> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "The smallest and most numerous flamingo, deep pink, with a dark red bill."@en .
+<https://example.org/birds/vocab/taxon/phoenicopterus-chilensis> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2481110> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A pink flamingo with greyish legs and pink knees."@en .
+<https://example.org/birds/vocab/taxon/phoenicopterus-roseus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/4352332> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A tall pink-white flamingo with a pink bill tipped with black and bright red and black wings in flight."@en .
+<https://example.org/birds/vocab/taxon/urodynamis-taitensis> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2496499> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large, slim cuckoo with a long barred tail, brown above and streaked below."@en ;
+	<http://www.w3.org/2004/02/skos/core#hiddenLabel> "Koekoea" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Koekoeā"@mi .
+<https://example.org/birds/vocab/taxon/chrysococcyx-caprius> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2496333> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small cuckoo."@en .
+<https://example.org/birds/vocab/taxon/chalcites-lucidus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2496325> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small cuckoo with metallic green upperparts and a white breast with bronze bars."@en ;
+	<http://www.w3.org/2004/02/skos/core#hiddenLabel> "Pipiwharauroa" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Pīpīwharauroa"@mi .
+<https://example.org/birds/vocab/taxon/cuculus-canorus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5231918> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A grey, hawk-like cuckoo whose two-note call announces spring across Europe."@en .
+<https://example.org/birds/vocab/taxon/hemiphaga-novaeseelandiae> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2495905> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large pigeon with an iridescent green and purple head and a clean white breast."@en ;
+	<http://www.w3.org/2004/02/skos/core#hiddenLabel> "Kereru" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Kererū"@mi .
+<https://example.org/birds/vocab/taxon/balearica-regulorum> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5228229> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A grey crane with a crown of stiff golden feathers, white cheeks and a red throat pouch."@en .
+<https://example.org/birds/vocab/taxon/antigone-canadensis> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2474953> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A tall grey crane with a red crown."@en .
+<https://example.org/birds/vocab/taxon/grus-japonensis> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2474944> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A tall white crane with black wings and neck and a red patch of bare skin on the crown."@en .
+<https://example.org/birds/vocab/taxon/porphyrio-hochstetteri> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5228153> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large, flightless rail with deep blue and green plumage and a heavy red bill."@en ;
+	<http://www.w3.org/2004/02/skos/core#hiddenLabel> "Takahe" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Takahē"@mi .
+<https://example.org/birds/vocab/taxon/himantopus-himantopus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5229126> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A slim black and white wader with very long pink legs."@en .
+<https://example.org/birds/vocab/taxon/himantopus-leucocephalus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5229124> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A black and white wader with very long pink legs and a thin black bill."@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Poaka"@mi .
+<https://example.org/birds/vocab/taxon/himantopus-novaezelandiae> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5229125> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A stilt with entirely black plumage and long red legs, one of the rarest wading birds in the world."@en ;
+	<http://www.w3.org/2004/02/skos/core#hiddenLabel> "Kaki" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Kakī"@mi .
+<https://example.org/birds/vocab/taxon/haematopus-finschi> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2480264> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A black and white oystercatcher with a long orange-red bill."@en ;
+	<http://www.w3.org/2004/02/skos/core#hiddenLabel> "Torea" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Tōrea"@mi .
+<https://example.org/birds/vocab/taxon/vanellus-vanellus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2480242> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A black and white plover with green and purple gloss on the back and a long, thin crest."@en .
+<https://example.org/birds/vocab/taxon/vanellus-miles> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5229134> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large plover with a yellow facial wattle and a sharp yellow spur on each wing."@en .
+<https://example.org/birds/vocab/taxon/anarhynchus-bicinctus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2480294> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small plover of beaches and riverbeds."@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Pohowera"@mi .
+<https://example.org/birds/vocab/taxon/anarhynchus-frontalis> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5229153> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small grey and white plover with a bill that bends to the right, the only bird in the world with a sideways-curved bill."@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Ngutuparore"@mi .
+<https://example.org/birds/vocab/taxon/numenius-madagascariensis> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2481791> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "The largest wader in the world, with a very long, down-curved bill that it uses to pull crabs and worms from deep burrows in mudflats."@en .
+<https://example.org/birds/vocab/taxon/limosa-lapponica> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2481681> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large wader with a long, slightly upturned bill."@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Kuaka"@mi .
+<https://example.org/birds/vocab/taxon/limosa-haemastica> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2481680> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large godwit with a long, slightly upturned bill."@en .
+<https://example.org/birds/vocab/taxon/arenaria-interpres> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2481776> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A stocky, short-legged wader with a short wedge-shaped bill and harlequin black, white and chestnut plumage in summer."@en .
+<https://example.org/birds/vocab/taxon/calidris-canutus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2481765> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A stocky, medium-sized sandpiper, grey in the non-breeding season and brick-red in breeding plumage."@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Huahou"@mi .
+<https://example.org/birds/vocab/taxon/calidris-tenuirostris> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2481768> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large, grey sandpiper with heavy dark spotting on the breast in breeding plumage."@en .
+<https://example.org/birds/vocab/taxon/calidris-acuminata> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2481769> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A medium-sized sandpiper with a rufous cap and a chestnut tint to the breast."@en .
+<https://example.org/birds/vocab/taxon/calidris-pygmaea> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/10658506> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small sandpiper with a bill that widens at the tip into a spoon."@en .
+<https://example.org/birds/vocab/taxon/calidris-ruficollis> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2481746> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A sparrow-sized sandpiper, the smallest common wader in Australia."@en .
+<https://example.org/birds/vocab/taxon/fratercula-arctica> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2481353> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small auk with a large, striped red, yellow and blue-grey bill in the breeding season."@en .
+<https://example.org/birds/vocab/taxon/sterna-paradisaea> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5229230> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A slender, grey and white tern with a black cap and a blood-red bill."@en .
+<https://example.org/birds/vocab/taxon/spheniscus-demersus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5229384> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A black and white penguin with a black band across the breast and a pink patch of bare skin above each eye."@en .
+<https://example.org/birds/vocab/taxon/spheniscus-magellanicus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5229385> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A black and white penguin with two black bands across the breast."@en .
+<https://example.org/birds/vocab/taxon/megadyptes-antipodes> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2481632> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A penguin with pale yellow eyes and a yellow band that runs from the eyes around the back of the head."@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Hoiho"@mi .
+<https://example.org/birds/vocab/taxon/diomedea-epomophora> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5229299> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "One of the largest seabirds, with a wingspan of about three metres."@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Toroa"@mi .
+<https://example.org/birds/vocab/taxon/ardenna-tenuirostris> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5229359> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A dark shearwater that breeds in huge colonies in burrows on islands of south-eastern Australia and Tasmania."@en .
+<https://example.org/birds/vocab/taxon/ardenna-grisea> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5739277> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A dark, slender shearwater with silvery underwings."@en ;
+	<http://www.w3.org/2004/02/skos/core#hiddenLabel> "Titi" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Tītī"@mi .
+<https://example.org/birds/vocab/taxon/ciconia-boyciana> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2481916> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large white stork with black flight feathers, a heavy black bill and red skin around the eye."@en .
+<https://example.org/birds/vocab/taxon/ciconia-ciconia> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2481912> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A tall white stork with black flight feathers and a red bill and legs."@en .
+<https://example.org/birds/vocab/taxon/bostrychia-hagedash> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5229203> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large, grey-brown ibis with a long, down-curved bill and green and purple gloss on the wings."@en .
+<https://example.org/birds/vocab/taxon/platalea-minor> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2480805> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A white spoonbill with a black face and a black, spoon-shaped bill that it sweeps from side to side through shallow water to catch fish and shrimp."@en .
+<https://example.org/birds/vocab/taxon/pelecanus-conspicillatus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5229156> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A very large black and white pelican with the longest bill of any bird."@en .
+<https://example.org/birds/vocab/taxon/apus-apus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5228676> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A dark, sickle-winged bird that spends almost its whole life in the air."@en .
+<https://example.org/birds/vocab/taxon/archilochus-colubris> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5228514> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A tiny hummingbird."@en .
+<https://example.org/birds/vocab/taxon/selasphorus-rufus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2476855> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small, fiery orange hummingbird."@en .
+<https://example.org/birds/vocab/taxon/bubo-scandiacus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5959143> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large white owl of the Arctic tundra."@en .
+<https://example.org/birds/vocab/taxon/vultur-gryphus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2481907> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "One of the largest flying birds, with a wingspan of more than three metres."@en .
+<https://example.org/birds/vocab/taxon/sagittarius-serpentarius> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5229409> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A tall, long-legged bird of prey of African grassland, with a crest of long black feathers like quill pens behind the head."@en .
+<https://example.org/birds/vocab/taxon/pandion-haliaetus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2480726> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large fish-eating bird of prey, white below and dark brown above, with a dark stripe through the eye."@en .
+<https://example.org/birds/vocab/taxon/gyps-africanus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/9487001> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A brown vulture of African savanna with a white rump and a bare dark neck."@en .
+<https://example.org/birds/vocab/taxon/aquila-adalberti> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2480510> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large, dark eagle with white shoulders, found only in the Iberian Peninsula."@en .
+<https://example.org/birds/vocab/taxon/aquila-audax> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5229181> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "The largest bird of prey in Australia, dark brown to black, with a long wedge-shaped tail and a wingspan of more than two metres."@en .
+<https://example.org/birds/vocab/taxon/circus-approximans> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5229172> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large brown hawk that glides slowly low over open country and wetlands, with its wings held in a shallow V."@en ;
+	<http://www.w3.org/2004/02/skos/core#hiddenLabel> "Kahu" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Kāhu"@mi .
+<https://example.org/birds/vocab/taxon/milvus-milvus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5229168> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A graceful bird of prey with a deeply forked rufous tail and long, angled wings."@en .
+<https://example.org/birds/vocab/taxon/haliaeetus-leucocephalus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2480446> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large eagle with a white head and tail and a heavy yellow bill, the national bird of the United States."@en .
+<https://example.org/birds/vocab/taxon/icthyophaga-vocifer> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2480454> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large eagle with a white head, breast and tail, chestnut belly and black wings."@en .
+<https://example.org/birds/vocab/taxon/buteo-swainsoni> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2480562> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A slim hawk of the western prairies of North America."@en .
+<https://example.org/birds/vocab/taxon/buteo-jamaicensis> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2480542> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A common, large hawk of North America with a brick-red tail."@en .
+<https://example.org/birds/vocab/taxon/upupa-epops> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2498415> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A pinkish-brown bird with a long, thin curved bill, black and white barred wings and a crest that it raises like a fan."@en .
+<https://example.org/birds/vocab/taxon/bucorvus-leadbeateri> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2476041> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A very large, black, turkey-like hornbill with a red face and throat."@en .
+<https://example.org/birds/vocab/taxon/coracias-caudatus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2475360> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A colourful roller with a lilac throat and breast, turquoise belly and long outer tail streamers."@en .
+<https://example.org/birds/vocab/taxon/merops-apiaster> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2475443> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A colourful bee-eater with a chestnut crown and back, a yellow throat and a turquoise breast."@en .
+<https://example.org/birds/vocab/taxon/merops-ornatus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2475422> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A slim bee-eater with bright green, blue and gold plumage, a black eye-stripe and long central tail feathers."@en .
+<https://example.org/birds/vocab/taxon/dacelo-novaeguineae> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2475648> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large, stocky kingfisher of eastern Australia, best known for its loud laughing call, which family groups give together at dawn and dusk."@en .
+<https://example.org/birds/vocab/taxon/falco-amurensis> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2480998> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small falcon."@en .
+<https://example.org/birds/vocab/taxon/falco-novaeseelandiae> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2481003> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small, fast falcon that hunts birds in flight through forest and over open hill country."@en ;
+	<http://www.w3.org/2004/02/skos/core#hiddenLabel> "Karearea" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Kārearea"@mi .
+<https://example.org/birds/vocab/taxon/falco-peregrinus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2481047> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A powerful falcon with a dark hood and moustache, blue-grey back and finely barred underparts."@en .
+<https://example.org/birds/vocab/taxon/strigops-habroptilus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2479236> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large, flightless, nocturnal parrot with moss-green feathers and an owl-like face."@en ;
+	<http://www.w3.org/2004/02/skos/core#hiddenLabel> "Kakapo" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Kākāpō"@mi .
+<https://example.org/birds/vocab/taxon/nestor-notabilis> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2479593> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large olive-green parrot of the Southern Alps, with orange-red under the wings."@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Kea"@mi .
+<https://example.org/birds/vocab/taxon/nestor-meridionalis> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2479594> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A forest parrot, olive-brown with crimson under the wings and on the belly."@en ;
+	<http://www.w3.org/2004/02/skos/core#hiddenLabel> "Kaka" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Kākā"@mi .
+<https://example.org/birds/vocab/taxon/eolophus-roseicapilla> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2479598> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A pink and grey cockatoo that is common across most of Australia."@en .
+<https://example.org/birds/vocab/taxon/cacatua-galerita> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2479888> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large white cockatoo with a yellow crest that it raises when alarmed or excited."@en .
+<https://example.org/birds/vocab/taxon/neophema-chrysogaster> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2479508> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small grass parrot with a bright green back, a yellow belly with an orange patch and a blue band on the forehead."@en .
+<https://example.org/birds/vocab/taxon/trichoglossus-haematodus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2479686> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A lorikeet of the islands of Melanesia, from New Guinea to Vanuatu and New Caledonia."@en .
+<https://example.org/birds/vocab/taxon/trichoglossus-moluccanus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/6170530> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A noisy, fast-flying parrot with a blue head, a red and yellow breast and a green back."@en .
+<https://example.org/birds/vocab/taxon/menura-novaehollandiae> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2488980> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large, pheasant-like songbird of the moist forests of south-eastern Australia."@en .
+<https://example.org/birds/vocab/taxon/ptilonorhynchus-violaceus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5231665> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A stocky bowerbird."@en .
+<https://example.org/birds/vocab/taxon/malurus-cyaneus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2487516> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A tiny bird with a long, cocked tail."@en .
+<https://example.org/birds/vocab/taxon/prosthemadera-novaeseelandiae> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2487029> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A dark honeyeater that shines green and blue in sunlight, with two white tufts at the throat."@en ;
+	<http://www.w3.org/2004/02/skos/core#hiddenLabel> "Tui" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Tūī"@mi .
+<https://example.org/birds/vocab/taxon/anthornis-melanura> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2487200> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "An olive-green honeyeater whose clear, bell-like song is a well-known sound of New Zealand forests."@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Korimako"@mi .
+<https://example.org/birds/vocab/taxon/anthochaera-phrygia> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/6094180> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A black and yellow honeyeater with a scaled pattern on the breast and bare pink skin around the eye."@en .
+<https://example.org/birds/vocab/taxon/gymnorhina-tibicen> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2489450> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A black and white bird of open country and towns across Australia and southern New Guinea, with a rich, flute-like carolling song."@en .
+<https://example.org/birds/vocab/taxon/rhipidura-albiscapa> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/9283578> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small grey flycatcher with a long tail that it fans while it hunts insects in flight."@en .
+<https://example.org/birds/vocab/taxon/rhipidura-fuliginosa> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5231730> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small, restless flycatcher that fans its long tail and follows walkers to catch the insects they disturb."@en ;
+	<http://www.w3.org/2004/02/skos/core#hiddenLabel> "Piwakawaka" ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Pīwakawaka"@mi .
+<https://example.org/birds/vocab/taxon/cyanocitta-cristata> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2482593> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A crested blue jay with black and white markings and a loud, varied voice."@en .
+<https://example.org/birds/vocab/taxon/cyanistes-caeruleus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2487879> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small, agile tit with a blue cap, wings and tail, a yellow breast and a white face with a dark eye-stripe."@en .
+<https://example.org/birds/vocab/taxon/parus-major> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/9705453> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "The largest tit in Europe, with a black head, white cheeks and a yellow breast with a black central stripe."@en .
+<https://example.org/birds/vocab/taxon/hirundo-neoxena> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5230789> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A swallow with glossy blue-black upperparts, a rust-red face and throat and a deeply forked tail."@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Warou"@mi .
+<https://example.org/birds/vocab/taxon/hirundo-rustica> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/9515886> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A swallow with glossy blue upperparts, a red throat and long tail streamers."@en .
+<https://example.org/birds/vocab/taxon/phylloscopus-trochilus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2493052> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small, plain olive-green warbler with a pale eyebrow and pale legs."@en .
+<https://example.org/birds/vocab/taxon/zosterops-japonicus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/9300456> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small olive-green bird with a white ring around each eye."@en .
+<https://example.org/birds/vocab/taxon/zosterops-lateralis> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2489396> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small olive-green bird with a ring of white feathers around each eye."@en ;
+	<http://www.w3.org/2004/02/skos/core#prefLabel> "Tauhou"@mi .
+<https://example.org/birds/vocab/taxon/sturnus-vulgaris> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/9809229> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A stocky bird with glossy, spotted black plumage that shines purple and green."@en .
+<https://example.org/birds/vocab/taxon/lamprotornis-superbus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2489075> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A starling with glossy blue-green upperparts, a chestnut belly, a white band across the breast and pale eyes."@en .
+<https://example.org/birds/vocab/taxon/turdus-merula> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2490719> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A thrush of woods and gardens."@en .
+<https://example.org/birds/vocab/taxon/turdus-migratorius> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/9510564> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large thrush with a grey-brown back and a brick-red breast."@en .
+<https://example.org/birds/vocab/taxon/erithacus-rubecula> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2492462> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small, round bird with an orange-red face and breast."@en .
+<https://example.org/birds/vocab/taxon/ficedula-hypoleuca> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2492606> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small flycatcher."@en .
+<https://example.org/birds/vocab/taxon/promerops-cafer> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5229963> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A brown sunbird-like bird with a very long tail, found only in the fynbos of south-western South Africa."@en .
+<https://example.org/birds/vocab/taxon/nectarinia-famosa> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5229971> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A sunbird of southern and eastern Africa."@en .
+<https://example.org/birds/vocab/taxon/ploceus-capensis> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2494035> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A large yellow weaver of south-western South Africa."@en .
+<https://example.org/birds/vocab/taxon/passer-montanus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5231198> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small sparrow with a chestnut crown and a black spot on each white cheek."@en .
+<https://example.org/birds/vocab/taxon/passer-domesticus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/5231190> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A small, stocky sparrow that lives close to people."@en .
+<https://example.org/birds/vocab/taxon/dolichonyx-oryzivorus> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2484417> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A blackbird of hayfields."@en .
+<https://example.org/birds/vocab/taxon/cardinalis-cardinalis> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://www.gbif.org/species/2490384> ;
+	<http://www.w3.org/2004/02/skos/core#definition> "A crested songbird."@en .
+<https://example.org/birds/vocab/taxon/anarhynchus-bicinctus> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "Charadrius bicinctus" .
+<https://example.org/birds/vocab/taxon/antigone-canadensis> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "Grus canadensis" .
+<https://example.org/birds/vocab/taxon/ardenna-grisea> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "Puffinus griseus" .
+<https://example.org/birds/vocab/taxon/ardenna-tenuirostris> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "Puffinus tenuirostris" .
+<https://example.org/birds/vocab/taxon/bubo-scandiacus> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "Nyctea scandiaca" , "Strix scandiaca" .
+<https://example.org/birds/vocab/taxon/chalcites-lucidus> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "Chrysococcyx lucidus" .
+<https://example.org/birds/vocab/taxon/cyanistes-caeruleus> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "Parus caeruleus" .
+<https://example.org/birds/vocab/taxon/himantopus-himantopus> <http://www.w3.org/2004/02/skos/core#related> <https://example.org/birds/vocab/taxon/himantopus-leucocephalus> ;
+	<http://www.w3.org/2004/02/skos/core#hiddenLabel> "Charadrius himantopus" .
+<https://example.org/birds/vocab/taxon/himantopus-leucocephalus> <http://www.w3.org/2004/02/skos/core#related> <https://example.org/birds/vocab/taxon/himantopus-himantopus> .
+<https://example.org/birds/vocab/taxon/icthyophaga-vocifer> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "Haliaeetus vocifer" .
+<https://example.org/birds/vocab/taxon/rhipidura-albiscapa> <http://www.w3.org/2004/02/skos/core#related> <https://example.org/birds/vocab/taxon/rhipidura-fuliginosa> .
+<https://example.org/birds/vocab/taxon/rhipidura-fuliginosa> <http://www.w3.org/2004/02/skos/core#related> <https://example.org/birds/vocab/taxon/rhipidura-albiscapa> .
+<https://example.org/birds/vocab/taxon/strigops-habroptilus> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "Strigops habroptila" .
+<https://example.org/birds/vocab/taxon/trichoglossus-haematodus> <http://www.w3.org/2004/02/skos/core#related> <https://example.org/birds/vocab/taxon/trichoglossus-moluccanus> .
+<https://example.org/birds/vocab/taxon/trichoglossus-moluccanus> <http://www.w3.org/2004/02/skos/core#related> <https://example.org/birds/vocab/taxon/trichoglossus-haematodus> .
+<https://example.org/birds/vocab/taxon/urodynamis-taitensis> <http://www.w3.org/2004/02/skos/core#hiddenLabel> "Eudynamys taitensis" .

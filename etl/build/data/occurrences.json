@@ -17,6 +17,7 @@
     { "columnName": "wkt", "termType": "literal", "datatypeIri": "http://www.opengis.net/ont/geosparql#wktLiteral" },
     { "columnName": "siteKey", "termType": "literal" },
     { "columnName": "datasetKey", "termType": "literal" },
-    { "columnName": "license", "termType": "uri" }
+    { "columnName": "license", "termType": "uri" },
+    { "columnName": "label", "termType": "literal", "lang": "en" }
   ]
 }

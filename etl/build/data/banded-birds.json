@@ -15,6 +15,8 @@
     { "columnName": "siteKey", "termType": "literal" },
     { "columnName": "date", "termType": "literal", "datatypeIri": "http://www.w3.org/2001/XMLSchema#date" },
     { "columnName": "previousPath", "termType": "literal" },
-    { "columnName": "note", "termType": "literal", "lang": "en" }
+    { "columnName": "note", "termType": "literal", "lang": "en" },
+    { "columnName": "birdLabel", "termType": "literal", "lang": "en" },
+    { "columnName": "resightingLabel", "termType": "literal", "lang": "en" }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "description": "The orders, families, genera and species of the species list, from AviList v2025, as a SKOS scheme. A species has its English, scientific and Māori names.",
+  "description": "The orders, families, genera and species of the species list, from AviList v2025, as a SKOS scheme. A species has its English, scientific and Māori names, earlier scientific names as hidden labels, a definition from its account, its GBIF taxon, and the species a split separated it from.",
   "sqlFile": "taxonomy.sql",
   "templateFile": "taxonomy.rq",
   "chunkSize": 100000,
@@ -15,6 +15,10 @@
     { "columnName": "familyName", "termType": "literal", "lang": "en" },
     { "columnName": "scientificAltLabel", "termType": "literal" },
     { "columnName": "miName", "termType": "literal", "lang": "mi" },
+    { "columnName": "hiddenLabel", "termType": "literal" },
+    { "columnName": "definition", "termType": "literal", "lang": "en" },
+    { "columnName": "exactMatch", "termType": "uri" },
+    { "columnName": "relatedKey", "termType": "literal" },
     { "columnName": "authority", "termType": "literal" },
     { "columnName": "rangeText", "termType": "literal" },
     { "columnName": "protonym", "termType": "literal" },

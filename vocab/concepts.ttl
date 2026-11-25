@@ -428,30 +428,35 @@ seasonalstatus:passage-migrant a skos:Concept ;
     skos:definition "Present in spring or autumn only."@en ;
     skos:inScheme <https://example.org/birds/vocab/seasonal-status> ;
     skos:prefLabel "Passage migrant"@en ;
+    skos:scopeNote "Inferred by the rule set Seasonal status from GBIF monthly record counts. The counts reflect where and when people look for birds as well as where the birds are."@en ;
     skos:topConceptOf <https://example.org/birds/vocab/seasonal-status> .
 
 seasonalstatus:resident a skos:Concept ;
     skos:definition "Present in every season."@en ;
     skos:inScheme <https://example.org/birds/vocab/seasonal-status> ;
     skos:prefLabel "Resident"@en ;
+    skos:scopeNote "Inferred by the rule set Seasonal status from GBIF monthly record counts. The counts reflect where and when people look for birds as well as where the birds are."@en ;
     skos:topConceptOf <https://example.org/birds/vocab/seasonal-status> .
 
 seasonalstatus:summer-and-winter a skos:Concept ;
     skos:definition "Present in summer and winter, absent in spring or autumn."@en ;
     skos:inScheme <https://example.org/birds/vocab/seasonal-status> ;
     skos:prefLabel "Summer and winter"@en ;
+    skos:scopeNote "Inferred by the rule set Seasonal status from GBIF monthly record counts. The counts reflect where and when people look for birds as well as where the birds are."@en ;
     skos:topConceptOf <https://example.org/birds/vocab/seasonal-status> .
 
 seasonalstatus:summer-visitor a skos:Concept ;
     skos:definition "Present in summer and absent in winter."@en ;
     skos:inScheme <https://example.org/birds/vocab/seasonal-status> ;
     skos:prefLabel "Summer visitor"@en ;
+    skos:scopeNote "Inferred by the rule set Seasonal status from GBIF monthly record counts. The counts reflect where and when people look for birds as well as where the birds are."@en ;
     skos:topConceptOf <https://example.org/birds/vocab/seasonal-status> .
 
 seasonalstatus:winter-visitor a skos:Concept ;
     skos:definition "Present in winter and absent in summer."@en ;
     skos:inScheme <https://example.org/birds/vocab/seasonal-status> ;
     skos:prefLabel "Winter visitor"@en ;
+    skos:scopeNote "Inferred by the rule set Seasonal status from GBIF monthly record counts. The counts reflect where and when people look for birds as well as where the birds are."@en ;
     skos:topConceptOf <https://example.org/birds/vocab/seasonal-status> .
 
 sitetype:bottleneck a skos:Concept ;
@@ -492,24 +497,28 @@ sitetype:wetland a skos:Concept ;
 trophic:aquatic-predator a skos:Concept ;
     skos:broader trophic:carnivore ;
     skos:definition "Mainly fish and aquatic animals."@en ;
+    skos:example "Species in this dataset: Wrybill, Bar-tailed Godwit."@en ;
     skos:inScheme <https://example.org/birds/vocab/trophic> ;
     skos:prefLabel "Aquatic predator"@en .
 
 trophic:frugivore a skos:Concept ;
     skos:broader trophic:herbivore ;
     skos:definition "Mainly fruit."@en ;
+    skos:example "Species in this dataset: New Zealand Pigeon."@en ;
     skos:inScheme <https://example.org/birds/vocab/trophic> ;
     skos:prefLabel "Frugivore"@en .
 
 trophic:granivore a skos:Concept ;
     skos:broader trophic:herbivore ;
     skos:definition "Mainly seeds."@en ;
+    skos:example "Species in this dataset: House Sparrow, Galah."@en ;
     skos:inScheme <https://example.org/birds/vocab/trophic> ;
     skos:prefLabel "Granivore"@en .
 
 trophic:herbivore-aquatic a skos:Concept ;
     skos:broader trophic:herbivore ;
     skos:definition "Mainly aquatic plants and algae."@en ;
+    skos:example "Species in this dataset: Lesser Flamingo, Mandarin Duck."@en ;
     skos:inScheme <https://example.org/birds/vocab/trophic> ;
     skos:prefLabel "Herbivore aquatic"@en .
 
@@ -522,30 +531,35 @@ trophic:herbivore-terrestrial a skos:Concept ;
 trophic:invertivore a skos:Concept ;
     skos:broader trophic:carnivore ;
     skos:definition "Mainly insects and other invertebrates."@en ;
+    skos:example "Species in this dataset: Barn Swallow, Superb Lyrebird."@en ;
     skos:inScheme <https://example.org/birds/vocab/trophic> ;
     skos:prefLabel "Invertivore"@en .
 
 trophic:nectarivore a skos:Concept ;
     skos:broader trophic:herbivore ;
     skos:definition "Mainly nectar."@en ;
+    skos:example "Species in this dataset: Tui, Rufous Hummingbird."@en ;
     skos:inScheme <https://example.org/birds/vocab/trophic> ;
     skos:prefLabel "Nectarivore"@en .
 
 trophic:niche-omnivore a skos:Concept ;
     skos:broader trophic:omnivore ;
     skos:definition "A mixed diet with no main source."@en ;
+    skos:example "Species in this dataset: Kea, Common Blackbird."@en ;
     skos:inScheme <https://example.org/birds/vocab/trophic> ;
     skos:prefLabel "Omnivore (niche)"@en .
 
 trophic:niche-scavenger a skos:Concept ;
     skos:broader trophic:scavenger ;
     skos:definition "Mainly carrion."@en ;
+    skos:example "Species in this dataset: Andean Condor, White-backed Vulture."@en ;
     skos:inScheme <https://example.org/birds/vocab/trophic> ;
     skos:prefLabel "Scavenger (niche)"@en .
 
 trophic:vertivore a skos:Concept ;
     skos:broader trophic:carnivore ;
     skos:definition "Mainly land vertebrates."@en ;
+    skos:example "Species in this dataset: Peregrine Falcon, Secretarybird."@en ;
     skos:inScheme <https://example.org/birds/vocab/trophic> ;
     skos:prefLabel "Vertivore"@en .
 

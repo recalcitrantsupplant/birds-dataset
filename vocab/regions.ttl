@@ -77,7 +77,6 @@
 	<https://example.org/birds/def/region> <https://example.org/birds/vocab/region/m49-009> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/region/m49-053> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "NZ" ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Aotearoa"@mi ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "New Zealand"@en ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/region> ;
 	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Country> , <http://www.w3.org/2004/02/skos/core#Concept> .
@@ -126,7 +125,6 @@
 	<https://example.org/birds/def/region> <https://example.org/birds/vocab/region/m49-009> ;
 	<http://www.w3.org/2004/02/skos/core#broader> <https://example.org/birds/vocab/region/m49-053> ;
 	<http://www.w3.org/2004/02/skos/core#notation> "AU" ;
-	<http://www.w3.org/2004/02/skos/core#altLabel> "Ahitereiria"@mi ;
 	<http://www.w3.org/2004/02/skos/core#prefLabel> "Australia"@en ;
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/region> ;
 	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Country> , <http://www.w3.org/2004/02/skos/core#Concept> .
@@ -239,3 +237,5 @@
 	<http://www.w3.org/2004/02/skos/core#inScheme> <https://example.org/birds/vocab/region> ;
 	a <http://www.opengis.net/ont/geosparql#Feature> , <https://example.org/birds/def/Country> , <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://example.org/birds/vocab/region/m49-030> <http://www.w3.org/2004/02/skos/core#narrower> <https://example.org/birds/vocab/region/kr> .
+<https://example.org/birds/vocab/region/nz> <http://www.w3.org/2004/02/skos/core#prefLabel> "Aotearoa"@mi .
+<https://example.org/birds/vocab/region/au> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ahitereiria"@mi .
