@@ -90,4 +90,18 @@ check "the taxonomy hierarchy facets by order" \
   "$(query "SELECT ?v { (?fld ?v ?lo ?hi ?c) luc:facet (\"birds\" \"default\" \"\" \"[\\\"${f}order\\\"]\" \"\" 1 1) }")" \
   "${taxon}"
 
+region=https://example.org/birds/vocab/region/
+by_graph=$(query "SELECT (COUNT(DISTINCT ?b) AS ?n) { ?r bird:bird ?b ; bird:site/bird:country <${region}nz> }")
+check "a nested resighting filter counts the birds that SPARQL counts" \
+  "$(query "SELECT ?total { (?h ?e ?s ?total) luc:query (\"birds\" \"default\" \"*:*\" \"{\\\"op\\\":\\\"=\\\",\\\"args\\\":[{\\\"property\\\":\\\"${f}sightingCountry\\\"},\\\"${region}nz\\\"]}\" \"\" 1 0) }")" \
+  "${by_graph:-none}"
+
+check "the resighting hierarchy facets by region" \
+  "$(query "SELECT ?v { (?fld ?v ?lo ?hi ?c) luc:facet (\"birds\" \"default\" \"\" \"[\\\"${f}sightingRegion\\\"]\" \"\" 1 1) }")" \
+  "${region}"
+
+check "an unstored field is searchable" \
+  "$(query "SELECT ?e { (?h ?e) luc:query (\"birds\" \"[\\\"${f}bandColours\\\"]\" \"orange\" \"\" \"\" 1 0) }")" \
+  "https://example.org/birds/id/bird/"
+
 exit $failed
