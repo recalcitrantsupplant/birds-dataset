@@ -201,7 +201,6 @@ Two fields need care:
 
 ## Not done yet
 
-- No release is published yet.
 - No GBIF derived-dataset DOI. It needs a GBIF account.
 - The AviList extract reads the AviList workbook from avilist.org. The site
   refused the build machine, so the extract was tested on a workbook made from
