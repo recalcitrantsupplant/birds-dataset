@@ -48,8 +48,10 @@ field:label        idx:fieldName "label" ; idx:fieldType idx:TextField ; idx:def
 field:labelPrefix  idx:fieldName "labelPrefix" ; idx:fieldType idx:TextField ; idx:multiValued true ;
     idx:analyzer [ a text:EdgeNGramAnalyzer ; text:tokenized true ] .
 field:text         idx:fieldName "text" ; idx:fieldType idx:TextField ; idx:defaultSearch true ; idx:multiValued true .
-field:prefLabel    idx:fieldName "prefLabel" ; idx:fieldType idx:KeywordField ; idx:sortable true ;
+field:prefLabel    idx:fieldName "prefLabel" ; idx:fieldType idx:KeywordField ; idx:sortable true ; idx:multiValued true ;
     idx:normalizer [ a text:LowerCaseKeywordAnalyzer ] .
+
+field:scientificName idx:fieldName "scientificName" ; idx:fieldType idx:KeywordField ; idx:sortable true .
 
 field:order        idx:fieldName "order" ; idx:fieldType idx:KeywordField ; idx:facetable true .
 field:family       idx:fieldName "family" ; idx:fieldType idx:KeywordField ; idx:facetable true .
@@ -83,9 +85,10 @@ dim:geography idx:levels ( field:region field:subregion field:country ) .
 :SpeciesShape a sh:NodeShape ;
     sh:targetClass bird:Species ;
     idx:facetHierarchy dim:taxonomy ;
-    sh:property [ idx:field field:label ; sh:path [ sh:alternativePath ( skos:prefLabel skos:altLabel ) ] ] ;
-    sh:property [ idx:field field:labelPrefix ; sh:path [ sh:alternativePath ( skos:prefLabel skos:altLabel ) ] ] ;
+    sh:property [ idx:field field:label ; sh:path [ sh:alternativePath ( skos:prefLabel skos:altLabel skos:hiddenLabel ) ] ] ;
+    sh:property [ idx:field field:labelPrefix ; sh:path [ sh:alternativePath ( skos:prefLabel skos:altLabel skos:hiddenLabel ) ] ] ;
     sh:property [ idx:field field:prefLabel ; sh:path skos:prefLabel ] ;
+    sh:property [ idx:field field:scientificName ; sh:path bird:scientificName ] ;
     sh:property [ idx:field field:text ; sh:path [ sh:alternativePath ( bird:account bird:rangeText ) ] ] ;
     sh:property [ idx:field field:genus ; sh:path skos:broader ] ;
     sh:property [ idx:field field:family ; sh:path ( skos:broader skos:broader ) ] ;
@@ -138,8 +141,8 @@ dim:geography idx:levels ( field:region field:subregion field:country ) .
 
 :ConceptShape a sh:NodeShape ;
     sh:targetClass skos:Concept ;
-    sh:property [ idx:field field:label ; sh:path [ sh:alternativePath ( skos:prefLabel skos:altLabel ) ] ] ;
-    sh:property [ idx:field field:labelPrefix ; sh:path [ sh:alternativePath ( skos:prefLabel skos:altLabel ) ] ] ;
+    sh:property [ idx:field field:label ; sh:path [ sh:alternativePath ( skos:prefLabel skos:altLabel skos:hiddenLabel ) ] ] ;
+    sh:property [ idx:field field:labelPrefix ; sh:path [ sh:alternativePath ( skos:prefLabel skos:altLabel skos:hiddenLabel ) ] ] ;
     sh:property [ idx:field field:text ; sh:path skos:definition ] ;
     sh:property [ idx:field field:prefLabel ; sh:path skos:prefLabel ] ;
     sh:property [ idx:field field:scheme ; sh:path skos:inScheme ] ;

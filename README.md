@@ -30,7 +30,7 @@ It is the shared demo dataset for:
 | `data/names.ttl` | Scientific names and 18 name changes: genus moves, splits by country, a lump | 488 |
 | `rules/*.srl` | Five SRL rule sets. See [rules/README.md](rules/README.md) | |
 | `rules/expected/` | The triples that each rule set infers | |
-| `fuseki/config.ttl` | A Fuseki dataset with two Lucene indexes, `birds` and `vocab` | |
+| `fuseki/config.ttl` | A Fuseki dataset with two Lucene indexes, `birds` and `vocab`. See [Load into Fuseki](#load-into-fuseki) | |
 | `catalogue.ttl` | DCAT description of the dataset and its parts | |
 | `etl/` | Source extracts, authored CSV files, and the sqlib jobs and scripts that build everything | |
 
@@ -116,6 +116,7 @@ the `sqlib-cli` Docker image, which you build from the sqlib repository with
 3. Run `just build` to write `vocab/` and `data/`. It takes about 5 seconds.
 4. Run `just rules` to run the rule sets into `rules/expected/`.
 5. Run `just validate` to check the data against the shapes.
+6. Run `just check-fuseki` to load the result into Fuseki and query it.
 
 Steps 1 and 2 download, so they run DuckDB with `--allow-http` and
 `--allow-extension-install`.
@@ -158,12 +159,48 @@ GitHub release.
 | --- | --- | --- |
 | sqlib-demo | `data`, `vocab`, `rules` | Pin a release tag and download its archives in the seed step |
 | Wrybill | `ontology`, `vocab`, and `data` for the search pages | Load the archives of a pinned tag in `scripts/jena-demo.sh` |
-| Fuseki | All parts, and `full` if wanted | Download the archives at build time, load them into TDB2 with `rules/expected/trait-inheritance.nt`, then build the indexes |
+| Fuseki | All parts, and `full` if wanted | Download the archives of a pinned tag and load them as [Load into Fuseki](#load-into-fuseki) describes |
+
+## Load into Fuseki
+
+`fuseki/config.ttl` sets `tdb2:unionDefaultGraph true`, so a query's default
+graph is the union of the named graphs. Load each file into its own named
+graph: a file loaded into the default graph is indexed, but no query sees it.
+The graph IRI is `https://example.org/birds/graph/` followed by the file's
+path without its extension, for example
+`https://example.org/birds/graph/data/occurrences`.
+
+```bash
+for f in ontology/*.ttl vocab/*.ttl data/*.ttl catalogue.ttl rules/expected/*.nt; do
+  tdb2.tdbloader --loc DB --graph "https://example.org/birds/graph/${f%.*}" "$f"
+done
+```
+
+Then build the indexes with `shacltextindexer --desc=fuseki/config.ttl` and
+start Fuseki with `--config fuseki/config.ttl`. The species traits that the
+`birds` index facets on come from `rules/expected/trait-inheritance.nt`, so
+load the rule output too.
+
+`just check-fuseki` does all of this in the Kurrawong image
+(`ghcr.io/kurrawong/fuseki-lucene-shacl:sha-ff15690`, or `$FUSEKI_IMAGE`) and
+runs seven checks: the union graph has triples, every label is indexed, an
+earlier scientific name and a Māori name without macrons find their species,
+typeahead works without macrons, the scientific-name sort, and the taxonomy
+facet. It needs Docker.
+
+Two fields need care:
+
+- `prefLabel` holds every preferred label: English, and Māori where a species
+  has a Māori name. A sort on it uses the smaller label ascending and the
+  larger descending, so a species can sort under its Māori name. Sort on
+  `scientificName` for a stable order of species.
+- `label` and `labelPrefix` include `skos:hiddenLabel`, so earlier scientific
+  names and Māori names written without macrons find the species. The index
+  does not fold macrons in general: a name without macrons matches only when
+  the data has it as a hidden label.
 
 ## Not done yet
 
-- The Fuseki configuration has not been run against the Kurrawong image.
-  Check it with `luc:config` and `luc:stats` before you rely on it.
 - No release is published yet.
 - No GBIF derived-dataset DOI. It needs a GBIF account.
 - The AviList extract reads the AviList workbook from avilist.org. The site
