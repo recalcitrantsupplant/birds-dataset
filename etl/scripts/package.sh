@@ -10,6 +10,7 @@ tar czf "$out/vocab.tar.gz" vocab
 tar czf "$out/data.tar.gz" data
 tar czf "$out/rules.tar.gz" rules
 tar czf "$out/fuseki.tar.gz" fuseki
+cp catalogue.ttl "$out/catalogue.ttl"
 if [ -d dist/full ]; then
   tar czf "$out/full.tar.gz" -C dist/full vocab data
 fi
