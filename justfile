@@ -32,3 +32,7 @@ full per_month="10" countries="13":
 # Pack each part into dist/release, one archive per part, for a release.
 package:
     etl/scripts/package.sh
+
+# Load the dataset into the Kurrawong Fuseki image with fuseki/config.ttl and run a few queries. Needs Docker.
+check-fuseki:
+    etl/scripts/check_fuseki.sh
