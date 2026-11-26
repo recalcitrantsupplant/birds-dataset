@@ -33,7 +33,7 @@ PREFIX text:   <http://jena.apache.org/text#>
 :birds rdf:type text:TextIndexShacl ;
     text:indexId "birds" ;
     text:directory "/fuseki/databases/birds-index" ;
-    text:shapes ( :SpeciesShape :OccurrenceShape :SiteShape :ResightingShape ) ;
+    text:shapes ( :SpeciesShape :OccurrenceShape :SiteShape :ResightingShape :BandedBirdShape ) ;
     text:storeValues true ;
     text:exposeConfig true .
 
@@ -77,6 +77,19 @@ field:location     idx:fieldName "location" ; idx:fieldType idx:LatLonField ; id
 
 field:scheme       idx:fieldName "scheme" ; idx:fieldType idx:KeywordField ; idx:facetable true ; idx:multiValued true .
 field:notation     idx:fieldName "notation" ; idx:fieldType idx:KeywordField ; idx:sortable true .
+
+field:bandNumber   idx:fieldName "bandNumber" ; idx:fieldType idx:KeywordField ; idx:sortable true .
+field:bandColours  idx:fieldName "bandColours" ; idx:fieldType idx:TextField ; idx:stored false .
+
+field:sightingDate      idx:fieldName "sightingDate" ; idx:fieldType idx:TemporalField ; idx:sortable true ;
+    idx:storeLiteralMetadata true .
+field:sightingSite      idx:fieldName "sightingSite" ; idx:fieldType idx:KeywordField ; idx:facetable true .
+field:sightingCountry   idx:fieldName "sightingCountry" ; idx:fieldType idx:KeywordField ; idx:facetable true .
+field:sightingSubregion idx:fieldName "sightingSubregion" ; idx:fieldType idx:KeywordField ; idx:facetable true .
+field:sightingRegion    idx:fieldName "sightingRegion" ; idx:fieldType idx:KeywordField ; idx:facetable true .
+field:sightingNote      idx:fieldName "sightingNote" ; idx:fieldType idx:TextField .
+field:sightingNotePrefix idx:fieldName "sightingNotePrefix" ; idx:fieldType idx:TextField ;
+    idx:analyzer [ a text:EdgeNGramAnalyzer ; text:tokenized true ] .
 
 dim:taxonomy idx:levels ( field:order field:family field:genus ) .
 dim:geography idx:levels ( field:region field:subregion field:country ) .
@@ -138,6 +151,26 @@ dim:geography idx:levels ( field:region field:subregion field:country ) .
     sh:property [ idx:field field:date ; sh:path bird:date ] ;
     sh:property [ idx:field field:country ; sh:path ( bird:site bird:country ) ] ;
     sh:property [ idx:field field:location ; sh:path ( bird:site geo:hasGeometry geo:asWKT ) ] .
+
+:BandedBirdShape a sh:NodeShape ;
+    sh:targetClass bird:BandedBird ;
+    sh:property [ idx:field field:label ; sh:path ( bird:species skos:prefLabel ) ] ;
+    sh:property [ idx:field field:bandNumber ; sh:path bird:bandNumber ] ;
+    sh:property [ idx:field field:bandColours ; sh:path rdfs:comment ] ;
+    sh:property [ idx:field field:species ; sh:path bird:species ] ;
+    sh:property [ idx:field field:date ; sh:path bird:bandedOn ] ;
+    sh:property [ idx:field field:country ; sh:path ( bird:bandedAt bird:country ) ] ;
+    idx:nested [
+        idx:joinPath [ sh:inversePath bird:bird ] ;
+        idx:property [ idx:field field:sightingDate ; sh:path bird:date ] ;
+        idx:property [ idx:field field:sightingSite ; sh:path bird:site ] ;
+        idx:property [ idx:field field:sightingCountry ; sh:path ( bird:site bird:country ) ] ;
+        idx:property [ idx:field field:sightingSubregion ; sh:path ( bird:site bird:country skos:broader ) ] ;
+        idx:property [ idx:field field:sightingRegion ; sh:path ( bird:site bird:country skos:broader skos:broader ) ] ;
+        idx:property [ idx:field field:sightingNote ; sh:path bird:note ] ;
+        idx:property [ idx:field field:sightingNotePrefix ; sh:path bird:note ] ;
+        idx:facetHierarchy ( field:sightingRegion field:sightingSubregion field:sightingCountry ) ;
+    ] .
 
 :ConceptShape a sh:NodeShape ;
     sh:targetClass skos:Concept ;

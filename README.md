@@ -183,10 +183,18 @@ load the rule output too.
 
 `just check-fuseki` does all of this in the Kurrawong image
 (`ghcr.io/kurrawong/fuseki-lucene-shacl:sha-ff15690`, or `$FUSEKI_IMAGE`) and
-runs seven checks: the union graph has triples, every label is indexed, an
+runs ten checks: the union graph has triples, every label is indexed, an
 earlier scientific name and a Māori name without macrons find their species,
-typeahead works without macrons, the scientific-name sort, and the taxonomy
-facet. It needs Docker.
+typeahead works without macrons, the scientific-name sort, the taxonomy
+facet, a filter on nested resightings, the resighting region facet, and a
+search on an unstored field. It needs Docker.
+
+Banded birds carry their resightings as nested records (`idx:nested`, joined
+by `[ sh:inversePath bird:bird ]`), so a filter on resighting country and
+date matches a bird only when one resighting meets both. The resighting
+region, subregion and country form a hierarchy counted per resighting. The
+band colours (`bandColours`, from `rdfs:comment`) are searchable but not
+stored.
 
 Two fields need care:
 
